@@ -1,0 +1,64 @@
+# Example/Documentation for the IG YML file
+# https://fshschool.org/docs/sushi/configuration/#exhaustive-example
+
+# Package name
+# https://confluence.hl7.org/display/FHIR/NPM+Package+Specification#NPMPackageSpecification-Packagename
+id: ch.fhir.ig.ch-epreg
+canonical: http://fhir.ch/ig/ch-epreg
+name: CH_EPREG
+title: "CH EPREG (R4)"
+description: Implementation Guide for the pregnancy passport in Switzerland..
+status: draft
+license: CC0-1.0
+copyright: CC0-1.0
+jurisdiction: urn:iso:std:iso:3166#CHE
+date: 2024-08-20
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2024+
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+publisher:
+  name: HL7 Switzerland
+contact:
+  - name: HL7 Switzerland
+    telecom:
+      - system: url
+        value: https://www.hl7.ch/
+
+dependencies:
+  hl7.terminology: 5.4.0
+  ch.fhir.ig.ch-core: 5.0.0-ballot
+
+pages:
+  index.md:
+    title: Home
+  profiles.md:
+    title: Profiles
+  extensions.md:
+    title: Extensions
+  terminology.md:
+    title: Terminology
+  usecase-german.md:
+    title: Anwendungsfälle
+  usecase-french.md:
+    title: Cas d'application
+
+menu:
+  Home: index.html
+  Profiles: profiles.html
+  Extensions: extensions.html
+  Terminology: terminology.html
+  Artifacts: artifacts.html
+  Use Case: 
+    German: usecase-german.html
+    French: usecase-french.html
+
+# Parameters
+# Core FHIR: http://build.fhir.org/codesystem-guide-parameter-code.html
+# FHIR Tools IG: http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+parameters:
+  excludettl: true
+  allow-extensible-warnings: true
+  display-warnings: true 
+  path-resource:
+    - input/resources
