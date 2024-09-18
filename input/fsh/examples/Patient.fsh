@@ -4,8 +4,9 @@ Usage: #example
 Title: "Petra Meier"
 Description: "Patient for CH EPREG"
 
-* extension[0].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
-* extension[0].valueCoding = urn:iso:std:iso:3166#CH "Switzerland"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+* extension.extension[0].url = "code"
+* extension.extension[=].valueCodeableConcept = urn:iso:std:iso:3166#CH "Switzerland"
 
 * extension[1].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-patient-languageOfCorrespondence"
 * extension[1].valueCodeableConcept.coding[0].system = "urn:ietf:bcp:47"
