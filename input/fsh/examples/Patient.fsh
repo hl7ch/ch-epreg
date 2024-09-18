@@ -31,3 +31,11 @@ Description: "Patient for CH EPREG"
 * identifier.system = "urn:oid:2.16.756.5.32"
 * identifier.value = "7562295883077"
 
+* telecom[0].system = #phone
+* telecom[=].value = "+41 32 331 61 11"
+* telecom[=].use = #home
+* telecom[0].system = #phone
+* telecom[=].value = "+41 78 111 61 11"
+* telecom[=].use = #mobil
+* telecom[+].system = #email
+* telecom[=].value = "petra@meier.ch"
