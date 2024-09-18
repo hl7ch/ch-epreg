@@ -10,7 +10,7 @@ Description: "Patient for CH EPREG"
 * extension[1].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-patient-languageOfCorrespondence"
 * extension[1].valueCodeableConcept.coding[0].system = "urn:ietf:bcp:47"
 * extension[1].valueCodeableConcept.coding[0].code = #de-CH
-* extension[1].valueCodeableConcept.coding[0].display = "Deutsch (Schweiz)"
+* extension[1].valueCodeableConcept.coding[0].display = "German (Switzerland)"
 
 * name
   * family = "Meier"
@@ -24,7 +24,7 @@ Description: "Patient for CH EPREG"
   * city = "Liebefeld"
   * postalCode = "3097"
   * state = "BE"
-  * country = "Schweiz"
+  * country = "Switzerland"
   * country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
   * country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
