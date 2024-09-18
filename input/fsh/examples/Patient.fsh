@@ -8,11 +8,6 @@ Description: "Patient for CH EPREG"
 * extension.extension[0].url = "code"
 * extension.extension[=].valueCodeableConcept = urn:iso:std:iso:3166#CH "Switzerland"
 
-* extension[1].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-patient-languageOfCorrespondence"
-* extension[1].valueCodeableConcept.coding[0].system = "urn:ietf:bcp:47"
-* extension[1].valueCodeableConcept.coding[0].code = #de-CH
-* extension[1].valueCodeableConcept.coding[0].display = "German (Switzerland)"
-
 * name
   * family = "Meier"
   * given = "Petra"
@@ -33,5 +28,6 @@ Description: "Patient for CH EPREG"
 * communication.language.text = "Deutsch (Schweiz)"
 * communication.preferred = true
 
-
+* identifier.system = "urn:oid:2.16.756.5.32"
+* identifier.value = "7562295883077"
 
