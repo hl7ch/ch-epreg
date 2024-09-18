@@ -4,13 +4,9 @@ Usage: #example
 Title: "Petra Meier"
 Description: "Patient for CH EPREG"
 
-* extension[0].url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
-* extension[0].valueCoding = urn:iso:std:iso:3166#CH "Schweiz"
-
-* extension[1].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-patient-languageOfCorrespondence"
-* extension[1].valueCodeableConcept.coding[0].system = "urn:ietf:bcp:47"
-* extension[1].valueCodeableConcept.coding[0].code = #de-CH
-* extension[1].valueCodeableConcept.coding[0].display = "Deutsch (Schweiz)"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+* extension.extension[0].url = "code"
+* extension.extension[=].valueCodeableConcept = urn:iso:std:iso:3166#CH "Switzerland"
 
 * name
   * family = "Meier"
@@ -24,11 +20,26 @@ Description: "Patient for CH EPREG"
   * city = "Liebefeld"
   * postalCode = "3097"
   * state = "BE"
-  * country = "Schweiz"
+  * country = "Switzerland"
   * country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
   * country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
+* communication
+  * language = urn:ietf:bcp:47#de-CH
+  * language.text = "Deutsch (Schweiz)"
+  * preferred = true
 
+* identifier
+  * system = "urn:oid:2.16.756.5.32"
+  * value = "7562295883077"
 
+* telecom[0].system = #phone
+* telecom[=].value = "+41 32 331 61 11"
+* telecom[=].use = #home
 
+* telecom[1].system = #phone
+* telecom[=].value = "+41 78 111 61 11"
+* telecom[=].use = #mobil
 
+* telecom[+].system = #email
+* telecom[=].value = "petra@meier.ch"
