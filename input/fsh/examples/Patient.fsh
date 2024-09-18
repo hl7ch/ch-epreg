@@ -29,10 +29,9 @@ Description: "Patient for CH EPREG"
   * country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
   * country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
-* communication[0].language = urn:ietf:bcp:47#fr-CH "German (Switzerland)"
-* communication[=].preferred = true
-* communication[=].extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-languageofcorrespondence"
-* communication[=].extension.valueBoolean = false
+* communication.language = urn:ietf:bcp:47#de-CH
+* communication.language.text = "Deutsch (Schweiz)"
+* communication.preferred = true
 
 
 
