@@ -20,9 +20,9 @@ Description: "Patient for CH EPREG"
 
 * address
   * use = #home
-  * line = "Kreuzweg 11"
-  * city = "Biel/Bienne"
-  * postalCode = "2500"
+  * line = "Schwarzenburgstrasse 157"
+  * city = "Liebefeld"
+  * postalCode = "3097"
   * state = "BE"
   * country = "Schweiz"
   * country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
