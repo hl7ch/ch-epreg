@@ -24,18 +24,22 @@ Description: "Patient for CH EPREG"
   * country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
   * country.extension.valueCoding = urn:iso:std:iso:3166#CH
 
-* communication.language = urn:ietf:bcp:47#de-CH
-* communication.language.text = "Deutsch (Schweiz)"
-* communication.preferred = true
+* communication
+  * language = urn:ietf:bcp:47#de-CH
+  * language.text = "Deutsch (Schweiz)"
+  * preferred = true
 
-* identifier.system = "urn:oid:2.16.756.5.32"
-* identifier.value = "7562295883077"
+* identifier
+  * system = "urn:oid:2.16.756.5.32"
+  * value = "7562295883077"
 
 * telecom[0].system = #phone
 * telecom[=].value = "+41 32 331 61 11"
 * telecom[=].use = #home
-* telecom[0].system = #phone
+
+* telecom[1].system = #phone
 * telecom[=].value = "+41 78 111 61 11"
 * telecom[=].use = #mobil
+
 * telecom[+].system = #email
 * telecom[=].value = "petra@meier.ch"

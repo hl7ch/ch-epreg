@@ -46,12 +46,13 @@ pages:
 menu:
   Home: index.html
   Profiles: profiles.html
-  Extensions: extensions.html
-  Terminology: terminology.html
-  Artifacts: artifacts.html
   Use Case: 
     German: usecase-german.html
     French: usecase-french.html
+  Extensions: extensions.html
+  Terminology: terminology.html
+  Artifacts: artifacts.html
+  
 
 # Parameters
 # Core FHIR: http://build.fhir.org/codesystem-guide-parameter-code.html
