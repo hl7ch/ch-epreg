@@ -32,7 +32,7 @@ Description: "Patient for CH EPREG"
 * communication[0].language = urn:ietf:bcp:47#fr-CH "German (Switzerland)"
 * communication[=].preferred = true
 * communication[=].extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-languageofcorrespondence"
-
+* communication[=].extension.valueBoolean = false
 
 
 
