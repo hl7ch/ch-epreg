@@ -1,0 +1,14 @@
+input-cache/**
+output/**
+temp/**
+template/**
+.vscode/**
+resources/implementationguide/ig-*.*
+org.hl7.*.jar
+**.jar
+qa/**
+fsh-generated/**
+www/*
+!www/package-list.json
+!www/publish.ini
+publisher.jar:Zone.Identifier
