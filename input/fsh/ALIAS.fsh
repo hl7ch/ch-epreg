@@ -12,7 +12,7 @@ Alias: $ChCoreOrganization =            http://fhir.ch/ig/ch-core/StructureDefin
 Alias: $ChCoreComposition =             http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr
 Alias: $ChCoreDocument =                http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr
 Alias: $ChCorePractitionerRole =        http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr
-Alias: $ChCoreCoverage  =               http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-covarage
+Alias: $ChCoreCoverage  =               http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage
 
 
 // XML CH IG Code System

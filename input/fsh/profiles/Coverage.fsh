@@ -1,6 +1,6 @@
-Profile: CHCovarage
-Parent: $ChCoreCovarage
-Id: ch-epreg-composition
-Title: "Covarage"
-Description: "Covarage for CH EPREG"
-* . ^short = "Covarage
+Profile: CHCoverage
+Parent: $ChCoreCoverage
+Id: ch-epreg-coverage
+Title: "Coverage"
+Description: "Coverage for CH EPREG"
+* . ^short = "Coverage
