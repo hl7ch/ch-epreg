@@ -1,6 +1,6 @@
 // Defining the Organization instance
 Instance: Sanitas
-InstanceOf: Organization
+InstanceOf: CHEPREGOrganization
 Title: "Sanitas Organization"
 Description: "Health Insurance Visana organization"
 

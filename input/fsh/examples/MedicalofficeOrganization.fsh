@@ -1,8 +1,7 @@
 Instance: MedicalofficeOrganization
-InstanceOf: Organization
+InstanceOf: CHEPREGOrganization
 Title: "Medical office Organization Example"
 Description: "An example of an organization"
-
 
 * identifier[0].system = "urn:oid:2.51.1.3"
 * identifier[0].value = "7601888888884"
