@@ -32,6 +32,8 @@ dependencies:
 pages:
   index.md:
     title: Home
+  document.md:
+    title: Document
   profiles.md:
     title: Profiles
   extensions.md:
@@ -45,6 +47,7 @@ pages:
 
 menu:
   Home: index.html
+  Document: document.html
   Profiles: profiles.html
   Use Case: 
     German: usecase-german.html
