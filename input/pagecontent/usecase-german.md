@@ -1,5 +1,5 @@
 ### Vorsorge
-Test2
+
 Die betreuende Gynäkologin dokumentiert die Untersuchungsergebnisse in ihrem Praxisinformationssystem (PIS). Dabei benutzt sie das System wie gewohnt. Der Hersteller des PIS hat aufgrund des Implementierungsleitfadens zum eSchwangerschaftspass eine Funktion implementiert, die es erlaubt aus den eingegebenen Daten im Primärsystem ein Austauschformat eSchwangerschaftspass zu generieren. Die Gynäkologin generiert nun auf 
 Knopfdruck das Austauschformat eSchwangerschaftspass und hat dieses nun in Form einer Datei auf ihrem Gerät zur Verfügung. Diese Datei kann sie nun zum Beispiel mittels sicherem E-Mail wie der HIN-Mail oder durch 
 das EPD der schwangeren Person und der betreuenden Hebamme zukommen lassen. Hat nun auch das PIS der Hebamme eine Funktion implementiert, die es erlaubt das Austauschformat eSchwangerschaftspass automatisiert einzulesen, können die Daten aus dem Austauschformat automatisch in ihr System übernommen werden. Gleichzeitig ist es denkbar, dass Schwangere selbst das Austauschformat zum Beispiel in einer dafür vorgesehenen App einlesen und anzeigen können und so Zugriff auf die eigenen Daten haben. Falls eine digitale Anzeige nicht möglich oder gewünscht ist, könnten sowohl die Hebamme als auch die Gynäkologin einen Auszug aus 
