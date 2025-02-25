@@ -13,6 +13,20 @@ This implementation guide is based on the concept for the exchange format of the
 **Download**: You can download this implementation guide in the [npm package format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 
 
+### MustSupport
+In the concept for the electronic pregnancy passport, the data elements are described in term of cardinality and conformity, which is then applied in the CH EPREG profiles (as long as it conforms to FHIR and the CH Core requirements). This table shows how the different levels of conformity are reflected in the FHIR profiles:
+
+{:class="table table-bordered"}
+| Concept (conformity) | FHIR profile (minimum cardinality and flag) |
+| --- | --- | 
+| **M**andatory: This is a required field. It must contain a valid value. | 1.. |
+| **R**equired: The field should always contain a valid value if possible. | 0.. MS (`mustSupport`=true)|
+| **O**ptional: The field may contain a valid value. | 0.. |
+
+For CH EPREG the meaning of [mustSupport](https://hl7.org/fhir/R4/conformance-rules.html#mustSupport) follows also the IHE use of **R2 (Required if known)** as defined in [ITI TF-2: Appendix Z](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir):    
+_If the sending application has data for the element, it is required to populate the element with a non-empty value. If the value ist not known, the element may be omitted. A receiving application may ignore the information conveyed by the element. A receiving application shall not raise an error solely due to the presence or absence of the element._
+
+
 ### IP Statements
 This document is licensed under Creative Commons "No Rights Reserved" ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).
 
