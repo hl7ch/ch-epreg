@@ -6,3 +6,9 @@ Le **recours au dossier de grossesse** dépend de la méthode de travail des fou
 * Grossesses futures
 
 Les **cas d'application** suivants servent à illustrer les scénarios possibles dans le cadre des possibilités d'utilisation du dossier de grossesse mentionnées ci-dessus.
+
+### Cas d'application 1 : prééclampsie
+TODO
+
+### Cas d'application 2 : fortes contractions
+TODO
