@@ -50,10 +50,10 @@ pages:
 menu:
   Home: index.html
   Document: document.html
-  Profiles: profiles.html
   Use Case: 
     German: usecase-german.html
     French: usecase-french.html
+  Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
   Artifacts: artifacts.html
