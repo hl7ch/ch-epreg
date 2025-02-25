@@ -36,16 +36,18 @@ pages:
     title: Home
   document.md:
     title: Document
+  usecase-german.md:
+    title: Anwendungsfälle
+  usecase-french.md:
+    title: Cas d'application
   profiles.md:
     title: Profiles
   extensions.md:
     title: Extensions
   terminology.md:
-    title: Terminology
-  usecase-german.md:
-    title: Anwendungsfälle
-  usecase-french.md:
-    title: Cas d'application
+    title: Terminology    
+  changelog.md:
+    title: Changelog         
 
 menu:
   Home: index.html
