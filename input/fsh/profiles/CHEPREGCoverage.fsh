@@ -1,5 +1,5 @@
 Profile: CHEPREGCoverage
-Parent: $ChCoreCoverage
+Parent: CHCoreCoverage
 Id: ch-epreg-coverage
 Title: "CH EPREG Coverage"
 Description: "Coverage for CH EPREG"

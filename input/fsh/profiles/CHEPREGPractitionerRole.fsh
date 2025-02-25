@@ -1,6 +1,6 @@
 Profile: CHEPREGPracttitionerRole
-Parent: $ChCorePractitionerRole
-Id: ch-epreg-practitionerRole
+Parent: CHCorePractitionerRole
+Id: ch-epreg-practitionerrole
 Title: "CH EPREG Practitioner Role"
 Description: "Practitioner Role for CH EPREG"
-* . ^short = "Practitioer Role"
+* . ^short = "CH EPREG PractitionerRole"

@@ -1,10 +1,10 @@
 {
-  "package-id" : "ch.fhir.ig.ch-ig",
-  "version" : "1.2.1",
-  "path" : "http://fhir.ch/ig/ch-ig/1.2.1",
+  "package-id" : "ch.fhir.ig.ch-epreg",
+  "version" : "1.0.0-ballot",
+  "path" : "http://fhir.ch/ig/ch-epreg/1.0.0-ballot",
   "mode" : "milestone",
   "status" : "trial-use",
-  "sequence" : "STU",
+  "sequence" : "STU 1",
   "desc" : "first publication",
   "changes" : "index.html",
   "first": false

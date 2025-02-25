@@ -1,5 +1,5 @@
 Profile: CHEPREGDocument
-Parent: $ChCoreDocument
+Parent: CHCoreDocument
 Id: ch-epreg-document
 Title: "CH EPREG Document"
 Description: "Document for CH EPREG"

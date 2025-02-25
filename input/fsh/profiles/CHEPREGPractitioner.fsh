@@ -1,5 +1,5 @@
 Profile: CHEPREGPractitioner
-Parent: $ChCorePractitioner
+Parent: CHCorePractitioner
 Id: ch-epreg-practitioner
 Title: "CH EPREG Practitioner"
 Description: "CH EPREG Practitioner"

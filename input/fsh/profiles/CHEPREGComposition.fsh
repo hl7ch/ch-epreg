@@ -1,5 +1,5 @@
 Profile: CHEPREGComposition
-Parent: $ChCoreComposition
+Parent: CHCoreComposition
 Id: ch-epreg-composition
 Title: "CH EPREG Composition"
 Description: "Composition for CH EPREG"

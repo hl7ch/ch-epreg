@@ -1,5 +1,5 @@
 Profile: CHEPREGPatient
-Parent: $ChCorePatient
+Parent: CHCorePatient
 Id: ch-epreg-patient
 Title: "CH EPREG Patient"
 Description: "Patient for CH EPREG"
