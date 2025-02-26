@@ -15,5 +15,8 @@ Description: "Example for CH EPREG Composition"
 * confidentiality.extension[confidentialityCode].valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
 
+* section[careTeam].title = "Behandelnde Leistungserbringende"
 * section[careTeam].code = $loinc#85847-2 "Patient Care team information"
 * section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
+* section[careTeam].text.status = #additional 
+* section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Gynäkologin: Petra Sectionata, Frauenzimmer</p><p>Hausärztin/Hausarzt: keine</p></div>"

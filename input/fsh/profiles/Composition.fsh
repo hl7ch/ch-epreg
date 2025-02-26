@@ -8,7 +8,9 @@ Description: "This profile constrains the Composition resource to represent the 
 * subject only Reference(ChEpregPatientMother)
 * section contains 
     careTeam 0..1
+
 * section[careTeam].code = $loinc#85847-2 // "Patient Care team information"
+* section[careTeam].text 1..
 * section[careTeam].entry MS
 * section[careTeam].entry only Reference(ChEpregPractitionerRoleTHCP)
 * section[careTeam].entry.reference 1..
@@ -22,3 +24,4 @@ Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 * subject                                   -> "Schwangere Person | Personne enceinte"
 * section[careTeam].entry                   -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
+* section[careTeam].text                    -> "Vorhanden | Disponible"

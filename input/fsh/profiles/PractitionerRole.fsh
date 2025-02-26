@@ -22,3 +22,5 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 *                                           -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
 * code                                      -> "Art des Leistungserbringenden | Type de fournisseur de prestations" 
 * specialty                                 -> "Art des Leistungserbringenden | Type de fournisseur de prestations" 
+
+// not mapped -> "Bemerkungen | Remarques"

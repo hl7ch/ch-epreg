@@ -6,7 +6,7 @@ Description: "Example for CH EPREG PractitionerRole"
 * language = #de-CH
 * practitioner = Reference(UC1-PetraSectionata)
 * organization = Reference(UC1-Frauenzimmer)
-* code = $sct#309343006 "Arzt/Ärztin"
+* code = $sct#309343006 "Arzt / Ärztin"
 * specialty = $medreg#1003 "Gynäkologie und Geburtshilfe"
 
 
