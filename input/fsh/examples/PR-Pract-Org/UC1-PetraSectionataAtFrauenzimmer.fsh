@@ -1,50 +1,37 @@
 Instance: UC1-PetraSectionataAtFrauenzimmer
-InstanceOf: ChEpregPractitionerRole
+InstanceOf: ChEpregPractitionerRoleTHCP
 Usage: #example
-Title: "Petra Sectionata @ Frauenzimmer"
+Title: "UC 1: Petra Sectionata @ Frauenzimmer"
 Description: "Example for CH EPREG PractitionerRole"
-
-//* practitioner = Reference(UC1-PetraSectionata)
-//* organization = Reference(UC1-Frauenzimmer)
-* code = $sct#309343006 "Physician"
-* specialty = urn:oid:2.16.756.5.30.1.127.3.5#1040 "General medical practitioner"
-/*
-Gynökologe/Gynäkologin
-Name: Petra Sectionata
-Mobile: +41 44 123 45 67
-Praxis: Frauenzimmer
+* language = #de-CH
+* practitioner = Reference(UC1-PetraSectionata)
+* organization = Reference(UC1-Frauenzimmer)
+* code = $sct#309343006 "Arzt/Ärztin"
+* specialty = $medreg#1003 "Gynäkologie und Geburtshilfe"
 
 
-
-Instance: PractitionerHansMuster
-InstanceOf: CHEPREGPractitioner
+Instance: UC1-PetraSectionata
+InstanceOf: ChEpregPractitionerTHCP
 Usage: #example
-Title: "Hans Muster"
-Description: "Example for Practitioner"
-
-* name[0].family = "Muster"
-* name[0].given[0] = "Hans"
-* name[0].prefix[0] = "Dr."
-* name[0].suffix[0] = "MED"
-* name[0].use = #official
-  
-* identifier
-  * system = "urn:oid:2.51.1.3"
-  * value = "7610000050719"
+Title: "UC 1: Petra Sectionata"
+Description: "Example for CH EPREG Practitioner: Treating Healthcare Provider"
+* language = #de-CH
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7610000050719"
+* name.family = "Sectionata"
+* name.given = "Petra"
+* name.prefix = "Dr. med."
 
 
+Instance: UC1-Frauenzimmer
+InstanceOf: ChEpregOrganizationTHCP
+Usage: #example
+Title: "UC 1: Frauenzimmer"
+Description: "Example for CH EPREG Organization: Treating Healthcare Provider"
+* language = #de-CH
+* name = "Frauenzimmer"
 
-
-Instance: MedicalofficeOrganization
-InstanceOf: CHEPREGOrganization
-Title: "Medical office Organization Example"
-Description: "An example of an organization"
-
-* identifier[0].system = "urn:oid:2.51.1.3"
-* identifier[0].value = "7601888888884"
-
-* name = "Arztpraxis CH"
-
+/*
 * telecom[0].system = #phone
 * telecom[0].value = "tel:+41.32.234.55.66"
 * telecom[0].use = #work

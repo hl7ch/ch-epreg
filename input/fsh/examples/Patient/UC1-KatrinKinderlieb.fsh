@@ -1,8 +1,8 @@
 Instance: UC1-KatrinKinderlieb
-InstanceOf: ChEpregPatient
+InstanceOf: ChEpregPatientMother
 Usage: #example
 Title: "UC 1: Katrin Kinderlieb"
-Description: "Example for CH EPREG Patient"
+Description: "Example for CH EPREG Patient: Mother"
 * language = #de-CH
 * extension[nationality].extension[code].valueCodeableConcept.coding = urn:iso:std:iso:3166#CH 
 * extension[pronoun].extension[value].valueCodeableConcept.coding = $loinc#LA29519-8 "she/her/her/hers/herself"

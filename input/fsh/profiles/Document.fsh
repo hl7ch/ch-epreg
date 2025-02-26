@@ -10,4 +10,4 @@ Description: "This profile constrains the Bundle resource to represent the pregn
 * entry[Composition].resource ^type.profile = Canonical(ChEpregComposition)
 * entry[Patient] 1..
 * entry[Patient].resource 1..
-* entry[Patient].resource ^type.profile = Canonical(ChEpregPatient)
+* entry[Patient].resource ^type.profile = Canonical(ChEpregPatientMother)

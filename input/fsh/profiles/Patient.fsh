@@ -1,9 +1,9 @@
-Profile: ChEpregPatient
+Profile: ChEpregPatientMother
 Parent: CHCorePatientEPR
-Id: ch-epreg-patient
-Title: "CH EPREG Patient"
+Id: ch-epreg-patient-mother
+Title: "CH EPREG Patient: Mother"
 Description: "This profile constrains the Patient resource to represent the pregnant individual within the context of the pregnancy passport."
-* . ^short = "CH EPREG Patient"
+* . ^short = "CH EPREG Patient: Mother"
 * extension contains 
     PatNationality named nationality 0..* and 
     http://hl7.org/fhir/StructureDefinition/individual-pronouns named pronoun 0..1
@@ -24,12 +24,12 @@ Description: "This profile constrains the Patient resource to represent the preg
 * address.country MS                          
 
 
-Mapping: ChEpregPatientToConceptPregnancyPassport
-Source: ChEpregPatient
+Mapping: ChEpregPatientMotherToConceptPregnancyPassport
+Source: ChEpregPatientMother
 Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf"
 Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
-Description: "This mapping illustrates the relationship between the CH EPREG Patient profile and the concept of the pregnancy passport."
+Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Schwangere Person | Personne enceinte"
 * extension[nationality]                    -> "Nationalität | Nationalité" 
 * extension[pronoun]                        -> "Pronomen | Pronoms"
