@@ -10,6 +10,8 @@ Description: "This profile constrains the PractitionerRole resource to represent
 * organization only Reference(ChEpregOrganizationTHCP)
 * organization MS 
 * organization.reference 1.. 
+* code MS 
+* specialty MS
 
 
 

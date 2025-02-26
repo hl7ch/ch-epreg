@@ -30,18 +30,15 @@ Title: "UC 1: Frauenzimmer"
 Description: "Example for CH EPREG Organization: Treating Healthcare Provider"
 * language = #de-CH
 * name = "Frauenzimmer"
-
-/*
-* telecom[0].system = #phone
-* telecom[0].value = "tel:+41.32.234.55.66"
-* telecom[0].use = #work
-* telecom[1].system = #email
-* telecom[1].value = "mailto:bereit@gruppenpraxis.ch"
-* telecom[1].use = #work
-
-* address[0].line[0] = "Doktorgasse 2"
-* address[0].city = "Musterhausen"
-* address[0].state = "ZH"
-* address[0].postalCode = "8888"
-* address[0].country = "CH"
-*/
+* address.line = "Zimmergasse 1"
+* address.postalCode = "8888"
+* address.city = "Musterhausen" 
+* address.country = "Schweiz"
+* telecom[email].system = #email 
+* telecom[email].value = "frauenzimmer@example.com"
+* telecom[phone][0].system = #phone
+* telecom[phone][=].use = #mobile
+* telecom[phone][=].value = "+41 79 444 44 44"
+* telecom[phone][+].system = #phone
+* telecom[phone][=].use = #work
+* telecom[phone][=].value = "+41 44 444 44 44"
