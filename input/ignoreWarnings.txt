@@ -1,1 +1,7 @@
 == Suppressed Messages ==
+
+# No suitable code in these cases
+None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.1.1-ci-build), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#736377005)
+
+# No valid display values for the given language (information)
+There are no valid display names found for the code http://loinc.org#LA29519-8 for language(s) 'de-CH'. The display is 'she/her/her/hers/herself' the default language display
