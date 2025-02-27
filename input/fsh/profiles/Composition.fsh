@@ -12,7 +12,7 @@ Description: "This profile constrains the Composition resource to represent the 
 
 * section contains 
     careTeam 0..1 MS and 
-    lab-subsections 0..1 MS
+    lab-subsections 0..1
 
 * section[careTeam].code = $loinc#85847-2 // "Patient Care team information"
 * section[careTeam].text 1..
@@ -30,7 +30,6 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section.code 1..
 * section[lab-subsections].section.code from $lab-studyType-eu-lab (preferred)
 * section[lab-subsections].section.text 1..
-* section[lab-subsections].section.entry MS
 * section[lab-subsections].section.entry only Reference(ChEpregObservationResultsLab)
 * section[lab-subsections].section.entry.reference 1..
 * section[lab-subsections].section.section 0..0
@@ -43,11 +42,15 @@ Description: "This profile constrains the Composition resource to represent the 
     bloodBankStudies 0..1 
 
 * section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 // "Blood bank studies (set)"   
-* section[lab-subsections].section[bloodBankStudies].entry MS
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.discriminator.type = #profile
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.discriminator.path = "resolve()"
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.ordered = false
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.rules = #open
+* section[lab-subsections].section[bloodBankStudies].entry contains 
+    bloodGroup 0..* MS
+
+* section[lab-subsections].section[bloodBankStudies].entry[bloodGroup] only Reference(ChEpregObservationBloodGroup)
+* section[lab-subsections].section[bloodBankStudies].entry[bloodGroup].reference 1..
 
 
 
@@ -58,8 +61,9 @@ Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_K
 Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
-* subject                                   -> "Schwangere Person | Personne enceinte"
-* section[careTeam]                         -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
-* section[careTeam].text                    -> "Vorhanden | Disponible"
-* section[lab-subsections]                  -> "Serologische- & Laboruntersuchungen | Sérologies et analyses de laboratoire"
-* section[lab-subsections].section          -> "Laboruntersuchung | Analyse de laboratoire"
+* subject                                               -> "Schwangere Person | Personne enceinte"
+* section[careTeam]                                     -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
+* section[careTeam].text                                -> "Vorhanden | Disponible"
+* section[lab-subsections]                              -> "Untersuchungen und Tests | Analyses et tests"
+* section[lab-subsections].section                      -> "Laboruntersuchung | Analyse de laboratoire"
+* section[lab-subsections].section[bloodBankStudies]    -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"

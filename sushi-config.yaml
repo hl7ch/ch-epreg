@@ -30,6 +30,7 @@ contact:
 dependencies:
   hl7.terminology: 6.1.0
   ch.fhir.ig.ch-core: current
+  ch.fhir.ig.ch-lab-report: current
 
 pages:
   index.md:

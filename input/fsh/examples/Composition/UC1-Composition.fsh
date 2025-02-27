@@ -27,10 +27,24 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].title = "Serologische- & Laboruntersuchungen"
 * section[lab-subsections].code = $loinc#26436-6 "Laboratory studies (set)"
 
-* section[lab-subsections].section[0].title = "Laboruntersuchungen"
+* section[lab-subsections].section[0].title = "Chemische Untersuchungen"
 * section[lab-subsections].section[=].code = $loinc#18719-5	"Chemistry studies (set)"
 * section[lab-subsections].section[=].text.status = #additional 
 * section[lab-subsections].section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p>Harnsäure: 6.3 mg/dL, 05.02.2025</p>
     </div>"
 * section[lab-subsections].section[=].entry = Reference(UC1-Urate-20250205)
+
+* section[lab-subsections].section[bloodBankStudies].title = "Blutbank-Studien"
+* section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 // "Blood bank studies (set)"   
+* section[lab-subsections].section[bloodBankStudies].text.status = #additional 
+* section[lab-subsections].section[bloodBankStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <p>Blutgruppe: AB Rh(D)+, 05.02.2025</p>
+    </div>"
+* section[lab-subsections].section[bloodBankStudies].entry[bloodGroup] = Reference(UC1-BloodGroup-20250205)
+
+// 18722-9 Fertilitätsuntersuchungen
+// 18723-7 Hämatologische Untersuchungen
+// 18725-2 Mikrobiologische Untersuchungen
+// 18728-6 Toxikologische Untersuchungen 
+// 26436-6 Laboruntersuchungen
