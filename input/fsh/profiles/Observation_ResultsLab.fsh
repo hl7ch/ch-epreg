@@ -5,9 +5,11 @@ Title: "CH EPREG Observation: Results Laboratory"
 Description: "This profile constrains the Observation resource to represent the laboratory results within the context of the pregnancy passport."
 * . ^short = "CH EPREG Observation: Results Laboratory"
 * subject 1..
-* subject only Reference(CHCorePatient)
+* subject only Reference(ChEpregPatientMother)
+* subject.reference 1..
 * effective[x] 1.. 
 * performer 1..
+* performer.reference 1..
 * value[x] MS 
 * component.value[x] MS                     
 
