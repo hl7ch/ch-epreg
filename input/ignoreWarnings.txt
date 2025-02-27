@@ -3,11 +3,12 @@
 # No suitable code in these cases
 None of the codings provided are in the value set 'DocumentEntry.typeCode' (http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|%
 
-# Issue coming from the snapshot
+# Issue coming from the snapshot (base/derived profile)
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 The extension http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding|5.2.0 is deprecated with the note Replaced by [[[http://hl7.org/fhir/StructureDefinition/iso21090-codedString]]]
+None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#VN)
 
 # No valid display values for the given language (information)
 There are no valid display names found for the code%

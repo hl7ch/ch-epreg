@@ -19,7 +19,7 @@ Description: "This profile constrains the Bundle resource to represent the pregn
 * entry[Organization].resource 1..
 * entry[RelatedPerson].resource 1..
 * entry[Device].resource 1..
-//* entry[Encounter].resource 1..
+* entry[Encounter].resource 1..
 //* entry[Location].resource 1..
 
 * entry[Observation].resource 1..

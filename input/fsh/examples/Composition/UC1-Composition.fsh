@@ -48,3 +48,11 @@ Description: "Example for CH EPREG Composition"
 // 18725-2 Mikrobiologische Untersuchungen
 // 18728-6 Toxikologische Untersuchungen 
 // 26436-6 Laboruntersuchungen
+
+* section[pregnancyProgress].title = "Schwangerschaftsverlauf"
+* section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
+* section[pregnancyProgress].text.status = #additional 
+* section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <p>Untersuch vom 05.02.2025: Nächste Kontrolle am 18.02.2025</p>
+    </div>"
+* section[pregnancyProgress].entry = Reference(UC1-EncounterPregVisit20250205)

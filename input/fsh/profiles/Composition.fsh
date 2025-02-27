@@ -12,7 +12,8 @@ Description: "This profile constrains the Composition resource to represent the 
 
 * section contains 
     careTeam 0..1 MS and 
-    lab-subsections 0..1
+    lab-subsections 0..1 and
+    pregnancyProgress 0..1 
 
 * section[careTeam].code = $loinc#85847-2 // "Patient Care team information"
 * section[careTeam].text 1..
@@ -52,6 +53,12 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup] only Reference(ChEpregObservationBloodGroup)
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup].reference 1..
 
+* section[pregnancyProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
+* section[pregnancyProgress].text 1..
+* section[pregnancyProgress].entry MS
+* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit)
+* section[pregnancyProgress].entry.reference 1..
+* section[pregnancyProgress].section 0..0
 
 
 
@@ -67,3 +74,4 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[lab-subsections]                              -> "Untersuchungen und Tests | Analyses et tests"
 * section[lab-subsections].section                      -> "Laboruntersuchung | Analyse de laboratoire"
 * section[lab-subsections].section[bloodBankStudies]    -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
+* section[pregnancyProgress]                            -> "Untersuchung | Examen"
