@@ -17,6 +17,20 @@ Description: "Example for CH EPREG Composition"
 
 * section[careTeam].title = "Behandelnde Leistungserbringende"
 * section[careTeam].code = $loinc#85847-2 "Patient Care team information"
-* section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * section[careTeam].text.status = #additional 
-* section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Gynäkologin: Petra Sectionata, Frauenzimmer</p><p>Hausärztin/Hausarzt: keine</p></div>"
+* section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <p>Gynäkologin: Petra Sectionata, Frauenzimmer</p>
+    <p>Hausärztin/Hausarzt: keine</p>
+    </div>"
+* section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
+
+* section[lab-subsections].title = "Serologische- & Laboruntersuchungen"
+* section[lab-subsections].code = $loinc#26436-6 "Laboratory studies (set)"
+
+* section[lab-subsections].section[0].title = "Laboruntersuchungen"
+* section[lab-subsections].section[=].code = $loinc#18719-5	"Chemistry studies (set)"
+* section[lab-subsections].section[=].text.status = #additional 
+* section[lab-subsections].section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <p>Harnsäure: 6.3 mg/dL, 05.02.2025</p>
+    </div>"
+* section[lab-subsections].section[=].entry = Reference(UC1-Urate-20250205)
