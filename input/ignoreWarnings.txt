@@ -19,3 +19,6 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-
 
 # Base profile, examples for the more specific ones are included 
 The Implementation Guide contains no explicitly linked examples for this profile
+
+# TODO for publication
+There are multiple different potential matches for the url%
