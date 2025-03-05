@@ -6,6 +6,7 @@ Description: "CH EPREG Encounter: Pregnancy Visit"
 * language = #de-CH
 // * extension[nextVisit].valueDateTime = ""
 * extension[pregnancyObservation][0].valueReference = Reference(UC1-GestationalAgeInWeeks-20250218)
+* extension[pregnancyObservation][+].valueReference = Reference(UC1-BodyWeight-20250218)
 * status = #finished 
 * class = $v3-ActCode#AMB "ambulatory"
 * subject = Reference(UC1-KatrinKinderlieb)

@@ -7,7 +7,6 @@ Description: "CH EPREG Observation: Gestational Age in Weeks"
 * status = #final
 * code = $loinc#49051-6 "Gestational age in weeks"
 * subject = Reference(UC1-KatrinKinderlieb)
-* encounter = Reference(UC1-EncounterPregVisit20250205)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * valueQuantity = 35 $ucum#wk "week"
@@ -22,7 +21,6 @@ Description: "CH EPREG Observation: Gestational Age in Weeks"
 * status = #final
 * code = $loinc#49051-6 "Gestational age in weeks"
 * subject = Reference(UC1-KatrinKinderlieb)
-* encounter = Reference(UC1-EncounterPregVisit20250218)
 * effectiveDateTime = "2025-02-18"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * valueQuantity = 37 $ucum#wk "week"

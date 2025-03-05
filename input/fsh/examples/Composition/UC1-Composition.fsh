@@ -56,8 +56,8 @@ Description: "Example for CH EPREG Composition"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text.status = #additional 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <p>Untersuch vom 05.02.2025: SSW 35; Nächste Kontrolle am 18.02.2025</p>
-    <p>Untersuch vom 18.02.2025: SSW 37</p>
+    <p>Untersuch vom 05.02.2025: SSW 35; Gewicht: 80,6 kg; Nächste Kontrolle am 18.02.2025</p>
+    <p>Untersuch vom 18.02.2025: SSW 37; Gewicht: 82,0 kg</p>
     </div>"
 * section[pregnancyProgress].entry[0] = Reference(UC1-EncounterPregVisit20250205)
 * section[pregnancyProgress].entry[+] = Reference(UC1-EncounterPregVisit20250218)
