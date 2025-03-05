@@ -5,7 +5,10 @@ Title: "CH EPREG Observation: Blood Group"
 Description: "This profile constrains the Observation resource to represent the blood group within the context of the pregnancy passport."
 * . ^short = "CH EPREG Observation: Blood Group"
 * code = $sct#365636006 // "Finding of blood group (finding)"
-* valueCodeableConcept from $results-blood-group-uv-ips (preferred)          
+* effective[x] only dateTime
+* value[x] 1..
+* value[x] only CodeableConcept
+* value[x] from $results-blood-group-uv-ips (preferred)          
 
 
 Mapping: ChEpregObservationBloodGroupToConceptPregnancyPassport
@@ -14,7 +17,7 @@ Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_K
 Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
-*                                           -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
+*                                           -> "Laboruntersuchung | Analyse de laboratoire"
 * code                                      -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
 * subject                                   -> "Schwangere Person | Personne enceinte"
 * effective[x]                              -> "Untersuchungsdatum | Date de l’analyse"

@@ -23,4 +23,4 @@ Description: "This profile constrains the Bundle resource to represent the pregn
 //* entry[Location].resource 1..
 
 * entry[Observation].resource 1..
-* entry[Observation].resource ^type.profile = Canonical(ChEpregObservationResultsLab)
+* entry[Observation].resource ^type.profile = Canonical(Observation)
