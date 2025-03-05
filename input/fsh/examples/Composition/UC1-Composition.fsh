@@ -15,6 +15,7 @@ Description: "Example for CH EPREG Composition"
 * confidentiality.extension[confidentialityCode].valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
 
+//-------------------------------------- Behandelnde Leistungserbringende --------------------------------------//
 * section[careTeam].title = "Behandelnde Leistungserbringende"
 * section[careTeam].code = $loinc#85847-2 "Patient Care team information"
 * section[careTeam].text.status = #additional 
@@ -24,6 +25,7 @@ Description: "Example for CH EPREG Composition"
     </div>"
 * section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
 
+//-------------------------------------- Serologische- & Laboruntersuchungen --------------------------------------//
 * section[lab-subsections].title = "Serologische- & Laboruntersuchungen"
 * section[lab-subsections].code = $loinc#26436-6 "Laboratory studies (set)"
 
@@ -35,13 +37,13 @@ Description: "Example for CH EPREG Composition"
     </div>"
 * section[lab-subsections].section[=].entry = Reference(UC1-Urate-20250205)
 
-* section[lab-subsections].section[bloodBankStudies].title = "Blutbank-Studien"
-* section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 // "Blood bank studies (set)"   
-* section[lab-subsections].section[bloodBankStudies].text.status = #additional 
-* section[lab-subsections].section[bloodBankStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[lab-subsections].section[+].title = "Blutbank-Studien"
+* section[lab-subsections].section[=].code = $loinc#18717-9 "Blood bank studies (set)"   
+* section[lab-subsections].section[=].text.status = #additional 
+* section[lab-subsections].section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p>Blutgruppe: AB Rh(D)+, 05.02.2025</p>
     </div>"
-* section[lab-subsections].section[bloodBankStudies].entry[bloodGroup] = Reference(UC1-BloodGroup-20250205)
+* section[lab-subsections].section[=].entry[0] = Reference(UC1-BloodGroup-20250205)
 
 // 18722-9 Fertilitätsuntersuchungen
 // 18723-7 Hämatologische Untersuchungen
@@ -49,10 +51,13 @@ Description: "Example for CH EPREG Composition"
 // 18728-6 Toxikologische Untersuchungen 
 // 26436-6 Laboruntersuchungen
 
+//-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title = "Schwangerschaftsverlauf"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text.status = #additional 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p>Untersuch vom 05.02.2025: Nächste Kontrolle am 18.02.2025</p>
+    <p>Untersuch vom 18.02.2025</p>
     </div>"
-* section[pregnancyProgress].entry = Reference(UC1-EncounterPregVisit20250205)
+* section[pregnancyProgress].entry[0] = Reference(UC1-EncounterPregVisit20250205)
+* section[pregnancyProgress].entry[+] = Reference(UC1-EncounterPregVisit20250218)

@@ -8,6 +8,7 @@ Description: "Example for CH EPREG Document - using absolute URLs for fullUrls/r
 * identifier.value = "urn:uuid:7afc1e97-67f8-49a8-91f5-46af596d0609"
 * type = #document
 * timestamp = "2025-02-18T10:34:00+01:00"
+
 * entry[0].fullUrl = "http://test.fhir.ch/r4/Composition/UC1-Composition"
 * entry[=].resource = UC1-Composition
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/UC1-KatrinKinderlieb"
@@ -29,3 +30,5 @@ Description: "Example for CH EPREG Document - using absolute URLs for fullUrls/r
 
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterPregVisit20250205"
 * entry[=].resource = UC1-EncounterPregVisit20250205
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterPregVisit20250218"
+* entry[=].resource = UC1-EncounterPregVisit20250218
