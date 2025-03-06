@@ -37,7 +37,7 @@ Description: "Example for CH EPREG Composition"
     </div>"
 * section[lab-subsections].section[bloodBankStudies].entry[0] = Reference(UC1-BloodGroup-20250205)
 
-* section[lab-subsections].section[chemistryStudies].title = "Klinische Chemie"
+* section[lab-subsections].section[chemistryStudies].title = "Chemische Untersuchungen"
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5	"Chemistry studies (set)"
 * section[lab-subsections].section[chemistryStudies].text.status = #additional 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">

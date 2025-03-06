@@ -58,7 +58,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup].reference 1..
 * section[lab-subsections].section[bloodBankStudies].section 0..0
 
-* section[lab-subsections].section[chemistryStudies].title 1.. // Klinische Chemie
+* section[lab-subsections].section[chemistryStudies].title 1.. // Chemische Untersuchungen / Klinische Chemie
 * section[lab-subsections].section[chemistryStudies].code 1..
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5 // "Chemistry studies (set)"
 * section[lab-subsections].section[chemistryStudies].text 1..
@@ -66,7 +66,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[chemistryStudies].entry.reference 1..
 * section[lab-subsections].section[chemistryStudies].section 0..0
 
-* section[lab-subsections].section[hematologyStudies].title 1.. // Hämatologie
+* section[lab-subsections].section[hematologyStudies].title 1.. // Hämatologische Untersuchungen / Hämatologie
 * section[lab-subsections].section[hematologyStudies].code 1..
 * section[lab-subsections].section[hematologyStudies].code = $loinc#18723-7 // "Hematology studies (set)"
 * section[lab-subsections].section[hematologyStudies].text 1..
@@ -74,7 +74,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[hematologyStudies].entry.reference 1..
 * section[lab-subsections].section[hematologyStudies].section 0..0
 
-* section[lab-subsections].section[microbiologyStudies].title 1.. // Mikrobiologie
+* section[lab-subsections].section[microbiologyStudies].title 1.. // Mikrobiologische Untersuchungen / Mikrobiologie 
 * section[lab-subsections].section[microbiologyStudies].code 1..
 * section[lab-subsections].section[microbiologyStudies].code = $loinc#18725-2 // "Microbiology studies (set)"
 * section[lab-subsections].section[microbiologyStudies].text 1..
