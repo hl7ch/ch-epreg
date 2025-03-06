@@ -33,22 +33,18 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section.code from $lab-studyType-eu-lab (preferred)
 * section[lab-subsections].section.entry only Reference(ChEpregObservationResultsLab)
 
+// https://hl7.eu/fhir/laboratory/0.1.0/ValueSet-lab-studyType-eu-lab.html
 * section[lab-subsections].section ^slicing.discriminator.type = #value
 * section[lab-subsections].section ^slicing.discriminator.path = "code"
 * section[lab-subsections].section ^slicing.ordered = false
 * section[lab-subsections].section ^slicing.rules = #open
 * section[lab-subsections].section contains 
     bloodBankStudies 0..1 and 
-    chemistryStudies 0..1
+    chemistryStudies 0..1 and 
+    hematologyStudies 0..1 and 
+    microbiologyStudies 0..1
 
-// https://hl7.eu/fhir/laboratory/0.1.0/ValueSet-lab-studyType-eu-lab.html
-// 18722-9 Fertilitätsuntersuchungen
-// 18723-7 Hämatologische Untersuchungen
-// 18725-2 Mikrobiologische Untersuchungen
-// 18728-6 Toxikologische Untersuchungen 
-// 26436-6 Laboruntersuchungen    
-
-* section[lab-subsections].section[bloodBankStudies].title 1..
+* section[lab-subsections].section[bloodBankStudies].title 1.. // Blutbank-Untersuchungen
 * section[lab-subsections].section[bloodBankStudies].code 1..
 * section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 // "Blood bank studies (set)" 
 * section[lab-subsections].section[bloodBankStudies].text 1..  
@@ -62,13 +58,29 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup].reference 1..
 * section[lab-subsections].section[bloodBankStudies].section 0..0
 
-* section[lab-subsections].section[chemistryStudies].title 1..
+* section[lab-subsections].section[chemistryStudies].title 1.. // Klinische Chemie
 * section[lab-subsections].section[chemistryStudies].code 1..
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5 // "Chemistry studies (set)"
 * section[lab-subsections].section[chemistryStudies].text 1..
 * section[lab-subsections].section[chemistryStudies].entry only Reference(ChEpregObservationResultsLab)
 * section[lab-subsections].section[chemistryStudies].entry.reference 1..
 * section[lab-subsections].section[chemistryStudies].section 0..0
+
+* section[lab-subsections].section[hematologyStudies].title 1.. // Hämatologie
+* section[lab-subsections].section[hematologyStudies].code 1..
+* section[lab-subsections].section[hematologyStudies].code = $loinc#18723-7 // "Hematology studies (set)"
+* section[lab-subsections].section[hematologyStudies].text 1..
+* section[lab-subsections].section[hematologyStudies].entry only Reference(ChEpregObservationResultsLab)
+* section[lab-subsections].section[hematologyStudies].entry.reference 1..
+* section[lab-subsections].section[hematologyStudies].section 0..0
+
+* section[lab-subsections].section[microbiologyStudies].title 1.. // Mikrobiologie
+* section[lab-subsections].section[microbiologyStudies].code 1..
+* section[lab-subsections].section[microbiologyStudies].code = $loinc#18725-2 // "Microbiology studies (set)"
+* section[lab-subsections].section[microbiologyStudies].text 1..
+* section[lab-subsections].section[microbiologyStudies].entry only Reference(ChEpregObservationResultsLab)
+* section[lab-subsections].section[microbiologyStudies].entry.reference 1..
+* section[lab-subsections].section[microbiologyStudies].section 0..0
 
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title 1..

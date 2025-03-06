@@ -29,7 +29,7 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].title = "Serologische- & Laboruntersuchungen"
 * section[lab-subsections].code = $loinc#26436-6 "Laboratory studies (set)"
 
-* section[lab-subsections].section[bloodBankStudies].title = "Blutbank-Studien"
+* section[lab-subsections].section[bloodBankStudies].title = "Blutbank-Untersuchungen"
 * section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 "Blood bank studies (set)"   
 * section[lab-subsections].section[bloodBankStudies].text.status = #additional 
 * section[lab-subsections].section[bloodBankStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -37,7 +37,7 @@ Description: "Example for CH EPREG Composition"
     </div>"
 * section[lab-subsections].section[bloodBankStudies].entry[0] = Reference(UC1-BloodGroup-20250205)
 
-* section[lab-subsections].section[chemistryStudies].title = "Chemische Untersuchungen"
+* section[lab-subsections].section[chemistryStudies].title = "Klinische Chemie"
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5	"Chemistry studies (set)"
 * section[lab-subsections].section[chemistryStudies].text.status = #additional 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
@@ -45,12 +45,7 @@ Description: "Example for CH EPREG Composition"
     </div>"
 * section[lab-subsections].section[chemistryStudies].entry = Reference(UC1-Urate-20250205)
 
-// https://hl7.eu/fhir/laboratory/0.1.0/ValueSet-lab-studyType-eu-lab.html
-// 18722-9 Fertilitätsuntersuchungen
-// 18723-7 Hämatologische Untersuchungen
-// 18725-2 Mikrobiologische Untersuchungen
-// 18728-6 Toxikologische Untersuchungen 
-// 26436-6 Laboruntersuchungen
+
 
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title = "Schwangerschaftsverlauf"
