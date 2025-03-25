@@ -52,8 +52,23 @@ Description: "Example for CH EPREG Composition"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text.status = #additional 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <p>Untersuch vom 05.02.2025: SSW 35; Gewicht: 80,6 kg; Nächste Kontrolle am 18.02.2025</p>
-    <p>Untersuch vom 18.02.2025: SSW 37; Gewicht: 82,0 kg</p>
+    <b>Untersuchung vom 05.02.2025</b>
+    <ul>
+        <li>SSW: 35</li>
+        <li>Gewicht: 80,6 kg</li>
+        <li>Nächste Kontrolle am: 18.02.2025</li>
+    </ul>
+    <h3>Untersuchung vom 18.02.2025</h3>
+    <ul>
+        <li>SSW: 37</li>
+        <li>Gewicht: 82,0 kg</li>
+    </ul>
     </div>"
-* section[pregnancyProgress].entry[0] = Reference(UC1-EncounterPregVisit20250205)
-* section[pregnancyProgress].entry[+] = Reference(UC1-EncounterPregVisit20250218)
+* section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250205)
+* section[pregnancyProgress].entry[visit][+] = Reference(UC1-EncounterPregVisit20250218)
+// Visit 05.02.2025
+* section[pregnancyProgress].entry[observation][0] = Reference(UC1-GestationalAgeInWeeks-20250205)
+* section[pregnancyProgress].entry[observation][+] = Reference(UC1-BodyWeight-20250205)
+// Visit 18.02.2025
+* section[pregnancyProgress].entry[observation][+] = Reference(UC1-GestationalAgeInWeeks-20250218)
+* section[pregnancyProgress].entry[observation][+] = Reference(UC1-BodyWeight-20250218)

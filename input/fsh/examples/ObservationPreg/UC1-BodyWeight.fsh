@@ -11,6 +11,7 @@ Description: "CH EPREG Observation: Body Weight"
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * valueQuantity = 80.6 $ucum#kg "kilogram"
+* encounter = Reference(UC1-EncounterPregVisit20250205)
 
 
 Instance: UC1-BodyWeight-20250218
@@ -26,3 +27,4 @@ Description: "CH EPREG Observation: Body Weight"
 * effectiveDateTime = "2025-02-18"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * valueQuantity = 82.0 $ucum#kg "kilogram"
+* encounter = Reference(UC1-EncounterPregVisit20250218)

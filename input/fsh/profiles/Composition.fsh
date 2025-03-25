@@ -31,7 +31,7 @@ Description: "This profile constrains the Composition resource to represent the 
 
 * section[lab-subsections].section.code 1..
 * section[lab-subsections].section.code from $lab-studyType-eu-lab (preferred)
-* section[lab-subsections].section.entry only Reference(ChEpregObservationResultsLab)
+//* section[lab-subsections].section.entry only Reference(ChEpregObservationResultsLab)
 
 // https://hl7.eu/fhir/laboratory/0.1.0/ValueSet-lab-studyType-eu-lab.html
 * section[lab-subsections].section ^slicing.discriminator.type = #value
@@ -87,9 +87,18 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregnancyProgress].code 1..
 * section[pregnancyProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text 1..
-* section[pregnancyProgress].entry MS
-* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit)
-* section[pregnancyProgress].entry.reference 1..
+* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit or ChEpregObservationPregProgress)
+* section[pregnancyProgress].entry ^slicing.discriminator.type = #profile
+* section[pregnancyProgress].entry ^slicing.discriminator.path = "resolve()"
+* section[pregnancyProgress].entry ^slicing.ordered = false
+* section[pregnancyProgress].entry ^slicing.rules = #open
+* section[pregnancyProgress].entry contains 
+    visit 0..* and 
+    observation 0..*
+* section[pregnancyProgress].entry[visit] only Reference(ChEpregEncounterPregVisit)
+* section[pregnancyProgress].entry[visit].reference 1..
+* section[pregnancyProgress].entry[observation] only Reference(ChEpregObservationPregProgress)
+* section[pregnancyProgress].entry[observation].reference 1..
 * section[pregnancyProgress].section 0..0
 
 
@@ -105,5 +114,6 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[careTeam].text                                -> "Vorhanden | Disponible"
 * section[lab-subsections]                              -> "Untersuchungen und Tests | Analyses et tests"
 * section[lab-subsections].section                      -> "Laboruntersuchung | Analyse de laboratoire"
-* section[lab-subsections].section[bloodBankStudies]    -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
-* section[pregnancyProgress]                            -> "Untersuchung | Examen"
+* section[lab-subsections].section[bloodBankStudies].entry[bloodGroup]    -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
+* section[pregnancyProgress]                            -> "Schwangerschaftsverlauf | Évolution de la grossesse"
+* section[pregnancyProgress].entry[visit]               -> "Untersuchung | Examen"

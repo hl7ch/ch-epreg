@@ -13,18 +13,6 @@ Description: "This base profile constrains the Observation resource to represent
 * performer.reference 1..
 * value[x] MS 
 * component.value[x] MS                     
-
-
-
-/*
-Mapping: ChEpregObservationPregProgressToConceptPregnancyPassport
-Source: ChEpregObservationPregProgress
-Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf"
-Id: concept-pregnancy-passport
-Title: "Concept Pregnancy Passport"
-Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
-*                                           -> "Untersuchung | Examen"
-* subject                                   -> "Schwangere Person | Personne enceinte"
-* effective[x]                              -> "Datum | Date de l’examen"
-* performer                                 -> "Kontrolle durchgeführt durch | Contrôle effectué par"
-*/
+* encounter 1.. 
+* encounter.reference 1..
+* encounter only Reference(ChEpregEncounterPregVisit)

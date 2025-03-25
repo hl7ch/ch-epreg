@@ -14,19 +14,3 @@ Description: "This base profile constrains the Observation resource to represent
 * value[x] MS 
 * component.value[x] MS                     
 
-/*
-Mapping: ChEpregObservationResultsLabToConceptPregnancyPassport
-Source: ChEpregObservationResultsLab
-Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf"
-Id: concept-pregnancy-passport
-Title: "Concept Pregnancy Passport"
-Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
-*                                           -> "Laboruntersuchung | Analyse de laboratoire"
-* code                                      -> "Code Laboruntersuchung | Code de l’analyse de laboratoire"
-* subject                                   -> "Schwangere Person | Personne enceinte"
-* effective[x]                              -> "Untersuchungsdatum | Date de l’analyse"
-* performer                                 -> "Durchgeführt durch | Analyse effectuée par"
-* value[x]                                  -> "Messergebnis | Résultats"
-* component.code                            -> "Code Laboruntersuchung | Code de l’analyse de laboratoire"
-* component.value[x]                        -> "Messergebnis | Résultats"
-*/
