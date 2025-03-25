@@ -31,7 +31,6 @@ Description: "This profile constrains the Composition resource to represent the 
 
 * section[lab-subsections].section.code 1..
 * section[lab-subsections].section.code from $lab-studyType-eu-lab (preferred)
-//* section[lab-subsections].section.entry only Reference(ChEpregObservationResultsLab)
 
 // https://hl7.eu/fhir/laboratory/0.1.0/ValueSet-lab-studyType-eu-lab.html
 * section[lab-subsections].section ^slicing.discriminator.type = #value
@@ -48,6 +47,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[bloodBankStudies].code 1..
 * section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 // "Blood bank studies (set)" 
 * section[lab-subsections].section[bloodBankStudies].text 1..  
+* section[lab-subsections].section[bloodBankStudies].entry only Reference(ChEpregObservationResultsLab)
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.discriminator.type = #profile
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.discriminator.path = "resolve()"
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.ordered = false
@@ -94,11 +94,14 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregnancyProgress].entry ^slicing.rules = #open
 * section[pregnancyProgress].entry contains 
     visit 0..* and 
-    observation 0..*
+    gestationalAge 0..* and 
+    bodyWeight 0..* 
 * section[pregnancyProgress].entry[visit] only Reference(ChEpregEncounterPregVisit)
 * section[pregnancyProgress].entry[visit].reference 1..
-* section[pregnancyProgress].entry[observation] only Reference(ChEpregObservationPregProgress)
-* section[pregnancyProgress].entry[observation].reference 1..
+* section[pregnancyProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInWeeks)
+* section[pregnancyProgress].entry[gestationalAge].reference 1..
+* section[pregnancyProgress].entry[bodyWeight] only Reference(ChEpregObservationBodyWeight)
+* section[pregnancyProgress].entry[bodyWeight].reference 1..
 * section[pregnancyProgress].section 0..0
 
 
@@ -117,3 +120,5 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup]    -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
 * section[pregnancyProgress]                            -> "Schwangerschaftsverlauf | Évolution de la grossesse"
 * section[pregnancyProgress].entry[visit]               -> "Untersuchung | Examen"
+* section[pregnancyProgress].entry[gestationalAge]      -> "Schwangerschaftswochen | Semaines de grossesse"
+* section[pregnancyProgress].entry[bodyWeight]          -> "Aktuelles Gewicht | Poids actuel"

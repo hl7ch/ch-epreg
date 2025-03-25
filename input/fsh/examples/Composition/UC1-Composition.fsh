@@ -58,17 +58,17 @@ Description: "Example for CH EPREG Composition"
         <li>Gewicht: 80,6 kg</li>
         <li>Nächste Kontrolle am: 18.02.2025</li>
     </ul>
-    <h3>Untersuchung vom 18.02.2025</h3>
+    <b>Untersuchung vom 18.02.2025</b>
     <ul>
         <li>SSW: 37</li>
         <li>Gewicht: 82,0 kg</li>
     </ul>
     </div>"
-* section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250205)
-* section[pregnancyProgress].entry[visit][+] = Reference(UC1-EncounterPregVisit20250218)
 // Visit 05.02.2025
-* section[pregnancyProgress].entry[observation][0] = Reference(UC1-GestationalAgeInWeeks-20250205)
-* section[pregnancyProgress].entry[observation][+] = Reference(UC1-BodyWeight-20250205)
+* section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250205)
+* section[pregnancyProgress].entry[gestationalAge][0] = Reference(UC1-GestationalAgeInWeeks-20250205)
+* section[pregnancyProgress].entry[bodyWeight][0] = Reference(UC1-BodyWeight-20250205)
 // Visit 18.02.2025
-* section[pregnancyProgress].entry[observation][+] = Reference(UC1-GestationalAgeInWeeks-20250218)
-* section[pregnancyProgress].entry[observation][+] = Reference(UC1-BodyWeight-20250218)
+* section[pregnancyProgress].entry[visit][+] = Reference(UC1-EncounterPregVisit20250218)
+* section[pregnancyProgress].entry[gestationalAge][+] = Reference(UC1-GestationalAgeInWeeks-20250218)
+* section[pregnancyProgress].entry[bodyWeight][+] = Reference(UC1-BodyWeight-20250218)
