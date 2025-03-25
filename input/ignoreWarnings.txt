@@ -17,5 +17,9 @@ There are no valid display names found for the code%
 # Base profile, examples for the more specific ones are included 
 The Implementation Guide contains no explicitly linked examples for this profile
 
+# Value sets from the concept paper
+No Source Code System, so the source codes cannot be checked
+Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
+
 # TODO for publication
 There are multiple different potential matches for the url%

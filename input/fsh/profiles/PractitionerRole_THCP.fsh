@@ -11,7 +11,9 @@ Description: "This profile constrains the PractitionerRole resource to represent
 * organization MS 
 * organization.reference 1.. 
 * code MS 
+* code ^binding.description = "See also [CH EPREG Mapping: hcProfession](ConceptMap-ch-epreg-mapping-hcProfession.html)."
 * specialty MS
+* specialty ^binding.description = "See also [CH EPREG Mapping: hcSpecialisation](ConceptMap-ch-epreg-mapping-hcSpecialisation.html)"
 
 
 
@@ -22,7 +24,7 @@ Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
-* code                                      -> "Art des Leistungserbringenden | Type de fournisseur de prestations" 
-* specialty                                 -> "Art des Leistungserbringenden | Type de fournisseur de prestations" 
+* code                                      -> "Art des Leistungserbringenden | Type de fournisseur de prestations (see also CH EPREG Mapping: hcProfession)" 
+* specialty                                 -> "Art des Leistungserbringenden | Type de fournisseur de prestations (see also CH EPREG Mapping: hcSpecialisation)" 
 
 // not mapped -> "Bemerkungen | Remarques"
