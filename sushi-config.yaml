@@ -28,7 +28,7 @@ contact:
         value: https://www.hl7.ch/
 
 dependencies:
-  hl7.terminology: 6.1.0
+  hl7.terminology.r4: 6.2.0
   ch.fhir.ig.ch-core: current
   ch.fhir.ig.ch-lab-report: current
 
