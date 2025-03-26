@@ -5,7 +5,7 @@ When representing this data in an FHIR document, the goal is to maintain compati
 
 #### Healthcare Provider 
 
-Profile: [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)
+Profile: [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)    
 Examples: 
 * [UC 1: Petra Sectionata @ Frauenzimmer](PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.json.html) (gynecologist)
 * Midwife (TODO)
