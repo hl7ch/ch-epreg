@@ -5,14 +5,14 @@ When representing this data in an FHIR document, the goal is to maintain compati
 
 #### Healthcare Provider 
 
-Profile: [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)    
-Examples: [UC 1: Petra Sectionata @ Frauenzimmer](PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.json.html) (gynecologist), Midwife (TODO)
+**Profile:** [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)         
+**Examples:** [UC 1: Petra Sectionata @ Frauenzimmer](PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.json.html) (gynecologist), Midwife (TODO)
 
 {:class="table table-bordered"}
 | Concept German <br>Leistungserbringender | Concept French <br>Fournisseurs de prestations | FHIR<br> Resource element | FHIR <br>ValueSet | FHIR <br> Concept | 
 | --- | --- | --- | --- |
 | Gynäkologin/Gynäkologe | Gynécologue |  |  |  |
-| Hebamme | Sage-femme | `PractitionerRole.code` | [HCProfessional.hcProfession](http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession) | system : http://snomed.info/sct <br>code : 309453006 <br>display : Registered midwife |
+| Hebamme | Sage-femme | `PractitionerRole.code` | [HCProfessional.hcProfession](http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession) | SNOMED CT: 309453006 'Registered midwife' |
 | Hausärztin/Hausarzt | Médecin de famille |  |  |  |
 | Kinderärztin/Kinderarzt | Pédiatre |  |  |  |
 | Apothekerin/Apotheker | Pharmacien |  |  |  |
