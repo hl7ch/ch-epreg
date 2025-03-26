@@ -41,6 +41,8 @@ pages:
     title: Anwendungsfälle
   usecase-french.md:
     title: Cas d'application
+  guidance.md:
+    title: Guidance  
   profiles.md:
     title: Profiles
   extensions.md:
@@ -56,6 +58,8 @@ menu:
   Use Case: 
     German: usecase-german.html
     French: usecase-french.html
+  Guidance: 
+    Mapping Value Sets Concept: guidance.html#mapping-value-sets-concept
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
