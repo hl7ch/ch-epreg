@@ -8,14 +8,89 @@ When representing this data in an FHIR document, the goal is to maintain compati
 **Profile:** [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)         
 **Examples:** [UC 1: Petra Sectionata @ Frauenzimmer](PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.json.html) (gynecologist), Midwife (TODO)
 
-{:class="table table-bordered"}
-| Concept German <br>Leistungserbringender | Concept French <br>Fournisseurs de prestations | FHIR<br> Resource element | FHIR <br>ValueSet | FHIR <br> Concept | 
-| --- | --- | --- | --- |
-| Gynäkologin/Gynäkologe | Gynécologue |  |  |  |
-| Hebamme | Sage-femme | `PractitionerRole.code` | [HCProfessional.hcProfession](http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession) | SNOMED CT: 309453006 'Registered midwife' |
-| Hausärztin/Hausarzt | Médecin de famille |  |  |  |
-| Kinderärztin/Kinderarzt | Pédiatre |  |  |  |
-| Apothekerin/Apotheker | Pharmacien |  |  |  |
-| Pflegefachperson | Infirmier |  |  |  |
-| Anderer Leistungserbringende | Autres fournisseurs de prestations |  |  |  |
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Concept German:<br>Leistungs-<br>erbringender</th>
+            <th>Concept French:<br>Fournisseurs de<br>prestations</th>
+            <th>Resource element</th>
+            <th>ValueSet</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Gynäkologin/Gynäkologe</td>
+            <td rowspan="2">Gynécologue</td>
+            <td><code>PractitionerRole.code</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession">HCProfessional.hcProfession</a></td>
+            <td>SNOMED CT: 309343006 'Physician'</td>
+        </tr>
+        <tr>
+            <td><code>PractitionerRole.specialty</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcSpecialisation">HCProfessional.hcSpecialisation</a></td>
+            <td>MedReg: 1003 'Gynaecology and obstetrics'</td>
+        </tr>
+        <tr>
+            <td>Hebamme</td>
+            <td>Sage-femme</td>
+            <td><code>PractitionerRole.code</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession">HCProfessional.hcProfession</a></td>
+            <td>SNOMED CT: 309453006 'Registered midwife'</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Hausärztin/Hausarzt</td>
+            <td rowspan="2">Médecin de famille</td>
+            <td><code>PractitionerRole.code</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession">HCProfessional.hcProfession</a></td>
+            <td>SNOMED CT: 309343006 'Physician'</td>
+        </tr>
+        <tr>
+            <td><code>PractitionerRole.specialty</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcSpecialisation">HCProfessional.hcSpecialisation</a></td>
+            <td>MedReg: 1040 'General medical practitioner'</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Kinderärztin/Kinderarzt</td>
+            <td rowspan="2">Pédiatre</td>
+            <td><code>PractitionerRole.code</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession">HCProfessional.hcProfession</a></td>
+            <td>SNOMED CT: 309343006 'Physician'</td>
+        </tr>
+        <tr>
+            <td><code>PractitionerRole.specialty</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcSpecialisation">HCProfessional.hcSpecialisation</a></td>
+            <td>MedReg: 1006 'Paediatrics'</td>
+        </tr>
+        <tr>
+            <td>Apothekerin/Apotheker</td>
+            <td>Pharmacien</td>
+            <td><code>PractitionerRole.code</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession">HCProfessional.hcProfession</a></td>
+            <td>SNOMED CT: 46255001 'Pharmacist'</td>
+        </tr>
+        <tr>
+            <td>Pflegefachperson</td>
+            <td>Infirmier</td>
+            <td><code>PractitionerRole.code</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession">HCProfessional.hcProfession</a></td>
+            <td>SNOMED CT: 106292003 'Professional nurse'</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Anderer Leistungserbringende</td>
+            <td rowspan="2">Autres fournisseurs de prestations</td>
+            <td><code>PractitionerRole.code</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession">HCProfessional.hcProfession</a></td>
+            <td rowspan="2">
+                As both ValueSets have a 
+                <a href="https://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a> 
+                binding to the element, the values SHOULD be from the specified ValueSets, but also other codes can be used.
+            </td>
+        </tr>
+        <tr>
+            <td><code>PractitionerRole.specialty</code></td>
+            <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcSpecialisation">HCProfessional.hcSpecialisation</a></td>
+        </tr>
+    </tbody>
+</table>
 

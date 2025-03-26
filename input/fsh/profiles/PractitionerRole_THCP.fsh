@@ -24,7 +24,7 @@ Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
-* code                                      -> "Art des Leistungserbringenden | Type de fournisseur de prestations (see also CH EPREG Mapping: hcProfession)" 
-* specialty                                 -> "Art des Leistungserbringenden | Type de fournisseur de prestations (see also CH EPREG Mapping: hcSpecialisation)" 
+* code                                      -> "Art des Leistungserbringenden | Type de fournisseur de prestations (see also 'Guidance Mapping Healthcare Provider')" 
+* specialty                                 -> "Art des Leistungserbringenden | Type de fournisseur de prestations (see also 'Guidance Mapping Healthcare Provider')" 
 
 // not mapped -> "Bemerkungen | Remarques"
