@@ -11,9 +11,9 @@ Description: "This profile constrains the PractitionerRole resource to represent
 * organization MS 
 * organization.reference 1.. 
 * code MS 
-* code ^binding.description = "See also [CH EPREG Mapping: hcProfession](ConceptMap-ch-epreg-mapping-hcProfession.html)."
+* code ^binding.description = "See also [Guidance Mapping Healthcare Provider](guidance.html#healthcare-provider)."
 * specialty MS
-* specialty ^binding.description = "See also [CH EPREG Mapping: hcSpecialisation](ConceptMap-ch-epreg-mapping-hcSpecialisation.html)"
+* specialty ^binding.description = "See also [Guidance Mapping Healthcare Provider](guidance.html#healthcare-provider)."
 
 
 
