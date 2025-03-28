@@ -38,7 +38,7 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
 <div style="display: flex; align-items: flex-start; width: 100%;">
   <div style="flex: 0.4; width: 40%;">
     <p>
-      Die Patientin <a href="">Fabienne Babyglück</a> (geb. 10.05.1999) wird mit starken Wehen und halb bewusstlos in der 32. Schwangerschaftswoche in die Geburtsklinik 'Willkommen auf der Welt' eingeliefert. Die Gynäkologin <a href="">Tanja Allesgut</a> und die Hebamme <a href="">Ruth Ohazwei</a> nehmen die Patientin in Empfang und sehen im Schwangerschaftspass, dass das Kind eine Steißlage hat und Frau Babyglück Diabetikerin ist (Blutzuckerkontrolle im Schwangerschaftsverlauf unter weitere Untersuchungen). Eine sofortige Blutspiegelmessung ergibt einen Wert von 3.9 mmol/l, sofort wird der Patientin Glukose verabreicht und eine Notfallsectio wird vorbereitet.
+      Die Patientin <a href="Patient-UC2-FabienneBabyglueck.html">Fabienne Babyglück</a> (geb. 10.05.1999) wird mit starken Wehen und halb bewusstlos in der 32. Schwangerschaftswoche in die Geburtsklinik 'Willkommen auf der Welt' eingeliefert. Die Gynäkologin <a href="">Tanja Allesgut</a> und die Hebamme <a href="">Ruth Ohazwei</a> nehmen die Patientin in Empfang und sehen im Schwangerschaftspass, dass das Kind eine Steißlage hat und Frau Babyglück Diabetikerin ist (Blutzuckerkontrolle im Schwangerschaftsverlauf unter weitere Untersuchungen). Eine sofortige Blutspiegelmessung ergibt einen Wert von 3.9 mmol/l, sofort wird der Patientin Glukose verabreicht und eine Notfallsectio wird vorbereitet.
     </p>
   </div>
   <div style="flex: 0.6; width: 60%; margin-left: 2%;">
