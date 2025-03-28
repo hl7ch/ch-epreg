@@ -5,7 +5,6 @@ Title: "CH EPREG Patient: Mother"
 Description: "This profile constrains the Patient resource to represent the pregnant individual within the context of the pregnancy passport."
 * . ^short = "CH EPREG Patient: Mother"
 * extension contains 
-    PatNationality named nationality 0..* and 
     http://hl7.org/fhir/StructureDefinition/individual-pronouns named pronoun 0..1
 //    JobPosition named jobPosition 0..* and  TODO
 //    ContactParentBirthDate named ContactParentBirthDate 0..1   TODO
@@ -31,7 +30,7 @@ Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Schwangere Person | Personne enceinte"
-* extension[nationality]                    -> "Nationalität | Nationalité" 
+* extension[citizenship]                    -> "Nationalität | Nationalité" 
 * extension[pronoun]                        -> "Pronomen | Pronoms"
 * identifier[AHVN13]                        -> "AHV-Nummer | Numéro AVS"
 * name                                      -> "Name | Nom"  
