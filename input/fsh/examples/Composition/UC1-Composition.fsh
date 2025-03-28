@@ -41,9 +41,13 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5	"Chemistry studies (set)"
 * section[lab-subsections].section[chemistryStudies].text.status = #additional 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <p>Harnsäure: 6.3 mg/dL, 05.02.2025</p>
+    <p>
+    Harnsäure: 6.3 mg/dL, 05.02.2025<br>
+    Kreatinin: 1.2 mg/dL, 05.02.2025
+    </p>
     </div>"
-* section[lab-subsections].section[chemistryStudies].entry = Reference(UC1-Urate-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[0] = Reference(UC1-Urate-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-Creatinine-20250205)
 
 
 
@@ -55,13 +59,13 @@ Description: "Example for CH EPREG Composition"
     <b>Untersuchung vom 05.02.2025</b>
     <ul>
         <li>SSW: 35</li>
-        <li>Gewicht: 80,6 kg</li>
+        <li>Gewicht: 80.6 kg</li>
         <li>Nächste Kontrolle am: 18.02.2025</li>
     </ul>
     <b>Untersuchung vom 18.02.2025</b>
     <ul>
         <li>SSW: 37</li>
-        <li>Gewicht: 82,0 kg</li>
+        <li>Gewicht: 82.0 kg</li>
     </ul>
     </div>"
 // Visit 05.02.2025
