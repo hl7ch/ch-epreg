@@ -1,7 +1,7 @@
 Instance: UC1-GGT-20250205
 InstanceOf: ChEpregObservationResultsLab
 Usage: #example
-Title: "UC 1: Gamma glutamyl transferase (05.02.2025)"
+Title: "UC 1: Gamma Glutamyl Transferase (05.02.2025)"
 Description: "CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
