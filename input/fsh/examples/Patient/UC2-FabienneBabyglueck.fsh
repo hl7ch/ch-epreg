@@ -1,4 +1,4 @@
-Instance: UC2-FabienneBabyglueck
+Instance: 76c2c5aa-3d7f-438d-b23d-56ce827695fd
 InstanceOf: ChEpregPatientMother
 Usage: #example
 Title: "UC 2: Fabienne Babyglück"
