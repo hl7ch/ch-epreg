@@ -2,7 +2,7 @@ Instance: bcd224d8-010e-4f87-9417-39c859a4043b
 InstanceOf: ChEpregEncounterPregVisit
 Usage: #example
 Title: "UC 2: Encounter 27.03.2025"
-Description: "CH EPREG Encounter: Pregnancy Visit"
+Description: "Example for CH EPREG Encounter: Pregnancy Visit"
 * language = #de-CH
 // * extension[nextVisit].valueDateTime = ""
 * status = #finished 

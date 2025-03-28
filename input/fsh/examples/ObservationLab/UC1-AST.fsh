@@ -2,7 +2,7 @@ Instance: UC1-AST-20250205
 InstanceOf: ChEpregObservationResultsLab
 Usage: #example
 Title: "UC 1: Aspartate Aminotransferase (05.02.2025)"
-Description: "CH EPREG Observation: Results Laboratory"
+Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
 * code = $loinc#LP31991-0 "Aspartate aminotransferase"

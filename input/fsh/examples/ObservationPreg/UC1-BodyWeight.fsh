@@ -2,7 +2,7 @@ Instance: UC1-BodyWeight-20250205
 InstanceOf: ChEpregObservationBodyWeight
 Usage: #example
 Title: "UC 1: 80.6 kg (05.02.2025)"
-Description: "CH EPREG Observation: Body Weight"
+Description: "Example for CH EPREG Observation: Body Weight"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
@@ -18,7 +18,7 @@ Instance: UC1-BodyWeight-20250218
 InstanceOf: ChEpregObservationBodyWeight
 Usage: #example
 Title: "UC 1: 82.0 kg (18.02.2025)"
-Description: "CH EPREG Observation: Body Weight"
+Description: "Example for CH EPREG Observation: Body Weight"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

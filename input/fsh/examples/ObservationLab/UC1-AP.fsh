@@ -2,7 +2,7 @@ Instance: UC1-AP-20250205
 InstanceOf: ChEpregObservationResultsLab
 Usage: #example
 Title: "UC 1: Alkaline Phosphatase Isoenzyme (05.02.2025)"
-Description: "CH EPREG Observation: Results Laboratory"
+Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
 * code = $loinc#12805-8 "Alkaline phosphatase isoenzyme [Units/volume] in Serum or Plasma"
