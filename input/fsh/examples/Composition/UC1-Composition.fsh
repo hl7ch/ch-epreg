@@ -20,8 +20,8 @@ Description: "Example for CH EPREG Composition"
 * section[careTeam].code = $loinc#85847-2 "Patient Care team information"
 * section[careTeam].text.status = #additional 
 * section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <p>Gynäkologin: Petra Sectionata, Frauenzimmer</p>
-    <p>Hausärztin/Hausarzt: keine</p>
+    <p><b>Gynäkologin:</b> Petra Sectionata, Frauenzimmer</p>
+    <p><b>Hausärztin/Hausarzt:</b> keine</p>
   </div>"
 * section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
 
@@ -44,13 +44,15 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].section[chemistryStudies].text.status = #additional 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <ul>
-        <li>Urat: 6.3 mg/dl, 05.02.2025</li>
-        <li>Kreatinin: 1.2 mg/dl, 05.02.2025</li>
+        <li>Kreatinin: 1.2 mg/dl (hoch), 05.02.2025</li>
+        <li>Harnsäure: 6.3 mg/dl (hoch), 05.02.2025</li>
+        <li>GGT: 43 U/l, 05.02.2025</li>
         <li>GOT AST, ASAT: 43 U/l, 05.02.2025</li>
     </ul>
   </div>"
-* section[lab-subsections].section[chemistryStudies].entry[0] = Reference(UC1-Urate-20250205)
-* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-Creatinine-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[0] = Reference(UC1-Creatinine-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-Urate-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-GGT-20250205)
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-AST-20250205)
 
 
