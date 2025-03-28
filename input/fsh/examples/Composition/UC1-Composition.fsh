@@ -22,7 +22,7 @@ Description: "Example for CH EPREG Composition"
 * section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p>Gynäkologin: Petra Sectionata, Frauenzimmer</p>
     <p>Hausärztin/Hausarzt: keine</p>
-    </div>"
+  </div>"
 * section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
 
 //-------------------------------------- Serologische- & Laboruntersuchungen --------------------------------------//
@@ -33,21 +33,25 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 "Blood bank studies (set)"   
 * section[lab-subsections].section[bloodBankStudies].text.status = #additional 
 * section[lab-subsections].section[bloodBankStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <p>Blutgruppe: AB Rh(D)+, 05.02.2025</p>
-    </div>"
+    <ul>
+        <li>Blutgruppe: AB Rh(D)+, 05.02.2025</li>
+    </ul>    
+  </div>"
 * section[lab-subsections].section[bloodBankStudies].entry[0] = Reference(UC1-BloodGroup-20250205)
 
 * section[lab-subsections].section[chemistryStudies].title = "Klinische Chemie"
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5	"Chemistry studies (set)"
 * section[lab-subsections].section[chemistryStudies].text.status = #additional 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <p>
-    Harnsäure: 6.3 mg/dL, 05.02.2025<br>
-    Kreatinin: 1.2 mg/dL, 05.02.2025
-    </p>
-    </div>"
+    <ul>
+        <li>Urat: 6.3 mg/dl, 05.02.2025</li>
+        <li>Kreatinin: 1.2 mg/dl, 05.02.2025</li>
+        <li>GOT AST, ASAT: 43 U/l, 05.02.2025</li>
+    </ul>
+  </div>"
 * section[lab-subsections].section[chemistryStudies].entry[0] = Reference(UC1-Urate-20250205)
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-Creatinine-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-AST-20250205)
 
 
 
@@ -67,7 +71,7 @@ Description: "Example for CH EPREG Composition"
         <li>SSW: 37</li>
         <li>Gewicht: 82.0 kg</li>
     </ul>
-    </div>"
+  </div>"
 // Visit 05.02.2025
 * section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250205)
 * section[pregnancyProgress].entry[gestationalAge][0] = Reference(UC1-GestationalAgeInWeeks-20250205)

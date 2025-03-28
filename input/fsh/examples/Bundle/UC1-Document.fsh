@@ -29,6 +29,8 @@ Description: "Example for CH EPREG Document - using absolute URLs for fullUrls/r
 * entry[=].resource = UC1-Urate-20250205
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-Creatinine-20250205"
 * entry[=].resource = UC1-Creatinine-20250205
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-AST-20250205"
+* entry[=].resource = UC1-AST-20250205
 
 
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterPregVisit20250205"
