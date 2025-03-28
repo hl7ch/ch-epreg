@@ -4,8 +4,8 @@ Usage: #example
 Title: "UC 1: Katrin Kinderlieb"
 Description: "Example for CH EPREG Patient: Mother"
 * language = #de-CH
-* extension[citizenship].extension[code].valueCodeableConcept.coding = urn:iso:std:iso:3166#CH 
-* extension[pronoun].extension[value].valueCodeableConcept.coding = $loinc#LA29519-8 "she/her/her/hers/herself"
+* extension[citizenship].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CH "Switzerland"
+* extension[pronoun].extension[value].valueCodeableConcept = $loinc#LA29519-8 "she/her/her/hers/herself"
 // * identifier[AHVN13]
 * identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
 * identifier[insuranceCardNumber].value = "80756015090002647590"
