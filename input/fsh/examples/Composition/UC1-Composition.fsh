@@ -49,6 +49,7 @@ Description: "Example for CH EPREG Composition"
         <li>GGT: 43 U/l, 05.02.2025</li>
         <li>GOT AST, ASAT: 43 U/l, 05.02.2025</li>
         <li>ALAT: 98 U/l, 05.02.2025</li>
+        <li>AP: 109 U/l, 05.02.2025</li>
     </ul>
   </div>"
 * section[lab-subsections].section[chemistryStudies].entry[0] = Reference(UC1-Creatinine-20250205)
@@ -56,6 +57,7 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-GGT-20250205)
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-AST-20250205)
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-ALAT-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-AP-20250205)
 
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title = "Schwangerschaftsverlauf"
