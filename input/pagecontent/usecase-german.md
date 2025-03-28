@@ -20,6 +20,10 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
     <p>
       Dank dem <a href="Bundle-UC1-Document.html"><b>Schwangerschaftspass</b></a> mit den aktuellsten Angaben zu den Nierenwerten (<a href="Observation-UC1-Creatinine-20250205.html">Kreatinin: 1.2 mg/dl</a>, <a href="Observation-UC1-Urate-20250205.html">Harnsäure: 6.3 mg/dL</a>, <a href="Observation-UC1-GFR-20250205.html">GFR: 54 ml/min</a>), den Leberwerten (<a href="Observation-UC1-GGT-20250205.html">GGT: 43 U/l</a>, <a href="Observation-UC1-AST-20250205.html">GOT/AST: 43 U/l</a>, <a href="Observation-UC1-ALAT-20250205.html">ALAT: 98 U/l</a>, <a href="Observation-UC1-AP-20250205.html">AP: 109 U/l</a>) sowie dem Blutzuckerwert (<a href="Observation-UC1-BloodGlucose-20250205.html">Glucose 8.1 mmol/l</a>) und dem Blutdruckwert können die Ärztinnen und Ärzte genau einschätzen, wie gravierend die Präeklampsie ist. Mit der Information zur aktuellen Kindslage (Schädellage) kann bei einer Geburtseinleitung frühzeitig geplant werden, ob eine Sectio Caesarea in Erwägung gezogen werden muss.
     </p>
+    <p>
+    <a href="Observation-UC1-Hematocrit-20250205.html">Hkt: 46 %</a>, 
+    <a href="Observation-UC1-Platelets-20250205.html">Thrombozyten: 130</a>
+    </p>
   </div>
     <div style="flex: 0.6; width: 60%; margin-left: 2%;">
     <img src="UC1-Preeclampsia.png" alt="passport" style="width: 100%;">

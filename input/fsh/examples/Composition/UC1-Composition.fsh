@@ -63,6 +63,18 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-AP-20250205)
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-BloodGlucose-20250205)
 
+* section[lab-subsections].section[hematologyStudies].title = "Hämatologie"
+* section[lab-subsections].section[hematologyStudies].code = $loinc#18723-7 "Hematology studies (set)"
+* section[lab-subsections].section[hematologyStudies].text.status = #additional 
+* section[lab-subsections].section[hematologyStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <ul>
+        <li>Hkt: 46 %, 05.02.2025</li>
+        <li>Thrombozyten: 130, 05.02.2025</li>
+    </ul>
+  </div>"
+* section[lab-subsections].section[hematologyStudies].entry[0] = Reference(UC1-Hematocrit-20250205)
+* section[lab-subsections].section[hematologyStudies].entry[+] = Reference(UC1-Platelets-20250205)
+
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title = "Schwangerschaftsverlauf"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
