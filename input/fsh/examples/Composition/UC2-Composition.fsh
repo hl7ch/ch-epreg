@@ -83,30 +83,21 @@ Description: "Example for CH EPREG Composition"
   </div>"
 * section[lab-subsections].section[hematologyStudies].entry[0] = Reference(UC1-Hematocrit-20250205)
 * section[lab-subsections].section[hematologyStudies].entry[+] = Reference(UC1-Platelets-20250205)
+*/
 
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title = "Schwangerschaftsverlauf"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text.status = #additional 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
-    <b>Untersuchung vom 05.02.2025</b>
+    <b>Untersuchung vom 27.03.2025</b>
     <ul>
-        <li>SSW: 35</li>
-        <li>Gewicht: 80.6 kg</li>
-        <li>Nächste Kontrolle am: 18.02.2025</li>
-    </ul>
-    <b>Untersuchung vom 18.02.2025</b>
-    <ul>
-        <li>SSW: 37</li>
-        <li>Gewicht: 82.0 kg</li>
+        <li>SSW: 32</li>
+        <li>Gewicht: 65 kg</li>
     </ul>
   </div>"
-// Visit 05.02.2025
-* section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250205)
-* section[pregnancyProgress].entry[gestationalAge][0] = Reference(UC1-GestationalAgeInWeeks-20250205)
-* section[pregnancyProgress].entry[bodyWeight][0] = Reference(UC1-BodyWeight-20250205)
-// Visit 18.02.2025
-* section[pregnancyProgress].entry[visit][+] = Reference(UC1-EncounterPregVisit20250218)
-* section[pregnancyProgress].entry[gestationalAge][+] = Reference(UC1-GestationalAgeInWeeks-20250218)
-* section[pregnancyProgress].entry[bodyWeight][+] = Reference(UC1-BodyWeight-20250218)
-*/
+// Visit 27.03.2025
+* section[pregnancyProgress].entry[visit][0] = Reference(urn:uuid:bcd224d8-010e-4f87-9417-39c859a4043b)
+* section[pregnancyProgress].entry[visit][=].display = "Untersuchung, 27.03.2025"
+* section[pregnancyProgress].entry[visit][=].type = "Encounter"
+

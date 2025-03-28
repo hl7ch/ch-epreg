@@ -13,7 +13,6 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = 7c4e431a-6222-475f-9593-764b79316afa
 * entry[+].fullUrl = "urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd"
 * entry[=].resource = 76c2c5aa-3d7f-438d-b23d-56ce827695fd
-
 * entry[+].fullUrl = "urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527"
 * entry[=].resource = 89029102-999c-4b69-a836-e4dbfbd55527
 * entry[+].fullUrl = "urn:uuid:a61d6a0b-ee42-443e-92e5-167d2e42f137"
@@ -24,3 +23,5 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = e1b736e3-10bb-41aa-8d17-c7ba28895880
 * entry[+].fullUrl = "urn:uuid:c314ae56-7edb-4ef9-b38a-216c9a979374"
 * entry[=].resource = c314ae56-7edb-4ef9-b38a-216c9a979374
+* entry[+].fullUrl = "urn:uuid:bcd224d8-010e-4f87-9417-39c859a4043b"
+* entry[=].resource = bcd224d8-010e-4f87-9417-39c859a4043b
