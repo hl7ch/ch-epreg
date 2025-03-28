@@ -8,12 +8,10 @@ Description: "Example for CH EPREG Composition"
 * identifier.value = "urn:uuid:658f9dd5-8034-4ba4-b7ce-d3f0f6ebb2a7"
 * status = #final
 * type = $sct#736377005 "Maternity care plan (record artifact)"
-* subject = Reference(urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd)
-* subject.display = "Fabienne Babyglück"
+* subject = Reference(urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd) "Fabienne Babyglück"
 * subject.type = "Patient"
 * date = "2025-03-27T14:11:00+01:00"
-* author = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) // TODO
-* author.display = "Tanja Allesgut @ Geburtsklinik"
+* author = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik" // TODO
 * author.type = "PractitionerRole"
 * title = "Schwangerschaftspass"
 * confidentiality.extension[confidentialityCode].valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
@@ -27,11 +25,9 @@ Description: "Example for CH EPREG Composition"
     <p><b>Gynäkologin:</b> Tanja Allesgut, Geburtsklinik 'Willkommen auf der Welt'</p>
     <p><b>Hebamme:</b> Ruth Ohazwei, Geburtsklinik 'Willkommen auf der Welt'</p>
   </div>"
-* section[careTeam].entry[0] = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527)
-* section[careTeam].entry[=].display = "Tanja Allesgut @ Geburtsklinik"
+* section[careTeam].entry[0] = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * section[careTeam].entry[=].type = "PractitionerRole"
-* section[careTeam].entry[+] = Reference(urn:uuid:e1b736e3-10bb-41aa-8d17-c7ba28895880)
-* section[careTeam].entry[=].display = "Ruth Ohazwei @ Geburtsklinik"
+* section[careTeam].entry[+] = Reference(urn:uuid:e1b736e3-10bb-41aa-8d17-c7ba28895880) "Ruth Ohazwei @ Geburtsklinik"
 * section[careTeam].entry[=].type = "PractitionerRole"
 /*
 //-------------------------------------- Serologische- & Laboruntersuchungen --------------------------------------//
@@ -97,7 +93,10 @@ Description: "Example for CH EPREG Composition"
     </ul>
   </div>"
 // Visit 27.03.2025
-* section[pregnancyProgress].entry[visit][0] = Reference(urn:uuid:bcd224d8-010e-4f87-9417-39c859a4043b)
-* section[pregnancyProgress].entry[visit][=].display = "Untersuchung, 27.03.2025"
+* section[pregnancyProgress].entry[visit][0] = Reference(urn:uuid:bcd224d8-010e-4f87-9417-39c859a4043b) "Untersuchung, 27.03.2025"
 * section[pregnancyProgress].entry[visit][=].type = "Encounter"
+* section[pregnancyProgress].entry[gestationalAge][0] = Reference(urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba) "SSW 32"
+* section[pregnancyProgress].entry[gestationalAge][=].type = "Observation"
+* section[pregnancyProgress].entry[bodyWeight][0] = Reference(urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7) "Gewicht 65 kg"
+* section[pregnancyProgress].entry[bodyWeight][=].type = "Observation"
 

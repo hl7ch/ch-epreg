@@ -10,7 +10,7 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
 ### Fallbeispiel 1: Präeklampsie
 
 <div style="display: flex; align-items: flex-start; width: 100%;">
-  <div style="flex: 0.5; width: 50%;">
+  <div style="flex: 0.4; width: 40%;">
     <p>
       Die Patientin <a href="Patient-UC1-KatrinKinderlieb.html">Katrin Kinderlieb</a> (geb. 18.01.1986) ist mit ihrem ersten Kind schwanger. Bei der <a href="Encounter-UC1-EncounterPregVisit20250218.html">Routineuntersuchung vom 18. Februar 2025</a> in der <a href="Observation-UC1-GestationalAgeInWeeks-20250218.html">37. Schwangerschaftswoche</a> stellt die Gynäkologin Frau <a href="PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.html">Petra Sectionata</a> einen massiv erhöhten Blutdruck (160/100 mmHg) fest. Auf die Frage, ob Frau Kinderlieb noch weitere Beschwerden habe, berichtet sie von Kopfschmerzen und Schwindel sowie einem gelegentlichen Druckgefühl im Oberbauch.
     </p>
@@ -25,7 +25,7 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
     <a href="Observation-UC1-Platelets-20250205.html">Thrombozyten: 130</a>
     </p>
   </div>
-    <div style="flex: 0.5; width: 50%; margin-left: 2%;">
+    <div style="flex: 0.6; width: 60%; margin-left: 2%;">
     <img src="UC1-Preeclampsia.png" alt="passport" style="width: 100%;">
     <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Katrin Kinderlieb</p>
   </div>
@@ -36,15 +36,15 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
 ### Fallbeispiel 2: Starke Wehentätigkeit
 
 <div style="display: flex; align-items: flex-start; width: 100%;">
-  <div style="flex: 0.5; width: 50%;">
+  <div style="flex: 0.4; width: 40%;">
     <p>
-      Die Patientin <a href="Patient-76c2c5aa-3d7f-438d-b23d-56ce827695fd.html">Fabienne Babyglück</a> (geb. 10.05.1999) wird mit starken Wehen und halb bewusstlos in der 32. Schwangerschaftswoche in die Geburtsklinik 'Willkommen auf der Welt' eingeliefert. Die Gynäkologin <a href="PractitionerRole-89029102-999c-4b69-a836-e4dbfbd55527.html">Tanja Allesgut</a> und die Hebamme <a href="PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.html">Ruth Ohazwei</a> nehmen die Patientin in Empfang und sehen im <a href="Bundle-UC2-Document.html"><b>Schwangerschaftspass</b></a>, dass das Kind eine Steisslage hat und Frau Babyglück Diabetikerin ist (Blutzuckerkontrolle im Schwangerschaftsverlauf unter weitere Untersuchungen). Eine sofortige Blutspiegelmessung ergibt einen Wert von 3.9 mmol/l, sofort wird der Patientin Glukose verabreicht und eine Notfallsectio wird vorbereitet.
+      Die Patientin <a href="Patient-76c2c5aa-3d7f-438d-b23d-56ce827695fd.html">Fabienne Babyglück</a> (geb. 10.05.1999) wird mit starken Wehen und halb bewusstlos in der <a href="Observation-84869994-4348-4ad3-95ee-d9b0faf75dba.html">32. Schwangerschaftswoche</a> in die Geburtsklinik 'Willkommen auf der Welt' eingeliefert. Die Gynäkologin <a href="PractitionerRole-89029102-999c-4b69-a836-e4dbfbd55527.html">Tanja Allesgut</a> und die Hebamme <a href="PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.html">Ruth Ohazwei</a> nehmen die Patientin in Empfang und sehen im <a href="Bundle-UC2-Document.html"><b>Schwangerschaftspass</b></a>, dass das Kind eine Steisslage hat und Frau Babyglück Diabetikerin ist (Blutzuckerkontrolle im Schwangerschaftsverlauf unter weitere Untersuchungen). Eine sofortige Blutspiegelmessung ergibt einen Wert von 3.9 mmol/l, sofort wird der Patientin Glukose verabreicht und eine Notfallsectio wird vorbereitet.
     </p>
     <p>
       <a href="Encounter-bcd224d8-010e-4f87-9417-39c859a4043b.html">Routineuntersuchung vom 27. März 2025</a>,
     </p>
   </div>
-  <div style="flex: 0.5; width: 50%; margin-left: 2%;">
+  <div style="flex: 0.6; width: 60%; margin-left: 2%;">
     <img src="UC2-StrongLaborContractions.png" alt="passport" style="width: 100%;">
     <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Fabienne Babyglück</p>
   </div>  

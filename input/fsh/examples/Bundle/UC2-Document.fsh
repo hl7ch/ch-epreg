@@ -25,3 +25,7 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = c314ae56-7edb-4ef9-b38a-216c9a979374
 * entry[+].fullUrl = "urn:uuid:bcd224d8-010e-4f87-9417-39c859a4043b"
 * entry[=].resource = bcd224d8-010e-4f87-9417-39c859a4043b
+* entry[+].fullUrl = "urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba"
+* entry[=].resource = 84869994-4348-4ad3-95ee-d9b0faf75dba
+* entry[+].fullUrl = "urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7"
+* entry[=].resource = e1c73669-f935-47d1-9dcd-fab76a38bdb7
