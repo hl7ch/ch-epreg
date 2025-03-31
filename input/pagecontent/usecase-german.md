@@ -41,7 +41,7 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
       Die Patientin <a href="Patient-76c2c5aa-3d7f-438d-b23d-56ce827695fd.html">Fabienne Babyglück</a> (geb. 10.05.1999) wird mit starken Wehen und halb bewusstlos in der <a href="Observation-84869994-4348-4ad3-95ee-d9b0faf75dba.html">32. Schwangerschaftswoche</a> in die Geburtsklinik 'Willkommen auf der Welt' eingeliefert. Die Gynäkologin <a href="PractitionerRole-89029102-999c-4b69-a836-e4dbfbd55527.html">Tanja Allesgut</a> und die Hebamme <a href="PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.html">Ruth Ohazwei</a> nehmen die Patientin in Empfang und sehen im <a href="Bundle-UC2-Document.html"><b>Schwangerschaftspass</b></a>, dass das Kind eine Steisslage hat und Frau Babyglück Diabetikerin ist (Blutzuckerkontrolle im Schwangerschaftsverlauf unter weitere Untersuchungen). Eine sofortige Blutspiegelmessung ergibt einen Wert von 3.9 mmol/l, sofort wird der Patientin Glukose verabreicht und eine Notfallsectio wird vorbereitet.
     </p>
     <p>
-      <a href="Encounter-1ba6df42-ae1a-4b4a-886f-33d6b2223b1f.html">Routineuntersuchung vom 27. März 2025</a>,
+      <a href="Encounter-1ba6df42-ae1a-4b4a-886f-33d6b2223b1f.html">Untersuchung vom 27. März 2025</a>,
     </p>
   </div>
   <div style="flex: 0.6; width: 60%; margin-left: 2%;">
