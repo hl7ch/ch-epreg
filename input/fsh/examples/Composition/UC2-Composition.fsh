@@ -1,8 +1,6 @@
 Instance: 7c4e431a-6222-475f-9593-764b79316afa
 InstanceOf: ChEpregComposition
-Usage: #example
-Title: "UC 2: Composition"
-Description: "Example for CH EPREG Composition"
+Usage: #inline
 * language = #de-CH
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:658f9dd5-8034-4ba4-b7ce-d3f0f6ebb2a7"
