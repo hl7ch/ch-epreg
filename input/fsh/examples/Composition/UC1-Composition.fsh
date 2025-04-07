@@ -48,7 +48,7 @@ Description: "Example for CH EPREG Composition"
         <li>Harnsäure: 6.3 mg/dl (hoch), 05.02.2025</li>
         <li>GFR: 54 ml/min, 05.02.2025</li>
         <li>GGT: 43 U/l, 05.02.2025</li>
-        <li>GOT AST, ASAT: 43 U/l, 05.02.2025</li>
+        <li>GOT/AST/ASAT: 43 U/l, 05.02.2025</li>
         <li>ALAT: 98 U/l, 05.02.2025</li>
         <li>AP: 109 U/l, 05.02.2025</li>
         <li>Glucose: 8.1 mmol/l, 05.02.2025</li>
