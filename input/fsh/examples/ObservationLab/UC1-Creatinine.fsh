@@ -5,6 +5,7 @@ Title: "UC 1: Creatinine (05.02.2025)"
 Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
+* category = $observation-category#laboratory "Laboratory"
 * code = $loinc#38483-4	"Creatinine [Mass/volume] in Blood"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"

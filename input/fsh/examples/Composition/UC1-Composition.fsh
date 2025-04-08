@@ -61,7 +61,7 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-AST-20250205)
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-ALAT-20250205)
 * section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-AP-20250205)
-* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-BloodGlucose-20250205)
+* section[lab-subsections].section[chemistryStudies].entry[+] = Reference(UC1-GlucoseLab-20250205)
 
 * section[lab-subsections].section[hematologyStudies].title = "Hämatologie"
 * section[lab-subsections].section[hematologyStudies].code = $loinc#18723-7 "Hematology studies (set)"

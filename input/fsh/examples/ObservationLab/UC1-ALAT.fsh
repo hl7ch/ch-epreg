@@ -5,6 +5,7 @@ Title: "UC 1: Alanine Aminotransferase (05.02.2025)"
 Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
+* category = $observation-category#laboratory "Laboratory"
 * code = $loinc#LP15333-5 "Alanine aminotransferase"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
