@@ -37,6 +37,8 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = f339e056-53d6-4247-9226-5339123fbd14
 * entry[+].fullUrl = "urn:uuid:e949f912-fc27-4849-8632-09caad9fe897" // Obs: "Blutdruck 122/83 mmHg"
 * entry[=].resource = e949f912-fc27-4849-8632-09caad9fe897
+* entry[+].fullUrl = "urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb" // Obs: "Glucose 4.7 mmol/l"
+* entry[=].resource = bbd6f1bc-1d87-4c90-a313-98bea06c3dfb
 
 // 27.03.2025
 * entry[+].fullUrl = "urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f" // Enc: "Untersuchung, 27.03.2025"
@@ -47,3 +49,5 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = e1c73669-f935-47d1-9dcd-fab76a38bdb7
 * entry[+].fullUrl = "urn:uuid:4268bd90-eff8-41f4-a7b4-2178dac0e470" // Obs: "Blutdruck 160/60 mmHg"
 * entry[=].resource = 4268bd90-eff8-41f4-a7b4-2178dac0e470
+* entry[+].fullUrl = "urn:uuid:4b9ca365-383e-41c8-9bac-b3c79aea1c7e" // Obs: "Glucose 3.9 mmol/l"
+* entry[=].resource = 4b9ca365-383e-41c8-9bac-b3c79aea1c7e

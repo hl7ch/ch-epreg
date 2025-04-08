@@ -87,7 +87,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregnancyProgress].code 1..
 * section[pregnancyProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text 1..
-* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit or ChEpregObservationPregProgress)
+* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit or ChEpregObservationPregProgress or ChEpregObservationResultsLab)
 * section[pregnancyProgress].entry ^slicing.discriminator.type = #profile
 * section[pregnancyProgress].entry ^slicing.discriminator.path = "resolve()"
 * section[pregnancyProgress].entry ^slicing.ordered = false
@@ -125,6 +125,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[lab-subsections].section[hematologyStudies]   -> "Laboruntersuchung | Analyse de laboratoire"
 * section[lab-subsections].section[microbiologyStudies] -> "Laboruntersuchung | Analyse de laboratoire"
 * section[pregnancyProgress]                            -> "Schwangerschaftsverlauf | Évolution de la grossesse"
+* section[pregnancyProgress].entry                      -> "Weitere Untersuchungen und Fragen | Autres examens et questions"
 * section[pregnancyProgress].entry[visit]               -> "Untersuchung | Examen"
 * section[pregnancyProgress].entry[gestationalAge]      -> "Schwangerschaftswochen | Semaines de grossesse"
 * section[pregnancyProgress].entry[bodyWeight]          -> "Aktuelles Gewicht | Poids actuel"
