@@ -10,6 +10,7 @@ Description: "Example for CH EPREG Encounter: Pregnancy Visit"
 * subject = Reference(UC1-KatrinKinderlieb)
 * participant.individual = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * period.start = "2025-02-05"
+* period.end = "2025-02-05"
 
 
 Instance: UC1-EncounterPregVisit20250218
@@ -24,3 +25,4 @@ Description: "Example for CH EPREG Encounter: Pregnancy Visit"
 * subject = Reference(UC1-KatrinKinderlieb)
 * participant.individual = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * period.start = "2025-02-18"
+* period.end = "2025-02-18"

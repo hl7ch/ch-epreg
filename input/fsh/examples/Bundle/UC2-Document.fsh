@@ -23,6 +23,16 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = e1b736e3-10bb-41aa-8d17-c7ba28895880
 * entry[+].fullUrl = "urn:uuid:c314ae56-7edb-4ef9-b38a-216c9a979374" // Pract: "Ruth Ohazwei"
 * entry[=].resource = c314ae56-7edb-4ef9-b38a-216c9a979374
+
+// 26.03.2025
+* entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung, 26.03.2025"
+* entry[=].resource = 8e89c502-964f-4234-9728-540d881b0380
+* entry[+].fullUrl = "urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3" // Obs: "SSW 32"
+* entry[=].resource = 2f167f2f-44f7-49e3-a970-d7f7a6573cd3
+* entry[+].fullUrl = "urn:uuid:f339e056-53d6-4247-9226-5339123fbd14" // Obs: "Gewicht 65.1 kg"
+* entry[=].resource = f339e056-53d6-4247-9226-5339123fbd14
+
+// 27.03.2025
 * entry[+].fullUrl = "urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f" // Enc: "Untersuchung, 27.03.2025"
 * entry[=].resource = 1ba6df42-ae1a-4b4a-886f-33d6b2223b1f
 * entry[+].fullUrl = "urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba" // Obs: "SSW 32"

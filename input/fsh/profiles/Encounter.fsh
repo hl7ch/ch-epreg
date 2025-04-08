@@ -29,5 +29,6 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * subject                                   -> "Schwangere Person | Personne enceinte"
 * participant.individual                    -> "Kontrolle durchgeführt durch | Contrôle effectué par"
 * period.start                              -> "Datum | Date de l’examen"
+* period.end                                -> "Datum | Date de l’examen"
 
 

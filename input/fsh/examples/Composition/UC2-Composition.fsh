@@ -8,7 +8,7 @@ Usage: #inline
 * type = $sct#736377005 "Maternity care plan (record artifact)"
 * subject = Reference(urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd) "Fabienne Babyglück"
 * date = "2025-03-27T14:11:00+01:00"
-* author = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik" // TODO
+* author = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * title = "Schwangerschaftspass"
 * confidentiality.extension[confidentialityCode].valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
@@ -45,14 +45,24 @@ Usage: #inline
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text.status = #additional 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <b>Untersuchung vom 26.03.2025</b>
+    <ul>
+        <li>SSW: 32</li>
+        <li>Gewicht: 65.1 kg</li>
+        <li>Nächste Kontrolle am: 02.04.2025</li>
+    </ul>
     <b>Untersuchung vom 27.03.2025</b>
     <ul>
         <li>SSW: 32</li>
         <li>Gewicht: 65 kg</li>
     </ul>
   </div>"
+// Visit 26.03.2025
+* section[pregnancyProgress].entry[visit][0] = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung, 26.03.2025"
+* section[pregnancyProgress].entry[gestationalAge][0] = Reference(urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3) "SSW 32, 26.03.2025"
+* section[pregnancyProgress].entry[bodyWeight][0] = Reference(urn:uuid:f339e056-53d6-4247-9226-5339123fbd14) "Gewicht 65 kg, 26.03.2025"  
 // Visit 27.03.2025
-* section[pregnancyProgress].entry[visit] = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung, 27.03.2025"
-* section[pregnancyProgress].entry[gestationalAge] = Reference(urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba) "SSW 32"
-* section[pregnancyProgress].entry[bodyWeight] = Reference(urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7) "Gewicht 65 kg"
+* section[pregnancyProgress].entry[visit][+] = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung, 27.03.2025"
+* section[pregnancyProgress].entry[gestationalAge][+] = Reference(urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba) "SSW 32, 27.03.2025"
+* section[pregnancyProgress].entry[bodyWeight][+] = Reference(urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7) "Gewicht 65 kg, 27.03.2025"
 

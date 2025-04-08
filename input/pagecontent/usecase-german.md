@@ -12,7 +12,7 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
 <div style="display: flex; align-items: flex-start; width: 100%;">
   <div style="flex: 0.4; width: 40%;">
     <p>
-      Die Patientin <a href="Patient-UC1-KatrinKinderlieb.html">Katrin Kinderlieb</a> (geb. 18.01.1986) ist mit ihrem ersten Kind schwanger. Bei der <a href="Encounter-UC1-EncounterPregVisit20250218.html">Routineuntersuchung vom 18. Februar 2025</a> in der <a href="Observation-UC1-GestationalAgeInWeeks-20250218.html">37. Schwangerschaftswoche</a> stellt die Gynäkologin Frau <a href="PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.html">Petra Sectionata</a> einen massiv erhöhten Blutdruck (160/100 mmHg) fest. Auf die Frage, ob Frau Kinderlieb noch weitere Beschwerden habe, berichtet sie von Kopfschmerzen und Schwindel sowie einem gelegentlichen Druckgefühl im Oberbauch.<br>
+      Die Patientin <a href="Patient-UC1-KatrinKinderlieb.html">Katrin Kinderlieb</a> (geb. 18.01.1986) ist mit ihrem ersten Kind schwanger. Bei der <a href="Encounter-UC1-EncounterPregVisit20250218.html">Routineuntersuchung vom 18.02.2025</a> in der <a href="Observation-UC1-GestationalAgeInWeeks-20250218.html">37. Schwangerschaftswoche</a> stellt die Gynäkologin Frau <a href="PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.html">Petra Sectionata</a> einen massiv erhöhten Blutdruck (160/100 mmHg) fest. Auf die Frage, ob Frau Kinderlieb noch weitere Beschwerden habe, berichtet sie von Kopfschmerzen und Schwindel sowie einem gelegentlichen Druckgefühl im Oberbauch.<br>
       Nach Durchsicht des Schwangerschaftsdiabetestagebuchs sowie der Werte der letzten Urinproben, mit stetig gestiegenen Harnsäurewerten (> 6 mg/dl), fordert Frau Sectionata weitere Laboruntersuchungen an. Aufgrund der auffälligen Werte sendet Frau Sectionata die Patientin ins Spital 'Kids & Mütter' und trägt die neuen Laborwerte in den Schwangerschaftspass ein.
     </p>
     <p>
@@ -21,7 +21,7 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
   </div>
     <div style="flex: 0.6; width: 60%; margin-left: 2%;">
     <img src="UC1-Preeclampsia.png" alt="passport" style="width: 100%;">
-    <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Katrin Kinderlieb</p>
+    <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Katrin Kinderlieb, 18.02.2025</p>
   </div>
 </div>
 
@@ -32,15 +32,12 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
 <div style="display: flex; align-items: flex-start; width: 100%;">
   <div style="flex: 0.4; width: 40%;">
     <p>
-      Die Patientin <a href="Patient-76c2c5aa-3d7f-438d-b23d-56ce827695fd.html">Fabienne Babyglück</a> (geb. 10.05.1999) wird mit starken Wehen und halb bewusstlos in der <a href="Observation-84869994-4348-4ad3-95ee-d9b0faf75dba.html">32. Schwangerschaftswoche</a> in die Geburtsklinik 'Willkommen auf der Welt' eingeliefert. Die Gynäkologin <a href="PractitionerRole-89029102-999c-4b69-a836-e4dbfbd55527.html">Tanja Allesgut</a> und die Hebamme <a href="PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.html">Ruth Ohazwei</a> nehmen die Patientin in Empfang und sehen im <a href="Bundle-UC2-Document.html"><b>Schwangerschaftspass</b></a>, dass das Kind eine Steisslage hat und Frau Babyglück Diabetikerin ist Die Blutzuckermesswerte vorhergehender gynäkologischer Kontrollen zeigen eine instabile Blutzuckerkurve. Die letzte Messung betrug 4.7 mmol/l. (Blutzuckerkontrolle im Schwangerschaftsverlauf unter weitere Untersuchungen). Eine sofortige Blutspiegelmessung ergibt einen Wert von 3.9 mmol/l, sofort wird der Patientin Glukose verabreicht und eine Notfallsectio wird vorbereitet. Im folgenden Verlauf wurde der Wert von 3.9 mmol/l sowie weitere Messungen nach der Sectio im Schwangerschaftspass nachgetragen. 
-    </p>
-    <p>
-      <a href="Encounter-1ba6df42-ae1a-4b4a-886f-33d6b2223b1f.html">Untersuchung vom 27. März 2025</a>,
+      Die Patientin <a href="Patient-76c2c5aa-3d7f-438d-b23d-56ce827695fd.html">Fabienne Babyglück</a> (geb. 10.05.1999) wird in der <a href="Observation-84869994-4348-4ad3-95ee-d9b0faf75dba.html">32. Schwangerschaftswoche</a> mit starken Wehen und in einem halb bewusstlosen Zustand in die Geburtsklinik 'Willkommen auf der Welt' eingeliefert. Die Gynäkologin <a href="PractitionerRole-89029102-999c-4b69-a836-e4dbfbd55527.html">Tanja Allesgut</a> und die Hebamme <a href="PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.html">Ruth Ohazwei</a> nehmen die Patientin in Empfang. Im Schwangerschaftspass finden sie die dokumentierte Steisslage des Kindes sowie den Hinweis auf einen insulinpflichtigen Gestationsdiabetes mit einem kapillären Blutzuckerwert von 4,7 mmol/l bei der <a href="Encounter-8e89c502-964f-4234-9728-540d881b0380.html">Vorsorgeuntersuchung vom 26.03.2025</a>. Am Aufnahmetag, bei der <a href="Encounter-1ba6df42-ae1a-4b4a-886f-33d6b2223b1f.html">Eintrittsuntersuchung vom 27.03.2025</a>, wird ein erniedrigter kapillärer Blutzuckerwert von 3,9 mmol/l gemessen; dieser wird im Labor durch eine venöse Messung bestätigt. Aufgrund der begleitenden Symptome und des raschen Geburtsfortschritts (Muttermund 5 cm, schwache Kindsbewegungen, fetale Herztöne bei 110/min) wird der Patientin umgehend Glukose verabreicht und eine Notfallsectio vorbereitet. Im weiteren Verlauf werden die erfassten Werte im <a href="Bundle-UC2-Document.html"><b>Schwangerschaftspass</b></a> nachgetragen.
     </p>
   </div>
   <div style="flex: 0.6; width: 60%; margin-left: 2%;">
     <img src="UC2-StrongLaborContractions.png" alt="passport" style="width: 100%;">
-    <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Fabienne Babyglück</p>
+    <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Fabienne Babyglück, 27.03.2025</p>
   </div>  
 </div>
 
