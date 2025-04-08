@@ -1,5 +1,5 @@
 Profile: ChEpregObservationResultsLab
-Parent: Observation // https://github.com/hl7ch/ch-core/issues/325
+Parent: Observation
 Id: ch-epreg-observation-results-lab
 Title: "CH EPREG Observation: Results Laboratory"
 Description: "This base profile constrains the Observation resource to represent the laboratory results within the context of the pregnancy passport."

@@ -17,7 +17,7 @@ Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_K
 Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
-*                                           -> "Laboruntersuchung | Analyse de laboratoire"
+*                                           -> "Untersuchungen und Tests | Analyses et tests"
 * code                                      -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
 * subject                                   -> "Schwangere Person | Personne enceinte"
 * effective[x]                              -> "Untersuchungsdatum | Date de l’analyse"

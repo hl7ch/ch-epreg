@@ -23,9 +23,8 @@ Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_K
 Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
-*                                           -> "Untersuchung | Examen"
 * code                                      -> "Schwangerschaftswochen | Semaines de grossesse"
 * subject                                   -> "Schwangere Person | Personne enceinte"
-* effective[x]                              -> "Datum | Date de l’examen"
+* effective[x]                              -> "Zeitpunkt der Untersuchung | Date de l’examen"
 * performer                                 -> "Kontrolle durchgeführt durch | Contrôle effectué par"
 * value[x]                                  -> "Schwangerschaftswochen | Semaines de grossesse"
