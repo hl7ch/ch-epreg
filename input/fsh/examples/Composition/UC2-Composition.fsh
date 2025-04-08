@@ -34,10 +34,10 @@ Usage: #inline
 * section[lab-subsections].section[chemistryStudies].text.status = #additional 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <ul>
-        <li>Glucose: 3.9 mmol/l, 05.02.2025</li>
+        <li>Glucose: 3.9 mmol/l, 27.03.2025</li>
     </ul>
   </div>"
-
+* section[lab-subsections].section[chemistryStudies].entry[0] = Reference(urn:uuid:b9145a94-ea12-479b-a031-b07d4ac9f297) "Glucose, 27.03.2025"
 
 
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//

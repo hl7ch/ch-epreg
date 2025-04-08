@@ -24,6 +24,10 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[+].fullUrl = "urn:uuid:c314ae56-7edb-4ef9-b38a-216c9a979374" // Pract: "Ruth Ohazwei"
 * entry[=].resource = c314ae56-7edb-4ef9-b38a-216c9a979374
 
+// Lab 
+* entry[+].fullUrl = "urn:uuid:b9145a94-ea12-479b-a031-b07d4ac9f297" // Obs: "Glucose 3.9 mmol/l"
+* entry[=].resource = b9145a94-ea12-479b-a031-b07d4ac9f297
+
 // 26.03.2025
 * entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung, 26.03.2025"
 * entry[=].resource = 8e89c502-964f-4234-9728-540d881b0380

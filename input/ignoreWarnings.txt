@@ -13,6 +13,7 @@ None of the codings provided are in the value set 'IdentifierType' (http://hl7.o
 # No valid display values for the given language (information)
 There are no valid display names found for the code%
 'High' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation has no Display Names for the language de-CH
+'Low' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation has no Display Names for the language de-CH
 
 # Base profile, examples for the more specific ones are included 
 The Implementation Guide contains no explicitly linked examples for this profile
