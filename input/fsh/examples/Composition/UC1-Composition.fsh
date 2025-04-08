@@ -84,19 +84,23 @@ Description: "Example for CH EPREG Composition"
     <ul>
         <li>SSW: 35</li>
         <li>Gewicht: 80.6 kg</li>
+        <li>Blutdruck: 120/80 mmHg</li>
         <li>Nächste Kontrolle am: 18.02.2025</li>
     </ul>
     <b>Untersuchung vom 18.02.2025</b>
     <ul>
         <li>SSW: 37</li>
         <li>Gewicht: 82.0 kg</li>
+        <li>Blutdruck: 160/100 mmHg</li>
     </ul>
   </div>"
 // Visit 05.02.2025
 * section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250205)
 * section[pregnancyProgress].entry[gestationalAge][0] = Reference(UC1-GestationalAgeInWeeks-20250205)
 * section[pregnancyProgress].entry[bodyWeight][0] = Reference(UC1-BodyWeight-20250205)
+* section[pregnancyProgress].entry[bloodPressure][0] = Reference(UC1-BloodPressure-20250205)
 // Visit 18.02.2025
 * section[pregnancyProgress].entry[visit][+] = Reference(UC1-EncounterPregVisit20250218)
 * section[pregnancyProgress].entry[gestationalAge][+] = Reference(UC1-GestationalAgeInWeeks-20250218)
 * section[pregnancyProgress].entry[bodyWeight][+] = Reference(UC1-BodyWeight-20250218)
+* section[pregnancyProgress].entry[bloodPressure][+] = Reference(UC1-BloodPressure-20250218)

@@ -28,3 +28,8 @@ URL value 'urn:oid:2.16.756.5.32' does not resolve
 URL value 'urn:oid:2.16.756.5.35' does not resolve
 URL value 'urn:oid:2.16.756.5.45' does not resolve
 URL value 'urn:oid:2.51.1.3' does not resolve
+
+# Does resolve
+URL value 'https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf' does not resolve
+URL value 'http://www.ech.ch/' does not resolve
+URL value 'https://www.ech.ch/' does not resolve

@@ -4,6 +4,7 @@ Id: ch-epreg-observation-body-weight
 Title: "CH EPREG Observation: Body Weight"
 Description: "This profile constrains the Observation resource to represent the body weight within the context of the pregnancy passport."
 * . ^short = "CH EPREG Observation: Body Weight"
+* ^extension[$imposeProfile].valueCanonical = Canonical(http://hl7.org/fhir/StructureDefinition/bodyweight)
 * category = $observation-category#vital-signs // "Vital Signs"
 * code = $loinc#29463-7 // "Body weight"
 * effective[x] only dateTime
