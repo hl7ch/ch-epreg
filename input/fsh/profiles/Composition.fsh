@@ -121,6 +121,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * subject                                               -> "Schwangere Person | Personne enceinte"
 * section[careTeam]                                     -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
 * section[careTeam].text                                -> "Vorhanden | Disponible"
+* section[careTeam].text                                -> "Bemerkungen | Remarques"
 * section[lab-subsections]                              -> "Untersuchungen und Tests | Analyses et tests"
 * section[lab-subsections].section[bloodBankStudies]    -> "Laboruntersuchung | Analyse de laboratoire"
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup] -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"

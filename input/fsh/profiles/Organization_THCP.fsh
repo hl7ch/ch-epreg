@@ -1,5 +1,5 @@
 Profile: ChEpregOrganizationTHCP
-Parent: CHCoreOrganizationEPR
+Parent: CHCoreOrganization
 Id: ch-epreg-organization-thcp
 Title: "CH EPREG Organization: Treating Healthcare Provider"
 Description: "This profile constrains the Organization resource to represent the treating healthcare provider within the context of the pregnancy passport."

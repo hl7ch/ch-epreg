@@ -12,6 +12,7 @@ Description: "This profile constrains the Encounter resource to represent a preg
 * subject.reference 1..     
 * participant 1..
 * participant.individual 1..
+* participant.individual only Reference(ChEpregPractitionerRoleTHCP)
 * participant.individual.reference 1..
 * period 1..
 * period.start 1..   

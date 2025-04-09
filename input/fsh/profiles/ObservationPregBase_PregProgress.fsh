@@ -9,7 +9,7 @@ Description: "This base profile constrains the Observation resource to represent
 * subject.reference 1..
 * effective[x] 1.. 
 * performer 1..
-// * performer only Reference(Practitioner | PractitionerRole | Organization | CareTeam | Patient | RelatedPerson)
+* performer only Reference(ChEpregPractitionerRoleTHCP)
 * performer.reference 1..
 * value[x] MS 
 * component.value[x] MS                     

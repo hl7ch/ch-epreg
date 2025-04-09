@@ -16,7 +16,7 @@ Usage: #inline
 //-------------------------------------- Behandelnde Leistungserbringende --------------------------------------//
 * section[careTeam].title = "Behandelnde Leistungserbringende"
 * section[careTeam].code = $loinc#85847-2 "Patient Care team information"
-* section[careTeam].text.status = #additional 
+* section[careTeam].text.status = #generated 
 * section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p><b>Gynäkologin:</b> Tanja Allesgut, Geburtsklinik 'Willkommen auf der Welt'</p>
     <p><b>Hebamme:</b> Ruth Ohazwei, Geburtsklinik 'Willkommen auf der Welt'</p>
@@ -31,7 +31,7 @@ Usage: #inline
 
 * section[lab-subsections].section[chemistryStudies].title = "Klinische Chemie"
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5	"Chemistry studies (set)"
-* section[lab-subsections].section[chemistryStudies].text.status = #additional 
+* section[lab-subsections].section[chemistryStudies].text.status = #generated 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <ul>
         <li>Glucose: 3.9 mmol/l, 27.03.2025</li>
@@ -43,7 +43,7 @@ Usage: #inline
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title = "Schwangerschaftsverlauf"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
-* section[pregnancyProgress].text.status = #additional 
+* section[pregnancyProgress].text.status = #generated 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <b>Untersuchung vom 27.03.2025</b>
     <ul>

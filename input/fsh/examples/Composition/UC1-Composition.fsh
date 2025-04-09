@@ -22,6 +22,7 @@ Description: "Example for CH EPREG Composition"
 * section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p><b>Gynäkologin:</b> Petra Sectionata, Frauenzimmer</p>
     <p><b>Hausärztin/Hausarzt:</b> keine</p>
+    <p><b>Bemerkungen:</b> noch keine Hebamme</p>
   </div>"
 * section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
 
@@ -31,7 +32,7 @@ Description: "Example for CH EPREG Composition"
 
 * section[lab-subsections].section[bloodBankStudies].title = "Blutbank-Untersuchungen"
 * section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 "Blood bank studies (set)"   
-* section[lab-subsections].section[bloodBankStudies].text.status = #additional 
+* section[lab-subsections].section[bloodBankStudies].text.status = #generated 
 * section[lab-subsections].section[bloodBankStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <ul>
         <li>Blutgruppe: AB Rh(D)+, 05.02.2025</li>
@@ -41,7 +42,7 @@ Description: "Example for CH EPREG Composition"
 
 * section[lab-subsections].section[chemistryStudies].title = "Klinische Chemie"
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5	"Chemistry studies (set)"
-* section[lab-subsections].section[chemistryStudies].text.status = #additional 
+* section[lab-subsections].section[chemistryStudies].text.status = #generated 
 * section[lab-subsections].section[chemistryStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <ul>
         <li>Kreatinin: 1.2 mg/dl (hoch), 05.02.2025</li>
@@ -65,7 +66,7 @@ Description: "Example for CH EPREG Composition"
 
 * section[lab-subsections].section[hematologyStudies].title = "Hämatologie"
 * section[lab-subsections].section[hematologyStudies].code = $loinc#18723-7 "Hematology studies (set)"
-* section[lab-subsections].section[hematologyStudies].text.status = #additional 
+* section[lab-subsections].section[hematologyStudies].text.status = #generated 
 * section[lab-subsections].section[hematologyStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <ul>
         <li>Hkt: 46 %, 05.02.2025</li>
@@ -78,7 +79,7 @@ Description: "Example for CH EPREG Composition"
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
 * section[pregnancyProgress].title = "Schwangerschaftsverlauf"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
-* section[pregnancyProgress].text.status = #additional 
+* section[pregnancyProgress].text.status = #generated 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <b>Untersuchung vom 18.02.2025</b>
     <ul>
