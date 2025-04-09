@@ -80,6 +80,13 @@ Description: "Example for CH EPREG Composition"
 * section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text.status = #additional 
 * section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <b>Untersuchung vom 18.02.2025</b>
+    <ul>
+        <li>SSW: 37</li>
+        <li>Gewicht: 82.0 kg</li>
+        <li>Blutdruck: 160/100 mmHg</li>
+        <li>Kindslage: Schädellage</li>
+    </ul>
     <b>Untersuchung vom 05.02.2025</b>
     <ul>
         <li>SSW: 35</li>
@@ -87,20 +94,13 @@ Description: "Example for CH EPREG Composition"
         <li>Blutdruck: 120/80 mmHg</li>
         <li>Nächste Kontrolle am: 18.02.2025</li>
     </ul>
-    <b>Untersuchung vom 18.02.2025</b>
-    <ul>
-        <li>SSW: 37</li>
-        <li>Gewicht: 82.0 kg</li>
-        <li>Blutdruck: 160/100 mmHg</li>
-    </ul>
   </div>"
-// Visit 05.02.2025
-* section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250205)
-* section[pregnancyProgress].entry[gestationalAge][0] = Reference(UC1-GestationalAgeInWeeks-20250205)
-* section[pregnancyProgress].entry[bodyWeight][0] = Reference(UC1-BodyWeight-20250205)
-* section[pregnancyProgress].entry[bloodPressure][0] = Reference(UC1-BloodPressure-20250205)
-// Visit 18.02.2025
-* section[pregnancyProgress].entry[visit][+] = Reference(UC1-EncounterPregVisit20250218)
-* section[pregnancyProgress].entry[gestationalAge][+] = Reference(UC1-GestationalAgeInWeeks-20250218)
-* section[pregnancyProgress].entry[bodyWeight][+] = Reference(UC1-BodyWeight-20250218)
-* section[pregnancyProgress].entry[bloodPressure][+] = Reference(UC1-BloodPressure-20250218)
+* section[pregnancyProgress].entry[visit][0] = Reference(UC1-EncounterPregVisit20250218)
+* section[pregnancyProgress].entry[visit][+] = Reference(UC1-EncounterPregVisit20250205)
+* section[pregnancyProgress].entry[gestationalAge][0] = Reference(UC1-GestationalAgeInWeeks-20250218)
+* section[pregnancyProgress].entry[gestationalAge][+] = Reference(UC1-GestationalAgeInWeeks-20250205)
+* section[pregnancyProgress].entry[bodyWeight][0] = Reference(UC1-BodyWeight-20250218)
+* section[pregnancyProgress].entry[bodyWeight][+] = Reference(UC1-BodyWeight-20250205)
+* section[pregnancyProgress].entry[bloodPressure][0] = Reference(UC1-BloodPressure-20250218)
+* section[pregnancyProgress].entry[bloodPressure][+] = Reference(UC1-BloodPressure-20250205)
+* section[pregnancyProgress].entry[fetalPosition][0] = Reference(UC1-FetalPosition-20250218)

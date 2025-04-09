@@ -96,7 +96,8 @@ Description: "This profile constrains the Composition resource to represent the 
     visit 0..* and 
     gestationalAge 0..* and 
     bodyWeight 0..* and 
-    bloodPressure 0..* 
+    bloodPressure 0..* and 
+    fetalPosition 0..*    
 * section[pregnancyProgress].entry[visit] only Reference(ChEpregEncounterPregVisit)
 * section[pregnancyProgress].entry[visit].reference 1..
 * section[pregnancyProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInWeeks)
@@ -105,6 +106,8 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregnancyProgress].entry[bodyWeight].reference 1..
 * section[pregnancyProgress].entry[bloodPressure] only Reference(ChEpregObservationBloodPressure)
 * section[pregnancyProgress].entry[bloodPressure].reference 1..
+* section[pregnancyProgress].entry[fetalPosition] only Reference(ChEpregObservationFetalPosition)
+* section[pregnancyProgress].entry[fetalPosition].reference 1..
 * section[pregnancyProgress].section 0..0
 
 
@@ -130,3 +133,4 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[pregnancyProgress].entry[gestationalAge]      -> "Schwangerschaftswochen | Semaines de grossesse"
 * section[pregnancyProgress].entry[bodyWeight]          -> "Aktuelles Gewicht | Poids actuel"
 * section[pregnancyProgress].entry[bloodPressure]       -> "Blutdruck | Pression artérielle"
+* section[pregnancyProgress].entry[fetalPosition]       -> "Kindslage | Position fœtale"

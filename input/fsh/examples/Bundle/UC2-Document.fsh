@@ -28,26 +28,28 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[+].fullUrl = "urn:uuid:b9145a94-ea12-479b-a031-b07d4ac9f297" // Obs: "Glucose 3.9 mmol/l"
 * entry[=].resource = b9145a94-ea12-479b-a031-b07d4ac9f297
 
-// 26.03.2025
-* entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung, 26.03.2025"
-* entry[=].resource = 8e89c502-964f-4234-9728-540d881b0380
-* entry[+].fullUrl = "urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3" // Obs: "SSW 32"
-* entry[=].resource = 2f167f2f-44f7-49e3-a970-d7f7a6573cd3
-* entry[+].fullUrl = "urn:uuid:f339e056-53d6-4247-9226-5339123fbd14" // Obs: "Gewicht 65.1 kg"
-* entry[=].resource = f339e056-53d6-4247-9226-5339123fbd14
-* entry[+].fullUrl = "urn:uuid:e949f912-fc27-4849-8632-09caad9fe897" // Obs: "Blutdruck 122/83 mmHg"
-* entry[=].resource = e949f912-fc27-4849-8632-09caad9fe897
-* entry[+].fullUrl = "urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb" // Obs: "Glucose 4.7 mmol/l"
-* entry[=].resource = bbd6f1bc-1d87-4c90-a313-98bea06c3dfb
-
-// 27.03.2025
+// Pregnancy Visit
 * entry[+].fullUrl = "urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f" // Enc: "Untersuchung, 27.03.2025"
 * entry[=].resource = 1ba6df42-ae1a-4b4a-886f-33d6b2223b1f
+* entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung, 26.03.2025"
+* entry[=].resource = 8e89c502-964f-4234-9728-540d881b0380
 * entry[+].fullUrl = "urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba" // Obs: "SSW 32"
 * entry[=].resource = 84869994-4348-4ad3-95ee-d9b0faf75dba
+* entry[+].fullUrl = "urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3" // Obs: "SSW 32"
+* entry[=].resource = 2f167f2f-44f7-49e3-a970-d7f7a6573cd3
 * entry[+].fullUrl = "urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7" // Obs: "Gewicht 65 kg"
 * entry[=].resource = e1c73669-f935-47d1-9dcd-fab76a38bdb7
+* entry[+].fullUrl = "urn:uuid:f339e056-53d6-4247-9226-5339123fbd14" // Obs: "Gewicht 65.1 kg"
+* entry[=].resource = f339e056-53d6-4247-9226-5339123fbd14
 * entry[+].fullUrl = "urn:uuid:4268bd90-eff8-41f4-a7b4-2178dac0e470" // Obs: "Blutdruck 160/60 mmHg"
 * entry[=].resource = 4268bd90-eff8-41f4-a7b4-2178dac0e470
+* entry[+].fullUrl = "urn:uuid:e949f912-fc27-4849-8632-09caad9fe897" // Obs: "Blutdruck 122/83 mmHg"
+* entry[=].resource = e949f912-fc27-4849-8632-09caad9fe897
+* entry[+].fullUrl = "urn:uuid:a5c14df0-3dca-4530-a22a-072af14178b1" // Obs: "Kindslage Steisslage"
+* entry[=].resource = a5c14df0-3dca-4530-a22a-072af14178b1
+* entry[+].fullUrl = "urn:uuid:4a907770-6665-4fb4-b186-afd0ddf48742" // Obs: "Kindslage Steisslage"
+* entry[=].resource = 4a907770-6665-4fb4-b186-afd0ddf48742
 * entry[+].fullUrl = "urn:uuid:4b9ca365-383e-41c8-9bac-b3c79aea1c7e" // Obs: "Glucose 3.9 mmol/l"
 * entry[=].resource = 4b9ca365-383e-41c8-9bac-b3c79aea1c7e
+* entry[+].fullUrl = "urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb" // Obs: "Glucose 4.7 mmol/l"
+* entry[=].resource = bbd6f1bc-1d87-4c90-a313-98bea06c3dfb
