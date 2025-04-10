@@ -59,6 +59,7 @@ menu:
     German: usecase-german.html
     French: usecase-french.html
   Guidance: 
+    Mother and Fetus Relationship: guidance.html#mother-and-fetus-relationship
     Mapping Value Sets Concept: guidance.html#mapping-value-sets-concept
   Profiles: profiles.html
   Extensions: extensions.html

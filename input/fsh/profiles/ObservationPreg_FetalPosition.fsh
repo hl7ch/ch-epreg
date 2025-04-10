@@ -8,6 +8,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * effective[x] only dateTime
 * value[x] 1..
 * value[x] only CodeableConcept
+* subject only Reference(ChEpregPatientFetus)
        
 
 Mapping: ChEpregObservationFetalPositionToConceptPregnancyPassport
@@ -17,7 +18,7 @@ Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 * code                                      -> "Kindslage | Position fœtale"
-* subject                                   -> "Schwangere Person | Personne enceinte"
+* subject                                   -> "Fötus | Fœtus"
 * effective[x]                              -> "Zeitpunkt der Untersuchung | Date de l’examen"
 * performer                                 -> "Kontrolle durchgeführt durch | Contrôle effectué par"
 * value[x]                                  -> "Kindslage | Position fœtale"

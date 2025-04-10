@@ -13,6 +13,12 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = 7c4e431a-6222-475f-9593-764b79316afa
 * entry[+].fullUrl = "urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd" // Pat: "Fabienne Babyglück"
 * entry[=].resource = 76c2c5aa-3d7f-438d-b23d-56ce827695fd
+* entry[+].fullUrl = "urn:uuid:67d0e290-21b9-4255-9182-5fe9f21cdbb4" // RP: "Fabienne Babyglück"
+* entry[=].resource = 67d0e290-21b9-4255-9182-5fe9f21cdbb4
+* entry[+].fullUrl = "urn:uuid:111d5e66-f17e-4369-90c6-9382e566040e" // Pat: "Fötus"
+* entry[=].resource = 111d5e66-f17e-4369-90c6-9382e566040e
+
+
 * entry[+].fullUrl = "urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527" // PR: "Tanja Allesgut @ Geburtsklinik"
 * entry[=].resource = 89029102-999c-4b69-a836-e4dbfbd55527
 * entry[+].fullUrl = "urn:uuid:a61d6a0b-ee42-443e-92e5-167d2e42f137" // Pract: "Tanja Allesgut"

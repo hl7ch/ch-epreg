@@ -20,7 +20,16 @@ Description: "This profile constrains the Patient resource to represent the preg
 * address.line MS                                       
 * address.postalCode MS                      
 * address.city MS                           
-* address.country MS                          
+* address.country MS         
+* link ^slicing.discriminator.type = #value
+* link ^slicing.discriminator.path = "type"
+* link ^slicing.rules = #open   
+* link contains fetus 0..*     
+* link[fetus] ^short = "Link to the mother's RelatedPerson resource pointing to the fetal Patient resource"
+* link[fetus].other ^short = "The mother's RelatedPerson resource"
+* link[fetus].other only Reference(ChEpregRelatedPersonMother)
+* link[fetus].other.reference 1..
+* link[fetus].type = #seealso
 
 
 Mapping: ChEpregPatientMotherToConceptPregnancyPassport

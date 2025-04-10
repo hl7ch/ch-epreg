@@ -31,3 +31,5 @@ Description: "Example for CH EPREG Patient: Mother"
 * address.city = "Zürich" 
 * address.country = "Schweiz"
 * communication[languageOfCorrespondence].language = urn:ietf:bcp:47#de-CH "German (Switzerland)"
+* link[fetus].other = Reference(urn:uuid:67d0e290-21b9-4255-9182-5fe9f21cdbb4) "RelatedPerson Fabienne Babyglück"
+* link[fetus].type = #seealso

@@ -6,7 +6,7 @@ Description: "Example for CH EPREG Observation: Fetal Position"
 * language = #de-CH
 * status = #final
 * code = $sct#364607000 "Position of fetus (observable entity)"
-* subject = Reference(UC1-KatrinKinderlieb)
+* subject = Reference(UC1-Fetus)
 * effectiveDateTime = "2025-02-18"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * encounter = Reference(UC1-EncounterPregVisit20250218)
