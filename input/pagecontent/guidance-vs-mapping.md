@@ -2,11 +2,6 @@ The concept for the exchange format of the electronic pregnancy passport ([de](h
 
 When representing this data in an FHIR document, the goal is to maintain compatibility with (Swiss) base concepts, such as those defined in CH Core or CH Term, whenever possible. To achieve this, the following mappings describe how the defined values from the concept paper are represented as coded values in FHIR resources (see also [FHIR Terminology](https://hl7.org/fhir/R4/terminology-module.html)), making use of existing value sets/terminologies where available.
 
-* [HealthcareProvider](#healthcare-provider)
-* [Blood Group & Rhesus](#blood-group--rhesus)
-* [Further Examinations](#further-examinations)
-
-
 ### Healthcare Provider 
 
 **Profile:** [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)         
@@ -117,28 +112,28 @@ When representing this data in an FHIR document, the goal is to maintain compati
         <tr>
             <td>A</td>
             <td>A</td>
-            <td><code>Observation.code</code></td>
+            <td><code>Observation.valueCodeableConcept</code></td>
             <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
             <td>SNOMED CT: 112144000 'Blood group A'<br>SNOMED CT: 278149003 'Blood group A Rh(D) positive'<br>SNOMED CT: 278152006 'Blood group A Rh(D) negative'</td>
         </tr>
         <tr>
             <td>B</td>
             <td>B</td>
-            <td><code>Observation.code</code></td>
+            <td><code>Observation.valueCodeableConcept</code></td>
             <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
             <td>SNOMED CT: 112149005 'Blood group B'<br>SNOMED CT: 278150003 'Blood group B Rh(D) positive'<br>SNOMED CT: 278153001 'Blood group B Rh(D) negative'</td>
         </tr>
         <tr>
             <td>AB</td>
             <td>AB</td>
-            <td><code>Observation.code</code></td>
+            <td><code>Observation.valueCodeableConcept</code></td>
             <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
             <td>SNOMED CT: 165743006 'Blood group AB'<br>SNOMED CT: 278151004 'Blood group AB Rh(D) positive'<br>SNOMED CT: 278154007 'Blood group AB Rh(D) negative'</td>
         </tr>
         <tr>
             <td>O</td>
             <td>O</td>
-            <td><code>Observation.code</code></td>
+            <td><code>Observation.valueCodeableConcept</code></td>
             <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
             <td>SNOMED CT: 58460004 'Blood group O'<br>SNOMED CT: 278147001 'Blood group O Rh(D) positive'<br>SNOMED CT: 278148006 'Blood group O Rh(D) negative'</td>
         </tr>
@@ -160,14 +155,14 @@ When representing this data in an FHIR document, the goal is to maintain compati
         <tr>
             <td>RhD positiv</td>
             <td>RhD positif</td>
-            <td><code>Observation.code</code></td>
+            <td><code>Observation.valueCodeableConcept</code></td>
             <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
             <td>SNOMED CT: 165747007 'RhD positive'<br>SNOMED CT: 278149003 'Blood group A Rh(D) positive'<br>SNOMED CT: 278150003 'Blood group B Rh(D) positive'<br>SNOMED CT: 278151004 'Blood group AB Rh(D) positive'<br>SNOMED CT: 278147001 'Blood group O Rh(D) positive'</td>
         </tr>
         <tr>
             <td>RhD negativ</td>
             <td>RhD négatif</td>
-            <td><code>Observation.code</code></td>
+            <td><code>Observation.valueCodeableConcept</code></td>
             <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
             <td>SNOMED CT: 165746003 'RhD negative'<br>SNOMED CT: 278152006 'Blood group A Rh(D) negative'<br>SNOMED CT: 278153001 'Blood group B Rh(D) negative'<br>SNOMED CT: 278154007 'Blood group AB Rh(D) negative'<br>SNOMED CT: 278148006 'Blood group O Rh(D) negative'</td>
         </tr>
@@ -290,3 +285,42 @@ For example, in the case of amniotic fluid (Fruchtwasser / Liquide amniotique), 
     </tbody>
 </table>
 
+
+### Fetal Position
+**Profile:** [CH EPREG Observation: Fetal Position](StructureDefinition-ch-epreg-observation-fetal-position.html)        
+**Example:** [Vertex Presentation](Observation-UC1-FetalPosition-20250205.html), [Breech Presentation](Observation-4a907770-6665-4fb4-b186-afd0ddf48742.html)
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Concept German:<br>Kindslage</th>
+            <th>Concept French:<br>Position de l’enfant</th>
+            <th>Resource element</th>
+            <th>ValueSet</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Schädellage</td>
+            <td>Présentation céphalique</td>
+            <td><code>Observation.valueCodeableConcept</code></td>
+            <td><a href="ValueSet-fetal-position.html">Fetal Position</a></td>
+            <td>SNOMED CT: 70028003 'Vertex presentation'</td>
+        </tr>
+        <tr>
+            <td>Beckenendlage</td>
+            <td>Présentation par le siège</td>
+            <td><code>Observation.valueCodeableConcept</code></td>
+            <td><a href="ValueSet-fetal-position.html">Fetal Position</a></td>
+            <td>SNOMED CT: 6096002 'Breech presentation'</td>
+        </tr>
+        <tr>
+            <td>Querlage</td>
+            <td>Présentation transversale</td>
+            <td><code>Observation.valueCodeableConcept</code></td>
+            <td><a href="ValueSet-fetal-position.html">Fetal Position</a></td>
+            <td>SNOMED CT: 73161006 'Transverse lie'</td>
+        </tr>
+    </tbody>
+</table>

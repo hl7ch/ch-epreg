@@ -8,6 +8,8 @@ Description: "This profile constrains the Observation resource to represent the 
 * effective[x] only dateTime
 * value[x] 1..
 * value[x] only CodeableConcept
+* value[x] from FetalPosition (extensible)
+* value[x] ^binding.description = "See also [Guidance Mapping Fetal Position](guidance-vs-mapping.html#fetal-position)."
 * subject only Reference(ChEpregPatientFetus)
        
 
