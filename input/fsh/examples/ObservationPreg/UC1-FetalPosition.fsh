@@ -1,14 +1,14 @@
-Instance: UC1-FetalPosition-20250218
+Instance: UC1-FetalPosition-20250205
 InstanceOf: ChEpregObservationFetalPosition
 Usage: #example
-Title: "UC 1: Vertex Presentation (18.02.2025)"
+Title: "UC 1: Vertex Presentation (05.02.2025)"
 Description: "Example for CH EPREG Observation: Fetal Position"
 * language = #de-CH
 * status = #final
 * code = $sct#364607000 "Position of fetus (observable entity)"
 * subject = Reference(UC1-Fetus)
-* effectiveDateTime = "2025-02-18"
+* effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
-* encounter = Reference(UC1-EncounterPregVisit20250218)
+* encounter = Reference(UC1-EncounterPregVisit20250205)
 * valueCodeableConcept.coding = $sct#70028003 "Vertex presentation (finding)"
 * valueCodeableConcept.text = "Schädellage"
