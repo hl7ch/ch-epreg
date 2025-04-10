@@ -6,6 +6,8 @@ This implementation guide is based on the concept for the exchange format of the
 
 <div markdown="1" class="stu-note">
 
+Please note that not all data elements from the concept have been mapped in this first version of the implementation guide. However, all elements and sections described in the guide (document structure / use cases etc.) have already been mapped, enabling an initial use of the pregnancy passport. For the current status, please refer to this [link](https://github.com/hl7ch/ch-epreg?tab=readme-ov-file#current-status).
+
 [Changelog](changelog.html) with significant changes, open and closed issues.
 
 </div>
