@@ -2,7 +2,7 @@ Profile: ChEpregPractitionerTHCP
 Parent: CHCorePractitioner
 Id: ch-epreg-practitioner-thcp
 Title: "CH EPREG Practitioner: Treating Healthcare Provider"
-Description: "This profile constrains the PractitionerRole resource to represent the treating healthcare provider within the context of the pregnancy passport."
+Description: "This profile constrains the PractitionerRole resource to represent the treating healthcare provider."
 * . ^short = "CH EPREG Practitioner: Treating Healthcare Provider"
 * identifier[GLN] MS
 * name MS

@@ -2,7 +2,7 @@ Profile: ChEpregPatientMother
 Parent: CHCorePatientEPR
 Id: ch-epreg-patient-mother
 Title: "CH EPREG Patient: Mother"
-Description: "This profile constrains the Patient resource to represent the pregnant individual within the context of the pregnancy passport."
+Description: "This profile constrains the Patient resource to represent the pregnant individual."
 * . ^short = "CH EPREG Patient: Mother"
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/individual-pronouns named pronoun 0..1

@@ -2,7 +2,7 @@ Profile: ChEpregObservationGestationalAgeInWeeks
 Parent: ChEpregObservationPregProgress
 Id: ch-epreg-observation-gestational-age-in-weeks
 Title: "CH EPREG Observation: Gestational Age in Weeks"
-Description: "This profile constrains the Observation resource to represent the gestational age in weeks within the context of the pregnancy passport."
+Description: "This profile constrains the Observation resource to represent the gestational age in weeks."
 * . ^short = "CH EPREG Observation: Gestational Age in Weeks"
 * code = $loinc#49051-6 // "Gestational age in weeks"
 * effective[x] only dateTime

@@ -2,7 +2,7 @@ Profile: ChEpregEncounterPregVisit
 Parent: CHCoreEncounter
 Id: ch-epreg-encounter-preg-visit
 Title: "CH EPREG Encounter: Pregnancy Visit"
-Description: "This profile constrains the Encounter resource to represent a pregnancy visit within the context of the pregnancy passport."
+Description: "This profile constrains the Encounter resource to represent a pregnancy visit."
 * . ^short = "CH EPREG Encounter: Pregnancy Visit"
 * extension contains 
     ChEpregExtPlannedNextPregVisit named nextVisit 0..1 

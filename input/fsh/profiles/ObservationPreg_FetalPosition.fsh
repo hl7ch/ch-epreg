@@ -2,7 +2,7 @@ Profile: ChEpregObservationFetalPosition
 Parent: ChEpregObservationPregProgress
 Id: ch-epreg-observation-fetal-position
 Title: "CH EPREG Observation: Fetal Position"
-Description: "This profile constrains the Observation resource to represent the position of the fetus within the context of the pregnancy passport."
+Description: "This profile constrains the Observation resource to represent the position of the fetus."
 * . ^short = "CH EPREG Observation: Fetal Position"
 * code = $sct#364607000 // "Position of fetus (observable entity)"
 * effective[x] only dateTime

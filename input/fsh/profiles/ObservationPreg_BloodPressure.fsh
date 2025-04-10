@@ -2,7 +2,7 @@ Profile: ChEpregObservationBloodPressure
 Parent: ChEpregObservationPregProgress
 Id: ch-epreg-observation-blood-pressure
 Title: "CH EPREG Observation: Blood Pressure"
-Description: "This profile constrains the Observation resource to represent the blood pressure within the context of the pregnancy passport."
+Description: "This profile constrains the Observation resource to represent the blood pressure."
 * . ^short = "CH EPREG Observation: Blood Pressure"
 * ^extension[$imposeProfile].valueCanonical = Canonical(http://hl7.org/fhir/StructureDefinition/bp)
 * category = $observation-category#vital-signs // "Vital Signs"

@@ -2,7 +2,7 @@ Profile: ChEpregPractitionerRoleTHCP
 Parent: CHCorePractitionerRole
 Id: ch-epreg-practitionerrole-thcp
 Title: "CH EPREG PractitionerRole: Treating Healthcare Provider"
-Description: "This profile constrains the PractitionerRole resource to represent the treating healthcare provider within the context of the pregnancy passport."
+Description: "This profile constrains the PractitionerRole resource to represent the treating healthcare provider."
 * . ^short = "CH EPREG PractitionerRole: Treating Healthcare Provider"
 * obeys epreg-pract-org and epreg-code-specialty
 * practitioner only Reference(ChEpregPractitionerTHCP)
