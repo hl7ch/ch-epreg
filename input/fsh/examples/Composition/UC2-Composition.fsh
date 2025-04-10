@@ -51,7 +51,7 @@ Usage: #inline
         <li>Gewicht: 65 kg</li>
         <li>Blutdruck: 160/60 mmHg</li>
         <li>Kindslage: Steisslage</li>
-        <li>Weitere Untersuchungen: BZ: 3.9 mmol/l</li>
+        <li>Weitere Untersuchungen: BZ (Teststreifen Finger): 3.9 mmol/l</li>
     </ul>
     <b>Untersuchung vom 26.03.2025</b>
     <ul>
@@ -59,7 +59,7 @@ Usage: #inline
         <li>Gewicht: 65.1 kg</li>
         <li>Blutdruck: 122/83 mmHg</li>
         <li>Kindslage: Steisslage</li>
-        <li>Weitere Untersuchungen: BZ: 4.7 mmol/l</li>
+        <li>Weitere Untersuchungen: BZ (Teststreifen Finger): 4.7 mmol/l, Verdauung: Sodbrennen</li>
         <li>Nächste Kontrolle am: 02.04.2025</li>
     </ul>
   </div>"
@@ -75,5 +75,7 @@ Usage: #inline
 * section[pregnancyProgress].entry[+] = Reference(urn:uuid:a5c14df0-3dca-4530-a22a-072af14178b1) "Kindslage Steisslage, 27.03.2025"
 * section[pregnancyProgress].entry[+] = Reference(urn:uuid:4a907770-6665-4fb4-b186-afd0ddf48742) "Kindslage Steisslage, 26.03.2025"
 * section[pregnancyProgress].entry[+] = Reference(urn:uuid:4b9ca365-383e-41c8-9bac-b3c79aea1c7e) "Weitere Untersuchungen: BZ 3.9 mmol/l, 27.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb) "Weitere Untersuchungen: BZ 4.7 mmol/l, 26.03.2025"  
+* section[pregnancyProgress].entry[+] = Reference(urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb) "Weitere Untersuchungen: BZ 4.7 mmol/l, 26.03.2025"
+* section[pregnancyProgress].entry[+] = Reference(urn:uuid:1ce882f2-953f-428e-a90b-a55271020fca) "Weitere Untersuchungen: Sodbrennen, 26.03.2025"    
+
  

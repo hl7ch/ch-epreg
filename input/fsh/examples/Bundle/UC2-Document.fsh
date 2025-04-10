@@ -59,3 +59,5 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = 4b9ca365-383e-41c8-9bac-b3c79aea1c7e
 * entry[+].fullUrl = "urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb" // Obs: "Glucose 4.7 mmol/l"
 * entry[=].resource = bbd6f1bc-1d87-4c90-a313-98bea06c3dfb
+* entry[+].fullUrl = "urn:uuid:1ce882f2-953f-428e-a90b-a55271020fca" // Obs: "Sodbrennen"
+* entry[=].resource = 1ce882f2-953f-428e-a90b-a55271020fca

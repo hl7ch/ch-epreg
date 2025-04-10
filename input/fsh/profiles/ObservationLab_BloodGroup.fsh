@@ -9,7 +9,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from ResultsBloodGroup (extensible)     
-* value[x] ^binding.description = "See also [Guidance Mapping Blood Group & Rhesus](guidance.html#blood-group--rhesus)."     
+* value[x] ^binding.description = "See also [Guidance Mapping Blood Group & Rhesus](guidance-vs-mapping.html#blood-group--rhesus)."     
 
 
 Mapping: ChEpregObservationBloodGroupToConceptPregnancyPassport

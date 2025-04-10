@@ -1,21 +1,13 @@
-### Mother and Fetus Relationship
-The relationship between mother and fetus/fetuses is modeled using the `Patient` and `RelatedPerson` resources, as depicted in the figures below. This approach follows the guidelines outlined in the [Mother and newborn relationships](https://hl7.org/fhir/R4/patient.html#maternity) section of the FHIR specification and the [International Birth And Child Model Implementation Guide](https://hl7.org/fhir/uv/ibcm/2024Sep/index.html).
-
-**Example 1:**    
-{% include img.html img="mother-fetus.png" caption="Fig.: A relationship between a mother and a single fetus, where both have their own associated observations" width="65%" %}
-
-Example instances: [Patient: Mother](Patient-UC1-KatrinKinderlieb.html) --> [RelatedPerson: Mother](RelatedPerson-UC1-RelatedPerson-Mother.html) --> [Patient: Fetus](Patient-UC1-Fetus.html)
-
-**Example 2:**    
-{% include img.html img="mother-fetuses.png" caption="Fig.: Relationship between a mother and multiple fetuses (e.g., twins)" width="65%" %}
-
-
-### Mapping Value Sets Concept
 The concept for the exchange format of the electronic pregnancy passport ([de](https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf), [fr](https://www.e-health-suisse.ch/upload/documents/eDossiergrossesse_Concept_fr.pdf)) defines specific value sets for various fields. These value sets, which contain the values in both German and French, are included in the concept document.
 
-When representing this data in an FHIR document, the goal is to maintain compatibility with (Swiss) base concepts, such as those defined in CH Core or CH Term, whenever possible. To achieve this, the following mappings describe how the defined values from the concept paper are represented as coded values in FHIR resources (see also [FHIR Terminology](https://hl7.org/fhir/R4/terminology-module.html)), making use of existing value sets where available.
+When representing this data in an FHIR document, the goal is to maintain compatibility with (Swiss) base concepts, such as those defined in CH Core or CH Term, whenever possible. To achieve this, the following mappings describe how the defined values from the concept paper are represented as coded values in FHIR resources (see also [FHIR Terminology](https://hl7.org/fhir/R4/terminology-module.html)), making use of existing value sets/terminologies where available.
 
-#### Healthcare Provider 
+* [HealthcareProvider](#healthcare-provider)
+* [Blood Group & Rhesus](#blood-group--rhesus)
+* [Further Examinations](#further-examinations)
+
+
+### Healthcare Provider 
 
 **Profile:** [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)         
 **Examples:** [Petra Sectionata @ Frauenzimmer](PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.json.html) (gynecologist), [Ruth Ohazwei @ Geburtsklinik](PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.json.html) (midwife)
@@ -107,7 +99,7 @@ When representing this data in an FHIR document, the goal is to maintain compati
 </table>
 
 
-#### Blood Group & Rhesus
+### Blood Group & Rhesus
 **Profile:** [CH EPREG Observation: Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html)        
 **Example:** [Blood Group AB Rh(D) positive](Observation-UC1-BloodGroup-20250205.html)
 
@@ -181,3 +173,120 @@ When representing this data in an FHIR document, the goal is to maintain compati
         </tr>
     </tbody>
 </table>
+
+
+### Further Examinations
+There is no ValueSet mapping for further examinations, as the Observation resource representing the result of the examination requires a code that explicitly reflects the specific examination performed.
+
+For example, in the case of amniotic fluid (Fruchtwasser / Liquide amniotique), relevant use cases for a maternity record might include:
+* LOINC: 38386-9 'Color of Amniotic fluid': This Observation represents the color of the amniotic fluid, which can provide important clinical insights during pregnancy monitoring.
+* LOINC: 1887-9 'Appearance of Amniotic fluid': This Observation covers the general visual appearance, such as clarity or turbidity, which is also significant in obstetric assessments.
+
+**Profile:** [CH EPREG Observation: Pregnancy Progress](StructureDefinition-ch-epreg-observation-preg-progress.html)         
+**Examples:** [Digestion: Heartburn](Observation-1ce882f2-953f-428e-a90b-a55271020fca.html)
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Concept German:<br>Weitere Untersuchungen<br>und Fragen</th>
+            <th>Concept French:<br>Autres examens<br>et questions</th>
+            <th>Resource element</th>
+            <th>ValueSet</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Beckenbodenprobleme / Inkontinenz</td>
+            <td>Dysfonctionnement du plancher pelvien / incontinence</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Belastungsbalance</td>
+            <td>Gestion du stress</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Besondere Beschwerden</td>
+            <td>Plaintes particulières</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Energie / Wohlbefinden / Schlaf</td>
+            <td>Énergie / bien-être / sommeil</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Fragen / Anliegen</td>
+            <td>Questions / demandes</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Fruchtwasser</td>
+            <td>Liquide amniotique</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Hämorrhoiden</td>
+            <td>Hémorroïdes</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Ödeme</td>
+            <td>Œdème</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Vaginale Abgänge</td>
+            <td>Écoulement vaginal</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Übelkeit</td>
+            <td>Nausées</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Varizen</td>
+            <td>Varices</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Verdauung</td>
+            <td>Digestion</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+        <tr>
+            <td>Weitere Befunde</td>
+            <td>Autres constatations</td>
+            <td><code>Observation.code</code></td>
+            <td>-</td>
+            <td>Provide the explicit code (e.g., LOINC)</td>
+        </tr>
+    </tbody>
+</table>
+

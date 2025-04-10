@@ -41,8 +41,10 @@ pages:
     title: Anwendungsfälle
   usecase-french.md:
     title: Cas d'application
-  guidance.md:
-    title: Guidance  
+  guidance-mother-relationship.md:
+    title: Mother and Fetus Relationship
+  guidance-vs-mapping.md:
+    title: Mapping Value Sets Concept
   profiles.md:
     title: Profiles
   extensions.md:
@@ -59,8 +61,8 @@ menu:
     German: usecase-german.html
     French: usecase-french.html
   Guidance: 
-    Mother and Fetus Relationship: guidance.html#mother-and-fetus-relationship
-    Mapping Value Sets Concept: guidance.html#mapping-value-sets-concept
+    Mother and Fetus Relationship: guidance-mother-relationship.html
+    Mapping Value Sets Concept: guidance-vs-mapping.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html

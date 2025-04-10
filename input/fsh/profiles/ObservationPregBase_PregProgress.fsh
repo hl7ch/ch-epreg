@@ -16,3 +16,4 @@ Description: "This base profile constrains the Observation resource to represent
 * encounter 1.. 
 * encounter.reference 1..
 * encounter only Reference(ChEpregEncounterPregVisit)
+* code ^binding.description = "See also [Guidance Mapping Further Examinations](guidance-vs-mapping.html#further-examinations)." 

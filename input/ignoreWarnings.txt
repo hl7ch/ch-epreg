@@ -19,6 +19,9 @@ There are no valid display names found for the code%
 'Vertex presentation (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
 'Breech presentation (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH 
 'Mother' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-RoleCode has no Display Names for the language de-CH
+'Maternity care plan (record artifact)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
+'Normal (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
+'Finding of blood group (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
 
 # Base profile, examples for the more specific ones are included 
 The Implementation Guide contains no explicitly linked examples for this profile
@@ -37,6 +40,17 @@ URL value 'http://example.com/identifiers/fetus' does not resolve
 URL value 'https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf' does not resolve
 URL value 'http://www.ech.ch/' does not resolve
 URL value 'https://www.ech.ch/' does not resolve
+
+# Slicing information: Bundle has not the specific Patient profiles (mother/fetus)
+INFORMATION: Bundle/UC1-Document: Bundle.entry[1].resource.extension[1]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient|%
+INFORMATION: Bundle/UC1-Document: Bundle.entry[3].resource.identifier[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient|%
+INFORMATION: Bundle/UC2-Document: Bundle.entry[1].resource.extension[1]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient|%
+INFORMATION: Bundle/UC2-Document: Bundle.entry[3].resource.identifier[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient|%
+
+# Slicing information: Composition.section:pregnancyProgress -> entries for 'further examinations' have no specific slice
+INFORMATION: Bundle/UC2-Document: Bundle.entry[0].resource.section[2].entry[10]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-epreg/StructureDefinition/ch-epreg-composition|%
+INFORMATION: Bundle/UC2-Document: Bundle.entry[0].resource.section[2].entry[11]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-epreg/StructureDefinition/ch-epreg-composition|%
+INFORMATION: Bundle/UC2-Document: Bundle.entry[0].resource.section[2].entry[12]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-epreg/StructureDefinition/ch-epreg-composition|%
 
 # TODO before publication!
 There are multiple different potential matches for the url%

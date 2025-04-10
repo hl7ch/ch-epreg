@@ -87,7 +87,8 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregnancyProgress].code 1..
 * section[pregnancyProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
 * section[pregnancyProgress].text 1..
-* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit or ChEpregObservationPregProgress or ChEpregObservationResultsLab)
+* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit or ChEpregObservationPregProgress)
+* section[pregnancyProgress].entry ^short = "Observations representing further examinations and questions can be added as additional entries." 
 * section[pregnancyProgress].entry ^slicing.discriminator.type = #profile
 * section[pregnancyProgress].entry ^slicing.discriminator.path = "resolve()"
 * section[pregnancyProgress].entry ^slicing.ordered = false
