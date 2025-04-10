@@ -12,7 +12,6 @@ Alias: $patient-contactrelationship     = http://hl7.org/fhir/CodeSystem/patient
 Alias: $v2-0203                         = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // External Value Sets
-Alias: $results-blood-group-uv-ips      = http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-uv-ips
 Alias: $lab-studyType-eu-lab            = http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab
 
 // Extensions
