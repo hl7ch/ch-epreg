@@ -5,6 +5,7 @@ Title: "UC 1: Encounter 23.01.2025"
 Description: "Example for CH EPREG Encounter: Pregnancy Visit"
 * language = #de-CH
 * extension[nextVisit].valueDateTime = "2025-02-05"
+* extension[examinationNumber].valuePositiveInt = 7
 * extension[note].valueString = "'Bemerkung zur Untersuchung'"
 * status = #finished 
 * class = $v3-ActCode#AMB "ambulatory"
