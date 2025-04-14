@@ -10,7 +10,7 @@ Description: "Example for CH EPREG Observation: Gestational Age in Weeks"
 * effectiveDateTime = "2025-01-23"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * valueQuantity = 35 $ucum#wk "week"
-* encounter = Reference(UC1-EncounterPregVisit20250123)
+* encounter = Reference(UC1-EncounterMother20250123)
 
 
 Instance: UC1-GestationalAgeInWeeks-20250205
@@ -25,4 +25,4 @@ Description: "Example for CH EPREG Observation: Gestational Age in Weeks"
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
 * valueQuantity = 37 $ucum#wk "week"
-* encounter = Reference(UC1-EncounterPregVisit20250205)
+* encounter = Reference(UC1-EncounterMother20250205)

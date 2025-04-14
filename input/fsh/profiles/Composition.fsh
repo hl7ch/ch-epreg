@@ -10,7 +10,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section contains 
     careTeam 0..1 MS and 
     lab-subsections 0..1 and
-    pregnancyProgress 0..1 
+    pregProgress 0..1 
 
 //-------------------------------------- Behandelnde Leistungserbringende --------------------------------------//
 * section[careTeam].title 1..
@@ -83,33 +83,33 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[microbiologyStudies].section 0..0
 
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
-* section[pregnancyProgress].title 1..
-* section[pregnancyProgress].code 1..
-* section[pregnancyProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
-* section[pregnancyProgress].text 1..
-* section[pregnancyProgress].entry only Reference(ChEpregEncounterPregVisit or ChEpregObservationPregProgress)
-* section[pregnancyProgress].entry ^short = "Observations representing further examinations and questions can be added as additional entries." 
-* section[pregnancyProgress].entry ^slicing.discriminator.type = #profile
-* section[pregnancyProgress].entry ^slicing.discriminator.path = "resolve()"
-* section[pregnancyProgress].entry ^slicing.ordered = false
-* section[pregnancyProgress].entry ^slicing.rules = #open
-* section[pregnancyProgress].entry contains 
-    visit 0..* and 
+* section[pregProgress].title 1..
+* section[pregProgress].code 1..
+* section[pregProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
+* section[pregProgress].text 1..
+* section[pregProgress].entry only Reference(ChEpregEncounterMother or ChEpregEncounterChild or ChEpregObservationPregProgress)
+* section[pregProgress].entry ^short = "Observations representing further examinations and questions can be added as additional entries." 
+* section[pregProgress].entry ^slicing.discriminator.type = #profile
+* section[pregProgress].entry ^slicing.discriminator.path = "resolve()"
+* section[pregProgress].entry ^slicing.ordered = false
+* section[pregProgress].entry ^slicing.rules = #open
+* section[pregProgress].entry contains 
+    pregVisit 0..* and 
     gestationalAge 0..* and 
     bodyWeight 0..* and 
     bloodPressure 0..* and 
     fetalPosition 0..*    
-* section[pregnancyProgress].entry[visit] only Reference(ChEpregEncounterPregVisit)
-* section[pregnancyProgress].entry[visit].reference 1..
-* section[pregnancyProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInWeeks)
-* section[pregnancyProgress].entry[gestationalAge].reference 1..
-* section[pregnancyProgress].entry[bodyWeight] only Reference(ChEpregObservationBodyWeight)
-* section[pregnancyProgress].entry[bodyWeight].reference 1..
-* section[pregnancyProgress].entry[bloodPressure] only Reference(ChEpregObservationBloodPressure)
-* section[pregnancyProgress].entry[bloodPressure].reference 1..
-* section[pregnancyProgress].entry[fetalPosition] only Reference(ChEpregObservationFetalPosition)
-* section[pregnancyProgress].entry[fetalPosition].reference 1..
-* section[pregnancyProgress].section 0..0
+* section[pregProgress].entry[pregVisit] only Reference(ChEpregEncounterMother or ChEpregEncounterChild)
+* section[pregProgress].entry[pregVisit].reference 1..
+* section[pregProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInWeeks)
+* section[pregProgress].entry[gestationalAge].reference 1..
+* section[pregProgress].entry[bodyWeight] only Reference(ChEpregObservationBodyWeight)
+* section[pregProgress].entry[bodyWeight].reference 1..
+* section[pregProgress].entry[bloodPressure] only Reference(ChEpregObservationBloodPressure)
+* section[pregProgress].entry[bloodPressure].reference 1..
+* section[pregProgress].entry[fetalPosition] only Reference(ChEpregObservationFetalPosition)
+* section[pregProgress].entry[fetalPosition].reference 1..
+* section[pregProgress].section 0..0
 
 
 
@@ -129,10 +129,10 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[lab-subsections].section[chemistryStudies]    -> "Laboruntersuchung | Analyse de laboratoire"
 * section[lab-subsections].section[hematologyStudies]   -> "Laboruntersuchung | Analyse de laboratoire"
 * section[lab-subsections].section[microbiologyStudies] -> "Laboruntersuchung | Analyse de laboratoire"
-* section[pregnancyProgress]                            -> "Schwangerschaftsverlauf | Évolution de la grossesse"
-* section[pregnancyProgress].entry                      -> "Weitere Untersuchungen und Fragen | Autres examens et questions"
-* section[pregnancyProgress].entry[visit]               -> "Untersuchung | Examen"
-* section[pregnancyProgress].entry[gestationalAge]      -> "Schwangerschaftswochen | Semaines de grossesse"
-* section[pregnancyProgress].entry[bodyWeight]          -> "Aktuelles Gewicht | Poids actuel"
-* section[pregnancyProgress].entry[bloodPressure]       -> "Blutdruck | Pression artérielle"
-* section[pregnancyProgress].entry[fetalPosition]       -> "Kindslage | Position fœtale"
+* section[pregProgress]                                 -> "Schwangerschaftsverlauf | Évolution de la grossesse"
+* section[pregProgress].entry                           -> "Weitere Untersuchungen und Fragen | Autres examens et questions"
+* section[pregProgress].entry[pregVisit]                -> "Untersuchung | Examen"
+* section[pregProgress].entry[gestationalAge]           -> "Schwangerschaftswochen | Semaines de grossesse"
+* section[pregProgress].entry[bodyWeight]               -> "Aktuelles Gewicht | Poids actuel"
+* section[pregProgress].entry[bloodPressure]            -> "Blutdruck | Pression artérielle"
+* section[pregProgress].entry[fetalPosition]            -> "Kindslage | Position fœtale"

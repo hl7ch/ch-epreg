@@ -15,8 +15,8 @@ Description: "Example for CH EPREG Document - using absolute URLs for fullUrls/r
 * entry[=].resource = UC1-KatrinKinderlieb
 * entry[+].fullUrl = "http://test.fhir.ch/r4/RelatedPerson/UC1-RelatedPerson-Mother"
 * entry[=].resource = UC1-RelatedPerson-Mother
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/UC1-Fetus"
-* entry[=].resource = UC1-Fetus
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/UC1-Child"
+* entry[=].resource = UC1-Child
 
 * entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/UC1-PetraSectionataAtFrauenzimmer"
 * entry[=].resource = UC1-PetraSectionataAtFrauenzimmer
@@ -51,10 +51,14 @@ Description: "Example for CH EPREG Document - using absolute URLs for fullUrls/r
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-Platelets-20250205"
 * entry[=].resource = UC1-Platelets-20250205
 
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterPregVisit20250205"
-* entry[=].resource = UC1-EncounterPregVisit20250205
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterPregVisit20250123"
-* entry[=].resource = UC1-EncounterPregVisit20250123
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterMother20250205"
+* entry[=].resource = UC1-EncounterMother20250205
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterMother20250123"
+* entry[=].resource = UC1-EncounterMother20250123
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterChild20250205"
+* entry[=].resource = UC1-EncounterChild20250205
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterChild20250123"
+* entry[=].resource = UC1-EncounterChild20250123
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-GestationalAgeInWeeks-20250205"
 * entry[=].resource = UC1-GestationalAgeInWeeks-20250205
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-GestationalAgeInWeeks-20250123"

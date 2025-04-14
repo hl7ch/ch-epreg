@@ -1,7 +1,7 @@
 Profile: ChEpregObservationResultsLab
 Parent: Observation
 Id: ch-epreg-observation-results-lab
-Title: "CH EPREG Observation: Results Laboratory"
+Title: "CH EPREG Observation (Base): Results Laboratory"
 Description: "This base profile constrains the Observation resource to represent the laboratory results."
 * . ^short = "CH EPREG Observation: Results Laboratory"
 * ^extension[$imposeProfile].valueCanonical = Canonical(http://fhir.ch/ig/ch-lab-report/StructureDefinition/ch-lab-observation-results-laboratory)

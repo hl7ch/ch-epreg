@@ -39,6 +39,10 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = 1ba6df42-ae1a-4b4a-886f-33d6b2223b1f
 * entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung, 26.03.2025"
 * entry[=].resource = 8e89c502-964f-4234-9728-540d881b0380
+* entry[+].fullUrl = "urn:uuid:833fd8f2-b75f-4dba-990f-6c46aa468d51" // Enc: "Untersuchung, 27.03.2025"
+* entry[=].resource = 833fd8f2-b75f-4dba-990f-6c46aa468d51
+* entry[+].fullUrl = "urn:uuid:22aeb067-85f9-4b3b-9301-161604005206" // Enc: "Untersuchung, 26.03.2025"
+* entry[=].resource = 22aeb067-85f9-4b3b-9301-161604005206
 * entry[+].fullUrl = "urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba" // Obs: "SSW 32"
 * entry[=].resource = 84869994-4348-4ad3-95ee-d9b0faf75dba
 * entry[+].fullUrl = "urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3" // Obs: "SSW 32"

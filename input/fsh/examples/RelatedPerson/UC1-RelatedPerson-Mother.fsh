@@ -4,5 +4,5 @@ Usage: #example
 Title: "UC 1: RelatedPerson Mother"
 Description: "Example for CH EPREG RelatedPerson: Mother"
 * language = #de-CH
-* patient = Reference(UC1-Fetus)
+* patient = Reference(UC1-Child)
 * relationship = $v3-RoleCode#MTH "Mother"

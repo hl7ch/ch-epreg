@@ -1,7 +1,7 @@
 Profile: ChEpregObservationBloodPressure
 Parent: ChEpregObservationPregProgress
 Id: ch-epreg-observation-blood-pressure
-Title: "CH EPREG Observation: Blood Pressure"
+Title: "CH EPREG Observation (Mother): Blood Pressure"
 Description: "This profile constrains the Observation resource to represent the blood pressure."
 * . ^short = "CH EPREG Observation: Blood Pressure"
 * ^extension[$imposeProfile].valueCanonical = Canonical(http://hl7.org/fhir/StructureDefinition/bp)
@@ -33,7 +33,8 @@ Description: "This profile constrains the Observation resource to represent the 
 * component[DiastolicBP].value[x].system = "http://unitsofmeasure.org"
 * component[DiastolicBP].value[x].code 1..
 * component[DiastolicBP].value[x].code = #mm[Hg] 
-
+* subject only Reference(ChEpregPatientMother)
+* encounter only Reference(ChEpregEncounterMother)
        
 
 Mapping: ChEpregObservationBloodPressureToConceptPregnancyPassport
@@ -50,3 +51,4 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * component[SystolicBP].value[x]            -> "Systolischer Blutdruckwert | Valeur de la pression artérielle systolique"
 * component[DiastolicBP].code               -> "Diastolischer Blutdruckwert | Valeur de la pression artérielle diastolique"
 * component[DiastolicBP].value[x]           -> "Diastolischer Blutdruckwert | Valeur de la pression artérielle diastolique"
+* encounter                                 -> "Untersuchung | Examen"

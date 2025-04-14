@@ -1,12 +1,12 @@
-Profile: ChEpregEncounterPregVisit
+Profile: ChEpregEncounterMother
 Parent: CHCoreEncounter
-Id: ch-epreg-encounter-preg-visit
-Title: "CH EPREG Encounter: Pregnancy Visit"
-Description: "This profile constrains the Encounter resource to represent a pregnancy visit."
-* . ^short = "CH EPREG Encounter: Pregnancy Visit"
+Id: ch-epreg-encounter-mother
+Title: "CH EPREG Encounter: Mother"
+Description: "This profile constrains the Encounter resource to represent a pregnancy visit from the mother's perspective."
+* . ^short = "CH EPREG Encounter: Mother"
 * extension contains 
     ChEpregExtPlannedNextPregVisit named nextVisit 0..1 and 
-    ChEpregExtExaminationNumber named examinationNumber 0..1 and
+    ChEpregExtVisitNumber named visitNumber 0..1 and
     ChEpregExtNote named note 0..1
 * status = #finished
 * subject only Reference(ChEpregPatientMother)    
@@ -21,15 +21,15 @@ Description: "This profile constrains the Encounter resource to represent a preg
 
 
 
-Mapping: ChEpregEncounterPregVisitToConceptPregnancyPassport
-Source: ChEpregEncounterPregVisit
+Mapping: ChEpregEncounterMotherToConceptPregnancyPassport
+Source: ChEpregEncounterMother
 Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf"
 Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Untersuchung | Examen"
 * extension[nextVisit]                      -> "Nächste Kontrolle | Prochain contrôle"
-* extension[examinationNumber]              -> "Nummer | Numéro"
+* extension[visitNumber]                    -> "Nummer | Numéro"
 * extension[note]                           -> "Bemerkungen | Remarques"
 * subject                                   -> "Schwangere Person | Personne enceinte"
 * participant.individual                    -> "Kontrolle durchgeführt durch | Contrôle effectué par"

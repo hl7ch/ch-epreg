@@ -41,10 +41,10 @@ Usage: #inline
 
 
 //-------------------------------------- Schwangerschaftsverlauf --------------------------------------//
-* section[pregnancyProgress].title = "Schwangerschaftsverlauf"
-* section[pregnancyProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
-* section[pregnancyProgress].text.status = #generated 
-* section[pregnancyProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+* section[pregProgress].title = "Schwangerschaftsverlauf"
+* section[pregProgress].code = $loinc#57059-8 "Pregnancy visit summary note Narrative"
+* section[pregProgress].text.status = #generated 
+* section[pregProgress].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <b>Untersuchung vom 27.03.2025</b>
     <ul>
         <li>SSW: 32</li>
@@ -64,18 +64,20 @@ Usage: #inline
     </ul>
   </div>"
 
-* section[pregnancyProgress].entry[0] = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung, 27.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung, 26.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba) "SSW 32, 27.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3) "SSW 32, 26.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7) "Gewicht 65 kg, 27.03.2025" 
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:f339e056-53d6-4247-9226-5339123fbd14) "Gewicht 65 kg, 26.03.2025" 
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:4268bd90-eff8-41f4-a7b4-2178dac0e470) "Blutdruck 160/60 mmHg, 27.03.2025" 
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:e949f912-fc27-4849-8632-09caad9fe897) "Blutdruck 122/83 mmHg, 26.03.2025"  
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:a5c14df0-3dca-4530-a22a-072af14178b1) "Kindslage Steisslage, 27.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:4a907770-6665-4fb4-b186-afd0ddf48742) "Kindslage Steisslage, 26.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:4b9ca365-383e-41c8-9bac-b3c79aea1c7e) "Weitere Untersuchungen: BZ 3.9 mmol/l, 27.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb) "Weitere Untersuchungen: BZ 4.7 mmol/l, 26.03.2025"
-* section[pregnancyProgress].entry[+] = Reference(urn:uuid:1ce882f2-953f-428e-a90b-a55271020fca) "Weitere Untersuchungen: Sodbrennen, 26.03.2025"    
+* section[pregProgress].entry[0] = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung Mutter, 27.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung Mutter, 26.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:833fd8f2-b75f-4dba-990f-6c46aa468d51) "Untersuchung Kind (Fötus), 27.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:22aeb067-85f9-4b3b-9301-161604005206) "Untersuchung Kind (Fötus), 26.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba) "SSW 32, 27.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3) "SSW 32, 26.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7) "Gewicht 65 kg, 27.03.2025" 
+* section[pregProgress].entry[+] = Reference(urn:uuid:f339e056-53d6-4247-9226-5339123fbd14) "Gewicht 65 kg, 26.03.2025" 
+* section[pregProgress].entry[+] = Reference(urn:uuid:4268bd90-eff8-41f4-a7b4-2178dac0e470) "Blutdruck 160/60 mmHg, 27.03.2025" 
+* section[pregProgress].entry[+] = Reference(urn:uuid:e949f912-fc27-4849-8632-09caad9fe897) "Blutdruck 122/83 mmHg, 26.03.2025"  
+* section[pregProgress].entry[+] = Reference(urn:uuid:a5c14df0-3dca-4530-a22a-072af14178b1) "Kindslage Steisslage, 27.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:4a907770-6665-4fb4-b186-afd0ddf48742) "Kindslage Steisslage, 26.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:4b9ca365-383e-41c8-9bac-b3c79aea1c7e) "Weitere Untersuchungen: BZ 3.9 mmol/l, 27.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:bbd6f1bc-1d87-4c90-a313-98bea06c3dfb) "Weitere Untersuchungen: BZ 4.7 mmol/l, 26.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:1ce882f2-953f-428e-a90b-a55271020fca) "Weitere Untersuchungen: Sodbrennen, 26.03.2025"    
 
  

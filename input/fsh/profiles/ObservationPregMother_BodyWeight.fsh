@@ -1,7 +1,7 @@
 Profile: ChEpregObservationBodyWeight
 Parent: ChEpregObservationPregProgress
 Id: ch-epreg-observation-body-weight
-Title: "CH EPREG Observation: Body Weight"
+Title: "CH EPREG Observation (Mother): Body Weight"
 Description: "This profile constrains the Observation resource to represent the body weight."
 * . ^short = "CH EPREG Observation: Body Weight"
 * ^extension[$imposeProfile].valueCanonical = Canonical(http://hl7.org/fhir/StructureDefinition/bodyweight)
@@ -16,6 +16,8 @@ Description: "This profile constrains the Observation resource to represent the 
 * value[x].system = "http://unitsofmeasure.org"
 * value[x].code 1..
 * value[x].code = #kg  
+* subject only Reference(ChEpregPatientMother)
+* encounter only Reference(ChEpregEncounterMother)
 
        
 
@@ -30,3 +32,4 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * effective[x]                              -> "Zeitpunkt der Untersuchung | Date de l’examen"
 * performer                                 -> "Kontrolle durchgeführt durch | Contrôle effectué par"
 * value[x]                                  -> "Aktuelles Gewicht | Poids actuel"
+* encounter                                 -> "Untersuchung | Examen"

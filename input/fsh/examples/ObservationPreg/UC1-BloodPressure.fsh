@@ -10,7 +10,7 @@ Description: "Example for CH EPREG Observation: Blood Pressure"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-01-23"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
-* encounter = Reference(UC1-EncounterPregVisit20250123)
+* encounter = Reference(UC1-EncounterMother20250123)
 * component[SystolicBP].code = $loinc#8480-6 "Systolic blood pressure"
 * component[SystolicBP].valueQuantity = 120 $ucum#mm[Hg] "millimeter of mercury"
 * component[DiastolicBP].code = $loinc#8462-4 "Diastolic blood pressure"
@@ -29,7 +29,7 @@ Description: "Example for CH EPREG Observation: Blood Pressure"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
-* encounter = Reference(UC1-EncounterPregVisit20250205)
+* encounter = Reference(UC1-EncounterMother20250205)
 * component[SystolicBP].code = $loinc#8480-6 "Systolic blood pressure"
 * component[SystolicBP].valueQuantity = 160 $ucum#mm[Hg] "millimeter of mercury"
 * component[DiastolicBP].code = $loinc#8462-4 "Diastolic blood pressure"

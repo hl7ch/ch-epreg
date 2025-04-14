@@ -1,11 +1,11 @@
-Instance: UC1-EncounterPregVisit20250123
-InstanceOf: ChEpregEncounterPregVisit
+Instance: UC1-EncounterMother20250123
+InstanceOf: ChEpregEncounterMother
 Usage: #example
 Title: "UC 1: Encounter 23.01.2025"
-Description: "Example for CH EPREG Encounter: Pregnancy Visit"
+Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
 * extension[nextVisit].valueDateTime = "2025-02-05"
-* extension[examinationNumber].valuePositiveInt = 7
+* extension[visitNumber].valuePositiveInt = 7
 * extension[note].valueString = "'Bemerkung zur Untersuchung'"
 * status = #finished 
 * class = $v3-ActCode#AMB "ambulatory"
@@ -15,11 +15,11 @@ Description: "Example for CH EPREG Encounter: Pregnancy Visit"
 * period.end = "2025-01-23"
 
 
-Instance: UC1-EncounterPregVisit20250205
-InstanceOf: ChEpregEncounterPregVisit
+Instance: UC1-EncounterMother20250205
+InstanceOf: ChEpregEncounterMother
 Usage: #example
 Title: "UC 1: Encounter 05.02.2025"
-Description: "Example for CH EPREG Encounter: Pregnancy Visit"
+Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
 // * extension[nextVisit].valueDateTime = ""
 * status = #finished 

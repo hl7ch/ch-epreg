@@ -1,8 +1,8 @@
-Extension: ChEpregExtExaminationNumber
-Id: ch-epreg-ext-examination-number
-Title: "CH EPREG Extension: Examination Number"
-Description: "This extension represents the examination number."
+Extension: ChEpregExtVisitNumber
+Id: ch-epreg-ext-visit-number
+Title: "CH EPREG Extension: Visit Number"
+Description: "This extension represents the visit number."
 Context: Encounter
-* . ^short = "CH EPREG Extension: Examination Number"
+* . ^short = "CH EPREG Extension: Visit Number"
 * value[x] 1..
 * value[x] only positiveInt

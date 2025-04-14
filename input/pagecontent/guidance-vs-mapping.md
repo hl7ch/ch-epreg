@@ -95,7 +95,7 @@ When representing this data in an FHIR document, the goal is to maintain compati
 
 
 ### Blood Group & Rhesus
-**Profile:** [CH EPREG Observation: Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html)        
+**Profile:** [CH EPREG Observation (Mother): Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html)        
 **Example:** [Blood Group AB Rh(D) positive](Observation-UC1-BloodGroup-20250205.html)
 
 <table class="table table-bordered">
@@ -177,7 +177,7 @@ For example, in the case of amniotic fluid (Fruchtwasser / Liquide amniotique), 
 * LOINC: 38386-9 'Color of Amniotic fluid': This Observation represents the color of the amniotic fluid, which can provide important clinical insights during pregnancy monitoring.
 * LOINC: 1887-9 'Appearance of Amniotic fluid': This Observation covers the general visual appearance, such as clarity or turbidity, which is also significant in obstetric assessments.
 
-**Profile:** [CH EPREG Observation: Pregnancy Progress](StructureDefinition-ch-epreg-observation-preg-progress.html)         
+**Profile:** [CH EPREG Observation (Base): Pregnancy Progress](StructureDefinition-ch-epreg-observation-preg-progress.html)         
 **Examples:** [Digestion: Heartburn](Observation-1ce882f2-953f-428e-a90b-a55271020fca.html)
 
 <table class="table table-bordered">
@@ -287,7 +287,7 @@ For example, in the case of amniotic fluid (Fruchtwasser / Liquide amniotique), 
 
 
 ### Fetal Position
-**Profile:** [CH EPREG Observation: Fetal Position](StructureDefinition-ch-epreg-observation-fetal-position.html)        
+**Profile:** [CH EPREG Observation (Child): Fetal Position](StructureDefinition-ch-epreg-observation-fetal-position.html)        
 **Example:** [Vertex Presentation](Observation-UC1-FetalPosition-20250205.html), [Breech Presentation](Observation-4a907770-6665-4fb4-b186-afd0ddf48742.html)
 
 <table class="table table-bordered">
