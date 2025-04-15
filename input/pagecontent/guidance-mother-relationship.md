@@ -13,5 +13,5 @@ The relationship between mother and child (fetus/newborn) is modeled using the `
 {% include img.html img="enc-obs-mother-child.png" caption="Fig.: Encounters and observations of mother and child and their references" width="80%" %}
 
 **Example instances:**    
-Mother: [Observation](Observation-UC1-GestationalAgeInWeeks-20250205.html) --> [Encounter](Encounter-UC1-EncounterMother20250205.html) --> [Patient](Patient-UC1-KatrinKinderlieb.html)       
-Child: [Observation](Observation-UC1-FetalPosition-20250205.html) --> [Encounter](Encounter-UC1-EncounterChild20250205.html) --> [Patient](Patient-UC1-Child.html)  
+Mother: [Observation: Gestational Age](Observation-UC1-GestationalAgeInWeeks-20250205.html) --> [Encounter](Encounter-UC1-EncounterMother20250205.html) --> [Patient](Patient-UC1-KatrinKinderlieb.html)       
+Child: [Observation: Fetal Position](Observation-UC1-FetalPosition-20250205.html) --> [Encounter](Encounter-UC1-EncounterChild20250205.html) --> [Patient](Patient-UC1-Child.html)  
