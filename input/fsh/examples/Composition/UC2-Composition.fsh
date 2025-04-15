@@ -66,8 +66,8 @@ Usage: #inline
 
 * section[pregProgress].entry[0] = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung Mutter, 27.03.2025"
 * section[pregProgress].entry[+] = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung Mutter, 26.03.2025"
-* section[pregProgress].entry[+] = Reference(urn:uuid:833fd8f2-b75f-4dba-990f-6c46aa468d51) "Untersuchung Kind (Fötus), 27.03.2025"
-* section[pregProgress].entry[+] = Reference(urn:uuid:22aeb067-85f9-4b3b-9301-161604005206) "Untersuchung Kind (Fötus), 26.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:833fd8f2-b75f-4dba-990f-6c46aa468d51) "Untersuchung Kind, 27.03.2025"
+* section[pregProgress].entry[+] = Reference(urn:uuid:22aeb067-85f9-4b3b-9301-161604005206) "Untersuchung Kind, 26.03.2025"
 * section[pregProgress].entry[+] = Reference(urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba) "SSW 32, 27.03.2025"
 * section[pregProgress].entry[+] = Reference(urn:uuid:2f167f2f-44f7-49e3-a970-d7f7a6573cd3) "SSW 32, 26.03.2025"
 * section[pregProgress].entry[+] = Reference(urn:uuid:e1c73669-f935-47d1-9dcd-fab76a38bdb7) "Gewicht 65 kg, 27.03.2025" 

@@ -10,7 +10,7 @@ Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Exa
 * effectiveDateTime = "2025-03-26"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * valueQuantity = 4.7 $ucum#mmol/L "millimole per liter"
-* encounter = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung, 26.03.2025"
+* encounter = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung Mutter, 26.03.2025"
 
 
 Instance: 4b9ca365-383e-41c8-9bac-b3c79aea1c7e
@@ -25,7 +25,7 @@ Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Exa
 * effectiveDateTime = "2025-03-27"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * valueQuantity = 3.9 $ucum#mmol/L "millimole per liter"
-* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung, 27.03.2025"
+* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung Mutter, 27.03.2025"
 
 
 Instance: 1ce882f2-953f-428e-a90b-a55271020fca
@@ -40,5 +40,5 @@ Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Exa
 * effectiveDateTime = "2025-03-27"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * valueBoolean = true
-* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung, 27.03.2025"
+* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung Mutter, 27.03.2025"
 

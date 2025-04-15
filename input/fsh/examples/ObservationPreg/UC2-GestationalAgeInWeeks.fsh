@@ -10,7 +10,7 @@ Description: "Example for CH EPREG Observation: Gestational Age in Weeks"
 * effectiveDateTime = "2025-03-26"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * valueQuantity = 32 $ucum#wk "week"
-* encounter = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung, 26.03.2025"
+* encounter = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung Mutter, 26.03.2025"
 
 
 Instance: 84869994-4348-4ad3-95ee-d9b0faf75dba
@@ -25,4 +25,4 @@ Description: "Example for CH EPREG Observation: Gestational Age in Weeks"
 * effectiveDateTime = "2025-03-27"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * valueQuantity = 32 $ucum#wk "week"
-* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung, 27.03.2025"
+* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung Mutter, 27.03.2025"

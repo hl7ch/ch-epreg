@@ -11,7 +11,7 @@ Description: "Example for CH EPREG Observation: Body Weight"
 * effectiveDateTime = "2025-03-26"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * valueQuantity = 65.1 $ucum#kg "kilogram"
-* encounter = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung, 26.03.2025"
+* encounter = Reference(urn:uuid:8e89c502-964f-4234-9728-540d881b0380) "Untersuchung Mutter, 26.03.2025"
 
 
 Instance: e1c73669-f935-47d1-9dcd-fab76a38bdb7
@@ -27,4 +27,4 @@ Description: "Example for CH EPREG Observation: Body Weight"
 * effectiveDateTime = "2025-03-27"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * valueQuantity = 65 $ucum#kg "kilogram"
-* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung, 27.03.2025"
+* encounter = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung Mutter, 27.03.2025"

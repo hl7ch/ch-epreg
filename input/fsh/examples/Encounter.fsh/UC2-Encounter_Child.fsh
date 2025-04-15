@@ -6,7 +6,7 @@ Description: "Example for CH EPREG Encounter: Child"
 * language = #de-CH
 * status = #finished 
 * class = $v3-ActCode#AMB "ambulatory"
-* subject = Reference(urn:uuid:111d5e66-f17e-4369-90c6-9382e566040e) "Kind (Fötus)"
+* subject = Reference(urn:uuid:111d5e66-f17e-4369-90c6-9382e566040e) "Kind"
 * participant.individual = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * period.start = "2025-03-26"
 * period.end = "2025-03-26"
@@ -22,7 +22,7 @@ Description: "Example for CH EPREG Encounter: Child"
 // * extension[nextVisit].valueDateTime = ""
 * status = #finished 
 * class = $v3-ActCode#IMP "inpatient encounter"
-* subject = Reference(urn:uuid:111d5e66-f17e-4369-90c6-9382e566040e) "Kind (Fötus)"
+* subject = Reference(urn:uuid:111d5e66-f17e-4369-90c6-9382e566040e) "Kind"
 * participant.individual = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
 * period.start = "2025-03-27"
 * partOf = Reference(urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f) "Untersuchung Mutter, 27.03.2025"

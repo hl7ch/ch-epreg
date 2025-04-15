@@ -9,6 +9,6 @@ Description: "Example for CH EPREG Observation: Fetal Position"
 * subject = Reference(UC1-Child)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
-* encounter = Reference(UC1-EncounterMother20250205)
+* encounter = Reference(UC1-EncounterChild20250205)
 * valueCodeableConcept.coding = $sct#70028003 "Vertex presentation (finding)"
 * valueCodeableConcept.text = "Schädellage"

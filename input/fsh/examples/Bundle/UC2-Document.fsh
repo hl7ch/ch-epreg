@@ -15,7 +15,7 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = 76c2c5aa-3d7f-438d-b23d-56ce827695fd
 * entry[+].fullUrl = "urn:uuid:67d0e290-21b9-4255-9182-5fe9f21cdbb4" // RP: "Fabienne Babyglück"
 * entry[=].resource = 67d0e290-21b9-4255-9182-5fe9f21cdbb4
-* entry[+].fullUrl = "urn:uuid:111d5e66-f17e-4369-90c6-9382e566040e" // Pat: "Fötus"
+* entry[+].fullUrl = "urn:uuid:111d5e66-f17e-4369-90c6-9382e566040e" // Pat: "Kind"
 * entry[=].resource = 111d5e66-f17e-4369-90c6-9382e566040e
 
 
@@ -35,13 +35,13 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = b9145a94-ea12-479b-a031-b07d4ac9f297
 
 // Pregnancy Visit
-* entry[+].fullUrl = "urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f" // Enc: "Untersuchung, 27.03.2025"
+* entry[+].fullUrl = "urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f" // Enc: "Untersuchung Mutter, 27.03.2025"
 * entry[=].resource = 1ba6df42-ae1a-4b4a-886f-33d6b2223b1f
-* entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung, 26.03.2025"
+* entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung Mutter, 26.03.2025"
 * entry[=].resource = 8e89c502-964f-4234-9728-540d881b0380
-* entry[+].fullUrl = "urn:uuid:833fd8f2-b75f-4dba-990f-6c46aa468d51" // Enc: "Untersuchung, 27.03.2025"
+* entry[+].fullUrl = "urn:uuid:833fd8f2-b75f-4dba-990f-6c46aa468d51" // Enc: "Untersuchung Kind, 27.03.2025"
 * entry[=].resource = 833fd8f2-b75f-4dba-990f-6c46aa468d51
-* entry[+].fullUrl = "urn:uuid:22aeb067-85f9-4b3b-9301-161604005206" // Enc: "Untersuchung, 26.03.2025"
+* entry[+].fullUrl = "urn:uuid:22aeb067-85f9-4b3b-9301-161604005206" // Enc: "Untersuchung Kind, 26.03.2025"
 * entry[=].resource = 22aeb067-85f9-4b3b-9301-161604005206
 * entry[+].fullUrl = "urn:uuid:84869994-4348-4ad3-95ee-d9b0faf75dba" // Obs: "SSW 32"
 * entry[=].resource = 84869994-4348-4ad3-95ee-d9b0faf75dba
