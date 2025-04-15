@@ -5,7 +5,7 @@ Title: "UC 2: Glucose Strip (26.03.2025)"
 Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Examination"
 * language = #de-CH
 * status = #final
-* code = $loinc#2341-6 "Glucose [Mass/volume] in Blood by Test strip manual"
+* code = $loinc#72516-8 "Glucose [Moles/volume] in Blood by Automated test strip"
 * subject = Reference(urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd) "Fabienne Babyglück"
 * effectiveDateTime = "2025-03-26"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
@@ -20,7 +20,7 @@ Title: "UC 2: Glucose Strip (27.03.2025)"
 Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Examination"
 * language = #de-CH
 * status = #final
-* code = $loinc#2341-6 "Glucose [Mass/volume] in Blood by Test strip manual"
+* code = $loinc#72516-8 "Glucose [Moles/volume] in Blood by Automated test strip"
 * subject = Reference(urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd) "Fabienne Babyglück"
 * effectiveDateTime = "2025-03-27"
 * performer = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"

@@ -6,7 +6,7 @@ Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
-* code = $loinc#3086-6 "Urate [Mass/volume] in Urine"
+* code = $loinc#3084-1 "Urate [Mass/volume] in Serum or Plasma"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-LaborPipette)

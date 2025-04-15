@@ -10,4 +10,4 @@ Description: "Example for CH EPREG Observation: Results Laboratory"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-LaborPipette)
-* valueQuantity = 54 $ucum#mL/min "milliliter per minute"
+* valueQuantity = 54 $ucum#mL/min/1.73.m2 "milliliter per minute per 1.73 square meter"

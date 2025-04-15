@@ -6,7 +6,7 @@ Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
-* code = $loinc#LP15590-0 "Gamma glutamyl transferase"
+* code = $loinc#2324-2 "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-LaborPipette)

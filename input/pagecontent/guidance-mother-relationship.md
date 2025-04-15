@@ -7,7 +7,7 @@ The relationship between mother and child (fetus/newborn) is modeled using the `
 [Patient: Mother](Patient-UC1-KatrinKinderlieb.html) --> [RelatedPerson: Mother](RelatedPerson-UC1-RelatedPerson-Mother.html) --> [Patient: Child](Patient-UC1-Child.html)
 
 ### Mother with her multiple children  
-{% include img.html img="mother-children.png" caption="Fig.: Relationship between a mother and her multiple children (e.g., twins)" width="80%" %}
+{% include img.html img="mother-children.png" caption="Fig.: Relationship between a mother and her multiple children (e.g. twins)" width="80%" %}
 
 ### Encounters/observations of mother and child  
 {% include img.html img="enc-obs-mother-child.png" caption="Fig.: Encounters and observations of mother and child and their references" width="80%" %}

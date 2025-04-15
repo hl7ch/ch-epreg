@@ -6,7 +6,7 @@ Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
-* code = $loinc#2341-6 "Glucose [Mass/volume] in Blood by Test strip manual"
+* code = $loinc#14771-0 "Fasting glucose [Moles/volume] in Serum or Plasma"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-LaborPipette)

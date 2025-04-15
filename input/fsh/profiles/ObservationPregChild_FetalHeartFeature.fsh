@@ -4,7 +4,7 @@ Profile: ChEpregObservationFetalHeartFeature
 Parent: ChEpregObservationPregProgress
 Id: ch-epreg-observation-fetal-heart-feature
 Title: "CH EPREG Observation (Child): Fetal Heart Feature"
-Description: "This profile constrains the Observation resource to represent the fetal heart feature (e.g., rate, sounds, rhythm)."
+Description: "This profile constrains the Observation resource to represent the fetal heart feature (e.g. rate, sounds, rhythm)."
 * . ^short = "CH EPREG Observation: Fetal Heart Feature"
 * code = $sct#364620002 // "Fetal heart feature (observable entity)"
 * effective[x] only dateTime

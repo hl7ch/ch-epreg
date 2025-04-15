@@ -6,7 +6,7 @@ Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
-* code = $loinc#16931-8 "Hematocrit/Hemoglobin [Ratio] of Blood by Automated count"
+* code = $loinc#4544-3 "Hematocrit [Volume Fraction] of Blood by Automated count"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-LaborPipette)

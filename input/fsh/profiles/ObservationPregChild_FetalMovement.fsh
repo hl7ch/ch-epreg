@@ -4,7 +4,7 @@ Profile: ChEpregObservationFetalMovement
 Parent: ChEpregObservationPregProgress
 Id: ch-epreg-observation-fetal-movement
 Title: "CH EPREG Observation (Child): Fetal Movement"
-Description: "This profile constrains the Observation resource to represent the movement of the fetus (e.g., activity, strength)."
+Description: "This profile constrains the Observation resource to represent the movement of the fetus (e.g. activity, strength)."
 * . ^short = "CH EPREG Observation: Fetal Movement"
 * code = $sct#249040004 // "Fetal movement activity (observable entity)"
 * effective[x] only dateTime
