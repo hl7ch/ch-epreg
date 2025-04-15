@@ -59,10 +59,10 @@ Description: "Example for CH EPREG Document - using absolute URLs for fullUrls/r
 * entry[=].resource = UC1-EncounterChild20250205
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC1-EncounterChild20250123"
 * entry[=].resource = UC1-EncounterChild20250123
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-GestationalAgeInWeeks-20250205"
-* entry[=].resource = UC1-GestationalAgeInWeeks-20250205
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-GestationalAgeInWeeks-20250123"
-* entry[=].resource = UC1-GestationalAgeInWeeks-20250123
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-GestationalAgeInDays-20250205"
+* entry[=].resource = UC1-GestationalAgeInDays-20250205
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-GestationalAgeInDays-20250123"
+* entry[=].resource = UC1-GestationalAgeInDays-20250123
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-BodyWeight-20250205"
 * entry[=].resource = UC1-BodyWeight-20250205
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-BodyWeight-20250123"

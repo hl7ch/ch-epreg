@@ -95,7 +95,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry ^slicing.rules = #open
 * section[pregProgress].entry contains 
     pregVisit 0..* and 
-    gestationalAge 0..* and 
+    gestationalAge 0..* MS and 
     bodyWeight 0..* and 
     bloodPressure 0..* and 
     fetalMovement 0..* and
@@ -103,7 +103,7 @@ Description: "This profile constrains the Composition resource to represent the 
     fetalPosition 0..*    
 * section[pregProgress].entry[pregVisit] only Reference(ChEpregEncounterMother or ChEpregEncounterChild)
 * section[pregProgress].entry[pregVisit].reference 1..
-* section[pregProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInWeeks)
+* section[pregProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInDays)
 * section[pregProgress].entry[gestationalAge].reference 1..
 * section[pregProgress].entry[bodyWeight] only Reference(ChEpregObservationBodyWeight)
 * section[pregProgress].entry[bodyWeight].reference 1..
