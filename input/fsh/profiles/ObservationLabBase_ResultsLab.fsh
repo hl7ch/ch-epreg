@@ -6,6 +6,7 @@ Description: "This base profile constrains the Observation resource to represent
 * . ^short = "CH EPREG Observation: Results Laboratory"
 * ^extension[$imposeProfile].valueCanonical = Canonical(http://fhir.ch/ig/ch-lab-report/StructureDefinition/ch-lab-observation-results-laboratory)
 * code from http://hl7.eu/fhir/laboratory/ValueSet/lab-obsCode-eu-lab (preferred)
+* code ^binding.description = "See also [Guidance Mapping Laboratory Results](guidance-vs-mapping.html#laboratory-results)." 
 * subject 1..
 * subject only Reference(ChEpregPatientMother)
 * subject.reference 1..

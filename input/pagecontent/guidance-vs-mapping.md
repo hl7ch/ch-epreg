@@ -3,7 +3,6 @@ The concept for the exchange format of the electronic pregnancy passport ([de](h
 When representing this data in an FHIR document, the goal is to maintain compatibility with (Swiss) base concepts, such as those defined in CH Core or CH Term, whenever possible. To achieve this, the following mappings describe how the defined values from the concept paper are represented as coded values in FHIR resources (see also [FHIR Terminology](https://hl7.org/fhir/R4/terminology-module.html)), making use of existing value sets/terminologies where available.
 
 ### Healthcare Provider 
-
 **Profile:** [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)         
 **Examples:** [Petra Sectionata @ Frauenzimmer](PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.json.html) (gynecologist), [Ruth Ohazwei @ Geburtsklinik](PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.json.html) (midwife)
 
@@ -91,6 +90,307 @@ When representing this data in an FHIR document, the goal is to maintain compati
             <td><a href="http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcSpecialisation">HCProfessional.hcSpecialisation</a></td>
         </tr>
     </tbody>
+</table>
+
+
+### Laboratory Results
+Although a mapping is provided here, the specific code (e.g., LOINC) should be used for laboratory results. The Observation profile for laboratory results is based on the [CH LAB-Report profile](https://fhir.ch/ig/ch-lab-report/StructureDefinition-ch-lab-observation-results-laboratory.html) and utilizes the same [Laboratory Code value set](https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html). The binding to the `Observation.code` element is [preferred](https://hl7.org/fhir/R4/terminologies.html#preferred), meaning that if no appropriate code is found within the value set, a code outside of the value set may be used.
+
+**Profile:** [CH EPREG Observation (Base): Results Laboratory](StructureDefinition-ch-epreg-observation-results-lab.html)         
+**Examples:** see [here](StructureDefinition-ch-epreg-observation-results-lab-examples.html)
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Concept German:<br>Laboruntersuchung</th>
+      <th>Concept French:<br>Analyses de laboratoire</th>
+      <th>Resource element</th>
+      <th>ValueSet</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Allgemeine Bakteriologie <br>(Vagina, Zervix, Urethra)</td>
+      <td>Bactériologie générale <br>(vagin, col de l’utérus, urètre)</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Allgemeine Mikrobiologie</td>
+      <td>Microbiologie générale</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Antikörpersuchtest</td>
+      <td>Test de recherche d’anticorps</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Beta-HCG</td>
+      <td>Bêta-HCG</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Bilirubin, direkt, gesamt</td>
+      <td>Bilirubine, directe, totale</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Chlamydien</td>
+      <td>Chlamydia</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>CMV</td>
+      <td>CMV</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>CRP</td>
+      <td>Protéine C-réactive (CRP)</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Cytomegalovirus</td>
+      <td>Cytomégalovirus</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Erytrozyten</td>
+      <td>Érythrocytes</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Erytrozyten, direkter Test <br>gegen humane globuline</td>
+      <td>Érythrocytes, test direct <br>à l’antiglobuline humaine</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Extraktion von menschlichen Nukleinsäuren</td>
+      <td>Extraction d’acides nucléiques humains</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Ferritin</td>
+      <td>Ferritine</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Folat</td>
+      <td>Acide folique</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Hämoglobin</td>
+      <td>Hémoglobine</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Hämoglobin A1c</td>
+      <td>Hémoglobine A1c</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Hämokrit</td>
+      <td>Hématocrite</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Hepatitis B</td>
+      <td>Hépatite B</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>HIV</td>
+      <td>VIH</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Leukozyten</td>
+      <td>Leucocytes</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Lues</td>
+      <td>Syphilis</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>MCH</td>
+      <td>MCH</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>MCHC</td>
+      <td>MCHC</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>MCV</td>
+      <td>MCV</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>MPV</td>
+      <td>MPV</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Molekulare Genotypisierung <br>der fötalen Erytrozytenantigene</td>
+      <td>Génotypage moléculaire des <br>antigènes érythrocytaires fœtaux</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Nüchtern Blutzucker</td>
+      <td>Glycémie à jeun</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>OGTT</td>
+      <td>Hyperglycémie provoquée <br>par voie orale</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Parvo-B19</td>
+      <td>Parvovirus B19</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>RDW</td>
+      <td>RDW</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Rubella</td>
+      <td>Rubéole</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Streptokokken B</td>
+      <td>Streptocoques B</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Thrombozyten</td>
+      <td>Thrombocytes</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Thyretropin (TSH)</td>
+      <td>Thyrotropine (TSH)</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Toxoplasmose</td>
+      <td>Toxoplasmose</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Urin, nativ</td>
+      <td>Urine, native</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Varizellen</td>
+      <td>Varicelle</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Vitamin B12</td>
+      <td>Vitamine B12</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Vitamin D</td>
+      <td>Vitamine D</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>LOINC: TODO</td>
+    </tr>
+    <tr>
+      <td>Weitere</td>
+      <td>Autres</td>
+      <td><code>Observation.code</code></td>
+      <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
+      <td>Provide the explicit code (e.g., LOINC)</td>
+    </tr>
+  </tbody>
 </table>
 
 
