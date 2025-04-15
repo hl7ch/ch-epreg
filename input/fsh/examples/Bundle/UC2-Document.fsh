@@ -55,6 +55,8 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = 4268bd90-eff8-41f4-a7b4-2178dac0e470
 * entry[+].fullUrl = "urn:uuid:e949f912-fc27-4849-8632-09caad9fe897" // Obs: "Blutdruck 122/83 mmHg"
 * entry[=].resource = e949f912-fc27-4849-8632-09caad9fe897
+* entry[+].fullUrl = "urn:uuid:3e120206-7aa2-4ced-82c3-3704868e023f" // Obs: "Kindsbewegung schwach"
+* entry[=].resource = 3e120206-7aa2-4ced-82c3-3704868e023f
 * entry[+].fullUrl = "urn:uuid:a5c14df0-3dca-4530-a22a-072af14178b1" // Obs: "Kindslage Steisslage"
 * entry[=].resource = a5c14df0-3dca-4530-a22a-072af14178b1
 * entry[+].fullUrl = "urn:uuid:4a907770-6665-4fb4-b186-afd0ddf48742" // Obs: "Kindslage Steisslage"

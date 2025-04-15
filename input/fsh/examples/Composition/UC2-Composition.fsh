@@ -50,6 +50,7 @@ Usage: #inline
         <li>SSW: 32</li>
         <li>Gewicht: 65 kg</li>
         <li>Blutdruck: 160/60 mmHg</li>
+        <li>Kindsbewegung: schwach</li>
         <li>Kindslage: Steisslage</li>
         <li>Weitere Untersuchungen: BZ (Teststreifen Finger): 3.9 mmol/l</li>
     </ul>
@@ -74,6 +75,7 @@ Usage: #inline
 * section[pregProgress].entry[+] = Reference(urn:uuid:f339e056-53d6-4247-9226-5339123fbd14) "Gewicht 65 kg, 26.03.2025" 
 * section[pregProgress].entry[+] = Reference(urn:uuid:4268bd90-eff8-41f4-a7b4-2178dac0e470) "Blutdruck 160/60 mmHg, 27.03.2025" 
 * section[pregProgress].entry[+] = Reference(urn:uuid:e949f912-fc27-4849-8632-09caad9fe897) "Blutdruck 122/83 mmHg, 26.03.2025"  
+* section[pregProgress].entry[+] = Reference(urn:uuid:3e120206-7aa2-4ced-82c3-3704868e023f) "Kindsbewegung schwach, 27.03.2025"
 * section[pregProgress].entry[+] = Reference(urn:uuid:a5c14df0-3dca-4530-a22a-072af14178b1) "Kindslage Steisslage, 27.03.2025"
 * section[pregProgress].entry[+] = Reference(urn:uuid:4a907770-6665-4fb4-b186-afd0ddf48742) "Kindslage Steisslage, 26.03.2025"
 * section[pregProgress].entry[+] = Reference(urn:uuid:4b9ca365-383e-41c8-9bac-b3c79aea1c7e) "Weitere Untersuchungen: BZ 3.9 mmol/l, 27.03.2025"
