@@ -4,7 +4,7 @@ Id: ch-epreg-observation-blood-group
 Title: "CH EPREG Observation (Lab): Blood Group"
 Description: "This profile constrains the Observation resource to represent the blood group."
 * . ^short = "CH EPREG Observation: Blood Group"
-* code = $sct#365636006 // "Finding of blood group (finding)"
+* code = $sct#365636006 // "Blutgruppenbestimmung" "Finding of blood group (finding)"
 * effective[x] only dateTime
 * value[x] 1..
 * value[x] only CodeableConcept
