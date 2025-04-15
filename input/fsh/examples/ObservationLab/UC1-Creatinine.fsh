@@ -1,7 +1,7 @@
 Instance: UC1-Creatinine-20250205
 InstanceOf: ChEpregObservationResultsLab
 Usage: #example
-Title: "UC 1: Creatinine (05.02.2025)"
+Title: "UC 1: Creatinine 1.2 mg/dL (05.02.2025)"
 Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final

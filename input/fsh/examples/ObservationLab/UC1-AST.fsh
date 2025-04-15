@@ -1,7 +1,7 @@
 Instance: UC1-AST-20250205
 InstanceOf: ChEpregObservationResultsLab
 Usage: #example
-Title: "UC 1: Aspartate Aminotransferase (05.02.2025)"
+Title: "UC 1: AST 43 U/L (05.02.2025)"
 Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final

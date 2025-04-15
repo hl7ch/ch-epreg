@@ -1,7 +1,7 @@
 Instance: UC1-ALAT-20250205
 InstanceOf: ChEpregObservationResultsLab
 Usage: #example
-Title: "UC 1: Alanine Aminotransferase (05.02.2025)"
+Title: "UC 1: ALAT 98 U/L (05.02.2025)"
 Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final

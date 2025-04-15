@@ -1,7 +1,7 @@
 Instance: UC1-BloodGroup-20250205
 InstanceOf: ChEpregObservationBloodGroup
 Usage: #example
-Title: "UC 1: Blood Group (05.02.2025)"
+Title: "UC 1: Blood Group AB Rh+ (05.02.2025)"
 Description: "Example for CH EPREG Observation: Results Laboratory"
 * language = #de-CH
 * status = #final

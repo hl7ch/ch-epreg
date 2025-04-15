@@ -15,5 +15,6 @@ Description: "This base profile constrains the Observation resource to represent
 * performer only Reference(CHCorePractitionerRole or CHCorePractitioner or CHCoreOrganization or CareTeam or CHCorePatient or RelatedPerson)
 * performer.reference 1..
 * value[x] MS 
+* value[x] ^short = "See also 'Guidance Mapping Measurement Results'."
 * component.value[x] MS                     
-
+* component.value[x] ^short = "See also 'Guidance Mapping Measurement Results'."

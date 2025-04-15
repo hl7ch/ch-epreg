@@ -394,6 +394,207 @@ As indicated in the mapping, the specific code (e.g. LOINC) should be used for l
 </table>
 
 
+### Measurement Results
+**Profile:** [CH EPREG Observation (Base): Results Laboratory](StructureDefinition-ch-epreg-observation-results-lab.html)         
+**Examples:** see [here](StructureDefinition-ch-epreg-observation-results-lab-examples.html)
+
+#### Qualitative 
+In the FHIR representation of the qualitative measurement result, the specific examination is given in `Observation.code` / `Observation.component.code` (e.g. antibody search test) and the non-specific result (positive / negative) in `Observation.valueCodeableConcept` / `Observation.component.valueCodeableConcept`.
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Concept German:<br>Messergebnisse<br>Qualitativ</th>
+      <th>Concept French:<br>Résultats<br>qualitatifs</th>
+      <th>Resource element</th>
+      <th>ValueSet</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Positiv</td>
+      <td>Positif</td>
+      <td><code>Observation.valueCodeableConcept</code><br><code>Observation.component.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 10828004 'Positive'</td>
+    </tr>
+    <tr>
+      <td>Negativ</td>
+      <td>Négatif</td>
+      <td><code>Observation.valueCodeableConcept</code><br><code>Observation.component.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 260385009 'Negative'</td>
+    </tr>
+    <tr>
+      <td>Antikörper-Suchtest negativ</td>
+      <td>Test de recherche d’anticorps négatif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 260385009 'Negative'</td>
+    </tr>
+    <tr>
+      <td>Antikörper-Suchtest positiv</td>
+      <td>Test de recherche d’anticorps positif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 10828004 'Positive'</td>
+    </tr>
+    <tr>
+      <td>Chlamydia trachomatis <br>Nachweis im Urin positiv</td>
+      <td>Test urinaire pour Chlamydia <br>trachomatis positif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 10828004 'Positive'</td>
+    </tr>
+    <tr>
+      <td>Chlamydia trachomatis <br>Nachweis im Urin negativ</td>
+      <td>Test urinaire pour Chlamydia <br>trachomatis négatif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 260385009 'Negative'</td>
+    </tr>
+    <tr>
+      <td>HBs-Antigen-Nachweis positiv</td>
+      <td>Test de l’antigène HBs positif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 10828004 'Positive'</td>
+    </tr>
+    <tr>
+      <td>HBs-Antigen-Nachweis negativ</td>
+      <td>Test de l’antigène HBs négatif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 260385009 'Negative'</td>
+    </tr>
+    <tr>
+      <td>Rubelle-Antikörpertest negativ</td>
+      <td>Test des anticorps de la rubéole négatif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 260385009 'Negative'</td>
+    </tr>
+    <tr>
+      <td>Rubella-Antikörpertest positiv</td>
+      <td>Test des anticorps de la rubéole positif</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 10828004 'Positive'</td>
+    </tr>
+    <tr>
+      <td>Lues Titer Test positiv</td>
+      <td>Test de titrage positif pour la syphilis</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 10828004 'Positive'</td>
+    </tr>
+    <tr>
+      <td>Lues Titer Test negativ</td>
+      <td>Test de titrage négatif pour la syphilis</td>
+      <td><code>Observation.valueCodeableConcept</code></td>
+      <td>-</td>
+      <td>SCT: 260385009 'Negative'</td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### Unit
+If a measurement result is expressed using a unit, it is represented in FHIR as `Observation.valueQuantity` / `Observation.component.valueQuantity`. According to the FHIR specification for the [Quantity data type](https://hl7.org/fhir/R4/datatypes.html#Quantity), _“If the unit can be coded in UCUM and a code is provided, it SHOULD be a UCUM code”_.
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Concept German:<br>Messergebnisse<br>Einheit</th>
+      <th>Concept French:<br>Unités de mesure</th>
+      <th>Resource element</th>
+      <th>ValueSet</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Titer</td>
+      <td>Titre</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: {titer} 'titer'</td>
+    </tr>
+    <tr>
+      <td>10*6/µl</td>
+      <td>10*6/µl</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: 10*6/uL 'million per microliter'</td>
+    </tr>
+    <tr>
+      <td>fl</td>
+      <td>fl</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: fL 'femtoliter'</td>
+    </tr>
+    <tr>
+      <td>g/dl</td>
+      <td>g/dl</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: g/dL 'gram per deciliter'</td>
+    </tr>
+    <tr>
+      <td>g/l</td>
+      <td>g/l</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: g/L 'gram per liter'</td>
+    </tr>
+    <tr>
+      <td>G/l</td>
+      <td>G/l</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: 10*9/L 'billion per liter'</td>
+    </tr>
+    <tr>
+      <td>IE/ml</td>
+      <td>UI/ml</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: [IU]/mL 'international unit per milliliter'</td>
+    </tr>
+    <tr>
+      <td>l/l</td>
+      <td>l/l</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: L/L 'liter per liter'</td>
+    </tr>
+    <tr>
+      <td>mmol/l</td>
+      <td>mmol/l</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: mmol/L 'millimole per liter'</td>
+    </tr>
+    <tr>
+      <td>pg</td>
+      <td>pg</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: pg 'picogram'</td>
+    </tr>
+    <tr>
+      <td>T/l</td>
+      <td>T/l</td>
+      <td><code>Observation.valueQuantity</code><br><code>Observation.component.valueQuantity</code></td>
+      <td><a href="https://hl7.org/fhir/R4/valueset-ucum-units.html">UCUM Codes</a></td>
+      <td>UCUM: 10*12/L 'trillion per liter'</td>
+    </tr>
+  </tbody>
+</table>
+
+
 ### Blood Group & Rhesus
 **Profile:** [CH EPREG Observation (Mother): Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html)        
 **Example:** [Blood Group AB Rh(D) positive](Observation-UC1-BloodGroup-20250205.html)
