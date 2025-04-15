@@ -614,28 +614,28 @@ If a measurement result is expressed using a unit, it is represented in FHIR as 
             <td>A</td>
             <td>A</td>
             <td><code>Observation.valueCodeableConcept</code></td>
-            <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
+            <td><a href="ValueSet-blood-group.html">Blood Group</a></td>
             <td>SNOMED CT: 112144000 'Blood group A'<br>SNOMED CT: 278149003 'Blood group A Rh(D) positive'<br>SNOMED CT: 278152006 'Blood group A Rh(D) negative'</td>
         </tr>
         <tr>
             <td>B</td>
             <td>B</td>
             <td><code>Observation.valueCodeableConcept</code></td>
-            <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
+            <td><a href="ValueSet-blood-group.html">Blood Group</a></td>
             <td>SNOMED CT: 112149005 'Blood group B'<br>SNOMED CT: 278150003 'Blood group B Rh(D) positive'<br>SNOMED CT: 278153001 'Blood group B Rh(D) negative'</td>
         </tr>
         <tr>
             <td>AB</td>
             <td>AB</td>
             <td><code>Observation.valueCodeableConcept</code></td>
-            <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
+            <td><a href="ValueSet-blood-group.html">Blood Group</a></td>
             <td>SNOMED CT: 165743006 'Blood group AB'<br>SNOMED CT: 278151004 'Blood group AB Rh(D) positive'<br>SNOMED CT: 278154007 'Blood group AB Rh(D) negative'</td>
         </tr>
         <tr>
             <td>O</td>
             <td>O</td>
             <td><code>Observation.valueCodeableConcept</code></td>
-            <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
+            <td><a href="ValueSet-blood-group.html">Blood Group</a></td>
             <td>SNOMED CT: 58460004 'Blood group O'<br>SNOMED CT: 278147001 'Blood group O Rh(D) positive'<br>SNOMED CT: 278148006 'Blood group O Rh(D) negative'</td>
         </tr>
     </tbody>
@@ -657,14 +657,14 @@ If a measurement result is expressed using a unit, it is represented in FHIR as 
             <td>RhD positiv</td>
             <td>RhD positif</td>
             <td><code>Observation.valueCodeableConcept</code></td>
-            <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
+            <td><a href="ValueSet-blood-group.html">Blood Group</a></td>
             <td>SNOMED CT: 165747007 'RhD positive'<br>SNOMED CT: 278149003 'Blood group A Rh(D) positive'<br>SNOMED CT: 278150003 'Blood group B Rh(D) positive'<br>SNOMED CT: 278151004 'Blood group AB Rh(D) positive'<br>SNOMED CT: 278147001 'Blood group O Rh(D) positive'</td>
         </tr>
         <tr>
             <td>RhD negativ</td>
             <td>RhD négatif</td>
             <td><code>Observation.valueCodeableConcept</code></td>
-            <td><a href="ValueSet-results-blood-group.html">Results Blood Group</a></td>
+            <td><a href="ValueSet-blood-group.html">Blood Group</a></td>
             <td>SNOMED CT: 165746003 'RhD negative'<br>SNOMED CT: 278152006 'Blood group A Rh(D) negative'<br>SNOMED CT: 278153001 'Blood group B Rh(D) negative'<br>SNOMED CT: 278154007 'Blood group AB Rh(D) negative'<br>SNOMED CT: 278148006 'Blood group O Rh(D) negative'</td>
         </tr>
     </tbody>

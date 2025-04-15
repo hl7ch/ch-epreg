@@ -1,9 +1,9 @@
 // https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html
 // https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html
 
-ValueSet: ResultsBloodGroup
-Id: results-blood-group
-Title: "CH EPREG VS: Results Blood Group"
+ValueSet: BloodGroup
+Id: blood-group
+Title: "CH EPREG VS: Blood Group"
 Description: "This value set includes SNOMED CT codes for blood group findings."
 * ^experimental = false
 
