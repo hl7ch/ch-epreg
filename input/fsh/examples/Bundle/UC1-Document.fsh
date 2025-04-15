@@ -73,5 +73,7 @@ Description: "Example for CH EPREG Document - using absolute URLs for fullUrls/r
 * entry[=].resource = UC1-BloodPressure-20250123
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-FetalMovement-20250205"
 * entry[=].resource = UC1-FetalMovement-20250205
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-FetalHeartFeature-20250205"
+* entry[=].resource = UC1-FetalHeartFeature-20250205
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC1-FetalPosition-20250205"
 * entry[=].resource = UC1-FetalPosition-20250205

@@ -87,6 +87,7 @@ Description: "Example for CH EPREG Composition"
         <li>Gewicht: 82.0 kg</li>
         <li>Blutdruck: 160/100 mmHg</li>
         <li>Kindsbewegung: normal</li>
+        <li>Herztöne: 162 /min</li>
         <li>Kindslage: Schädellage</li>
     </ul>
     <b>Untersuchung vom 23.01.2025</b>
@@ -108,4 +109,5 @@ Description: "Example for CH EPREG Composition"
 * section[pregProgress].entry[bloodPressure][0] = Reference(UC1-BloodPressure-20250205)
 * section[pregProgress].entry[bloodPressure][+] = Reference(UC1-BloodPressure-20250123)
 * section[pregProgress].entry[fetalMovement][0] = Reference(UC1-FetalMovement-20250205)
+* section[pregProgress].entry[fetalHeartFeature][0] = Reference(UC1-FetalHeartFeature-20250205)
 * section[pregProgress].entry[fetalPosition][0] = Reference(UC1-FetalPosition-20250205)

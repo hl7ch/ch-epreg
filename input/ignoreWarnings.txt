@@ -22,6 +22,8 @@ There are no valid display names found for the code%
 'Maternity care plan (record artifact)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
 'Normal (qualifier value)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
 'Finding of blood group (finding)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
+'Fetal movement activity (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
+'Fetal heart feature (observable entity)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
 
 # Base profile, examples for the more specific ones are included 
 The Implementation Guide contains no explicitly linked examples for this profile
