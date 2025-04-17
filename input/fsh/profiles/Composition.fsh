@@ -99,6 +99,7 @@ Description: "This profile constrains the Composition resource to represent the 
     bodyWeight 0..* and 
     bloodPressure 0..* and 
     abdominalCircumference 0..* and
+    fundusHeight 0..* and
     fetalMovement 0..* and
     fetalHeartFeature 0..* and
     fetalPosition 0..*    
@@ -112,6 +113,8 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[bloodPressure].reference 1..
 * section[pregProgress].entry[abdominalCircumference] only Reference(ChEpregObservationAbdominalCircumference)
 * section[pregProgress].entry[abdominalCircumference].reference 1..
+* section[pregProgress].entry[fundusHeight] only Reference(ChEpregObservationFundusHeight)
+* section[pregProgress].entry[fundusHeight].reference 1..
 * section[pregProgress].entry[fetalMovement] only Reference(ChEpregObservationFetalMovement)
 * section[pregProgress].entry[fetalMovement].reference 1..
 * section[pregProgress].entry[fetalHeartFeature] only Reference(ChEpregObservationFetalHeartFeature)
