@@ -42,3 +42,4 @@ Pinned the version of%
 
 # internet isn't MS, the others are
 The slice 'internet' on path 'Patient.telecom' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+The slice 'internet' on path 'Organization.telecom' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
