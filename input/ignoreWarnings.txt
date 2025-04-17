@@ -40,6 +40,8 @@ URL value 'https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass
 URL value 'http://www.ech.ch/' does not resolve
 URL value 'https://www.ech.ch/' does not resolve
 
-# TODO before publication!
-There are multiple different potential matches for the url%
+# see https://github.com/hl7ch/ch-core/issues/341
 ValueSet 'http://hl7.org/fhir/ValueSet/country' not found
+
+# Information about pinned version 
+Pinned the version of%
