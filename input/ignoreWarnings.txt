@@ -39,3 +39,6 @@ ValueSet 'http://hl7.org/fhir/ValueSet/country' not found
 
 # Information about pinned version 
 Pinned the version of%
+
+# internet isn't MS, the others are
+The slice 'internet' on path 'Patient.telecom' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
