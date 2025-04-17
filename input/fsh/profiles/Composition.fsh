@@ -98,6 +98,7 @@ Description: "This profile constrains the Composition resource to represent the 
     gestationalAge 0..* MS and 
     bodyWeight 0..* and 
     bloodPressure 0..* and 
+    abdominalCircumference 0..* and
     fetalMovement 0..* and
     fetalHeartFeature 0..* and
     fetalPosition 0..*    
@@ -109,6 +110,8 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[bodyWeight].reference 1..
 * section[pregProgress].entry[bloodPressure] only Reference(ChEpregObservationBloodPressure)
 * section[pregProgress].entry[bloodPressure].reference 1..
+* section[pregProgress].entry[abdominalCircumference] only Reference(ChEpregObservationAbdominalCircumference)
+* section[pregProgress].entry[abdominalCircumference].reference 1..
 * section[pregProgress].entry[fetalMovement] only Reference(ChEpregObservationFetalMovement)
 * section[pregProgress].entry[fetalMovement].reference 1..
 * section[pregProgress].entry[fetalHeartFeature] only Reference(ChEpregObservationFetalHeartFeature)
@@ -141,6 +144,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[pregProgress].entry[gestationalAge]           -> "Schwangerschaftswochen | Semaines de grossesse"
 * section[pregProgress].entry[bodyWeight]               -> "Aktuelles Gewicht | Poids actuel"
 * section[pregProgress].entry[bloodPressure]            -> "Blutdruck | Pression artérielle"
+* section[pregProgress].entry[abdominalCircumference]   -> "BU (Bauchumfang) | Circonférence abdominale"
 * section[pregProgress].entry[fetalMovement]            -> "Kindsbewegungen | Mobilité fœtale"
 * section[pregProgress].entry[fetalHeartFeature]        -> "Herztöne | Bruits cardiaques fœtaux"
 * section[pregProgress].entry[fetalPosition]            -> "Kindslage | Position fœtale"
