@@ -1,7 +1,7 @@
 Instance: UC1-EncounterChild20250123
 InstanceOf: ChEpregEncounterChild
 Usage: #example
-Title: "UC 1: Encounter 23.01.2025"
+Title: "UC 1: Visit 23.01.2025"
 Description: "Example for CH EPREG Encounter: Child"
 * language = #de-CH
 * status = #finished 
@@ -16,7 +16,7 @@ Description: "Example for CH EPREG Encounter: Child"
 Instance: UC1-EncounterChild20250205
 InstanceOf: ChEpregEncounterChild
 Usage: #example
-Title: "UC 1: Encounter 05.02.2025"
+Title: "UC 1: Visit 05.02.2025"
 Description: "Example for CH EPREG Encounter: Child"
 * language = #de-CH
 * status = #finished 

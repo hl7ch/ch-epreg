@@ -1,7 +1,7 @@
 Instance: 8e89c502-964f-4234-9728-540d881b0380
 InstanceOf: ChEpregEncounterMother
 Usage: #example
-Title: "UC 2: Encounter 26.03.2025"
+Title: "UC 2: Visit 26.03.2025"
 Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
 * extension[nextVisit].valueDateTime = "2025-04-02"
@@ -16,7 +16,7 @@ Description: "Example for CH EPREG Encounter: Mother"
 Instance: 1ba6df42-ae1a-4b4a-886f-33d6b2223b1f
 InstanceOf: ChEpregEncounterMother
 Usage: #example
-Title: "UC 2: Encounter 27.03.2025"
+Title: "UC 2: Visit 27.03.2025"
 Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
 // * extension[nextVisit].valueDateTime = ""

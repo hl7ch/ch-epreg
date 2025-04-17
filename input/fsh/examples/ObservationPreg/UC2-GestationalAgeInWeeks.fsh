@@ -1,8 +1,8 @@
 Instance: 2f167f2f-44f7-49e3-a970-d7f7a6573cd3
 InstanceOf: ChEpregObservationGestationalAgeInDays
 Usage: #example
-Title: "UC 2: Gestational Age 32 Weeks (26.03.2025)"
-Description: "Example for CH EPREG Observation (Mother): Gestational Age in Days"
+Title: "UC 2: 32 Weeks (26.03.2025)"
+Description: "Example for CH EPREG Observation (Mother): Gestational Age"
 * language = #de-CH
 * status = #final
 * code = $loinc#49052-4 "Gestational age in days"
@@ -16,8 +16,8 @@ Description: "Example for CH EPREG Observation (Mother): Gestational Age in Days
 Instance: 84869994-4348-4ad3-95ee-d9b0faf75dba
 InstanceOf: ChEpregObservationGestationalAgeInDays
 Usage: #example
-Title: "UC 2: Gestational Age 32 Weeks (27.03.2025)"
-Description: "Example for CH EPREG Observation (Mother): Gestational Age in Days"
+Title: "UC 2: 32 Weeks (27.03.2025)"
+Description: "Example for CH EPREG Observation (Mother): Gestational Age"
 * language = #de-CH
 * status = #final
 * code = $loinc#49052-4 "Gestational age in days"

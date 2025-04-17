@@ -1,7 +1,7 @@
 Instance: UC1-FetalMovement-20250205
 InstanceOf: ChEpregObservationFetalMovement
 Usage: #example
-Title: "UC 1: Normal Fetal Movement (05.02.2025)"
+Title: "UC 1: Normal (05.02.2025)"
 Description: "Example for CH EPREG Observation (Child): Fetal Movement"
 * language = #de-CH
 * status = #final
