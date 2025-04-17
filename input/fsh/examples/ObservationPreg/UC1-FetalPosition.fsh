@@ -2,7 +2,7 @@ Instance: UC1-FetalPosition-20250205
 InstanceOf: ChEpregObservationFetalPosition
 Usage: #example
 Title: "UC 1: Vertex Presentation (05.02.2025)"
-Description: "Example for CH EPREG Observation: Fetal Position"
+Description: "Example for CH EPREG Observation (Mother): Fetal Position"
 * language = #de-CH
 * status = #final
 * code = $sct#364607000 "Position of fetus (observable entity)"

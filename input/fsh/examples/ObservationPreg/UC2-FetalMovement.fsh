@@ -2,7 +2,7 @@ Instance: 3e120206-7aa2-4ced-82c3-3704868e023f
 InstanceOf: ChEpregObservationFetalMovement
 Usage: #example
 Title: "UC 2: Weak Fetal Movement (27.03.2025)"
-Description: "Example for CH EPREG Observation: Fetal Movement"
+Description: "Example for CH EPREG Observation (Child): Fetal Movement"
 * language = #de-CH
 * status = #final
 * code = $sct#249040004 "Fetal movement activity (observable entity)"

@@ -2,7 +2,7 @@ Instance: d0b53779-fde0-4780-9ff4-9ba2a4cf9393
 InstanceOf: ChEpregObservationFetalHeartFeature
 Usage: #example
 Title: "UC 2: 110 /min (27.03.2025)"
-Description: "Example for CH EPREG Observation: Fetal Movement"
+Description: "Example for CH EPREG Observation (Child): Fetal Movement"
 * language = #de-CH
 * status = #final
 * code = $sct#364620002 "Fetal heart feature (observable entity)"

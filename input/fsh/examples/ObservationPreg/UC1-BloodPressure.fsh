@@ -2,7 +2,7 @@ Instance: UC1-BloodPressure-20250123
 InstanceOf: ChEpregObservationBloodPressure
 Usage: #example
 Title: "UC 1: 120/80 mmHg (23.01.2025)"
-Description: "Example for CH EPREG Observation: Blood Pressure"
+Description: "Example for CH EPREG Observation (Mother): Blood Pressure"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
@@ -21,7 +21,7 @@ Instance: UC1-BloodPressure-20250205
 InstanceOf: ChEpregObservationBloodPressure
 Usage: #example
 Title: "UC 1: 160/100 mmHg (05.02.2025)"
-Description: "Example for CH EPREG Observation: Blood Pressure"
+Description: "Example for CH EPREG Observation (Mother): Blood Pressure"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

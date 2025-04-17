@@ -2,7 +2,7 @@ Instance: f339e056-53d6-4247-9226-5339123fbd14
 InstanceOf: ChEpregObservationBodyWeight
 Usage: #example
 Title: "UC 2: 65.1 kg (26.03.2025)"
-Description: "Example for CH EPREG Observation: Body Weight"
+Description: "Example for CH EPREG Observation (Mother): Body Weight"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
@@ -18,7 +18,7 @@ Instance: e1c73669-f935-47d1-9dcd-fab76a38bdb7
 InstanceOf: ChEpregObservationBodyWeight
 Usage: #example
 Title: "UC 2: 65 kg (27.03.2025)"
-Description: "Example for CH EPREG Observation: Body Weight"
+Description: "Example for CH EPREG Observation (Mother): Body Weight"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

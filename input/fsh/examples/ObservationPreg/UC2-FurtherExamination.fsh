@@ -2,7 +2,7 @@ Instance: bbd6f1bc-1d87-4c90-a313-98bea06c3dfb
 InstanceOf: ChEpregObservationPregProgress
 Usage: #example
 Title: "UC 2: Glucose Strip (26.03.2025)"
-Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Examination"
+Description: "Example for CH EPREG Observation (Mother): Pregnancy Progress - Further Examination"
 * language = #de-CH
 * status = #final
 * code = $loinc#72516-8 "Glucose [Moles/volume] in Blood by Automated test strip"
@@ -17,7 +17,7 @@ Instance: 4b9ca365-383e-41c8-9bac-b3c79aea1c7e
 InstanceOf: ChEpregObservationPregProgress
 Usage: #example
 Title: "UC 2: Glucose Strip (27.03.2025)"
-Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Examination"
+Description: "Example for CH EPREG Observation (Mother): Pregnancy Progress - Further Examination"
 * language = #de-CH
 * status = #final
 * code = $loinc#72516-8 "Glucose [Moles/volume] in Blood by Automated test strip"
@@ -32,7 +32,7 @@ Instance: 1ce882f2-953f-428e-a90b-a55271020fca
 InstanceOf: ChEpregObservationPregProgress
 Usage: #example
 Title: "UC 2: Heartburn (27.03.2025)"
-Description: "Example for CH EPREG Observation: Pregnancy Progress - Further Examination"
+Description: "Example for CH EPREG Observation (Mother): Pregnancy Progress - Further Examination"
 * language = #de-CH
 * status = #final
 * code = $loinc#70387-6	"I am bothered by reflux or heartburn in the past 7 days [FACIT]"

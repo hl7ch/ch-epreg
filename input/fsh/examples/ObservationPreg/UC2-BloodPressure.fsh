@@ -2,7 +2,7 @@ Instance: e949f912-fc27-4849-8632-09caad9fe897
 InstanceOf: ChEpregObservationBloodPressure
 Usage: #example
 Title: "UC 2: 122/83 mmHg (26.03.2025)"
-Description: "Example for CH EPREG Observation: Blood Pressure"
+Description: "Example for CH EPREG Observation (Mother): Blood Pressure"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"
@@ -21,7 +21,7 @@ Instance: 4268bd90-eff8-41f4-a7b4-2178dac0e470
 InstanceOf: ChEpregObservationBloodPressure
 Usage: #example
 Title: "UC 2: 160/60 mmHg (27.03.2025)"
-Description: "Example for CH EPREG Observation: Blood Pressure"
+Description: "Example for CH EPREG Observation (Mother): Blood Pressure"
 * language = #de-CH
 * status = #final
 * category = $observation-category#vital-signs "Vital Signs"

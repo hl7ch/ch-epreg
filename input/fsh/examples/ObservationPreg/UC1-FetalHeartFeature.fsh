@@ -2,7 +2,7 @@ Instance: UC1-FetalHeartFeature-20250205
 InstanceOf: ChEpregObservationFetalHeartFeature
 Usage: #example
 Title: "UC 1: 162 /min (05.02.2025)"
-Description: "Example for CH EPREG Observation: Fetal Heart Feature"
+Description: "Example for CH EPREG Observation (Child): Fetal Heart Feature"
 * language = #de-CH
 * status = #final
 * code = $sct#364620002 "Fetal heart feature (observable entity)"

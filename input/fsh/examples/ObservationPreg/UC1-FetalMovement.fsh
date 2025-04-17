@@ -2,7 +2,7 @@ Instance: UC1-FetalMovement-20250205
 InstanceOf: ChEpregObservationFetalMovement
 Usage: #example
 Title: "UC 1: Normal Fetal Movement (05.02.2025)"
-Description: "Example for CH EPREG Observation: Fetal Movement"
+Description: "Example for CH EPREG Observation (Child): Fetal Movement"
 * language = #de-CH
 * status = #final
 * code = $sct#249040004 "Fetal movement activity (observable entity)"

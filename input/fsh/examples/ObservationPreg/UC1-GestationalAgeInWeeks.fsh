@@ -2,7 +2,7 @@ Instance: UC1-GestationalAgeInDays-20250123
 InstanceOf: ChEpregObservationGestationalAgeInDays
 Usage: #example
 Title: "UC 1: Gestational Age 35 Weeks (23.01.2025)"
-Description: "Example for CH EPREG Observation: Gestational Age in Days"
+Description: "Example for CH EPREG Observation (Mother): Gestational Age in Days"
 * language = #de-CH
 * status = #final
 * code = $loinc#49052-4 "Gestational age in days"
@@ -17,7 +17,7 @@ Instance: UC1-GestationalAgeInDays-20250205
 InstanceOf: ChEpregObservationGestationalAgeInDays
 Usage: #example
 Title: "UC 1: Gestational Age 37 Weeks (05.02.2025)"
-Description: "Example for CH EPREG Observation: Gestational Age in Days"
+Description: "Example for CH EPREG Observation (Mother): Gestational Age in Days"
 * language = #de-CH
 * status = #final
 * code = $loinc#49052-4 "Gestational age in days"

@@ -2,7 +2,7 @@ Instance: 4a907770-6665-4fb4-b186-afd0ddf48742
 InstanceOf: ChEpregObservationFetalPosition
 Usage: #example
 Title: "UC 2: Breech Presentation (26.03.2025)"
-Description: "Example for CH EPREG Observation: Fetal Position"
+Description: "Example for CH EPREG Observation (Child): Fetal Position"
 * language = #de-CH
 * status = #final
 * code = $sct#364607000 "Position of fetus (observable entity)"
@@ -18,7 +18,7 @@ Instance: a5c14df0-3dca-4530-a22a-072af14178b1
 InstanceOf: ChEpregObservationFetalPosition
 Usage: #example
 Title: "UC 2: Breech Presentation (27.03.2025)"
-Description: "Example for CH EPREG Observation: Fetal Position"
+Description: "Example for CH EPREG Observation (Child): Fetal Position"
 * language = #de-CH
 * status = #final
 * code = $sct#364607000 "Position of fetus (observable entity)"
