@@ -101,6 +101,7 @@ Description: "This profile constrains the Composition resource to represent the 
     bloodPressure 0..* and 
     abdominalCircumference 0..* and
     fundusHeight 0..* and
+    vaginaFeature 0..* and
     fetalMovement 0..* and
     fetalHeartFeature 0..* and
     fetalPosition 0..*    
@@ -118,6 +119,8 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[abdominalCircumference].reference 1..
 * section[pregProgress].entry[fundusHeight] only Reference(ChEpregObservationFundusHeight)
 * section[pregProgress].entry[fundusHeight].reference 1..
+* section[pregProgress].entry[vaginaFeature] only Reference(ChEpregObservationVaginaFeature)
+* section[pregProgress].entry[vaginaFeature].reference 1..
 * section[pregProgress].entry[fetalMovement] only Reference(ChEpregObservationFetalMovement)
 * section[pregProgress].entry[fetalMovement].reference 1..
 * section[pregProgress].entry[fetalHeartFeature] only Reference(ChEpregObservationFetalHeartFeature)
@@ -152,6 +155,8 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[pregProgress].entry[weightGain]               -> "Gewichtszunahme	| Prise de poids"
 * section[pregProgress].entry[bloodPressure]            -> "Blutdruck | Pression artérielle"
 * section[pregProgress].entry[abdominalCircumference]   -> "BU (Bauchumfang) | Circonférence abdominale"
+* section[pregProgress].entry[fundusHeight]             -> "SY-FU (Symphysen-Fundus-Abstand) | Hauteur utérine"
+* section[pregProgress].entry[vaginaFeature]            -> "Vaginalbefund | Examen gynécologique"
 * section[pregProgress].entry[fetalMovement]            -> "Kindsbewegungen | Mobilité fœtale"
 * section[pregProgress].entry[fetalHeartFeature]        -> "Herztöne | Bruits cardiaques fœtaux"
 * section[pregProgress].entry[fetalPosition]            -> "Kindslage | Position fœtale"
