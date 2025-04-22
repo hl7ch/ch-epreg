@@ -2,7 +2,7 @@ Instance: UC1-Urate-20250205
 InstanceOf: ChEpregObservationResultsLab
 Usage: #example
 Title: "UC 1: Urate 6.3 mg/dL (05.02.2025)"
-Description: "Example for CH EPREG Observation: Results Laboratory"
+Description: "Example for CH EPREG Observation (Lab)"
 * language = #de-CH
 * status = #final
 * category = $observation-category#laboratory "Laboratory"

@@ -596,8 +596,8 @@ If a measurement result is expressed using a unit, it is represented in FHIR as 
 
 
 ### Blood Group & Rhesus
-**Profile:** [CH EPREG Observation (Mother): Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html)        
-**Example:** [Blood Group AB Rh(D) positive](Observation-UC1-BloodGroup-20250205.html)
+**Profile:** [CH EPREG Observation (Lab): Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html)        
+**Example:** [Blood Group: AB Rh(D) positive](Observation-UC1-BloodGroup-20250205.html)
 
 <table class="table table-bordered">
     <thead>
@@ -666,6 +666,39 @@ If a measurement result is expressed using a unit, it is represented in FHIR as 
             <td><code>Observation.valueCodeableConcept</code></td>
             <td><a href="ValueSet-blood-group.html">Blood Group</a></td>
             <td>SNOMED CT: 165746003 'RhD negative'<br>SNOMED CT: 278152006 'Blood group A Rh(D) negative'<br>SNOMED CT: 278153001 'Blood group B Rh(D) negative'<br>SNOMED CT: 278154007 'Blood group AB Rh(D) negative'<br>SNOMED CT: 278148006 'Blood group O Rh(D) negative'</td>
+        </tr>
+    </tbody>
+</table>
+
+
+### Fetal RhD
+**Profile:** [CH EPREG Observation (Lab): Fetal RhD](StructureDefinition-ch-epreg-observation-fetal-rhd.html)        
+**Example:** [Fetal RhD: RhD positive](Observation-UC1-FetalRhD-20250205.html)
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Concept German:<br>Rhesus</th>
+            <th>Concept French:<br>Rhésus</th>
+            <th>Resource element</th>
+            <th>ValueSet</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>RhD positiv</td>
+            <td>RhD positif</td>
+            <td><code>Observation.valueCodeableConcept</code></td>
+            <td><a href="ValueSet-fetal-rhd-antigen.html">Fetal RhD Antigen</a></td>
+            <td>LOINC: LA22747-2 'RhD positive'</td>
+        </tr>
+        <tr>
+            <td>RhD negativ</td>
+            <td>RhD négatif</td>
+            <td><code>Observation.valueCodeableConcept</code></td>
+            <td><a href="ValueSet-fetal-rhd-antigen.html">Fetal RhD Antigen</a></td>
+            <td>LOINC: LA22748-0 'RhD negative'</td>
         </tr>
     </tbody>
 </table>

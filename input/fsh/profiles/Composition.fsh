@@ -53,9 +53,12 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.ordered = false
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.rules = #open
 * section[lab-subsections].section[bloodBankStudies].entry contains 
-    bloodGroup 0..* MS
+    bloodGroup 0..* MS and 
+    fetalRhD 0..* MS
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup] only Reference(ChEpregObservationBloodGroup)
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup].reference 1..
+* section[lab-subsections].section[bloodBankStudies].entry[fetalRhD] only Reference(ChEpregObservationFetalRhD)
+* section[lab-subsections].section[bloodBankStudies].entry[fetalRhD].reference 1..
 * section[lab-subsections].section[bloodBankStudies].section 0..0
 
 * section[lab-subsections].section[chemistryStudies].title 1.. // Chemische Untersuchungen / Klinische Chemie

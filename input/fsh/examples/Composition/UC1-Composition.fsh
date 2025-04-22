@@ -35,10 +35,12 @@ Description: "Example for CH EPREG Composition"
 * section[lab-subsections].section[bloodBankStudies].text.status = #generated 
 * section[lab-subsections].section[bloodBankStudies].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <ul>
-        <li>Blutgruppe: AB Rh(D)+, 05.02.2025</li>
+        <li>Blutgruppe: AB Rh+, 05.02.2025</li>
+        <li>Fetaler RhD: Rh+, 05.02.2025</li>
     </ul>    
   </div>"
-* section[lab-subsections].section[bloodBankStudies].entry[0] = Reference(UC1-BloodGroup-20250205)
+* section[lab-subsections].section[bloodBankStudies].entry[bloodGroup][0] = Reference(UC1-BloodGroup-20250205)
+* section[lab-subsections].section[bloodBankStudies].entry[fetalRhD][0] = Reference(UC1-FetalRhD-20250205)
 
 * section[lab-subsections].section[chemistryStudies].title = "Klinische Chemie"
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5	"Chemistry studies (set)"
