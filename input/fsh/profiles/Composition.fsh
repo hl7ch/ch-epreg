@@ -97,6 +97,7 @@ Description: "This profile constrains the Composition resource to represent the 
     pregVisit 0..* and 
     gestationalAge 0..* MS and 
     bodyWeight 0..* and 
+    weightGain 0..* and
     bloodPressure 0..* and 
     abdominalCircumference 0..* and
     fundusHeight 0..* and
@@ -109,6 +110,8 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[gestationalAge].reference 1..
 * section[pregProgress].entry[bodyWeight] only Reference(ChEpregObservationBodyWeight)
 * section[pregProgress].entry[bodyWeight].reference 1..
+* section[pregProgress].entry[weightGain] only Reference(ChEpregObservationWeightGain)
+* section[pregProgress].entry[weightGain].reference 1..
 * section[pregProgress].entry[bloodPressure] only Reference(ChEpregObservationBloodPressure)
 * section[pregProgress].entry[bloodPressure].reference 1..
 * section[pregProgress].entry[abdominalCircumference] only Reference(ChEpregObservationAbdominalCircumference)
@@ -146,6 +149,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[pregProgress].entry[pregVisit]                -> "Untersuchung | Examen"
 * section[pregProgress].entry[gestationalAge]           -> "Schwangerschaftswochen | Semaines de grossesse"
 * section[pregProgress].entry[bodyWeight]               -> "Aktuelles Gewicht | Poids actuel"
+* section[pregProgress].entry[weightGain]               -> "Gewichtszunahme	| Prise de poids"
 * section[pregProgress].entry[bloodPressure]            -> "Blutdruck | Pression artérielle"
 * section[pregProgress].entry[abdominalCircumference]   -> "BU (Bauchumfang) | Circonférence abdominale"
 * section[pregProgress].entry[fetalMovement]            -> "Kindsbewegungen | Mobilité fœtale"

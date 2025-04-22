@@ -85,6 +85,7 @@ Description: "Example for CH EPREG Composition"
     <ul>
         <li>SSW: 37</li>
         <li>Gewicht: 82.0 kg</li>
+        <li>Gewichtszunahme: 12.5 kg</li>
         <li>Blutdruck: 160/100 mmHg</li>
         <li>Bauchumfang: 101 cm</li>
         <li>Fundusstand: Rb/0</li>
@@ -96,6 +97,7 @@ Description: "Example for CH EPREG Composition"
     <ul>
         <li>SSW: 35</li>
         <li>Gewicht: 80.6 kg</li>
+        <li>Gewichtszunahme: 11.1 kg</li>
         <li>Blutdruck: 120/80 mmHg</li>
         <li>Nächste Kontrolle am: 05.02.2025</li>
     </ul>
@@ -108,6 +110,8 @@ Description: "Example for CH EPREG Composition"
 * section[pregProgress].entry[gestationalAge][+] = Reference(UC1-GestationalAgeInDays-20250123)
 * section[pregProgress].entry[bodyWeight][0] = Reference(UC1-BodyWeight-20250205)
 * section[pregProgress].entry[bodyWeight][+] = Reference(UC1-BodyWeight-20250123)
+* section[pregProgress].entry[weightGain][0] = Reference(UC1-WeightGain-20250205)
+* section[pregProgress].entry[weightGain][+] = Reference(UC1-WeightGain-20250123)
 * section[pregProgress].entry[bloodPressure][0] = Reference(UC1-BloodPressure-20250205)
 * section[pregProgress].entry[abdominalCircumference][0] = Reference(UC1-AbdominalCircumference-20250205)
 * section[pregProgress].entry[fundusHeight][0] = Reference(UC1-FundusHeight-20250205)
