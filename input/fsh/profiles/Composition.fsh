@@ -102,6 +102,7 @@ Description: "This profile constrains the Composition resource to represent the 
     bodyWeight 0..* and 
     weightGain 0..* and
     bloodPressure 0..* and 
+    urineFinding 0..* and
     abdominalCircumference 0..* and
     fundusHeight 0..* and
     vaginaFeature 0..* and
@@ -116,8 +117,10 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[bodyWeight].reference 1..
 * section[pregProgress].entry[weightGain] only Reference(ChEpregObservationWeightGain)
 * section[pregProgress].entry[weightGain].reference 1..
-* section[pregProgress].entry[bloodPressure] only Reference(ChEpregObservationBloodPressure)
+* section[pregProgress].entry[bloodPressure] only Reference(ChEpregObservationUrineFinding)
 * section[pregProgress].entry[bloodPressure].reference 1..
+* section[pregProgress].entry[urineFinding] only Reference(ChEpregObservationBloodPressure)
+* section[pregProgress].entry[urineFinding].reference 1..
 * section[pregProgress].entry[abdominalCircumference] only Reference(ChEpregObservationAbdominalCircumference)
 * section[pregProgress].entry[abdominalCircumference].reference 1..
 * section[pregProgress].entry[fundusHeight] only Reference(ChEpregObservationFundusHeight)
@@ -157,6 +160,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[pregProgress].entry[bodyWeight]               -> "Aktuelles Gewicht | Poids actuel"
 * section[pregProgress].entry[weightGain]               -> "Gewichtszunahme	| Prise de poids"
 * section[pregProgress].entry[bloodPressure]            -> "Blutdruck | Pression artérielle"
+* section[pregProgress].entry[urineFinding]             -> "Urin | Urine"
 * section[pregProgress].entry[abdominalCircumference]   -> "BU (Bauchumfang) | Circonférence abdominale"
 * section[pregProgress].entry[fundusHeight]             -> "SY-FU (Symphysen-Fundus-Abstand) | Hauteur utérine"
 * section[pregProgress].entry[vaginaFeature]            -> "Vaginalbefund | Examen gynécologique"

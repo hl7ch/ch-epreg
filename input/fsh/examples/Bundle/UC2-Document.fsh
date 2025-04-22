@@ -55,6 +55,8 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[=].resource = 4268bd90-eff8-41f4-a7b4-2178dac0e470
 * entry[+].fullUrl = "urn:uuid:e949f912-fc27-4849-8632-09caad9fe897" // Obs: "Blutdruck 122/83 mmHg"
 * entry[=].resource = e949f912-fc27-4849-8632-09caad9fe897
+* entry[+].fullUrl = "urn:uuid:2db81543-7bf1-4965-a75e-00400c62e78b" // Obs: "Urin bland"
+* entry[=].resource = 2db81543-7bf1-4965-a75e-00400c62e78b
 * entry[+].fullUrl = "urn:uuid:6eafd07b-c40a-4864-874c-cfe2d5b222ed" // Obs: "Fundusstand Rb/2"
 * entry[=].resource = 6eafd07b-c40a-4864-874c-cfe2d5b222ed
 * entry[+].fullUrl = "urn:uuid:c9bba019-9ed9-4574-84e2-f7d302e8f5d0" // Obs: "Vaginalbefund MM 5 cm"

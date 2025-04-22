@@ -50,6 +50,7 @@ Usage: #inline
         <li>SSW: 32</li>
         <li>Gewicht: 65 kg</li>
         <li>Blutdruck: 160/60 mmHg</li>
+        <li>Urin: bland</li>
         <li>Fundusstand: Rb/2</li>
         <li>Vaginalbefund: MM 5 cm</li>
         <li>Kindsbewegung: schwach</li>
@@ -80,6 +81,7 @@ Usage: #inline
 * section[pregProgress].entry[bodyWeight][+] = Reference(urn:uuid:f339e056-53d6-4247-9226-5339123fbd14) "Gewicht 65 kg, 26.03.2025" 
 * section[pregProgress].entry[bloodPressure][0] = Reference(urn:uuid:4268bd90-eff8-41f4-a7b4-2178dac0e470) "Blutdruck 160/60 mmHg, 27.03.2025" 
 * section[pregProgress].entry[bloodPressure][+] = Reference(urn:uuid:e949f912-fc27-4849-8632-09caad9fe897) "Blutdruck 122/83 mmHg, 26.03.2025" 
+* section[pregProgress].entry[urineFinding][0] = Reference(urn:uuid:2db81543-7bf1-4965-a75e-00400c62e78b) "Urin bland, 27.03.2025" 
 * section[pregProgress].entry[fundusHeight][0] = Reference(urn:uuid:6eafd07b-c40a-4864-874c-cfe2d5b222ed) "Fundusstand Rb/2, 27.03.2025"  
 * section[pregProgress].entry[vaginaFeature][0] = Reference(urn:uuid:c9bba019-9ed9-4574-84e2-f7d302e8f5d0) "Vaginalbefund MM 5 cm, 27.03.2025"  
 * section[pregProgress].entry[fetalMovement][0] = Reference(urn:uuid:3e120206-7aa2-4ced-82c3-3704868e023f) "Kindsbewegung schwach, 27.03.2025"
