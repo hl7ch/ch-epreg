@@ -9,7 +9,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from FetalPosition (extensible)
-* value[x] ^binding.description = "See also [Guidance Mapping Fetal Position](guidance-vs-mapping.html#fetal-position)."
+* value[x] ^binding.description = "See also [Mapping Fetal Position](mapping-concept-valuesets.html#fetal-position)."
 * subject only Reference(ChEpregPatientChild)
 * encounter only Reference(ChEpregEncounterChild)       
 

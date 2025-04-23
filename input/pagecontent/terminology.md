@@ -1,5 +1,5 @@
 ### Value Sets
 
-Please note that there is a guidance section for [mapping the value sets from the concept paper](guidance-vs-mapping.html).
+_Please note that there is a section for [mapping the value sets from the concept paper](mapping-concept-valuesets.html)._
 
 {% include list-simple-valuesets.xhtml %}

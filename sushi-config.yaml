@@ -43,8 +43,10 @@ pages:
     title: Cas d'application
   guidance-mother-relationship.md:
     title: Mother and Child Relationship
-  guidance-vs-mapping.md:
-    title: Mapping Value Sets Concept
+  mapping-concept-dataelements.md:
+    title: Mapping Concept Data Elements
+  mapping-concept-valuesets.md:
+    title: Mapping Concept Value Sets
   profiles.md:
     title: Profiles
   extensions.md:
@@ -62,7 +64,9 @@ menu:
     French: usecase-french.html
   Guidance: 
     Mother and Child Relationship: guidance-mother-relationship.html
-    Mapping Value Sets Concept: guidance-vs-mapping.html
+  Mapping:  
+    Concept Data Elements: mapping-concept-dataelements.html
+    Concept Value Sets: mapping-concept-valuesets.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html

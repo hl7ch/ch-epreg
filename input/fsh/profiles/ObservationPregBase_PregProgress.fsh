@@ -16,4 +16,4 @@ Description: "This base profile constrains the Observation resource to represent
 * encounter 1.. 
 * encounter.reference 1..
 * encounter only Reference(ChEpregEncounterMother or ChEpregEncounterChild)
-* code ^binding.description = "See also [Guidance Mapping Further Examinations](guidance-vs-mapping.html#further-examinations)." 
+* code ^binding.description = "See also [Mapping Further Examinations](mapping-concept-valuesets.html#further-examinations)." 

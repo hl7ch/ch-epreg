@@ -9,7 +9,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * value[x] 1..
 * value[x] only CodeableConcept
 * value[x] from FetalRhDAntigen (extensible)     
-* value[x] ^binding.description = "See also [Guidance Mapping Fetal RhD](guidance-vs-mapping.html#fetal-rhd)."     
+* value[x] ^binding.description = "See also [Mapping Fetal RhD](mapping-concept-valuesets.html#fetal-rhd)."     
 
 
 Mapping: ChEpregObservationFetalRhDToConceptPregnancyPassport
