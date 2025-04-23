@@ -2,7 +2,7 @@ The concept for the exchange format of the electronic pregnancy passport ([de](h
 
 _Note: The mapping can also be found for each profile under its 'Mappings' tab, e.g. [CH EPREG Composition](StructureDefinition-ch-epreg-composition-mappings.html)._
 
-## Data Elements
+<br>
 
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity M = Mandatory R = Required O = Optional | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
