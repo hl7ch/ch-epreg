@@ -4,8 +4,9 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 
 <br>
 
-{:class="table table-bordered"}
 ## Data Elements
+
+{:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | STAMMDATEN | DONNÉES DE BASE |   |   |   |   |   |   |
