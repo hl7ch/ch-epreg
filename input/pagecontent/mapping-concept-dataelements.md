@@ -2,15 +2,12 @@ The concept for the exchange format of the electronic pregnancy passport ([de](h
 
 _Note: The mapping can also be found for each profile under its 'Mappings' tab, e.g. [CH EPREG Composition](StructureDefinition-ch-epreg-composition-mappings.html)._
 
-<br>
-
-## Data Elements
+### Master Data
 
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| STAMMDATEN | DONNÉES DE BASE |   |   |   |   |   |   |
-| 1. Schwangere Person | 1. Personne enceinte | 1..1 | M |   |   | Composition.subject<br />-> CH EPREG Patient: Mother |   |
+| **1. Schwangere Person** | **1. Personne enceinte** | 1..1 | M |   |   | Composition.subject<br />-> CH EPREG Patient: Mother |   |
 | 1.1. AHV-Nummer | 1.1. Numéro AVS | 0..1 | R | Identifikator |   | not allowed in the EPR context | AHVN13 is not allowed in the EPR context, see https://fhir.ch/ig/ch-core/StructureDefinition-ch-core-patient-epr.html |
 | 1.2. Name | 1.2. Nom | 0..1 | R |   | 371484003 Patient name (observable entity) | Patient.name |   |
 | 1.2.1. Nachname | 1.2.1. Nom de famille | 1..1 | M | String | 184096005 Patient surname (observable entity) | Patient.name.family |   |
@@ -39,7 +36,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 1.9.2. Zusatzversicherung | 1.9.2. Assurance complémentaire | 0..\* | R |   |   |   |   |
 | 1.9.2.1. Name Versicherung | 1.9.2.1. Nom de l’assureur | 0..1 | R | String |   |   |   |
 | 1.9.2.2. Versichertennummer | 1.9.2.2. Numéro de la personne assurée | 1..1 | M | String |   |   |   |
-| 2. Elternteil | 2. Parent | 0..\* | O |   |   | letzte von ersten Prios |   |
+| **2. Elternteil** | **2. Parent** | 0..\* | O |   |   | letzte von ersten Prios |   |
 | 2.1. Art des Elternteils | 2.1. Type de parent | 1..1 | M | Code | Value Set: Elternteil |   |   |
 | 2.2. Name | 2.2. Nom | 0..1 | R |   |   |   |   |
 | 2.2.1. Nachname | 2.2.1. Nom | 0..1 | R | String |   |   |   |
@@ -48,7 +45,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 2.4. Nationalität | 2.4. Nationalité | 0..\* | O | String |   |   |   |
 | 2.5. Kommunikationssprache | 2.5. Langue de communication | 0..1 | O | String |   |   |   |
 | 2.6. Bemerkungen | 2.6. Remarques | 0..1 | O | String |   |   |   |
-| 3. Notfallkontakt | 3. Contact en cas d’urgence | 0..\* | R |   |   |   |   |
+| **3. Notfallkontakt** | **3. Contact en cas d’urgence** | 0..\* | R |   |   |   |   |
 | 3.1. Primärkontakt | 3.1. Contact principal | 0..1 | O | Boolean | Gibt an, ob es sich um den Primärkontakt handelt. |   |   |
 | 3.2. Name | 3.2. Nom | 0..1 | R |   |   |   |   |
 | 3.2.1. Nachname | 3.2.1. Nom | 0..1 | R | String |   |   |   |
@@ -58,7 +55,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 3.3.2. Mobil | 3.3.2. Mobile | 0..1 | R | String |   |   |   |
 | 3.3.3. Arbeit | 3.3.3. Professionnel | 0..1 | O | String |   |   |   |
 | 3.4. Bemerkungen | 3.4. Remarque | 0..1 | O | String |   |   |   |
-| 4. Beistand/Vormund | 4. Curatelle/tutelle | 0..\* | O |   |   | letzte von ersten Prios |   |
+| **4. Beistand/Vormund** | **4. Curatelle/tutelle** | 0..\* | O |   |   | letzte von ersten Prios |   |
 | 4.1. Name | 4.1. Nom | 0..1 | R |   |   |   |   |
 | 4.1.1. Nachname | 4.1.1. Nom | 0..1 | R | String |   |   |   |
 | 4.1.2. Vorname | 4.1.2. Prénom | 0..1 | R | String |   |   |   |
@@ -68,7 +65,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 4.2.3. Arbeit | 4.2.3. Professionnel | 0..1 | O | String |   |   |   |
 | 4.3. E-Mailadresse | 4.3. Courriel | 0..1 | O | String |   |   |   |
 | 4.4. Bemerkungen | 4.4. Remarques | 0..1 | O | String |   |   |   |
-| 5. Behandelnder Leistungserbringender | 5. Fournisseur de prestations | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | Composition.section:careTeam <br />-> CH EPREG PractitionerRole: Treating Healthcare Provider <br /> -> CH EPREG Practitioner: Treating Healthcare Provider<br /> -> CH EPREG Organization: Treating Healthcare Provider |   |
+| **5. Behandelnder Leistungserbringender** | **5. Fournisseur de prestations** | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | Composition.section:careTeam <br />-> CH EPREG PractitionerRole: Treating Healthcare Provider <br /> -> CH EPREG Practitioner: Treating Healthcare Provider<br /> -> CH EPREG Organization: Treating Healthcare Provider |   |
 | 5.1. Art des Leistungserbringenden | 5.1. Type de fournisseur de prestations | 1..1 | M | Code | Value Set: Leistungserbringender | PractitionerRole.code <br />PractitionerRole.specialty |   |
 | 5.2. GLN Nummer | 5.2. Numéro GLN | 0..1 | R | Identifikator |   | Practitioner.identifier:GLN |   |
 | 5.3. Bemerkungen | 5.3. Remarques | 0..1 | O | String |   | can be textually described here:<br />Composition.section:careTeam.text |   |
@@ -88,7 +85,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 5.8.1. Festnetz | 5.8.1. Fixe | 0..1 | R | String |   | Organization.telecom:phone<br />use = work |   |
 | 5.8.2. Mobil | 5.8.2. Mobile | 0..1 | O | String |   | Organization.telecom:phone<br />use = mobile |   |
 | 5.9. E-Mailadresse | 5.9. Courriel | 0..1 | R | String | E-Mailadresse des Leistungserbringenden | Organization.telecom:email |   |
-| 6. Geplanter Geburtsort | 6. Lieu d’accouchement prévu | 0..1 | R |   |   |   |   |
+| **6. Geplanter Geburtsort** | **6. Lieu d’accouchement prévu** | 0..1 | R |   |   |   |   |
 | 6.1. Hausgeburt | 6.1. Accouchement à la maison | 0..1 | O |   |   |   |   |
 | 6.1.1. Hausgeburt geplant | 6.1.1. Accouchement prévu à la maison | 0..1 | O | Boolean | Gibt an, ob eine Hausgeburt geplant ist oder nicht. |   |   |
 | 6.1.2. Verlegungsort Wunschspital | 6.1.2. Hôpital de transfert souhaité | 0..1 | O | String |   |   |   |
@@ -105,8 +102,13 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 6.5.1. Festnetz | 6.5.1. Fixe | 0..1 | R | String |   |   |   |
 | 6.5.2. Mobil | 6.5.2. Mobile | 0..1 | O | String |   |   |   |
 | 6.6. E-Mailadresse | 6.6. Courriel | 0..1 | R | String |   |   |   |
-| ANAMNESE & RISIKOFAKTOREN | ANAMNÈSE ET FACTEURS DE RISQUE |   |   |   |   |   |   |
-| 7. Anamnese | 7. Anamnèse | 0..1 | O |   |   |   |   |
+
+### Medical History & Risk Factors
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **7. Anamnese** | **7. Anamnèse** | 0..1 | O |   |   |   |   |
 | 7.1. Allgemeine Anamnese | 7.1. Anamnèse générale | 0..1 | O |   |   |   |   |
 | 7.1.1. Alter | 7.1.1. Âge | 0..1 | O | Quantität | Alter in Jahren<br />424144002 Current chronological age (observable entity) |   |   |
 | 7.1.2. Körpergrösse | 7.1.2. Taille | 0..1 | O | Quantität | Grösse in cm<br />248334005 Length of body (observable entity) <br />LOINC: 8302-2 Body height |   |   |
@@ -180,7 +182,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 7.6.6.10. Stillen | 7.6.6.10. Allaitement | 0..1 | O | String |   |   |   |
 | 7.6.6.11. Besonderheiten Mutter | 7.6.6.11. Particularités concer t la mère | 0..1 | O | String |   |   |   |
 | 7.6.6.12. Besonderheiten Kind | 7.6.6.12. Particularités concer t l’enfant | 0..1 | O | String |   |   |   |
-| 8. Risikofaktoren | 8. Facteurs de risque | 0..1 | O |   |   |   |   |
+| **8. Risikofaktoren** | **8. Facteurs de risque** | 0..1 | O |   |   |   |   |
 | 8.1. Einzelne Risikofaktoren | 8.1. Liste des facteurs de risque | 0..\* | O |   |   |   |   |
 | 8.1.1. Risikofaktor | 8.1.1. Facteur de risque | 1..1 | M | Code | Value Set: Risikofaktoren |   |   |
 | 8.1.2. Antwort | 8.1.2. Réponse | 1..1 | M | Boolean | Gibt an, ob ein Risikofaktor zutrifft oder nicht |   |   |
@@ -189,8 +191,13 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 8.2.1. Risikoschwangerschaft liegt vor | 8.2.1. Présence d’une grossesse à risque | 1..1 | M | Boolean | Gibt an, ob eine Risikoschwangerschaft vorliegt oder nicht |   |   |
 | 8.2.2. Beurteilung durch | 8.2.2. Évaluation effectuée par | 1..1 | M | String |   |   |   |
 | 8.2.3. Bemerkungen | 8.2.3. Remarques | 0..1 | R | String |   |   |   |
-| TERMINBESTIMMUNG & PRÄNATALDIAGNOSTIK | CALCUL DU TERME ET DIAGNOSTIC PRÉNATAL |   |   |   |   |   |   |
-| 9. Terminbestimmung | 9. Calcul du terme | 0..1 | O |   |   |   |   |
+
+### Pregnancy Dating & Prenatal Diagnostics
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **9. Terminbestimmung** | **9. Calcul du terme** | 0..1 | O |   |   |   |   |
 | 9.1. Start letzte Periode | 9.1. Début de la dernière période menstruelle | 0..1 | R | Datum | 248993009 Date of last normal period (observable entity) |   |   |
 | 9.2. Zyklusdauer/-länge | 9.2. Durée du cycle menstruel | 0..1 | R | Quantität | Anzahl in Tagen<br />364310004 Duration of menstrual cycle (observable entity) |   |   |
 | 9.3. Positiver Schwangerschaftstest am | 9.3. Test de grossesse positif le | 0..1 | O | Datum | 250423000 Preg cy test positive (finding) |   |   |
@@ -206,7 +213,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 9.8.2. Alter der eingesetzten Eizelle | 9.8.2. Âge de l’ovocyte utilisé | 0..\* | O | Quantität | Alter der Eizelle in Tagen. |   |   |
 | 9.8.3. Bemerkungen | 9.8.3. Remarques | 0..1 | O | String |   |   |   |
 | 9.9. Bemerkungen | 9.9. Remarques | 0..1 | O | String | Bemerkungen zur Terminbestimmung |   |   |
-| 10.Pränataldiagnostik | 10. Diagnostic prénatal | 0..1 | O |   | 243787009 Antenatal screening (procedure) |   |   |
+| **10.Pränataldiagnostik** | **10. Diagnostic prénatal** | 0..1 | O |   | 243787009 Antenatal screening (procedure) |   |   |
 | 10.1. Abgelehnt | 10.1. Refus | 0..1 | O | Boolean | Gibt an, ob die schwangere Frau die Pränataldiagnostik ablehnt oder nicht. |   |   |
 | 10.2. Pränataldiagnostik Test | 10.2. Test de diagnostic prénatal | 0..\* | O |   |   |   |   |
 | 10.2.1. Code Pränataldiagnostiktest | 10.2.1. Code du test de diagnostic prénatal | 1..1 | M | Code | Value Set: Pränataldiagnostik Test |   |   |
@@ -216,8 +223,13 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 10.2.3.2. Anzahl an Tagen in laufender Schwangerschaftswoche | 10.2.3.2. Nombre de jours dans la semaine de grossesse en cours | 0..1 | O | Quantität | Anzahl der Tage in der laufenden Schwangerschaftswoche |   |   |
 | 10.2.4. Ergebnis | 10.2.4. Résultat | 0..1 | R | String | Ergebnisse des Pränataldiagnostik Tests |   |   |
 | 10.2.5. Bemerkung | 10.2.5. Remarques | 0..1 | O | String | Bemerkungen zum durchgeführten Pränataldiagnostik Test |   |   |
-| SEROLOGISCHE- & LABORUNTERSUCHUNGEN | SÉROLOGIES ET ANALYSES DE LABORATOIRE |   |   |   |   |   |   |
-| 11. Untersuchungen und Tests | 11. Analyses et tests | 0..1 | O |   |   | Composition.section:lab-subsections | Modelled accoring CH LAB-Report, see note below |
+
+### Serological & Laboratory Tests
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **11. Untersuchungen und Tests** | **11. Analyses et tests** | 0..1 | O |   |   | Composition.section:lab-subsections | Modelled accoring CH LAB-Report, see note below |
 | 11.1. Blutgruppenzugehörigkeit | 11.1. Détermination du groupe sanguin | 0..1 | R |   |   | Composition.section:lab-subsections.<br />section:bloodBankStudies.entry:bloodGroup<br />-> CH EPREG Observation (Lab): Blood Group | The values for blood group and Rhesus (D) are given as a single value (Observation.value), either one or the other, or both combined.<br />This approach is already in use in Switzerland and IPS:<br />- https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html<br />- https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html<br />See discussion about value vs. component.value: https://chat.fhir.org/#narrow/channel/179256-Orders-and-Observation-WG/topic/Blood.20Type<br /><br /><br /> |
 | 11.1.1. Untersuchungsdatum | 11.1.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | Observation.effectiveDateTime |   |
 | 11.1.2. Durchgeführt durch | 11.1.2. Analyse effectuée par | 1..1 | M |   | Dies kann analog zum Austauschformat eLaborbefund implementiert werden. | Observation.performer |   |
@@ -241,8 +253,13 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 11.4.1. Untersuchungsdatum | 11.4.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   |   |   |
 | 11.4.2. Durchgeführt durch | 11.4.2. Effectuée par | 1..1 | M | String |   |   |   |
 | 11.4.1. Code Laboruntersuchung | 11.4.3. Code de l’analyse de laboratoire | 1..1 | M | Code | Value Set: Laboruntersuchung maskiert |   |   |
-| STATIONÄRE AUFNAHME IN DER SCHWANGERSCHAFT | HOSPITALISATION PENDANT LA GROSSESSE |   |   |   |   |   |   |
-| 12. Stationäre Aufnahme | 12. Hospitalisation | 0..1 | O |   | 32485007 Hospital admission (procedure) |   |   |
+
+### Inpatient Admission During Pregnancy
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **12. Stationäre Aufnahme** | **12. Hospitalisation** | 0..1 | O |   | 32485007 Hospital admission (procedure) |   |   |
 | 12.1. Datum (von/bis) | 12.1. Date (du/au) | 0..1 | R |   |   |   |   |
 | 12.1.1. Datum Eintritt | 12.1.1. Date d’admission | 0..1 | R | Datum |   |   |   |
 | 12.1.2. Datum Austritt | 12.1.2. Date de sortie | 0..1 | R | Datum |   |   |   |
@@ -259,8 +276,13 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 12.3. Diagnose | 12.3. Diagnostic | 0..1 | R | String |   |   |   |
 | 12.4. Therapie | 12.4. Traitement | 0..1 | O | String |   |   |   |
 | 12.5. Verlauf | 12.5. Évolution | 0..1 | O | String |   |   |   |
-| SCHWANGERSCHAFTSVERLAUF | ÉVOLUTION DE LA GROSSESSE |   |   |   |   | Composition.setion:preg cyProgress |   |
-| 13. Untersuchung | 13. Examen | 0..1 | O |   |   | Composition.setion:pregProgress.entry:pregVisit <br />-> CH EPREG Encounter: Mother<br />-> CH EPREG Encounter: Child |   |
+
+### Pregnancy Progress
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **13. Untersuchung** | **13. Examen** | 0..1 | O |   |   | Composition.setion:pregProgress.entry:pregVisit <br />-> CH EPREG Encounter: Mother<br />-> CH EPREG Encounter: Child |   |
 | 13.1. Nummer | 13.1. Numéro | 0..1 | O | Count | Nummer der Untersuchung | Encounter.extension:visitNumber<br />-> Extension.valuePositiveInt |   |
 | 13.2. Zeitpunkt der Untersuchung | 13.2. Date de l’examen | 1..1 | M |   |   | Observation.effective[x] |   |
 | 13.2.1. Datum | 13.2.1. Date | 1..1 | M | Datum | Datum der Ultraschalluntersuchung | Encounter.period.start<br />Encounter.period.end |   |
@@ -313,8 +335,14 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 13.9.5.1. Festnetz | 13.9.5.1. Fixe | 0..1 | R | String |   | Organization.telecom:phone<br />use = work |   |
 | 13.9.5.2. Mobil | 13.9.5.2. Mobile | 0..1 | O | String |   | Organization.telecom:phone<br />use = mobile |   |
 | 13.9.6. E-Mailadresse | 13.9.6. Courriel | 0..1 | O | String |   | Organization.telecom:email |   |
-| ULTRASCHALLUNTERSUCHUNGEN & CTG-KONTROLLEN | ÉCHOGRAPHIES ET CONTRÔLES CTG |   |   |   |   |   |   |
-| 14. Ultraschall | 14. Échographie | 0..1 | O |   | 16310003 Ultrasonography (procedure) |   |   |
+
+
+### Ultrasound Examinations & CTG Monitoring
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **14. Ultraschall** | **14. Échographie** | 0..1 | O |   | 16310003 Ultrasonography (procedure) |   |   |
 | 14.1. Nummer | 14.1. Numéro | 0..1 | O | Count | Nummer der Ultraschalluntersuchung |   |   |
 | 14.2. Zeitpunkt der Untersuchung | 14.2. Moment | 1..1 | M |   |   |   |   |
 | 14.2.1. Datum | 14.2.1. Date | 1..1 | M | Datum | Datum der Ultraschalluntersuchung |   |   |
@@ -367,7 +395,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 14.10.4.1. Festnetz | 14.10.4.1. Fixe | 0..1 | R | String |   |   |   |
 | 14.10.4.2. Mobil | 14.10.4.2. Mobile | 0..1 | O | String |   |   |   |
 | 14.10.5. E-Mailadresse | 14.10.5. Courriel | 0..1 | O | String |   |   |   |
-| 15. Kardiotokografie | 15. CTG | 0..\* | O |   |   |   |   |
+| **15. Kardiotokografie** | **15. CTG** | 0..\* | O |   |   |   |   |
 | 15.1. Identifikation | 15.1. Identification | 0…1 | O | String | Angaben oder Beschreibung von Merkmalen zur Unterscheidung der Föten/Kinder im Falle einer Mehrlingsschwangerschaft. |   |   |
 | 15.2. Zeitpunkt der Untersuchung | 15.2. Date de l’examen | 1..1 | M |   |   |   |   |
 | 15.2.1. Datum und Zeit | 15.2.1. Date et heure | 1..1 | M | Datum/Zeit | Datum des CTG |   |   |
@@ -397,8 +425,13 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 15.4.5.1. Festnetz | 15.4.5.1. Fixe | 0..1 | R | String |   |   |   |
 | 15.4.5.2. Mobil | 15.4.5.2. Mobile | 0..1 | O | String |   |   |   |
 | 15.4.6. E-Mailadresse | 15.4.6. Courriel | 0..1 | O | String |   |   |   |
-| GEBURT | ACCOUCHEMENT |   |   |   |   |   |   |
-| 16. Geburt | 16. Accouchement | 0..1 | O |   | 3950001 Birth (finding) |   |   |
+
+### Delivery
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **16. Geburt** | **16. Accouchement** | 0..1 | O |   | 3950001 Birth (finding) |   |   |
 | 16.1. Datum und Zeit | 16.1. Date et heure | 1..1 | M | Datum/Zeit | Datum und Zeit der Geburt |   |   |
 | 16.2. Schwangerschaftswoche+Tage | 16.2. Semaine de grossesse + jours | 0..1 | O |   | Schwangerschaftswoche in der die Geburt stattgefunden hat<br />1156738004 Fetal gestational age in weeks and days (observable entity) |   |   |
 | 16.2.1. Schwangerschaftswochen | 16.2.1. Semaines de grossesse | 1..1 | M | Quantität | Anzahl der Wochen in der laufenden Schwangerschaft |   |   |
@@ -451,8 +484,14 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 16.5.13.2. Beschreibung Fehlbildung | 16.5.13.2. Description de la malformation | 0..1 | O | String | Beschreibung der Fehlbildung |   |   |
 | 16.5.14. Besonderheiten | 16.5.14. Particularités | 0..1 | O | String | Beschreibung Besonderheiten zum Kind |   |   |
 | 16.6. Bemerkungen zur Geburt | 16.6. Remarques concer t l’accouchement | 0..1 | O | String | Bemerkungen zur Geburt |   |   |
-| WOCHENBETT | POST-PARTUM |   |   |   |   |   |   |
-| 17. Wochenbett | 17. Post-partum | 0..1 | O |   |   |   |   |
+
+
+### Postpartum
+
+{:class="table table-bordered"}
+| Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **17. Wochenbett** | **17. Post-partum** | 0..1 | O |   |   |   |   |
 | 17.1. Wochenbettverlauf | 17.1. Déroulement du post-partum | 0..1 | O |   |   |   |   |
 | 17.1.1. Wundheilung | 17.1.1. Cicatrisation | 0..1 | O | String |   |   |   |
 | 17.1.2. Ausscheidung | 17.1.2. Excrétion | 0..1 | O | String |   |   |   |
