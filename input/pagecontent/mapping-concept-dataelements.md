@@ -117,9 +117,9 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 7.2.1.1. Frage | 7.2.1.1. Question | 1..1 | M | Code | Value Set: Persönliche Anamnese |   |   |
 | 7.2.1.2. Antwort | 7.2.1.2. Réponse | 1..1 | M | Boolean | Gibt an, ob die Frage zutrifft oder nicht. |   |   |
 | 7.2.1.3. Bemerkungen | 7.2.1.3. Remarques | 0..1 | O | String |   |   |   |
-| 7.3. Familie amnese | 7.3. Anamnèse familiale | 0..1 | O |   |   |   |   |
-| 7.3.1. Fragen Familie amnese | 7.3.1. Questions sur l’anamnèse familiale | 0..\* | O |   |   |   |   |
-| 7.3.1.1. Frage | 7.3.1.1. Question | 1..1 | M | Code | Value Set: Familie amnese |   |   |
+| 7.3. Familienanamnese | 7.3. Anamnèse familiale | 0..1 | O |   |   |   |   |
+| 7.3.1. Fragen Familienanamnese | 7.3.1. Questions sur l’anamnèse familiale | 0..\* | O |   |   |   |   |
+| 7.3.1.1. Frage | 7.3.1.1. Question | 1..1 | M | Code | Value Set: Familienanamnese |   |   |
 | 7.3.1.2. Antwort | 7.3.1.2. Réponse | 1..1 | M | Boolean | Gibt an, ob eine Frage zutrifft oder nicht. |   |   |
 | 7.3.1.3. Bemerkungen | 7.3.1.3. Remarques | 0..1 | O | String | Bemerkungen zur Frage |   |   |
 | 7.4. Soziale Anamnese | 7.4. Anamnèse sociale | 0..1 |   |   |   |   |   |
