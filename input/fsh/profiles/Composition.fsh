@@ -117,9 +117,9 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[bodyWeight].reference 1..
 * section[pregProgress].entry[weightGain] only Reference(ChEpregObservationWeightGain)
 * section[pregProgress].entry[weightGain].reference 1..
-* section[pregProgress].entry[bloodPressure] only Reference(ChEpregObservationUrineFinding)
+* section[pregProgress].entry[bloodPressure] only Reference(ChEpregObservationBloodPressure)
 * section[pregProgress].entry[bloodPressure].reference 1..
-* section[pregProgress].entry[urineFinding] only Reference(ChEpregObservationBloodPressure)
+* section[pregProgress].entry[urineFinding] only Reference(ChEpregObservationUrineFinding)
 * section[pregProgress].entry[urineFinding].reference 1..
 * section[pregProgress].entry[abdominalCircumference] only Reference(ChEpregObservationAbdominalCircumference)
 * section[pregProgress].entry[abdominalCircumference].reference 1..
