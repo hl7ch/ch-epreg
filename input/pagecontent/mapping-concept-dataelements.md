@@ -7,28 +7,28 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **1. Schwangere Person** | **1. Personne enceinte** | 1..1 | M |   |   | Composition.subject<br />-> CH EPREG Patient: Mother |   |
-| 1.1. AHV-Nummer | 1.1. Numéro AVS | 0..1 | R | Identifikator |   | not allowed in the EPR context | AHVN13 is not allowed in the EPR context, see https://fhir.ch/ig/ch-core/StructureDefinition-ch-core-patient-epr.html |
-| 1.2. Name | 1.2. Nom | 0..1 | R |   | 371484003 Patient name (observable entity) | Patient.name |   |
-| 1.2.1. Nachname | 1.2.1. Nom de famille | 1..1 | M | String | 184096005 Patient surname (observable entity) | Patient.name.family |   |
-| 1.2.2. Vorname | 1.2.2. Prénoms | 1..1 | M | String | 184095009 Patient forename (observable entity) | Patient.name.given |   |
-| 1.2.3. Namenszusatz | 1.2.3. Autres prénoms | 0..1 | O | String | 716057004 Patient middle name (observable entity) | Patient.name.prefix |   |
-| 1.2.4. Vollständiger Name | 1.2.4. Nom complet | 0..1 | R | String | Vollständiger Name mit Vornamen, Nachnamen und Namenszusatz. Der vollständige Name soll alle Namensteile in ihrer korrekten Reihenfolge abbilden. | Patient.name.text |   |
-| 1.2.5. Pronomen | 1.2.5. Pronoms | 0..1 | O | String | Für Trans-PatientInnen als optionale Angabe | Patient.extension:pronoun |   |
-| 1.3. Geburtsdatum | 1.3. Date de naissance | 0..1 | R | Datum | 184099003 Date of birth (observable entity) | Patient.birthDate |   |
-| 1.4. Nationalität | 1.4. Nationalité | 0..\* | O | String |   | Patient.extension:citizenship |   |
-| 1.5. Kommunikationssprache | 1.5. Langue de communication | 0..1 | O | String |   | Patient.communication:languageOfCorrespondence |   |
-| 1.6. Adresse | 1.6. Adresse | 0..1 | R |   |   | Patient.address |   |
-| 1.6.1. Strasse | 1.6.1. Rue | 0..1 | R | String |   | Patient.address.line |   |
-| 1.6.2. Hausnummer | 1.6.2. Numéro | 0..1 | R | String |   | Patient.address.line |   |
-| 1.6.3. Postleitzahl | 1.6.3. Code postal | 0..1 | R | String |   | Patient.address.postalCode |   |
-| 1.6.4. Ort | 1.6.4. Localité | 0..1 | R | String |   | Patient.address.city |   |
-| 1.6.5. Land | 1.6.5. Pays | 0..1 | R | String |   | Patient.address.country |   |
-| 1.7. Telefon | 1.7. N° de téléphone | 0..1 | R |   |   | Patient.telecom:phone |   |
-| 1.7.1. Festnetz | 1.7.1. Fixe | 0..1 | O | String |   | Patient.telecom:phone<br />use = home |   |
-| 1.7.2. Mobil | 1.7.2. Mobile | 0..\* | R | String |   | Patient.telecom:phone<br />use = mobile |   |
-| 1.7.3. Arbeit | 1.7.3. Professionnel | 0..1 | O | String |   | Patient.telecom:phone<br />use = work |   |
-| 1.8. E-Mailadresse | 1.8. Courriel | 0..\* | R | String |   | Patient.telecom:email |   |
+| **1. Schwangere Person** | **1. Personne enceinte** | 1..1 | M |   |   | `Composition.subject`<br />-> [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html) |   |
+| 1.1. AHV-Nummer | 1.1. Numéro AVS | 0..1 | R | Identifikator |   | _not allowed in the EPR context_ | AHVN13/NAVS13 is not allowed in the EPR context, see parent profile [CH Core Patient EPR](https://fhir.ch/ig/ch-core/StructureDefinition-ch-core-patient-epr.html). |
+| 1.2. Name | 1.2. Nom | 0..1 | R |   | 371484003 Patient name (observable entity) | `Patient.name` |   |
+| 1.2.1. Nachname | 1.2.1. Nom de famille | 1..1 | M | String | 184096005 Patient surname (observable entity) | `Patient.name.family` |   |
+| 1.2.2. Vorname | 1.2.2. Prénoms | 1..1 | M | String | 184095009 Patient forename (observable entity) | `Patient.name.given` |   |
+| 1.2.3. Namenszusatz | 1.2.3. Autres prénoms | 0..1 | O | String | 716057004 Patient middle name (observable entity) | `Patient.name.prefix` |   |
+| 1.2.4. Vollständiger Name | 1.2.4. Nom complet | 0..1 | R | String | Vollständiger Name mit Vornamen, Nachnamen und Namenszusatz. Der vollständige Name soll alle Namensteile in ihrer korrekten Reihenfolge abbilden. | `Patient.name.text` |   |
+| 1.2.5. Pronomen | 1.2.5. Pronoms | 0..1 | O | String | Für Trans-PatientInnen als optionale Angabe | `Patient.extension:pronoun.extension:value.valueCodeableConcept` |   |
+| 1.3. Geburtsdatum | 1.3. Date de naissance | 0..1 | R | Datum | 184099003 Date of birth (observable entity) | `Patient.birthDate` |   |
+| 1.4. Nationalität | 1.4. Nationalité | 0..\* | O | String |   | `Patient.extension:citizenship.extension:code.valueCodeableConcept` |   |
+| 1.5. Kommunikationssprache | 1.5. Langue de communication | 0..1 | O | String |   | `Patient.communication:languageOfCorrespondence` |   |
+| 1.6. Adresse | 1.6. Adresse | 0..1 | R |   |   | `Patient.address` |   |
+| 1.6.1. Strasse | 1.6.1. Rue | 0..1 | R | String |   | `Patient.address.line` |   |
+| 1.6.2. Hausnummer | 1.6.2. Numéro | 0..1 | R | String |   | `Patient.address.line` |   |
+| 1.6.3. Postleitzahl | 1.6.3. Code postal | 0..1 | R | String |   | `Patient.address.postalCode` |   |
+| 1.6.4. Ort | 1.6.4. Localité | 0..1 | R | String |   | `Patient.address.city` |   |
+| 1.6.5. Land | 1.6.5. Pays | 0..1 | R | String |   | `Patient.address.country` |   |
+| 1.7. Telefon | 1.7. N° de téléphone | 0..1 | R |   |   | `Patient.telecom:phone` |   |
+| 1.7.1. Festnetz | 1.7.1. Fixe | 0..1 | O | String |   | `Patient.telecom:phone`<br />`use` = home |   |
+| 1.7.2. Mobil | 1.7.2. Mobile | 0..\* | R | String |   | `Patient.telecom:phone`<br />`use` = mobile |   |
+| 1.7.3. Arbeit | 1.7.3. Professionnel | 0..1 | O | String |   | `Patient.telecom:phone`<br />`use` = work |   |
+| 1.8. E-Mailadresse | 1.8. Courriel | 0..\* | R | String |   | `Patient.telecom:email` |   |
 | 1.9. Versicherung | 1.9. Assurance | 0..1 | R |   |   |   |   |
 | 1.9.1. Grundversicherung | 1.9.1. Assurance de base | 0..1 | R |   |   |   |   |
 | 1.9.1.1. Name Versicherung | 1.9.1.1. Nom de l’assureur | 0..1 | R | String |   |   |   |
@@ -36,7 +36,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 1.9.2. Zusatzversicherung | 1.9.2. Assurance complémentaire | 0..\* | R |   |   |   |   |
 | 1.9.2.1. Name Versicherung | 1.9.2.1. Nom de l’assureur | 0..1 | R | String |   |   |   |
 | 1.9.2.2. Versichertennummer | 1.9.2.2. Numéro de la personne assurée | 1..1 | M | String |   |   |   |
-| **2. Elternteil** | **2. Parent** | 0..\* | O |   |   | letzte von ersten Prios |   |
+| **2. Elternteil** | **2. Parent** | 0..\* | O |   |   |  |   |
 | 2.1. Art des Elternteils | 2.1. Type de parent | 1..1 | M | Code | Value Set: Elternteil |   |   |
 | 2.2. Name | 2.2. Nom | 0..1 | R |   |   |   |   |
 | 2.2.1. Nachname | 2.2.1. Nom | 0..1 | R | String |   |   |   |
@@ -55,7 +55,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 3.3.2. Mobil | 3.3.2. Mobile | 0..1 | R | String |   |   |   |
 | 3.3.3. Arbeit | 3.3.3. Professionnel | 0..1 | O | String |   |   |   |
 | 3.4. Bemerkungen | 3.4. Remarque | 0..1 | O | String |   |   |   |
-| **4. Beistand/Vormund** | **4. Curatelle/tutelle** | 0..\* | O |   |   | letzte von ersten Prios |   |
+| **4. Beistand/Vormund** | **4. Curatelle/tutelle** | 0..\* | O |   |   |   |   |
 | 4.1. Name | 4.1. Nom | 0..1 | R |   |   |   |   |
 | 4.1.1. Nachname | 4.1.1. Nom | 0..1 | R | String |   |   |   |
 | 4.1.2. Vorname | 4.1.2. Prénom | 0..1 | R | String |   |   |   |
@@ -65,26 +65,26 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 4.2.3. Arbeit | 4.2.3. Professionnel | 0..1 | O | String |   |   |   |
 | 4.3. E-Mailadresse | 4.3. Courriel | 0..1 | O | String |   |   |   |
 | 4.4. Bemerkungen | 4.4. Remarques | 0..1 | O | String |   |   |   |
-| **5. Behandelnder Leistungserbringender** | **5. Fournisseur de prestations** | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | Composition.section:careTeam <br />-> CH EPREG PractitionerRole: Treating Healthcare Provider <br /> -> CH EPREG Practitioner: Treating Healthcare Provider<br /> -> CH EPREG Organization: Treating Healthcare Provider |   |
-| 5.1. Art des Leistungserbringenden | 5.1. Type de fournisseur de prestations | 1..1 | M | Code | Value Set: Leistungserbringender | PractitionerRole.code <br />PractitionerRole.specialty |   |
-| 5.2. GLN Nummer | 5.2. Numéro GLN | 0..1 | R | Identifikator |   | Practitioner.identifier:GLN |   |
-| 5.3. Bemerkungen | 5.3. Remarques | 0..1 | O | String |   | can be textually described here:<br />Composition.section:careTeam.text |   |
-| 5.4. Vorhanden | 5.4. Disponible | 1..1 | M | Boolean | Gibt an, ob ein gewisser Leistungserbringer vorhanden bzw. nicht vorhanden ist. So kann zum Beispiel explizit gesagt werden, dass die Patientin keinen Hausarzt besitzt. | can be textually described here:<br />Composition.section:careTeam.text |   |
-| 5.5. Name der behandelnden Institution | 5.5. Nom de l’institution | 0..1 | R | String | Name der Institution oder Praxis | Organization.name |   |
-| 5.6. Name | 5.6. Nom | 0..1 | R |   | Name des Leistungserbringenden | Practitioner.name |   |
-| 5.6.1. Titel | 5.6.1. Titre | 0..1 | O | String |   | Practitioner.name.prefix |   |
-| 5.6.2. Nachname | 5.6.2. Nom | 0..1 | R | String |   | Practitioner.name.family |   |
-| 5.6.3. Vorname | 5.6.3. Prénom | 0..1 | R | String |   | Practitioner.name.given |   |
-| 5.7. Adresse | 5.7. Adresse | 0..1 | R |   | Adresse des Leistungserbringenden bzw. der Praxis | Organization.address | Mapped address to Organization (not Practitioner), like it is done in CH EMED: https://fhir.ch/ig/ch-emed/StructureDefinition-ch-emed-practitionerrole.html |
-| 5.7.1. Strasse | 5.7.1. Rue | 0..1 | R | String |   | Organization.address.line |   |
-| 5.7.2. Hausnummer | 5.7.2. Numéro | 0..1 | R | String |   | Organization.address.line |   |
-| 5.7.3. Postleitzahl | 5.7.3. Code postal | 0..1 | R | String |   | Organization.address.postalCode |   |
-| 5.7.4. Ort | 5.7.4. Localité | 0..1 | R | String |   | Organization.address.city |   |
-| 5.7.5. Land | 5.7.5. Pays | 0..1 | R | String |   | Organization.address.country |   |
-| 5.8. Telefon | 5.8. N° de téléphone | 0..1 | R |   | Telefon des Leistungserbringenden | Organization.telecom:phone |   |
-| 5.8.1. Festnetz | 5.8.1. Fixe | 0..1 | R | String |   | Organization.telecom:phone<br />use = work |   |
-| 5.8.2. Mobil | 5.8.2. Mobile | 0..1 | O | String |   | Organization.telecom:phone<br />use = mobile |   |
-| 5.9. E-Mailadresse | 5.9. Courriel | 0..1 | R | String | E-Mailadresse des Leistungserbringenden | Organization.telecom:email |   |
+| **5. Behandelnder Leistungserbringender** | **5. Fournisseur de prestations** | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | `Composition.section:careTeam.entry`<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)<br />`PractitionerRole.practitioner`<br />-> [CH EPREG Practitioner: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitioner-thcp.html)<br />`PractitionerRole.organization`<br />-> [CH EPREG Organization: Treating Healthcare Provider](StructureDefinition-ch-epreg-organization-thcp.html) |   |
+| 5.1. Art des Leistungserbringenden | 5.1. Type de fournisseur de prestations | 1..1 | M | Code | [Value Set: Leistungserbringender](mapping-concept-valuesets.html#healthcare-provider) | `PractitionerRole.code`<br />`PractitionerRole.specialty` |   |
+| 5.2. GLN Nummer | 5.2. Numéro GLN | 0..1 | R | Identifikator |   | `Practitioner.identifier:GLN`|   |
+| 5.3. Bemerkungen | 5.3. Remarques | 0..1 | O | String |   | _can be textually described here:_<br />`Composition.section:careTeam.text` |   |
+    | 5.4. Vorhanden | 5.4. Disponible | 1..1 | M | Boolean | Gibt an, ob ein gewisser Leistungserbringer vorhanden bzw. nicht vorhanden ist. So kann zum Beispiel explizit gesagt werden, dass die Patientin keinen Hausarzt besitzt. | _can be textually described here:_<br />`Composition.section:careTeam.text` |   |
+| 5.5. Name der behandelnden Institution | 5.5. Nom de l’institution | 0..1 | R | String | Name der Institution oder Praxis | `Organization.name` |   |
+| 5.6. Name | 5.6. Nom | 0..1 | R |   | Name des Leistungserbringenden | `Practitioner.name` |   |
+| 5.6.1. Titel | 5.6.1. Titre | 0..1 | O | String |   | `Practitioner.name.prefix` |   |
+| 5.6.2. Nachname | 5.6.2. Nom | 0..1 | R | String |   | `Practitioner.name.family` |   |
+| 5.6.3. Vorname | 5.6.3. Prénom | 0..1 | R | String |   | `Practitioner.name.given` |   |
+| 5.7. Adresse | 5.7. Adresse | 0..1 | R |   | Adresse des Leistungserbringenden bzw. der Praxis | `Organization.address` | Mapped address to Organization (not Practitioner), like it is done in [CH EMED](https://fhir.ch/ig/ch-emed/StructureDefinition-ch-emed-practitionerrole.html). |
+| 5.7.1. Strasse | 5.7.1. Rue | 0..1 | R | String |   | `Organization.address.line` |   |
+| 5.7.2. Hausnummer | 5.7.2. Numéro | 0..1 | R | String |   | `Organization.address.line` |   |
+| 5.7.3. Postleitzahl | 5.7.3. Code postal | 0..1 | R | String |   | `Organization.address.postalCode` |   |
+| 5.7.4. Ort | 5.7.4. Localité | 0..1 | R | String |   | `Organization.address.city` |   |
+| 5.7.5. Land | 5.7.5. Pays | 0..1 | R | String |   | `Organization.address.country` |   |
+| 5.8. Telefon | 5.8. N° de téléphone | 0..1 | R |   | Telefon des Leistungserbringenden | `Organization.telecom:phone` |   |
+| 5.8.1. Festnetz | 5.8.1. Fixe | 0..1 | R | String |   | `Organization.telecom:phone`<br />`use` = work |   |
+| 5.8.2. Mobil | 5.8.2. Mobile | 0..1 | O | String |   | `Organization.telecom:phone`<br />`use` = mobile |   |
+| 5.9. E-Mailadresse | 5.9. Courriel | 0..1 | R | String | E-Mailadresse des Leistungserbringenden | `Organization.telecom:email` |   |
 | **6. Geplanter Geburtsort** | **6. Lieu d’accouchement prévu** | 0..1 | R |   |   |   |   |
 | 6.1. Hausgeburt | 6.1. Accouchement à la maison | 0..1 | O |   |   |   |   |
 | 6.1.1. Hausgeburt geplant | 6.1.1. Accouchement prévu à la maison | 0..1 | O | Boolean | Gibt an, ob eine Hausgeburt geplant ist oder nicht. |   |   |
@@ -111,8 +111,8 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | **7. Anamnese** | **7. Anamnèse** | 0..1 | O |   |   |   |   |
 | 7.1. Allgemeine Anamnese | 7.1. Anamnèse générale | 0..1 | O |   |   |   |   |
 | 7.1.1. Alter | 7.1.1. Âge | 0..1 | O | Quantität | Alter in Jahren<br />424144002 Current chronological age (observable entity) |   |   |
-| 7.1.2. Körpergrösse | 7.1.2. Taille | 0..1 | O | Quantität | Grösse in cm<br />248334005 Length of body (observable entity) <br />LOINC: 8302-2 Body height |   |   |
-| 7.1.3. Körpergewicht vor der Schwangerschaft | 7.1.3. Poids avant la grossesse | 0..1 | O | Quantität | Gewicht in kg. 1 Nachkommastelle<br />400967004 Baseline weight (observable entity) <br />LOINC: 29463-7 Body weight |   |   |
+| 7.1.2. Körpergrösse | 7.1.2. Taille | 0..1 | O | Quantität | Grösse in cm<br />248334005 Length of body (observable entity)<br />LOINC: 8302-2 Body height |   |   |
+| 7.1.3. Körpergewicht vor der Schwangerschaft | 7.1.3. Poids avant la grossesse | 0..1 | O | Quantität | Gewicht in kg.<br />1 Nachkommastelle<br />400967004 Baseline weight (observable entity) <br />LOINC: 29463-7 Body weight |   |   |
 | 7.1.4. BMI | 7.1.4. IMC | 0..1 | O | Quantität | 1 Nachkommastelle<br />60621009 Body mass index (observable entity) |   |   |
 | 7.2. Persönliche Anamnese | 7.2. Anamnèse personnelle | 0..1 | O |   | 160476009 Social / personal history observable (observable entity) |   |   |
 | 7.2.1. Fragen persönliche Anamnese | 7.2.1. Questions sur l’anamnèse personnelle | 0..\* | O |   |   |   |   |
@@ -175,7 +175,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 7.6.6.7. Geburtsverletzungen | 7.6.6.7. Traumatismes obstétricaux | 0..1 | R | String | 56110009 Birth trauma of fetus (disorder) |   |   |
 | 7.6.6.8. Angaben zum Kind | 7.6.6.8. Informations concer t l’enfant | 0..\* | O |   |   |   |   |
 | 7.6.6.8.1. Körpergewicht | 7.6.6.8.1. Poids corporel | 0..1 | R | Quantität | Gewicht in g<br />364589006 Birth weight (observable entity) <br />LOINC: 8339-4 Birth weight Measured |   |   |
-| 7.6.6.8.2. Körperlänge | 7.6.6.8.2. Taille | 0..1 | R | Quantität | Länge in cm. 1 Nachkommastelle<br />169886007 Birth length (observable entity)<br />LOINC: 89269-5 Body height Measured --at birth |   |   |
+| 7.6.6.8.2. Körperlänge | 7.6.6.8.2. Taille | 0..1 | R | Quantität | Länge in cm.<br />1 Nachkommastelle<br />169886007 Birth length (observable entity)<br />LOINC: 89269-5 Body height Measured --at birth |   |   |
 | 7.6.6.8.3. Apgar | 7.6.6.8.3. Score d’Apgar | 0..1 | R | String | Format 8/9/10<br />249228009 Total apgar score (observable entity) |   |   |
 | 7.6.6.8.4. Fehlbildung | 7.6.6.8.4. Malformation | 0..1 | O | String | 276654001 Congenital malformation (disorder) |   |   |
 | 7.6.6.9. Wochenbett | 7.6.6.9. Post-partum | 0..1 | O | String |   |   |   |
@@ -200,7 +200,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | **9. Terminbestimmung** | **9. Calcul du terme** | 0..1 | O |   |   |   |   |
 | 9.1. Start letzte Periode | 9.1. Début de la dernière période menstruelle | 0..1 | R | Datum | 248993009 Date of last normal period (observable entity) |   |   |
 | 9.2. Zyklusdauer/-länge | 9.2. Durée du cycle menstruel | 0..1 | R | Quantität | Anzahl in Tagen<br />364310004 Duration of menstrual cycle (observable entity) |   |   |
-| 9.3. Positiver Schwangerschaftstest am | 9.3. Test de grossesse positif le | 0..1 | O | Datum | 250423000 Preg cy test positive (finding) |   |   |
+| 9.3. Positiver Schwangerschaftstest am | 9.3. Test de grossesse positif le | 0..1 | O | Datum | 250423000 Pregnancy test positive (finding) |   |   |
 | 9.4. Schwangerschaft festgestellt am | 9.4. Grossesse constatée le | 0..1 | O | Datum | Datum, an dem die Schwangerschaft durch medizinisches Personal festgestellt wurde. |   |   |
 | 9.5. Einnistungsblutung am | 9.5. Saignement d’implantation le | 0..1 | O | Datum |   |   |   |
 | 9.6. Konzeptionsart | 9.6. Type de conception | 0..1 | O | Code | Value Set: Konzeptionsart |   |   |
@@ -229,25 +229,25 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **11. Untersuchungen und Tests** | **11. Analyses et tests** | 0..1 | O |   |   | Composition.section:lab-subsections | Modelled accoring CH LAB-Report, see note below |
-| 11.1. Blutgruppenzugehörigkeit | 11.1. Détermination du groupe sanguin | 0..1 | R |   |   | Composition.section:lab-subsections.<br />section:bloodBankStudies.entry:bloodGroup<br />-> CH EPREG Observation (Lab): Blood Group | The values for blood group and Rhesus (D) are given as a single value (Observation.value), either one or the other, or both combined.<br />This approach is already in use in Switzerland and IPS:<br />- https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html<br />- https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html<br />See discussion about value vs. component.value: https://chat.fhir.org/#narrow/channel/179256-Orders-and-Observation-WG/topic/Blood.20Type<br /><br /><br /> |
-| 11.1.1. Untersuchungsdatum | 11.1.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | Observation.effectiveDateTime |   |
-| 11.1.2. Durchgeführt durch | 11.1.2. Analyse effectuée par | 1..1 | M |   | Dies kann analog zum Austauschformat eLaborbefund implementiert werden. | Observation.performer |   |
-| 11.1.3. Blutgruppe | 11.1.3. Groupe sanguin | 0..1 | R | Code | Value Set: Blutgruppe | Observation.valueCodeableConcept |   |
-| 11.1.4. Rhesus | 11.1.4. Rhésus | 0..1 | R | Code | Value Set: Rhesus | Observation.valueCodeableConcept |   |
-| 11.2. Bestimmung des fetalen RHD-Status | 11.2. Détermination du RhD fœtal | 0..1 | R |   |   | Composition.section:lab-subsections.<br />section:bloodBankStudies.entry:fetalRhD<br />-> CH EPREG Observation (Lab): Fetal RhD |   |
-| 11.2.1. Untersuchungsdatum | 11.2.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | Observation.effective[x] |   |
-| 11.2.2. Rhesus | 11.2.2. Rhésus | 0..1 | R | Code | Value Set: Rhesus | Observation.valueCodeableConcept |   |
-| 11.3. Laboruntersuchung | 11.3. Analyse de laboratoire | 0..\* | O |   | 108252007 Laboratory procedure (procedure) | Composition.section:lab-subsections.<br />- section:bloodBankStudies.entry<br />- section:chemistryStudies.entry<br />- section:hematologyStudies.entry<br />- section:microbiologyStudies.entry<br />-> CH EPREG Observation (Base): Results Laboratory | Modelled according to CH LAB-Report: https://fhir.ch/ig/ch-lab-report/StructureDefinition-ch-lab-report-composition.html<br />- section:lab-subsections with sections according to https://hl7.eu/fhir/laboratory/ValueSet-lab-studyType-eu-lab.html<br />- Representation of the common sections used for the preg cy passport, but other sections can be added |
-| 11.3.1. Untersuchungsdatum | 11.3.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | Observation.effective[x] |   |
-| 11.3.2. Durchgeführt durch | 11.3.2. Analyse effectuée par | 1..1 | M |   | Dies kann analog zum Austauschformat eLaborbefund implementiert werden. | Observation.performer |   |
-| 11.3.3. Code Laboruntersuchung | 11.3.3. Code de l’analyse de laboratoire | 1..1 | M | Code | Value Set: Laboruntersuchung | Observation.code |   |
-| 11.3.4. Messergebnis | 11.3.4. Résultats | 1..1 | M |   |   | Observation.(component.)value[x] |   |
-| 11.3.4.1. Messergebnis quantitativ | 11.3.4.1. Résultat quantitatif | 0..1 | R |   |   | valueQuantity | https://hl7.org/fhir/R4/datatypes.html#Quantity |
-| 11.3.4.1.1. Analyse-Wert | 11.3.4.1.1. Valeur | 0..1 | R | Quantität | 1 Nachkommastelle | valueQuantity.value |   |
-| 11.3.4.1.2. Einheit | 11.3.4.1.2. Unité | 0..1 | R | Code | Value Set: Messergebnisse Einheit | valueQuantity.code <br />(valueQuantity.unit) |   |
-| 11.3.4.2. Messergebnis qualitativ | 11.3.4.2. Résultat qualitatif | 0..1 | R | Code | Value Set: Messergebnisse Qualitativ | valueCodeableConcept.coding | https://hl7.org/fhir/R4/datatypes.html#CodeableConcept |
-| 11.3.4.3. Messergebnis Textform | 11.3.4.3. Résultat au format texte | 0..1 | R | String | Messergebnis in Textform falls andere Angabe nicht möglich. | valueCodeableConcpet.text |   |
+| **11. Untersuchungen und Tests** | **11. Analyses et tests** | 0..1 | O |   |   | `Composition.section:lab-subsections` | Modelled accoring [CH LAB-Report](https://fhir.ch/ig/ch-lab-report/index.html), see note row 11.3. below. |
+| 11.1. Blutgruppenzugehörigkeit | 11.1. Détermination du groupe sanguin | 0..1 | R |   |   | `Composition.section:lab-subsections`<br />`.section:bloodBankStudies.entry:bloodGroup`<br />-> [CH EPREG Observation (Lab): Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html) | The values for blood group and Rhesus are given as single value (`Observation.valueCodeableConcept`), either one or the other, or both combined.<br />This approach is already in use in Switzerland and IPS:<br />- [https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html](https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html)<br />- [https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html](https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html)<br />See also the discussion about `value` vs. `component.value` on [chat.fhir.org](https://chat.fhir.org/#narrow/channel/179256-Orders-and-Observation-WG/topic/Blood.20Type). |
+| 11.1.1. Untersuchungsdatum | 11.1.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | `Observation.effectiveDateTime` |   |
+| 11.1.2. Durchgeführt durch | 11.1.2. Analyse effectuée par | 1..1 | M |   | Dies kann analog zum Austauschformat eLaborbefund implementiert werden. | `Observation.performer` |   |
+| 11.1.3. Blutgruppe | 11.1.3. Groupe sanguin | 0..1 | R | Code | [Value Set: Blutgruppe](mapping-concept-valuesets.html#blood-group--rhesus) | `Observation.valueCodeableConcept` | See note row 11.1. above.  |
+| 11.1.4. Rhesus | 11.1.4. Rhésus | 0..1 | R | Code | [Value Set: Rhesus](mapping-concept-valuesets.html#blood-group--rhesus) | `Observation.valueCodeableConcept` |  See note row 11.1. above.<br /> RhD mother and fetal RhD have different [result values](ValueSet-blood-group.html), due to different laboratory tests. |
+| 11.2. Bestimmung des fetalen RHD-Status | 11.2. Détermination du RhD fœtal | 0..1 | R |   |   | `Composition.section:lab-subsections`<br />`.section:bloodBankStudies.entry:fetalRhD`<br />-> [CH EPREG Observation (Lab): Fetal RhD](StructureDefinition-ch-epreg-observation-fetal-rhd.html) |   |
+| 11.2.1. Untersuchungsdatum | 11.2.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | `Observation.effectiveDateTime` |   |
+| 11.2.2. Rhesus | 11.2.2. Rhésus | 0..1 | R | Code | [Value Set: Rhesus](mapping-concept-valuesets.html#fetal-rhd) | `Observation.valueCodeableConcept` | RhD mother and fetal RhD have different [result values](ValueSet-fetal-rhd-antigen.html), due to different laboratory tests. |
+| 11.3. Laboruntersuchung | 11.3. Analyse de laboratoire | 0..\* | O |   | 108252007 Laboratory procedure (procedure) | `Composition.section:lab-subsections`<br />- `.section:bloodBankStudies.entry`<br />- `.section:chemistryStudies.entry`<br />- `.section:hematologyStudies.entry`<br />- `.section:microbiologyStudies.entry`<br />-> [CH EPREG Observation (Base): Results Laboratory](StructureDefinition-ch-epreg-observation-results-lab.html) | Modelled and compliant in accordance with [CH LAB-Report Composition: Laboratory Report](https://fhir.ch/ig/ch-lab-report/StructureDefinition-ch-lab-report-composition.html);<br />`.section:lab-subsections` with sections corresponding to [ValueSet: Laboratory Study Types](https://hl7.eu/fhir/laboratory/ValueSet-lab-studyType-eu-lab.html).<br />Representation of the common sections used for the pregnancy passport, but other sections can be added. |
+| 11.3.1. Untersuchungsdatum | 11.3.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | `Observation.effective[x]` |   |
+| 11.3.2. Durchgeführt durch | 11.3.2. Analyse effectuée par | 1..1 | M |   | Dies kann analog zum Austauschformat eLaborbefund implementiert werden. | `Observation.performer` |   |
+| 11.3.3. Code Laboruntersuchung | 11.3.3. Code de l’analyse de laboratoire | 1..1 | M | Code | [Value Set: Laboruntersuchung](mapping-concept-valuesets.html#laboratory-results) | `Observation.code` |   |
+| 11.3.4. Messergebnis | 11.3.4. Résultats | 1..1 | M |   |   | `Observation.(component.)value[x]` |   |
+| 11.3.4.1. Messergebnis quantitativ | 11.3.4.1. Résultat quantitatif | 0..1 | R |   |   | => `.valueQuantity` | [Data Type: Quantity](https://hl7.org/fhir/R4/datatypes.html#Quantity) |
+| 11.3.4.1.1. Analyse-Wert | 11.3.4.1.1. Valeur | 0..1 | R | Quantität | 1 Nachkommastelle | => `.valueQuantity.value` |   |
+| 11.3.4.1.2. Einheit | 11.3.4.1.2. Unité | 0..1 | R | Code | [Value Set: Messergebnisse Einheit](mapping-concept-valuesets.html#unit) | => `.valueQuantity.code` |   |
+| 11.3.4.2. Messergebnis qualitativ | 11.3.4.2. Résultat qualitatif | 0..1 | R | Code | [Value Set: Messergebnisse Qualitativ](mapping-concept-valuesets.html#qualitative) | => `.valueCodeableConcept.coding` | [Data Type: CodeableConcept](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) |
+| 11.3.4.3. Messergebnis Textform | 11.3.4.3. Résultat au format texte | 0..1 | R | String | Messergebnis in Textform falls andere Angabe nicht möglich. | => `.valueCodeableConcpet.text` |   |
 | 11.3.5. Immunität anzunehmen | 11.3.5. Immunité acquise | 0..\* | R | Code | Value Set: Interpretation Immunität |   |   |
 | 11.4. Laboruntersuchung, Ergebnis maskiert | 11.4. Analyse de laboratoire, résultat non documenté | 0..\* | O |   |   |   |   |
 | 11.4.1. Untersuchungsdatum | 11.4.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   |   |   |
@@ -290,7 +290,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 13.2.2.1. Schwangerschaftswochen | 13.2.2.1. Semaines de grossesse | 1..1 | M | Quantität | Anzahl der Wochen in der laufenden Schwangerschaft | see comment about gestational age above |   |
 | 13.2.2.2. Anzahl an Tagen in laufender Schwangerschaftswoche | 13.2.2.2. Nombre de jours dans la semaine de grossesse en cours | 1..1 | M | Quantität | Anzahl der Tage in der laufenden Schwangerschaftswoche | see comment about gestational age above |   |
 | 13.3. Angaben zur Schwangeren | 13.3. Informations sur la femme enceinte | 0..1 | O |   |   | Observation.subject<br />-> CH EPREG Patient: Mother | see note about Observation for mother and (unborn) child below |
-| 13.3.1. Aktuelles Gewicht | 13.3.1. Poids actuel | 0..1 | O | Quantität | Aktuelles Gewicht in kg. 1 Nachkommastelle | Compostion.section:pregProgress.entry:bodyWeight<br />-> CH EPREG Observation (Mother): Body Weight<br />Observation.valueQuantity | conforms to https://hl7.org/fhir/R4/bodyweight.html |
+| 13.3.1. Aktuelles Gewicht | 13.3.1. Poids actuel | 0..1 | O | Quantität | Aktuelles Gewicht in kg.<br />1 Nachkommastelle | Compostion.section:pregProgress.entry:bodyWeight<br />-> CH EPREG Observation (Mother): Body Weight<br />Observation.valueQuantity | conforms to https://hl7.org/fhir/R4/bodyweight.html |
 | 13.3.2. Gewichtszunahme | 13.3.2. Prise de poids | 0..1 | O | Quantität | Gewichtszunahme in kg. 1 Nachkommastelle | Composition.section:weightGain<br />-> CH EPREG Observation (Mother): Weight Gain<br />Observation.valueQuantity |   |
 | 13.3.3. Blutdruck | 13.3.3. Pression artérielle | 0..1 | O |   | 75367002 Blood pressure (observable entity)<br />LOINC: 85354-9 Blood pressure panel with all children optional | Composition.section:pregProgress.entry:bloodPressure<br />-> CH EPREG Observation (Mother): Blood Pressure | conforms to https://hl7.org/fhir/R4/bp.html |
 | 13.3.3.1. Systolischer Blutdruckwert | 13.3.3.1. Valeur de la pression artérielle systolique | 1..1 | M | Quantität | Angabe in mmHg<br />271649006 Systolic blood pressure (observable entity) <br />LOINC: 8480-6 Systolic blood pressure | Observation.component:SystolicBP.valueQuantity |   |
@@ -303,8 +303,8 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 13.3.5. BU (Bauchumfang) | 13.3.5. Circonférence abdominale | 0..1 | O | Quantität |   | Composition.section:pregProgress.entry:abdominalCircumference<br />CH EPREG Observation (Mother): Abdominal Circumference<br />Observation.valueQuantity |   |
 | 13.3.6. SY-FU (Symphysen-Fundus-Abstand) | 13.3.6. Hauteur utérine | 0..1 | O | String | 364265003 Height of gravid uterus (observable entity) | Composition.section:pregProgress.entry:fundusHeight<br />CH EPREG Observation (Mother): Fundus Height<br />Observation.valueString | Height of gravid uterus (de: Fundusstand) is not the same as Symphysen-Fundus-Abstand (SY-FU).<br />- Fundus height: example value Rb/2 (represented in the IG)<br />- SY-FU: measured in cm (not represented in the IG)<br /> |
 | 13.3.7. Vaginalbefund | 13.3.7. Examen gynécologique | 0..1 | O | String |   | Composition.section:pregProgress.entry:vaginaFeature<br />-> CH EPREG Observation (Mother): Vagina Feature<br />Observation.valueString |   |
-| 13.3.8. Weitere Untersuchungen und Fragen | 13.3.8. Autres examens et questions | 0..1 | O |   |   | Composition.section:pregProgress.entry<br />-> CH EPREG Observation (Base): Preg cy Progress | Additional Observation entries, representing the specific examination/question can be added in the section pregProgress. <br />See also the according guidance section in the IG for details: guidance-vs-mapping.html#further-examinations |
-| 13.3.8.1. Untersuchung oder Frage | 13.3.8.1. Examen ou question | 1..1 | M | Code | Value Set: Weitere Untersuchungen und Fragen | Observation.code |   |
+| 13.3.8. Weitere Untersuchungen und Fragen | 13.3.8. Autres examens et questions | 0..1 | O |   |   | Composition.section:pregProgress.entry<br />-> CH EPREG Observation (Base): Pregnancy Progress | Additional Observation entries, representing the specific examination/question can be added in the section pregProgress. <br />See also the according guidance section in the IG for details: guidance-vs-mapping.html#further-examinations |
+| 13.3.8.1. Untersuchung oder Frage | 13.3.8.1. Examen ou question | 1..1 | M | Code | [Value Set: Weitere Untersuchungen und Fragen](mapping-concept-valuesets.html#further-examinations) | Observation.code |   |
 | 13.3.8.2. Beurteilung | 13.3.8.2. Évaluation | 1..1 | M | String |   | Observation.(component.)value[x] |   |
 | 13.4. Angaben zum Fötus/Kind | 13.4. Informations sur le fœtus/l’enfant | 0..\* | O |   |   | Observation.subject<br />-> CH EPREG Patient: Child | Modelling the CH EPREG Observations for the (unborn) child reflects the need of the concept (infos about mother and infos about (unborn) child) and are based on the FHIR base spec and the IBCM IG:<br />- Observation.subject -> Patient: (unborn) Child<br />- Observation.encounter -> Encounter: Child<br /><br />In the MIO Mutterpass, it is handled differently for the fetus and the child:<br />- Fetus: Observation.subject -> Patient: Mother and Observation.bodySite -> Fetus<br />- Child: Observation.subject -> Patient: Child<br /><br />The Dutch (Nictiz) differenciate if the fetus/child does have a record or not:<br />- Record: Observation.subject -> Patient: Child (blank focus extension)<br />- No record: Observation.subject -> Patient: Mother & focus extension refers to fetus BodySite |
 | 13.4.1. Identifikation | 13.4.1. Identification | 0..1 | O | String | Angaben oder Beschreibung von Merkmalen zur Unterscheidung der Föten/Kinder im Falle einer Mehrlingsschwangerschaft. | CH EPREG Patient: Child<br />Patient.identifier:LocalPid |   |
@@ -366,7 +366,7 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 14.6.2.3. Bemerkungen | 14.6.2.3. Remarques | 0..1 | O | String | Bemerkungen zum untersuchten Parameter |   |   |
 | 14.6.3. Biometrie | 14.6.3. Biométrie | 0..\* | O |   |   |   |   |
 | 14.6.3.1. Messparameter | 14.6.3.1. Paramètre | 1..1 | M | Code | Value Set: Messparameter Biometrie |   |   |
-| 14.6.3.2. Messwert | 14.6.3.2. Valeur | 1..1 | M | Quantität | Länge in mm. 1 Nachkommastelle |   |   |
+| 14.6.3.2. Messwert | 14.6.3.2. Valeur | 1..1 | M | Quantität | Länge in mm.<br />1 Nachkommastelle |   |   |
 | 14.6.3.3. Perzentil | 14.6.3.3. Percentile | 0..1 | R |   | 1157309008 Percentile of fetal growth (observable entity) |   |   |
 | 14.6.3.3.1. System | 14.6.3.3.1. Système | 1..1 | M | Code | Value Set: Perzentil System |   |   |
 | 14.6.3.3.2. Wert | 14.6.3.3.2. Valeur | 1..1 | M | Quantität | Perzentil in % |   |   |
@@ -466,12 +466,12 @@ _Note: The mapping can also be found for each profile under its 'Mappings' tab, 
 | 16.5.1. Identifikator | 16.5.1. Identification | 0..1 | O | String |   |   |   |
 | 16.5.2. Lebendgeburt | 16.5.2. Naissante vivante | 1..1 | M | Boolean | 281050002 Livebirth (finding) |   |   |
 | 16.5.3. Geburtsmodus | 16.5.3. Type d’accouchement | 0..1 | O | Code | Value Set: Geburtsmodus<br />364336006 Pattern of delivery (observable entity) |   |   |
-| 16.5.4. Kindslage | 16.5.4. Position de l’enfant | 0..1 | O | Code | Value Set: Kindslage<br />364607000 Position of fetus (observable entity) |   |   |
+| 16.5.4. Kindslage | 16.5.4. Position de l’enfant | 0..1 | O | Code | [Value Set: Kindslage](mapping-concept-valuesets.html#fetal-position)<br />364607000 Position of fetus (observable entity) |   |   |
 | 16.5.5. Geburtsverletzungen Kind | 16.5.5. Traumatismes obstétricaux (enfant) | 0..\* | O | Code | Value Set: Geburtsverletzungen Kind |   |   |
 | 16.5.6. Name | 16.5.6. Nom | 0..1 | O | String | Vorname(n) des Kindes |   |   |
 | 16.5.7. Geschlecht | 16.5.7. Sexe | 0..1 | O | Code | Value Set: Geschlecht |   |   |
 | 16.5.8. Körpergewicht | 16.5.8. Poids | 0..1 | O | Quantität | Gewicht in g<br />364589006 Birth weight (observable entity) <br />LOINC: 8339-4 Birth weight Measured |   |   |
-| 16.5.9. Körperlänge | 16.5.9. Taille | 0..1 | O | Quantität | Länge in cm. 1 Nachkommastelle<br />169886007 Birth length (observable entity) <br />LOINC: 89269-5 Body height Measured --at birth |   |   |
+| 16.5.9. Körperlänge | 16.5.9. Taille | 0..1 | O | Quantität | Länge in cm.<br />1 Nachkommastelle<br />169886007 Birth length (observable entity) <br />LOINC: 89269-5 Body height Measured --at birth |   |   |
 | 16.5.10. Kopfumfang | 16.5.10. Circonférence céphalique | 0..1 | O | Quantität | Kopfumfang in cm. 1 Nachkommastelle<br />169876006 Birth head circumference (observable entity) <br />LOINC: 9843-4 Head Occipital-frontal circumference |   |   |
 | 16.5.11. Apgar-Score | 16.5.11. Score d’Apgar | 0..\* | O |   | 249228009 Total apgar score (observable entity) |   |   |
 | 16.5.11.1. Apgar-Score Zeitpunkt | 16.5.11.1. Moment | 0..1 | O | Code | Value Set: Apgar-Score Zeitpunkt |   |   |
