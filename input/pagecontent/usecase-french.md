@@ -23,7 +23,7 @@ Les **cas d'application** suivants servent à illustrer les scénarios possibles
     </p>
   </div>
   <div style="flex: 0.5; width: 50%; margin-left: 2%;">
-    <img src="UC1-Preeclampsia-de.png" alt="passport" style="width: 100%;">
+    <img src="UC1-Preeclampsia-fr.png" alt="passport" style="width: 100%;">
     <p style="text-align: left; font-style: italic;">Fig. : Passeport de grossesse Katrin Kinderlieb, 05.02.2025</p>
   </div>
 </div>
