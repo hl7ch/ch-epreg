@@ -5,7 +5,7 @@ Title: "CH EPREG Patient: Child"
 Description: "This profile constrains the Patient resource to represent the child (fetus/newborn). (See also the [IBCM Fetal Record Profile](https://hl7.org/fhir/uv/ibcm/2024Sep/StructureDefinition-ibcm-fetal-record.html).)"
 * . ^short = "CH EPREG Patient: Child"
 * identifier contains internalPid 0..*
-* identifier[internalPid] ^short = "Patient internal identifier; also used to distinguish the children in the case of multiple pregnancy (e.g. A/B)"
+* identifier[internalPid] ^short = "Patient internal identifier; used to distinguish the children in the case of multiple pregnancy (e.g. A/B)"
 * identifier[internalPid] ^patternIdentifier.type = $v2-0203#PI // "Patient internal identifier" 
 * identifier[internalPid].system 1.. 
 * identifier[internalPid].value 1..
