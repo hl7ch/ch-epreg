@@ -4,7 +4,7 @@ When representing this data in an FHIR document, the goal is to maintain compati
 
 ### Parent 
 **Profile:** [CH EPREG RelatedPerson: Parent](StructureDefinition-ch-epreg-relatedperson-parent.html)         
-**Examples:** [Biological Father](RelatedPerson-UC1-BiologicalFather.json.html)
+**Example:** [Biological Father](RelatedPerson-UC1-BiologicalFather.json.html)
 
 <table class="table table-bordered">
     <thead>
@@ -752,7 +752,7 @@ For example, in the case of amniotic fluid (Fruchtwasser / Liquide amniotique), 
 * LOINC: 1887-9 'Appearance of Amniotic fluid': This Observation covers the general visual appearance, such as clarity or turbidity, which is also significant in obstetric assessments.
 
 **Profile:** [CH EPREG Observation (Base): Pregnancy Progress](StructureDefinition-ch-epreg-observation-preg-progress.html)         
-**Examples:** [Digestion: Heartburn](Observation-1ce882f2-953f-428e-a90b-a55271020fca.html)
+**Example:** [Digestion: Heartburn](Observation-1ce882f2-953f-428e-a90b-a55271020fca.html)
 
 <table class="table table-bordered">
     <thead>
