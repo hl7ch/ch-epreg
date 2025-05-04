@@ -22,7 +22,7 @@ Description: "Example for CH EPREG Composition"
 * section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p><b>Gynäkologin:</b> Petra Sectionata, Frauenzimmer</p>
     <p><b>Hausärztin/Hausarzt:</b> keine</p>
-    <p><b>Bemerkungen:</b> noch keine Hebamme</p>
+    <p><b>Hebamme:</b> noch nicht vorhanden</p>
   </div>"
 * section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
 
