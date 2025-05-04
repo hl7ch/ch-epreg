@@ -6,4 +6,4 @@ Description: "This profile constrains the RelatedPerson resource to represent th
 * . ^short = "CH EPREG RelatedPerson: Mother"
 * patient only Reference(ChEpregPatientChild)
 * relationship 1..
-* relationship = $v3-RoleCode#MTH // "Mother"
+* relationship = $sct#65656005 // "Natural mother (person)"
