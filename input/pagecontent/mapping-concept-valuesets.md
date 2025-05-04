@@ -2,6 +2,46 @@ The concept for the exchange format of the electronic pregnancy passport ([de](h
 
 When representing this data in an FHIR document, the goal is to maintain compatibility with (Swiss) base concepts, such as those defined in CH Core or CH Term, whenever possible. To achieve this, the following mappings describe how the defined values from the concept paper are represented as coded values in FHIR resources (see also [FHIR Terminology](https://hl7.org/fhir/R4/terminology-module.html)), making use of existing value sets/terminologies where available.
 
+### Parent 
+**Profile:** [CH EPREG RelatedPerson: Parent](StructureDefinition-ch-epreg-relatedperson-parent.html)         
+**Examples:** [Biological Father](RelatedPerson-UC1-BiologicalFather.json.html)
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Concept German:<br>Elternteil</th>
+            <th>Concept French:<br>Parents</th>
+            <th>Resource element</th>
+            <th>ValueSet</th>
+            <th>Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Biologischer Vater</td>
+            <td>Père biologique</td>
+            <td><code>RelatedPerson.relationship</code></td>
+            <td><a href="ValueSet-parent.html">Parent</a></td>
+            <td>SNOMED CT: 9947008 'Natural father'</td>
+        </tr>
+        <tr>
+            <td>Sozialer Vater</td>
+            <td>Père social</td>
+            <td><code>RelatedPerson.relationship</code></td>
+            <td><a href="ValueSet-parent.html">Parent</a></td>
+            <td>SNOMED CT: TBD, see open issue <a href="https://github.com/hl7ch/ch-epreg/issues/10">#10</a></td>
+        </tr>
+        <tr>
+            <td>Soziale Mutter</td>
+            <td>Mère sociale</td>
+            <td><code>RelatedPerson.relationship</code></td>
+            <td><a href="ValueSet-parent.html">Parent</a></td>
+            <td>SNOMED CT: TBD, see open issue <a href="https://github.com/hl7ch/ch-epreg/issues/10">#10</a></td>
+        </tr>
+    </tbody>
+</table>
+ 
+
 ### Healthcare Provider 
 **Profile:** [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)         
 **Examples:** [Petra Sectionata @ Frauenzimmer](PractitionerRole-UC1-PetraSectionataAtFrauenzimmer.json.html) (gynecologist), [Ruth Ohazwei @ Geburtsklinik](PractitionerRole-e1b736e3-10bb-41aa-8d17-c7ba28895880.json.html) (midwife)
