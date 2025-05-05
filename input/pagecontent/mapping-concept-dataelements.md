@@ -39,7 +39,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 1.9.2. Zusatzversicherung | 1.9.2. Assurance complémentaire | 0..\* | R |   |   |   |   |
 | 1.9.2.1. Name Versicherung | 1.9.2.1. Nom de l’assureur | 0..1 | R | String |   |   |   |
 | 1.9.2.2. Versichertennummer | 1.9.2.2. Numéro de la personne assurée | 1..1 | M | String |   |   |   |
-| **2. Elternteil** | **2. Parent** | 0..\* | O |   |   | `Composition.section:coreData`<br />`.section:parent.entry`<br />-> [CH EPREG RelatedPerson: Parent](StructureDefinition-ch-epreg-relatedperson-parent.html) |   |
+| **2. Elternteil** | **2. Parent** | 0..\* | O |   |   | `Composition.section:coreData.section:parent.entry`<br />-> [CH EPREG RelatedPerson: Parent](StructureDefinition-ch-epreg-relatedperson-parent.html) |   |
 | 2.1. Art des Elternteils | 2.1. Type de parent | 1..1 | M | Code | [Value Set: Elternteil](mapping-concept-valuesets.html#parent) | `RelatedPerson.relationship` |   |
 | 2.2. Name | 2.2. Nom | 0..1 | R |   |   | `RelatedPerson.name` |   |
 | 2.2.1. Nachname | 2.2.1. Nom | 0..1 | R | String |   | `RelatedPerson.name.family` |   |
@@ -68,11 +68,11 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 4.2.3. Arbeit | 4.2.3. Professionnel | 0..1 | O | String |   |   |   |
 | 4.3. E-Mailadresse | 4.3. Courriel | 0..1 | O | String |   |   |   |
 | 4.4. Bemerkungen | 4.4. Remarques | 0..1 | O | String |   |   |   |
-| **5. Behandelnder Leistungserbringender** | **5. Fournisseur de prestations** | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | `Composition.section:coreData`<br />`.section:careTeam.entry`<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)<br />`PractitionerRole.practitioner`<br />-> [CH EPREG Practitioner: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitioner-thcp.html)<br />`PractitionerRole.organization`<br />-> [CH EPREG Organization: Treating Healthcare Provider](StructureDefinition-ch-epreg-organization-thcp.html) |   |
+| **5. Behandelnder Leistungserbringender** | **5. Fournisseur de prestations** | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | `Composition.section:coreData.section:careTeam.entry`<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)<br />`PractitionerRole.practitioner`<br />-> [CH EPREG Practitioner: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitioner-thcp.html)<br />`PractitionerRole.organization`<br />-> [CH EPREG Organization: Treating Healthcare Provider](StructureDefinition-ch-epreg-organization-thcp.html) |   |
 | 5.1. Art des Leistungserbringenden | 5.1. Type de fournisseur de prestations | 1..1 | M | Code | [Value Set: Leistungserbringender](mapping-concept-valuesets.html#healthcare-provider) | `PractitionerRole.code`<br />`PractitionerRole.specialty` |   |
 | 5.2. GLN Nummer | 5.2. Numéro GLN | 0..1 | R | Identifikator |   | `Practitioner.identifier:GLN`|   |
 | 5.3. Bemerkungen | 5.3. Remarques | 0..1 | O | String |   | `PractitionerRole.extension:note.valueString` |   |
-| 5.4. Vorhanden | 5.4. Disponible | 1..1 | M | Boolean | Gibt an, ob ein gewisser Leistungserbringer vorhanden bzw. nicht vorhanden ist. So kann zum Beispiel explizit gesagt werden, dass die Patientin keinen Hausarzt besitzt. | _can be textually described here:_<br />`Composition.section:careTeam.text` |   |
+| 5.4. Vorhanden | 5.4. Disponible | 1..1 | M | Boolean | Gibt an, ob ein gewisser Leistungserbringer vorhanden bzw. nicht vorhanden ist. So kann zum Beispiel explizit gesagt werden, dass die Patientin keinen Hausarzt besitzt. | _can be textually described here:_<br />`Composition.section:coreData.section:careTeam.text` |   |
 | 5.5. Name der behandelnden Institution | 5.5. Nom de l’institution | 0..1 | R | String | Name der Institution oder Praxis | `Organization.name` |   |
 | 5.6. Name | 5.6. Nom | 0..1 | R |   | Name des Leistungserbringenden | `Practitioner.name` |   |
 | 5.6.1. Titel | 5.6.1. Titre | 0..1 | O | String |   | `Practitioner.name.prefix` |   |
