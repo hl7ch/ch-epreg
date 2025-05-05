@@ -19,6 +19,16 @@ Description: "Example for CH EPREG Composition"
 * section[coreData].title = "Stammdaten"
 * section[coreData].code = $loinc#86638-4 "Patient demographic and administrative information panel [FPAR]"
 
+* section[coreData].section[insurance].title = "Versicherung"
+* section[coreData].section[insurance].code = $loinc#35525-5 "Clinical trial protocol Financing and insurance section"
+* section[coreData].section[insurance].text.status = #additional 
+* section[coreData].section[insurance].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <p><b>Grundversicherung:</b> Sanitas</p>
+    <p><b>Zusatzversicherung:</b> Helsana</p>
+  </div>"
+* section[coreData].section[insurance].entry[0] = Reference(UC1-BasicInsurance)
+* section[coreData].section[insurance].entry[+] = Reference(UC1-SupplementaryInsurance)
+
 * section[coreData].section[parent].title = "Elternteil"
 * section[coreData].section[parent].code = $loinc#54136-7 "Relationship to patient Family member"
 * section[coreData].section[parent].text.status = #additional 

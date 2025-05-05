@@ -32,13 +32,13 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 1.7.2. Mobil | 1.7.2. Mobile | 0..\* | R | String |   | `Patient.telecom:phone`<br />`use` = mobile |   |
 | 1.7.3. Arbeit | 1.7.3. Professionnel | 0..1 | O | String |   | `Patient.telecom:phone`<br />`use` = work |   |
 | 1.8. E-Mailadresse | 1.8. Courriel | 0..\* | R | String |   | `Patient.telecom:email` |   |
-| 1.9. Versicherung | 1.9. Assurance | 0..1 | R |   |   |   |   |
-| 1.9.1. Grundversicherung | 1.9.1. Assurance de base | 0..1 | R |   |   |   |   |
-| 1.9.1.1. Name Versicherung | 1.9.1.1. Nom de l’assureur | 0..1 | R | String |   |   |   |
-| 1.9.1.2. Versichertennummer | 1.9.1.2. Numéro de la personne assurée | 1..1 | M | String |   |   |   |
-| 1.9.2. Zusatzversicherung | 1.9.2. Assurance complémentaire | 0..\* | R |   |   |   |   |
-| 1.9.2.1. Name Versicherung | 1.9.2.1. Nom de l’assureur | 0..1 | R | String |   |   |   |
-| 1.9.2.2. Versichertennummer | 1.9.2.2. Numéro de la personne assurée | 1..1 | M | String |   |   |   |
+| 1.9. Versicherung | 1.9. Assurance | 0..1 | R |   |   | `Composition.section:coreData.section:insurance`<br />-> [CH EPREG Coverage](StructureDefinition-ch-epreg-coverage.html) | Each insurance is represented as one Coverage instance. |
+| 1.9.1. Grundversicherung | 1.9.1. Assurance de base | 0..1 | R |   |   | `Coverage.type`<br />= 1 'Krankenversicherung (obligat.)' / 'Assurance-maladie (obligatoire)' |   |
+| 1.9.1.1. Name Versicherung | 1.9.1.1. Nom de l’assureur | 0..1 | R | String |   | `Coverage.payor`<br />->`Organization.name` _(as contained resource)_ |   |
+| 1.9.1.2. Versichertennummer | 1.9.1.2. Numéro de la personne assurée | 1..1 | M | String |   | `Coverage.identifier:insuranceNumber` | Please note that this is different from the insurance card number:<br />`Coverage.identifier:insuranceCardNumber` |
+| 1.9.2. Zusatzversicherung | 1.9.2. Assurance complémentaire | 0..\* | R |   |   | `Coverage.type`<br />= ZV 'Zusatzversicherung' / 'Assurance complémentaire' |   |
+| 1.9.2.1. Name Versicherung | 1.9.2.1. Nom de l’assureur | 0..1 | R | String |   | `Coverage.payor`<br />->`Organization.name` _(as contained resource)_ |   |
+| 1.9.2.2. Versichertennummer | 1.9.2.2. Numéro de la personne assurée | 1..1 | M | String |   | `Coverage.identifier:insuranceNumber` | Please note that this is different from the insurance card number:<br />`Coverage.identifier:insuranceCardNumber` |
 | **2. Elternteil** | **2. Parent** | 0..\* | O |   |   | `Composition.section:coreData.section:parent.entry`<br />-> [CH EPREG RelatedPerson: Parent](StructureDefinition-ch-epreg-relatedperson-parent.html) |   |
 | 2.1. Art des Elternteils | 2.1. Type de parent | 1..1 | M | Code | [Value Set: Elternteil](mapping-concept-valuesets.html#parent) | `RelatedPerson.relationship` |   |
 | 2.2. Name | 2.2. Nom | 0..1 | R |   |   | `RelatedPerson.name` |   |
@@ -312,8 +312,8 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 13.4. Angaben zum Fötus/Kind | 13.4. Informations sur le fœtus/l’enfant | 0..\* | O |   |   | `Observation.subject`<br />-> [CH EPREG Patient: Child](StructureDefinition-ch-epreg-patient-child.html)<br />`Observation.encounter`<br />->[CH EPREG Encounter: Child](StructureDefinition-ch-epreg-encounter-child.html) | The modelling of the CH EPREG Observations for the (unborn) child reflects the need of the concept (separate information about the mother and the (unborn) child) and is based on the FHIR base spec and the IBCM IG, see [guidance](guidance-child-relationships.html#child-and-mother). |
 | 13.4.1. Identifikation | 13.4.1. Identification | 0..1 | O | String | Angaben oder Beschreibung von Merkmalen zur Unterscheidung der Föten/Kinder im Falle einer Mehrlingsschwangerschaft. | [CH EPREG Patient: Child](StructureDefinition-ch-epreg-patient-child.html)<br />`Patient.identifier:internalPid` |   |
 | 13.4.2. Kindsbewegungen | 13.4.2. Mobilité fœtale | 0..1 | O | String | 249040004 Fetal movement activity (observable entity) | `Composition.section:pregProgress.entry:fetalMovement`<br />-> [CH EPREG Observation (Child): Fetal Movement](StructureDefinition-ch-epreg-observation-fetal-movement.html)<br />`Observation.valueString` |   |
-| 13.4.3. Herztöne | 13.4.3. Bruits cardiaques fœtaux | 0..1 | O | String | 364620002 Fetal heart feature (observable entity) | `Composition.section:pregProgress.entry:fetalHeartFeature`<br />-> [CH EPREG Observation (Child): Fetal Heart Feature](StructureDefinition-ch-epreg-observation-fetal-heart-feature.html)<br />Observation.valueString |   |
-| 13.4.4. Kindslage | 13.4.4. Position fœtale | 0..1 | O | String | 364607000 Position of fetus (observable entity) | `Composition.section:pregProgress.entry:fetalPosition`<br />-> [CH EPREG Observation (Child): Fetal Position](StructureDefinition-ch-epreg-observation-fetal-position.html)<br />Observation.valueCodeableConcept |   |
+| 13.4.3. Herztöne | 13.4.3. Bruits cardiaques fœtaux | 0..1 | O | String | 364620002 Fetal heart feature (observable entity) | `Composition.section:pregProgress.entry:fetalHeartFeature`<br />-> [CH EPREG Observation (Child): Fetal Heart Feature](StructureDefinition-ch-epreg-observation-fetal-heart-feature.html)<br />`Observation.valueString` |   |
+| 13.4.4. Kindslage | 13.4.4. Position fœtale | 0..1 | O | String | 364607000 Position of fetus (observable entity) | `Composition.section:pregProgress.entry:fetalPosition`<br />-> [CH EPREG Observation (Child): Fetal Position](StructureDefinition-ch-epreg-observation-fetal-position.html)<br />`Observation.valueCodeableConcept` |   |
 | 13.5. Therapie | 13.5. Thérapie | 0..1 | O | String |   |   |   |
 | 13.6. Arbeitsunfähigkeitszeugnis | 13.6. Certificat d’incapacité de travail | 0..1 | O | String |   |   |   |
 | 13.6.1. Arbeitsunfähig | 13.6.1. Incapacité de travail | 1..1 | M | Boolean |   |   |   |

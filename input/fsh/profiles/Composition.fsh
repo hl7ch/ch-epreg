@@ -25,8 +25,18 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[coreData].section ^slicing.ordered = false
 * section[coreData].section ^slicing.rules = #open
 * section[coreData].section contains 
+    insurance 0..1 MS and
     parent 0..1 and
     careTeam 0..1 MS 
+
+* section[coreData].section[insurance].title 1..
+* section[coreData].section[insurance].code 1..
+* section[coreData].section[insurance].code = $loinc#35525-5 // "Clinical trial protocol Financing and insurance section"
+* section[coreData].section[insurance].text 1..
+* section[coreData].section[insurance].entry MS
+* section[coreData].section[insurance].entry only Reference(ChEpregCoverage)
+* section[coreData].section[insurance].entry.reference 1..
+* section[coreData].section[insurance].section 0..0
 
 * section[coreData].section[parent].title 1..
 * section[coreData].section[parent].code 1..
