@@ -5,7 +5,7 @@ The mapping can also be found for each profile under its 'Mappings' tab, e.g. [C
 _Please note that not all data elements from the concept have been mapped in this first version of the implementation guide. However, all elements and sections described in the guide (document structure / use cases etc.) have already been mapped, enabling an initial use of the pregnancy passport._     
 _Each element that has already been mapped has an entry in the column 'Mapping to FHIR (Resources, Elements). The others will follow in a next version._
 
-### Master Data
+### Core Data
 
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
