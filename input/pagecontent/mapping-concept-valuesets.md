@@ -4,7 +4,7 @@ When representing this data in an FHIR document, the goal is to maintain compati
 
 ### Parent 
 **Profile:** [CH EPREG RelatedPerson: Parent](StructureDefinition-ch-epreg-relatedperson-parent.html)         
-**Example:** [Biological Father](RelatedPerson-UC1-BiologicalFather.json.html)
+**Example:** [Biological Father](RelatedPerson-UC1-RelatedPerson-BiologicalFather.html)
 
 <table class="table table-bordered">
     <thead>

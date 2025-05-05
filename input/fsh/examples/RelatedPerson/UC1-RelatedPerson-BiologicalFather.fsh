@@ -1,7 +1,7 @@
 Instance: UC1-RelatedPerson-BiologicalFather
 InstanceOf: ChEpregRelatedPersonParent
 Usage: #example
-Title: "UC 1: RelatedPerson BiologicalFather"
+Title: "UC 1: RelatedPerson Biological Father"
 Description: "Example for CH EPREG RelatedPerson: Parent"
 * language = #de-CH
 // * extension[citizenship].extension[code].valueCodeableConcept = urn:iso:std:iso:3166#CH "Switzerland" TODO: https://github.com/hl7ch/ch-core/issues/344
