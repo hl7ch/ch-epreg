@@ -13,16 +13,19 @@ Usage: #inline
 * confidentiality.extension[confidentialityCode].valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
 
-//-------------------------------------- Behandelnde Leistungserbringende --------------------------------------//
-* section[careTeam].title = "Behandelnde Leistungserbringende"
-* section[careTeam].code = $loinc#85847-2 "Patient Care team information"
-* section[careTeam].text.status = #generated 
-* section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+//-------------------------------------- Stammdaten --------------------------------------//
+* section[coreData].title = "Stammdaten"
+* section[coreData].code = $loinc#86638-4 "Patient demographic and administrative information panel [FPAR]"
+
+* section[coreData].section[careTeam].title = "Behandelnde Leistungserbringende"
+* section[coreData].section[careTeam].code = $loinc#85847-2 "Patient Care team information"
+* section[coreData].section[careTeam].text.status = #generated 
+* section[coreData].section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p><b>Gynäkologin:</b> Tanja Allesgut, Geburtsklinik 'Willkommen auf der Welt'</p>
     <p><b>Hebamme:</b> Ruth Ohazwei, Geburtsklinik 'Willkommen auf der Welt'</p>
   </div>"
-* section[careTeam].entry[0] = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
-* section[careTeam].entry[+] = Reference(urn:uuid:e1b736e3-10bb-41aa-8d17-c7ba28895880) "Ruth Ohazwei @ Geburtsklinik"
+* section[coreData].section[careTeam].entry[0] = Reference(urn:uuid:89029102-999c-4b69-a836-e4dbfbd55527) "Tanja Allesgut @ Geburtsklinik"
+* section[coreData].section[careTeam].entry[+] = Reference(urn:uuid:e1b736e3-10bb-41aa-8d17-c7ba28895880) "Ruth Ohazwei @ Geburtsklinik"
 
 
 //-------------------------------------- Serologische- & Laboruntersuchungen --------------------------------------//

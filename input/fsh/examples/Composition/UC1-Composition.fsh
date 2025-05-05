@@ -15,16 +15,26 @@ Description: "Example for CH EPREG Composition"
 * confidentiality.extension[confidentialityCode].valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
 * confidentiality = #N
 
-//-------------------------------------- Behandelnde Leistungserbringende --------------------------------------//
-* section[careTeam].title = "Behandelnde Leistungserbringende"
-* section[careTeam].code = $loinc#85847-2 "Patient Care team information"
-* section[careTeam].text.status = #additional 
-* section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+//-------------------------------------- Stammdaten --------------------------------------//
+* section[coreData].title = "Stammdaten"
+* section[coreData].code = $loinc#86638-4 "Patient demographic and administrative information panel [FPAR]"
+
+* section[coreData].section[parent].title = "Elternteil"
+* section[coreData].section[parent].code = $loinc#54136-7 "Relationship to patient Family member"
+* section[coreData].section[parent].text.status = #additional 
+* section[coreData].section[parent].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+    <p><b>Biologischer Vater:</b> Pierre Kinderlieb</p>
+  </div>"
+* section[coreData].section[parent].entry = Reference(UC1-RelatedPerson-BiologicalFather)
+
+* section[coreData].section[careTeam].title = "Behandelnde Leistungserbringende"
+* section[coreData].section[careTeam].code = $loinc#85847-2 "Patient Care team information"
+* section[coreData].section[careTeam].text.status = #additional 
+* section[coreData].section[careTeam].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <p><b>Gynäkologin:</b> Petra Sectionata, Frauenzimmer</p>
     <p><b>Hausärztin/Hausarzt:</b> keine</p>
-    <p><b>Hebamme:</b> noch nicht vorhanden</p>
   </div>"
-* section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
+* section[coreData].section[careTeam].entry = Reference(UC1-PetraSectionataAtFrauenzimmer)
 
 //-------------------------------------- Serologische- & Laboruntersuchungen --------------------------------------//
 * section[lab-subsections].title = "Serologische- & Laboruntersuchungen"

@@ -8,19 +8,42 @@ Description: "This profile constrains the Composition resource to represent the 
 * subject only Reference(ChEpregPatientMother)
 
 * section contains 
-    careTeam 0..1 MS and 
+    coreData 0..1 and 
     lab-subsections 0..1 and
     pregProgress 0..1 
 
-//-------------------------------------- Behandelnde Leistungserbringende --------------------------------------//
-* section[careTeam].title 1..
-* section[careTeam].code 1..
-* section[careTeam].code = $loinc#85847-2 // "Patient Care team information"
-* section[careTeam].text 1..
-* section[careTeam].entry MS
-* section[careTeam].entry only Reference(ChEpregPractitionerRoleTHCP)
-* section[careTeam].entry.reference 1..
-* section[careTeam].section 0..0
+//-------------------------------------- Stammdaten --------------------------------------//
+
+* section[coreData].title 1..
+* section[coreData].code 1..
+* section[coreData].code = $loinc#86638-4 // "Patient demographic and administrative information panel [FPAR]"
+* section[coreData].text 0..0
+* section[coreData].entry 0..0
+
+* section[coreData].section ^slicing.discriminator.type = #value
+* section[coreData].section ^slicing.discriminator.path = "code"
+* section[coreData].section ^slicing.ordered = false
+* section[coreData].section ^slicing.rules = #open
+* section[coreData].section contains 
+    parent 0..1 and
+    careTeam 0..1 MS 
+
+* section[coreData].section[parent].title 1..
+* section[coreData].section[parent].code 1..
+* section[coreData].section[parent].code = $loinc#54136-7 // "Relationship to patient Family member"
+* section[coreData].section[parent].text 1..
+* section[coreData].section[parent].entry only Reference(ChEpregRelatedPersonParent)
+* section[coreData].section[parent].entry.reference 1..
+* section[coreData].section[parent].section 0..0
+
+* section[coreData].section[careTeam].title 1..
+* section[coreData].section[careTeam].code 1..
+* section[coreData].section[careTeam].code = $loinc#85847-2 // "Patient Care team information"
+* section[coreData].section[careTeam].text 1..
+* section[coreData].section[careTeam].entry MS
+* section[coreData].section[careTeam].entry only Reference(ChEpregPractitionerRoleTHCP)
+* section[coreData].section[careTeam].entry.reference 1..
+* section[coreData].section[careTeam].section 0..0
 
 //-------------------------------------- Serologische- & Laboruntersuchungen --------------------------------------//
 * section[lab-subsections] ^short = "Based on the section of the exchange format for Swiss laboratory reports (https://fhir.ch/ig/ch-lab-report/StructureDefinition-ch-lab-report-composition.html)"
@@ -144,8 +167,9 @@ Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 * subject                                               -> "Schwangere Person | Personne enceinte"
-* section[careTeam]                                     -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
-* section[careTeam].text                                -> "Vorhanden | Disponible"
+* section[coreData].section[parent]                     -> "Elternteil | Parent"
+* section[coreData].section[careTeam]                   -> "Behandelnder Leistungserbringender | Fournisseur de prestations"
+* section[coreData].section[careTeam].text              -> "Vorhanden | Disponible"
 * section[lab-subsections]                              -> "Untersuchungen und Tests | Analyses et tests"
 * section[lab-subsections].section[bloodBankStudies]    -> "Laboruntersuchung | Analyse de laboratoire"
 * section[lab-subsections].section[bloodBankStudies].entry[bloodGroup] -> "Blutgruppenzugehörigkeit | Détermination du groupe sanguin"
