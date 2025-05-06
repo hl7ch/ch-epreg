@@ -7,7 +7,6 @@ Description: "This profile constrains the Patient resource to represent the preg
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/individual-pronouns named pronoun 0..1
 //    JobPosition named jobPosition 0..* and  TODO
-//    ContactParentBirthDate named ContactParentBirthDate 0..1   TODO
 * name MS 
 * name.text MS
 * name.family 1..                         
@@ -30,6 +29,23 @@ Description: "This profile constrains the Patient resource to represent the preg
 * link[child].other only Reference(ChEpregRelatedPersonMother)
 * link[child].other.reference 1..
 * link[child].type = #seealso
+* contact contains emergency 0..* MS 
+* contact[emergency] ^short = "Emergency contact"
+* contact[emergency].relationship = $v2-0131#C // "Emergency Contact"
+* contact[emergency].name MS
+* contact[emergency].name.family MS 
+* contact[emergency].name.given MS
+* contact[emergency].telecom ^slicing.discriminator.type = #value
+* contact[emergency].telecom ^slicing.discriminator.path = "system"
+* contact[emergency].telecom ^slicing.rules = #open
+* contact[emergency].telecom.system 1..
+* contact[emergency].telecom.value 1..
+* contact[emergency].telecom contains phone 0..* MS
+* contact[emergency].telecom[phone] only CHCoreContactPointECH46Phone
+* contact[emergency].extension contains 
+    ChEpregExtPrimaryContact named primaryContact 0..1 and
+    ChEpregExtNote named note 0..1
+
 
 
 Mapping: ChEpregPatientMotherToConceptPregnancyPassport
@@ -60,3 +76,13 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * address.city                              -> "Ort | Localité" 
 * address.country                           -> "Land | Pays" 
 * communication[languageOfCorrespondence]   -> "Kommunikationssprache | Langue de communication"  
+* contact[emergency]                        -> "Notfallkontakt | Contact en cas d’urgence"
+* contact[emergency].name                   -> "Name | Nom"
+* contact[emergency].name.family            -> "Nachname | Nom"
+* contact[emergency].name.given             -> "Vorname | Prénom"
+* contact[emergency].telecom[phone]         -> "Telefon | N° de téléphone"
+* contact[emergency].telecom[phone]         -> "use = home: Festnetz | Fixe" 
+* contact[emergency].telecom[phone]         -> "use = mobile: Mobil | Mobile" 
+* contact[emergency].telecom[phone]         -> "use = work: Arbeit | Professionnel" 
+* contact[emergency].extension[primaryContact] -> "Primärkontakt | Contact principal"
+* contact[emergency].extension[note]        -> "Bemerkungen | Remarque"

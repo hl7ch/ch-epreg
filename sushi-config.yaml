@@ -29,7 +29,9 @@ contact:
 
 dependencies:
   hl7.terminology.r4: 6.3.0
-  ch.fhir.ig.ch-core: current
+  ch.fhir.ig.ch-core:
+    uri: http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core
+    version: current
   ch.fhir.ig.ch-lab-report: current
 
 pages:

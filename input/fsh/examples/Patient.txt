@@ -7,26 +7,7 @@ Description: "Patient for CH EPREG"
 * extension[1].url = "http://hl7.org/fhir/StructureDefinition/job-position"
 * extension[1].valueString = "Software Engineer"
 
-//Notfallkontakt
-* contact[1].relationship.coding.system = "http://hl7.org/fhir/CodeSystem/patient-contactrelationship"
-* contact[1].relationship.coding.code = #C
-* contact[1].relationship.coding.display = "Emergency Contact"
-* contact[1].name.family = "Meier"
-* contact[1].name.given[0] = "Max"
-* contact[1].telecom[0].system = #phone
-* contact[1].telecom[0].value = "+41 44 123 45 67"
-* contact[1].telecom[0].use = #home
-* contact[1].telecom[1].system = #phone
-* contact[1].telecom[1].value = "+41 79 111 11 11"
-* contact[1].telecom[1].use = #mobile
-* contact[1].telecom[2].system = #phone
-* contact[1].telecom[2].value = "+41 44 765 43 21"
-* contact[1].telecom[2].use = #work
-* contact[1].address.line[0] = "Beispielstrasse 10"
-* contact[1].address.city = "Zürich"
-* contact[1].address.postalCode = "8000"
-* contact[1].address.country = "Schweiz"
-* contact[1].address.use = #home
+
 
 //Beistand
 * contact[2].relationship.coding.system = "http://hl7.org/fhir/CodeSystem/patient-contactrelationship"

@@ -9,6 +9,7 @@ Alias: $observation-category            = http://terminology.hl7.org/CodeSystem/
 Alias: $v3-ObservationInterpretation    = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $patient-contactrelationship     = http://hl7.org/fhir/CodeSystem/patient-contactrelationship
 Alias: $v2-0203                         = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0131                         = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $bfs-medstats-25-mainguarantor   = http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-25-mainguarantor
 Alias: $mainguarantor                   = http://fhir.ch/ig/ch-core/CodeSystem/mainguarantor
 
