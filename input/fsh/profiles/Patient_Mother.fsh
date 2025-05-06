@@ -6,7 +6,6 @@ Description: "This profile constrains the Patient resource to represent the preg
 * . ^short = "CH EPREG Patient: Mother"
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/individual-pronouns named pronoun 0..1
-//    JobPosition named jobPosition 0..* and  TODO
 * name MS 
 * name.text MS
 * name.family 1..                         
