@@ -1,7 +1,7 @@
 Instance: 2db81543-7bf1-4965-a75e-00400c62e78b
 InstanceOf: ChEpregObservationUrineFinding
 Usage: #example
-Title: "UC 2: bland (27.03.2025)"
+Title: "UC 2: Bland (27.03.2025)"
 Description: "Example for CH EPREG Observation (Mother): Urine Finding"
 * language = #de-CH
 * status = #final

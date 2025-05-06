@@ -1,7 +1,7 @@
 Instance: UC1-VaginaFeature-20250205
 InstanceOf: ChEpregObservationVaginaFeature
 Usage: #example
-Title: "UC 1: bland (05.02.2025)"
+Title: "UC 1: Bland (05.02.2025)"
 Description: "Example for CH EPREG Observation (Mother): Vagina Feature"
 * language = #de-CH
 * status = #final
