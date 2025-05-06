@@ -58,16 +58,16 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 3.3.2. Mobil | 3.3.2. Mobile | 0..1 | R | String |   | `Patient.contact:emergency.telecom:phone`<br />`use` = mobile |   |
 | 3.3.3. Arbeit | 3.3.3. Professionnel | 0..1 | O | String |   | `Patient.contact:emergency.telecom:phone`<br />`use` = work |   |
 | 3.4. Bemerkungen | 3.4. Remarque | 0..1 | O | String |   | `Patient.contact:emergency.extension:note.valueString`  |   |
-| **4. Beistand/Vormund** | **4. Curatelle/tutelle** | 0..\* | O |   |   |   |   |
-| 4.1. Name | 4.1. Nom | 0..1 | R |   |   |   |   |
-| 4.1.1. Nachname | 4.1.1. Nom | 0..1 | R | String |   |   |   |
-| 4.1.2. Vorname | 4.1.2. Prénom | 0..1 | R | String |   |   |   |
-| 4.2. Telefon | 4.2. N° de téléphone | 0..1 | R |   |   |   |   |
-| 4.2.1. Festnetz | 4.2.1. Fixe | 0..1 | O | String |   |   |   |
-| 4.2.2. Mobil | 4.2.2. Mobile | 0..1 | R | String |   |   |   |
-| 4.2.3. Arbeit | 4.2.3. Professionnel | 0..1 | O | String |   |   |   |
-| 4.3. E-Mailadresse | 4.3. Courriel | 0..1 | O | String |   |   |   |
-| 4.4. Bemerkungen | 4.4. Remarques | 0..1 | O | String |   |   |   |
+| **4. Beistand/Vormund** | **4. Curatelle/tutelle** | 0..\* | O |   |   | [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html)<br />`Patient.contact:guardian` |   |
+| 4.1. Name | 4.1. Nom | 0..1 | R |   |   | `Patient.contact:guardian.name` |   |
+| 4.1.1. Nachname | 4.1.1. Nom | 0..1 | R | String |   | `Patient.contact:guardian.name.family` |   |
+| 4.1.2. Vorname | 4.1.2. Prénom | 0..1 | R | String |   | `Patient.contact:guardian.name.given` |   |
+| 4.2. Telefon | 4.2. N° de téléphone | 0..1 | R |   |   | `Patient.contact:guardian.telecom:phone` |   |
+| 4.2.1. Festnetz | 4.2.1. Fixe | 0..1 | O | String |   | `Patient.contact:guardian.telecom:phone`<br />`use` = home |   |
+| 4.2.2. Mobil | 4.2.2. Mobile | 0..1 | R | String |   | `Patient.contact:guardian.telecom:phone`<br />`use` = mobile |   |
+| 4.2.3. Arbeit | 4.2.3. Professionnel | 0..1 | O | String |   | `Patient.contact:guardian.telecom:phone`<br />`use` = work |   |
+| 4.3. E-Mailadresse | 4.3. Courriel | 0..1 | O | String |   | `Patient.contact:guardian.telecom:email` |   |
+| 4.4. Bemerkungen | 4.4. Remarques | 0..1 | O | String |   | `Patient.contact:guardian.extension:note.valueString` |   |
 | **5. Behandelnder Leistungserbringender** | **5. Fournisseur de prestations** | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | `Composition.section:coreData.section:careTeam.entry`<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)<br />`PractitionerRole.practitioner`<br />-> [CH EPREG Practitioner: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitioner-thcp.html)<br />`PractitionerRole.organization`<br />-> [CH EPREG Organization: Treating Healthcare Provider](StructureDefinition-ch-epreg-organization-thcp.html) |   |
 | 5.1. Art des Leistungserbringenden | 5.1. Type de fournisseur de prestations | 1..1 | M | Code | [Value Set: Leistungserbringender](mapping-concept-valuesets.html#healthcare-provider) | `PractitionerRole.code`<br />`PractitionerRole.specialty` |   |
 | 5.2. GLN Nummer | 5.2. Numéro GLN | 0..1 | R | Identifikator |   | `Practitioner.identifier:GLN`|   |

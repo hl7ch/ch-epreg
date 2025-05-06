@@ -29,8 +29,9 @@ Description: "This profile constrains the Patient resource to represent the preg
 * link[child].other only Reference(ChEpregRelatedPersonMother)
 * link[child].other.reference 1..
 * link[child].type = #seealso
-* contact contains emergency 0..* MS 
-* contact[emergency] ^short = "Emergency contact"
+* contact contains 
+    emergency 0..* MS and 
+    guardian 0..*  
 * contact[emergency].relationship = $v2-0131#C // "Emergency Contact"
 * contact[emergency].name MS
 * contact[emergency].name.family MS 
@@ -45,6 +46,21 @@ Description: "This profile constrains the Patient resource to represent the preg
 * contact[emergency].extension contains 
     ChEpregExtPrimaryContact named primaryContact 0..1 and
     ChEpregExtNote named note 0..1
+* contact[guardian].relationship = $v3-RoleCode#GUARD // "guardian"
+* contact[guardian].name MS
+* contact[guardian].name.family MS 
+* contact[guardian].name.given MS
+* contact[guardian].telecom ^slicing.discriminator.type = #value
+* contact[guardian].telecom ^slicing.discriminator.path = "system"
+* contact[guardian].telecom ^slicing.rules = #open
+* contact[guardian].telecom.system 1..
+* contact[guardian].telecom.value 1..
+* contact[guardian].telecom contains 
+    email 0..* and
+    phone 0..* MS
+* contact[guardian].telecom[email] only CHCoreContactPointECH46Email    
+* contact[guardian].telecom[phone] only CHCoreContactPointECH46Phone
+* contact[guardian].extension contains ChEpregExtNote named note 0..1    
 
 
 
@@ -86,3 +102,13 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * contact[emergency].telecom[phone]         -> "use = work: Arbeit | Professionnel" 
 * contact[emergency].extension[primaryContact] -> "Primärkontakt | Contact principal"
 * contact[emergency].extension[note]        -> "Bemerkungen | Remarque"
+* contact[guardian]                         -> "Beistand/Vormund | Curatelle/tutelle"
+* contact[guardian].name                    -> "Name | Nom"
+* contact[guardian].name.family             -> "Nachname | Nom"
+* contact[guardian].name.given              -> "Vorname | Prénom"
+* contact[guardian].telecom[email]          -> "E-Mailadresse | Courriel"
+* contact[guardian].telecom[phone]          -> "Telefon | N° de téléphone"
+* contact[guardian].telecom[phone]          -> "use = home: Festnetz | Fixe" 
+* contact[guardian].telecom[phone]          -> "use = mobile: Mobil | Mobile" 
+* contact[guardian].telecom[phone]          -> "use = work: Arbeit | Professionnel" 
+* contact[guardian].extension[note]         -> "Bemerkungen | Remarque"

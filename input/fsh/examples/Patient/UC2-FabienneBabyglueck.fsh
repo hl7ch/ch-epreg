@@ -33,3 +33,18 @@ Description: "Example for CH EPREG Patient: Mother"
 * communication[languageOfCorrespondence].language = urn:ietf:bcp:47#de-CH "German (Switzerland)"
 * link[child].other = Reference(urn:uuid:67d0e290-21b9-4255-9182-5fe9f21cdbb4) "RelatedPerson Fabienne Babyglück"
 * link[child].type = #seealso
+* contact[guardian][0].relationship = $v3-RoleCode#GUARD "guardian"
+* contact[guardian][=].name.family = "Beistand"
+* contact[guardian][=].name.given = "Marius"
+* contact[guardian][=].telecom[email].system = #email 
+* contact[guardian][=].telecom[email].value = "marius.beistand@example.com"
+* contact[guardian][=].telecom[phone][0].system = #phone
+* contact[guardian][=].telecom[phone][=].use = #home
+* contact[guardian][=].telecom[phone][=].value = "+41 99 999 99 99"
+* contact[guardian][=].telecom[phone][+].system = #phone
+* contact[guardian][=].telecom[phone][=].use = #mobile
+* contact[guardian][=].telecom[phone][=].value = "+41 79 777 77 77"
+* contact[guardian][=].telecom[phone][+].system = #phone
+* contact[guardian][=].telecom[phone][=].use = #work
+* contact[guardian][=].telecom[phone][=].value = "+41 88 888 88 88"
+* contact[guardian][=].extension[note].valueString = "Beistand/Vormund von Fabienne Babyglück" 
