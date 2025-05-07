@@ -1,5 +1,5 @@
 Profile: ChEpregRelatedPersonParent
-Parent: RelatedPerson // TODO: https://github.com/hl7ch/ch-core/issues/344
+Parent: CHCoreRelatedPerson
 Id: ch-epreg-relatedperson-parent
 Title: "CH EPREG RelatedPerson: Parent"
 Description: "This profile constrains the RelatedPerson resource to represent the relationship between the parent (besides the biological mother) and the child."
@@ -23,11 +23,11 @@ Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Elternteil | Parent"
-// * extension[citizenship]                    -> "Nationalität | Nationalité" TODO: https://github.com/hl7ch/ch-core/issues/344
+* extension[citizenship]                    -> "Nationalität | Nationalité" 
 * extension[note]                           -> "Bemerkungen | Remarques"
 * relationship                              -> "Art des Elternteils | Type de parent" 
 * name                                      -> "Name | Nom"
 * name.family                               -> "Nachname | Nom"
 * name.given                                -> "Vorname | Prénom"
 * birthDate                                 -> "Geburtsdatum | Date de naissance"
-// * communication[languageOfCorrespondence]   -> "Kommunikationssprache | Langue de communication"  // TODO
+* communication[languageOfCorrespondence]   -> "Kommunikationssprache | Langue de communication" 
