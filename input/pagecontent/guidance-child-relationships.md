@@ -1,5 +1,5 @@
 ### Child and Mother
-The relationship between **biological mother** and **child (fetus/newborn)** is modeled using the `Patient` and `RelatedPerson` resources, as depicted in the figures below. This approach follows the guidelines outlined in the [Mother and newborn relationships](https://hl7.org/fhir/R4/patient.html#maternity) section of the FHIR specification and the [International Birth And Child Model Implementation Guide](https://hl7.org/fhir/uv/ibcm/2024Sep/index.html).
+The relationship between the **biological mother** and her **child (fetus/newborn)** is modeled using the `Patient` and `RelatedPerson` resources, as depicted in the figures below. This approach follows the guidelines outlined in the [Mother and newborn relationships](https://hl7.org/fhir/R4/patient.html#maternity) section of the FHIR specification and the [International Birth And Child Model Implementation Guide](https://hl7.org/fhir/uv/ibcm/2024Sep/index.html).
 
 #### Mother with her Single Child
 {% include img.html img="mother-child.png" caption="Fig.: Relationship between the biological mother and her single child" width="80%" %}

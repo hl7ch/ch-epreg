@@ -3,7 +3,7 @@ The concept for the exchange format of the electronic pregnancy passport ([de](h
 The mapping can also be found for each profile under its 'Mappings' tab, e.g. [CH EPREG Composition](StructureDefinition-ch-epreg-composition-mappings.html).
 
 _Please note that not all data elements from the concept have been mapped in this first version of the implementation guide. However, all elements and sections described in the guide (document structure / use cases etc.) have already been mapped, enabling an initial use of the pregnancy passport._     
-_Each element that has already been mapped has an entry in the column 'Mapping to FHIR (Resources, Elements). The others will follow in a next version._
+_Each element that has already been mapped has an entry in the column 'Mapping to FHIR (Resources, Elements). The others will follow in a future version._
 
 ### Core Data
 
@@ -11,7 +11,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **1. Schwangere Person** | **1. Personne enceinte** | 1..1 | M |   |   | `Composition.subject`<br />-> [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html) |   |
-| 1.1. AHV-Nummer | 1.1. Numéro AVS | 0..1 | R | Identifikator |   | _not allowed in the EPR context_ | AHVN13/NAVS13 is not allowed in the EPR context, see parent profile [CH Core Patient EPR](https://fhir.ch/ig/ch-core/StructureDefinition-ch-core-patient-epr.html). |
+| 1.1. AHV-Nummer | 1.1. Numéro AVS | 0..1 | R | Identifikator |   | _not allowed in the EPR context_ | AHVN13/NAVS13 is not allowed in the EPR context; see parent profile [CH Core Patient EPR](https://fhir.ch/ig/ch-core/StructureDefinition-ch-core-patient-epr.html). |
 | 1.2. Name | 1.2. Nom | 0..1 | R |   | 371484003 Patient name (observable entity) | `Patient.name` |   |
 | 1.2.1. Nachname | 1.2.1. Nom de famille | 1..1 | M | String | 184096005 Patient surname (observable entity) | `Patient.name.family` |   |
 | 1.2.2. Vorname | 1.2.2. Prénoms | 1..1 | M | String | 184095009 Patient forename (observable entity) | `Patient.name.given` |   |
@@ -176,15 +176,15 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 7.6.6.5.3. Gestationsdiabetes | 7.6.6.5.3. Diabète gestationnel | 0..1 | O | Boolean |   |   |   |
 | 7.6.6.6. Geburtsmodus | 7.6.6.6. Type d’accouchement | 0..1 | R | Code | Value Set: Geburtsmodus |   |   |
 | 7.6.6.7. Geburtsverletzungen | 7.6.6.7. Traumatismes obstétricaux | 0..1 | R | String | 56110009 Birth trauma of fetus (disorder) |   |   |
-| 7.6.6.8. Angaben zum Kind | 7.6.6.8. Informations concer t l’enfant | 0..\* | O |   |   |   |   |
+| 7.6.6.8. Angaben zum Kind | 7.6.6.8. Informations concernant l’enfant | 0..\* | O |   |   |   |   |
 | 7.6.6.8.1. Körpergewicht | 7.6.6.8.1. Poids corporel | 0..1 | R | Quantität | Gewicht in g<br />364589006 Birth weight (observable entity) <br />LOINC: 8339-4 Birth weight Measured |   |   |
 | 7.6.6.8.2. Körperlänge | 7.6.6.8.2. Taille | 0..1 | R | Quantität | Länge in cm.<br />1 Nachkommastelle<br />169886007 Birth length (observable entity)<br />LOINC: 89269-5 Body height Measured --at birth |   |   |
 | 7.6.6.8.3. Apgar | 7.6.6.8.3. Score d’Apgar | 0..1 | R | String | Format 8/9/10<br />249228009 Total apgar score (observable entity) |   |   |
 | 7.6.6.8.4. Fehlbildung | 7.6.6.8.4. Malformation | 0..1 | O | String | 276654001 Congenital malformation (disorder) |   |   |
 | 7.6.6.9. Wochenbett | 7.6.6.9. Post-partum | 0..1 | O | String |   |   |   |
 | 7.6.6.10. Stillen | 7.6.6.10. Allaitement | 0..1 | O | String |   |   |   |
-| 7.6.6.11. Besonderheiten Mutter | 7.6.6.11. Particularités concer t la mère | 0..1 | O | String |   |   |   |
-| 7.6.6.12. Besonderheiten Kind | 7.6.6.12. Particularités concer t l’enfant | 0..1 | O | String |   |   |   |
+| 7.6.6.11. Besonderheiten Mutter | 7.6.6.11. Particularités concernant la mère | 0..1 | O | String |   |   |   |
+| 7.6.6.12. Besonderheiten Kind | 7.6.6.12. Particularités concernant l’enfant | 0..1 | O | String |   |   |   |
 | **8. Risikofaktoren** | **8. Facteurs de risque** | 0..1 | O |   |   |   |   |
 | 8.1. Einzelne Risikofaktoren | 8.1. Liste des facteurs de risque | 0..\* | O |   |   |   |   |
 | 8.1.1. Risikofaktor | 8.1.1. Facteur de risque | 1..1 | M | Code | Value Set: Risikofaktoren |   |   |
@@ -232,7 +232,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **11. Untersuchungen und Tests** | **11. Analyses et tests** | 0..1 | O |   |   | `Composition.section:lab-subsections` | Modelled accoring [CH LAB-Report](https://fhir.ch/ig/ch-lab-report/index.html), see note row 11.3. below. |
+| **11. Untersuchungen und Tests** | **11. Analyses et tests** | 0..1 | O |   |   | `Composition.section:lab-subsections` | Modelled according [CH LAB-Report](https://fhir.ch/ig/ch-lab-report/index.html), see note row 11.3. below. |
 | 11.1. Blutgruppenzugehörigkeit | 11.1. Détermination du groupe sanguin | 0..1 | R |   |   | `Composition.section:lab-subsections`<br />`.section:bloodBankStudies.entry:bloodGroup`<br />-> [CH EPREG Observation (Lab): Blood Group](StructureDefinition-ch-epreg-observation-blood-group.html) | The values for blood group and Rhesus are given as single value (`Observation.valueCodeableConcept`), either one or the other, or both combined.<br />This approach is already in use in Switzerland and IPS:<br />- [https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html](https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html)<br />- [https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html](https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html)<br />See also the discussion on [chat.fhir.org](https://chat.fhir.org/#narrow/channel/179256-Orders-and-Observation-WG/topic/Blood.20Type). |
 | 11.1.1. Untersuchungsdatum | 11.1.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   | `Observation.effectiveDateTime` |   |
 | 11.1.2. Durchgeführt durch | 11.1.2. Analyse effectuée par | 1..1 | M |   | Dies kann analog zum Austauschformat eLaborbefund implementiert werden. | `Observation.performer` |   |
@@ -250,7 +250,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 11.3.4.1.1. Analyse-Wert | 11.3.4.1.1. Valeur | 0..1 | R | Quantität | 1 Nachkommastelle | => `.valueQuantity.value` |   |
 | 11.3.4.1.2. Einheit | 11.3.4.1.2. Unité | 0..1 | R | Code | [Value Set: Messergebnisse Einheit](mapping-concept-valuesets.html#unit) | => `.valueQuantity.code` |   |
 | 11.3.4.2. Messergebnis qualitativ | 11.3.4.2. Résultat qualitatif | 0..1 | R | Code | [Value Set: Messergebnisse Qualitativ](mapping-concept-valuesets.html#qualitative) | => `.valueCodeableConcept.coding` | [Data Type: CodeableConcept](https://hl7.org/fhir/R4/datatypes.html#CodeableConcept) |
-| 11.3.4.3. Messergebnis Textform | 11.3.4.3. Résultat au format texte | 0..1 | R | String | Messergebnis in Textform falls andere Angabe nicht möglich. | => `.valueCodeableConcpet.text` |   |
+| 11.3.4.3. Messergebnis Textform | 11.3.4.3. Résultat au format texte | 0..1 | R | String | Messergebnis in Textform falls andere Angabe nicht möglich. | => `.valueCodeableConcept.text` |   |
 | 11.3.5. Immunität anzunehmen | 11.3.5. Immunité acquise | 0..\* | R | Code | Value Set: Interpretation Immunität |   |   |
 | 11.4. Laboruntersuchung, Ergebnis maskiert | 11.4. Analyse de laboratoire, résultat non documenté | 0..\* | O |   |   |   |   |
 | 11.4.1. Untersuchungsdatum | 11.4.1. Date de l’analyse | 1..1 | M | Datum/Zeit |   |   |   |
@@ -285,7 +285,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **13. Untersuchung** | **13. Examen** | 0..1 | O |   |   | `Composition.setion:pregProgress.entry:pregVisit`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
+| **13. Untersuchung** | **13. Examen** | 0..1 | O |   |   | `Composition.section:pregProgress.entry:pregVisit`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
 | 13.1. Nummer | 13.1. Numéro | 0..1 | O | Count | Nummer der Untersuchung | `Encounter.extension:visitNumber.valuePositiveInt` |   |
 | 13.2. Zeitpunkt der Untersuchung | 13.2. Date de l’examen | 1..1 | M |   |   | `Observation.effective[x]` |   |
 | 13.2.1. Datum | 13.2.1. Date | 1..1 | M | Datum | Datum der Untersuchung | `Encounter.period.start`<br />`Encounter.period.end` |   |
@@ -293,7 +293,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 13.2.2.1. Schwangerschaftswochen | 13.2.2.1. Semaines de grossesse | 1..1 | M | Quantität | Anzahl der Wochen in der laufenden Schwangerschaft |  | See note row 13.2.2. above. |
 | 13.2.2.2. Anzahl an Tagen in laufender Schwangerschaftswoche | 13.2.2.2. Nombre de jours dans la semaine de grossesse en cours | 1..1 | M | Quantität | Anzahl der Tage in der laufenden Schwangerschaftswoche |  | See note row 13.2.2. above. |
 | 13.3. Angaben zur Schwangeren | 13.3. Informations sur la femme enceinte | 0..1 | O |   |   | `Observation.subject`<br />-> [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html)<br />`Observation.encounter`<br />->[CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) | See [Guidance: Encounters/Observations of Mother and Child](guidance-child-relationships.html#encountersobservations-of-mother-and-child). |
-| 13.3.1. Aktuelles Gewicht | 13.3.1. Poids actuel | 0..1 | O | Quantität | Aktuelles Gewicht in kg.<br />1 Nachkommastelle | `Compostion.section:pregProgress.entry:bodyWeight`<br />-> [CH EPREG Observation (Mother): Body Weight](StructureDefinition-ch-epreg-observation-body-weight.html)<br />`Observation.valueQuantity` | Conforms to [FHIR Body Weight Profile](https://hl7.org/fhir/R4/bodyweight.html). |
+| 13.3.1. Aktuelles Gewicht | 13.3.1. Poids actuel | 0..1 | O | Quantität | Aktuelles Gewicht in kg.<br />1 Nachkommastelle | `Composition.section:pregProgress.entry:bodyWeight`<br />-> [CH EPREG Observation (Mother): Body Weight](StructureDefinition-ch-epreg-observation-body-weight.html)<br />`Observation.valueQuantity` | Conforms to [FHIR Body Weight Profile](https://hl7.org/fhir/R4/bodyweight.html). |
 | 13.3.2. Gewichtszunahme | 13.3.2. Prise de poids | 0..1 | O | Quantität | Gewichtszunahme in kg.<br />1 Nachkommastelle | `Composition.section:weightGain`<br />-> [CH EPREG Observation (Mother): Weight Gain](StructureDefinition-ch-epreg-observation-weight-gain.html)<br />`Observation.valueQuantity` |   |
 | 13.3.3. Blutdruck | 13.3.3. Pression artérielle | 0..1 | O |   | 75367002 Blood pressure (observable entity)<br />LOINC: 85354-9 Blood pressure panel with all children optional | `Composition.section:pregProgress.entry:bloodPressure`<br />-> [CH EPREG Observation (Mother): Blood Pressure](StructureDefinition-ch-epreg-observation-blood-pressure.html) | Conforms to [FHIR Blood Pressure Profile](https://hl7.org/fhir/R4/bp.html). |
 | 13.3.3.1. Systolischer Blutdruckwert | 13.3.3.1. Valeur de la pression artérielle systolique | 1..1 | M | Quantität | Angabe in mmHg<br />271649006 Systolic blood pressure (observable entity) <br />LOINC: 8480-6 Systolic blood pressure | `Observation.component:SystolicBP.valueQuantity` |   |
@@ -355,13 +355,13 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 14.2.3. Schwangerschaftswoche+Tage (korrigiert) | 14.2.3. Semaine de grossesse + jours (correction) | 0..1 | O |   | In diesem Element ist es möglich, im Verlauf der Untersuchung die Angabe zur Schwangerschaftswoche zu korrigieren bzw. anzupassen.<br />1157308000 Corrected fetal gestational age in weeks and days (observable entity) |   |   |
 | 14.2.3.1. Schwangerschaftswochen | 14.2.3.1. Semaines de grossesse | 1..1 | M | Quantität | Anzahl der Wochen in der laufenden Schwangerschaft |   |   |
 | 14.2.3.2. Anzahl an Tagen in laufender Schwangerschaftswoche | 14.2.3.2. Nombre de jours dans la semaine de grossesse en cours | 1..1 | M | Quantität | Anzahl der Tage in der laufenden Schwangerschaftswoche |   |   |
-| 14.3. Angaben zur Schwangerschaft | 14.3. Informations concer t la grossesse | 0..\* | O |   |   |   |   |
+| 14.3. Angaben zur Schwangerschaft | 14.3. Informations concernant la grossesse | 0..\* | O |   |   |   |   |
 | 14.3.1. Untersuchte Parameter | 14.3.1. Paramètre examiné | 1..1 | M | Code | Value Set: Angaben zur Schwangerschaft |   |   |
 | 14.3.2. Beurteilung | 14.3.2. Évaluation | 1..1 | M | Boolean | Beurteilung, ob der untersuchte Parameter zutrifft oder nicht |   |   |
 | 14.3.3. Bemerkungen | 14.3.3. Remarques | 0..1 | O | String | Bemerkungen zum untersuchten Parameter |   |   |
 | 14.4. Plazenta | 14.4. Placenta | 0..1 | O | String | Angaben zur Plazenta<br />78067005 Placental structure (body structure) |   |   |
 | 14.5. Fruchtwasser | 14.5. Liquide amniotique | 0..1 | O | String | Angaben zum Fruchtwasser<br />77012006 Amniotic fluid (substance) |   |   |
-| 14.6. Angaben zum Fötus/Kind | 14.6. Informations concer t le fœtus/l’enfant | 0..\* | O |   |   |   |   |
+| 14.6. Angaben zum Fötus/Kind | 14.6. Informations concernant le fœtus/l’enfant | 0..\* | O |   |   |   |   |
 | 14.6.1. Identifikation | 14.6.1. Identification | 0..1 | O | String | Angaben oder Beschreibung von Merkmalen zur Unterscheidung der Föten/Kinder im Falle einer Mehrlingsschwangerschaft. |   |   |
 | 14.6.2. Allgemeine Angaben | 14.6.2. Informations générales | 0..\* | O |   |   |   |   |
 | 14.6.2.1. Untersuchte Parameter | 14.6.2.1. Paramètre examiné | 1..1 | M | Code | 5.1.8 Value Set: Abort<br />Angaben zum Fötus/Kind (Ultraschall) |   |   |
@@ -465,7 +465,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 16.4.3. Cervixriss | 16.4.3. Déchirure du col de l’utérus | 0..1 | O | Boolean |   |   |   |
 | 16.4.4. Episiotomie | 16.4.4. Épisiotomie | 0..1 | O | Boolean |   |   |   |
 | 16.4.5. Plazenta vollständig | 16.4.5. Placenta entier | 0..1 | O | Boolean |   |   |   |
-| 16.5. Angaben zum Kind | 16.5. Informations concer t l’enfant | 0..\* | O |   | 118188004 Finding of neonate (finding) |   |   |
+| 16.5. Angaben zum Kind | 16.5. Informations concernant l’enfant | 0..\* | O |   | 118188004 Finding of neonate (finding) |   |   |
 | 16.5.1. Identifikator | 16.5.1. Identification | 0..1 | O | String |   |   |   |
 | 16.5.2. Lebendgeburt | 16.5.2. Naissante vivante | 1..1 | M | Boolean | 281050002 Livebirth (finding) |   |   |
 | 16.5.3. Geburtsmodus | 16.5.3. Type d’accouchement | 0..1 | O | Code | Value Set: Geburtsmodus<br />364336006 Pattern of delivery (observable entity) |   |   |
@@ -486,7 +486,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 16.5.13.1. Fehlbildung vorhanden | 16.5.13.1. Présence d’une malformation | 1..1 | M | Boolean | Gibt an, ob eine Fehlbildung beim Kind vorhanden ist oder nicht. |   |   |
 | 16.5.13.2. Beschreibung Fehlbildung | 16.5.13.2. Description de la malformation | 0..1 | O | String | Beschreibung der Fehlbildung |   |   |
 | 16.5.14. Besonderheiten | 16.5.14. Particularités | 0..1 | O | String | Beschreibung Besonderheiten zum Kind |   |   |
-| 16.6. Bemerkungen zur Geburt | 16.6. Remarques concer t l’accouchement | 0..1 | O | String | Bemerkungen zur Geburt |   |   |
+| 16.6. Bemerkungen zur Geburt | 16.6. Remarques concernant l’accouchement | 0..1 | O | String | Bemerkungen zur Geburt |   |   |
 
 
 ### Postpartum
@@ -521,12 +521,12 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 17.5. Anti-D-Prophylaxe | 17.5. Prophylaxie anti-D | 0..1 | O | Boolean | Gibt an, ob Massnahmen zur Anti-D-Prophylaxe unternommen wurden oder nicht. |   |   |
 | 17.6. Besonderheiten | 17.6. Particularités | 0..1 | O | String |   |   |   |
 | 17.7. Datum der Entlassung | 17.7. Date de sortie | 0..1 | O | Datum |   |   |   |
-| 17.8. Angaben zum Kind | 17.8. Informations concer t l’enfant | 0..1 | O |   |   |   |   |
+| 17.8. Angaben zum Kind | 17.8. Informations concernant l’enfant | 0..1 | O |   |   |   |   |
 | 17.8.1. Blutgruppe | 17.8.1. Groupe sanguin | 0..1 | O | Code | Value Set: Blutgruppe |   |   |
 | 17.8.2. Rhesus | 17.8.2. Rhésus | 0..1 | O | Code | Value Set: Rhesus |   |   |
 | 17.8.3. Direkter Coombstest | 17.8.3. Test direct à l’antiglobuline | 0..1 | O | Code | Value Set: CoombstestCoombstest |   |   |
 | 17.8.4. Kind unauffällig entlassen am | 17.8.4. Enfant sorti le (rien à signaler) | 0..1 | O | Datum | Datum, an welchem das Kind unauffällig entlassen werden konnte |   |   |
 | 17.8.5. Kind verlegt am | 17.8.5. Enfant transféré le | 0..1 | O | Datum | Datum, an dem das Kind verlegt wurde |   |   |
 | 17.8.6. Ernährung Kind | 17.8.6. Alimentation de l’enfant | 0..1 | O | String | Angaben zur Ernährung des Kindes |   |   |
-| 17.8.7. Besonderheiten zum Kind | 17.8.7. Particularités concer t l’enfant | 0..1 | O | String | Beschreibung möglicher Besonderheiten zum Kind |   |   |
-| 17.9. Bemerkungen zum Wochenbett | 17.9. Remarques concer t le post-partum | 0..1 | O | String | Bemerkungen zum Wochenbett |   |   |
+| 17.8.7. Besonderheiten zum Kind | 17.8.7. Particularités concernant l’enfant | 0..1 | O | String | Beschreibung möglicher Besonderheiten zum Kind |   |   |
+| 17.9. Bemerkungen zum Wochenbett | 17.9. Remarques concernant le post-partum | 0..1 | O | String | Bemerkungen zum Wochenbett |   |   |

@@ -214,14 +214,14 @@ As indicated in the mapping, the specific code (e.g. LOINC) should be used for l
       <td>Provide the explicit code (e.g. LOINC)</td>
     </tr>
     <tr>
-      <td>Erytrozyten</td>
+      <td>Erythrozyten</td>
       <td>Érythrocytes</td>
       <td><code>Observation.code</code></td>
       <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
       <td>Provide the explicit code (e.g. LOINC)</td>
     </tr>
     <tr>
-      <td>Erytrozyten, direkter Test <br>gegen humane globuline</td>
+      <td>Erythrozyten, direkter Test <br>gegen humane globuline</td>
       <td>Érythrocytes, test direct <br>à l’antiglobuline humaine</td>
       <td><code>Observation.code</code></td>
       <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
@@ -326,14 +326,14 @@ As indicated in the mapping, the specific code (e.g. LOINC) should be used for l
       <td>Provide the explicit code (e.g. LOINC)</td>
     </tr>
     <tr>
-      <td>Molekulare Genotypisierung <br>der fötalen Erytrozytenantigene</td>
+      <td>Molekulare Genotypisierung <br>der fötalen Erythrozytenantigene</td>
       <td>Génotypage moléculaire des <br>antigènes érythrocytaires fœtaux</td>
       <td><code>Observation.code</code></td>
       <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
       <td>Provide the explicit code (e.g. LOINC)</td>
     </tr>
     <tr>
-      <td>Nüchtern Blutzucker</td>
+      <td>Nüchternblutzucker</td>
       <td>Glycémie à jeun</td>
       <td><code>Observation.code</code></td>
       <td><a href="https://hl7.eu/fhir/laboratory/ValueSet-lab-obsCode-eu-lab.html">Laboratory Code</a></td>
