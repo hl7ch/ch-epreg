@@ -6,7 +6,7 @@ Description: "Example for CH EPREG Observation (Lab): Blood Group"
 * language = #de-CH
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
-* code = $sct#365636006 "Blutgruppenbestimmung"
+* code = $sct#365636006 "Finding of blood group (finding)"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-LaborPipette)
