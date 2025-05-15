@@ -10,7 +10,6 @@ Description: "This profile constrains the Patient resource to represent the preg
 * name.text MS
 * name.family 1..                         
 * name.given 1..                                                   
-* telecom MS                                 
 * telecom[email] MS                         
 * telecom[phone] MS                                                    
 * birthDate MS                               

@@ -12,16 +12,17 @@ The repeating element has a pattern. The pattern will apply to all the repeats (
 The extension http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding|5.2.0 is deprecated with the note Replaced by [[[http://hl7.org/fhir/StructureDefinition/iso21090-codedString]]]
 
 # No valid display values for the given language (information)
-'guardian' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-RoleCode has no Display Names for the language de-CH
-'Low' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation has no Display Names for the language de-CH
-'High' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation has no Display Names for the language de-CH
+%as no Display Names for the language de-CH 
+There are no valid display names found for the code%
+Wrong Display Name%
 
 # see https://github.com/hl7ch/ch-core/issues/341
 ValueSet 'http://hl7.org/fhir/ValueSet/country' not found
 
+# Extension citizenship will be allowed on RelatedPerson: https://jira.hl7.org/browse/FHIR-49948
+The extension http://hl7.org/fhir/StructureDefinition/patient-citizenship is not allowed to be used at this point (allowed = e:Patient; this element is [RelatedPerson])
+The extension http://hl7.org/fhir/StructureDefinition/patient-citizenship is not allowed to be used at this point (allowed = e:Patient; this element is [Bundle.entry.resource, Bundle.entry.resource/*RelatedPerson/UC1-RelatedPerson-BiologicalFather*/, RelatedPerson])
+
+
 # Information about pinned version 
 Pinned the version of%
-
-# internet isn't MS, the others are
-The slice 'internet' on path 'Patient.telecom' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-The slice 'internet' on path 'Organization.telecom' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true

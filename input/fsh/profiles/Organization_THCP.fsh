@@ -5,7 +5,6 @@ Title: "CH EPREG Organization: Treating Healthcare Provider"
 Description: "This profile constrains the Organization resource to represent the treating healthcare provider."
 * . ^short = "CH EPREG Organization: Treating Healthcare Provider"
 * name MS
-* telecom MS
 * telecom[phone] MS
 * telecom[email] MS
 * address MS 
