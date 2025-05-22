@@ -3,9 +3,13 @@
   "version" : "1.0.0-ballot",
   "path" : "http://fhir.ch/ig/ch-epreg/1.0.0-ballot",
   "mode" : "milestone",
-  "status" : "trial-use",
+  "status" : "ballot",
   "sequence" : "STU 1",
-  "desc" : "first publication",
-  "changes" : "index.html",
-  "first": false
+  "desc" : "HL7 Switzerland STU 1",
+  "changes" : "changelog.html",
+  "first": true,
+  "title" : "CH EPREG (R4)",
+  "ci-build" : "https://build.fhir.org/ig/hl7ch/ch-epreg",
+  "category" : "National Base",
+  "introduction" : "FHIR implementation guide for the pregnancy passport in Switzerland."
 }
