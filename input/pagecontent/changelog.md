@@ -10,6 +10,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 #### Added 
 
 #### Changed / Updated 
+* [#15](https://github.com/hl7ch/ch-epreg/issues/15): Rename number extension and update description to clarify the (re-) usage
 
 #### Fixed 
 
