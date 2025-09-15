@@ -30,10 +30,10 @@ contact:
 dependencies:
   hl7.terminology.r4: 
     uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
-    version: 6.3.0  
+    version: 6.5.0  
   ch.fhir.ig.ch-core:
     uri: http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core
-    version: current # 6.0.0-
+    version: current # 6.0.0
   ch.fhir.ig.ch-lab-report: current # 2.0.0
 
 pages:
