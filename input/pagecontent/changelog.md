@@ -12,7 +12,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 #### Changed / Updated 
 
 #### Fixed 
-
+* [#14](https://github.com/hl7ch/ch-epreg/issues/14): Typo
 
 
 ### STU 1 Ballot (2025-05-22)
