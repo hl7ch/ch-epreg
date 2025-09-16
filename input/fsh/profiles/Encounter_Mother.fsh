@@ -6,7 +6,7 @@ Description: "This profile constrains the Encounter resource to represent a preg
 * . ^short = "CH EPREG Encounter: Mother"
 * extension contains 
     ChEpregExtPlannedNextPregVisit named nextVisit 0..1 and 
-    ChEpregExtNumber named visitNumber 0..1 and
+    ChEpregExtExamNumber named visitNumber 0..1 and
     ChEpregExtNote named note 0..1
 * status = #finished
 * subject only Reference(ChEpregPatientMother)    

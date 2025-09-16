@@ -12,7 +12,8 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 #### Added 
 
 #### Changed / Updated 
-* [#12](https://github.com/hl7ch/ch-epreg/issues/12): Blood Type: stay with the current modelling approach and the VS. Update link in mapping notes to the reintroduced UV IPS VS.
+* [#15](https://github.com/hl7ch/ch-epreg/issues/15): Rename number extension and update description to clarify the (re-) usage
+* [#12](https://github.com/hl7ch/ch-epreg/issues/12): Blood Type: stay with the current modelling approach and the VS. Update link in mapping notes to the reintroduced UV IPS VS
 
 #### Fixed 
 * [#14](https://github.com/hl7ch/ch-epreg/issues/14): Typo
