@@ -2,7 +2,7 @@ Profile: ChEpregComposition
 Parent: CHCoreCompositionEPR
 Id: ch-epreg-composition
 Title: "CH EPREG Composition"
-Description: "This profile constrains the Composition resource to represent the the first entry in the CH EPREG Document."
+Description: "This profile constrains the Composition resource to represent the first entry in the CH EPREG Document."
 * . ^short = "CH EPREG Composition"
 * type = $sct#736377005 // "Maternity care plan (record artifact)"
 * subject only Reference(ChEpregPatientMother)
