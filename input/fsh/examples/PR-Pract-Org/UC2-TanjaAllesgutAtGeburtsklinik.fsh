@@ -6,7 +6,7 @@ Description: "Example for CH EPREG PractitionerRole"
 * language = #de-CH
 * practitioner = Reference(urn:uuid:a61d6a0b-ee42-443e-92e5-167d2e42f137) "Tanja Allesgut"
 * organization = Reference(urn:uuid:fbe019f1-6574-40be-940f-d03da0c743db) "Geburtsklinik"
-* code = $sct#309343006 "Arzt / Ärztin"
+* code = $sct#309343006 "Arzt/Ärztin"
 * specialty = $medreg#1003 "Gynäkologie und Geburtshilfe"
 
 
