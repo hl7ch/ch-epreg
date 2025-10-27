@@ -16,7 +16,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 * [#12](https://github.com/hl7ch/ch-epreg/issues/12): Blood Type: stay with the current modelling approach and the VS. Update link in mapping notes to the reintroduced UV IPS VS
 
 #### Fixed 
-* [#14](https://github.com/hl7ch/ch-epreg/issues/14): Typo
+* [#14](https://github.com/hl7ch/ch-epreg/issues/14), [#28](https://github.com/hl7ch/ch-epreg/issues/28): Typos
 
 
 ### STU 1 Ballot (2025-05-22)
