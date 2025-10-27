@@ -15,8 +15,8 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 1.2. Name | 1.2. Nom | 0..1 | R |   | 371484003 Patient name (observable entity) | `Patient.name` |   |
 | 1.2.1. Nachname | 1.2.1. Nom de famille | 1..1 | M | String | 184096005 Patient surname (observable entity) | `Patient.name.family` |   |
 | 1.2.2. Vorname | 1.2.2. Prénoms | 1..1 | M | String | 184095009 Patient forename (observable entity) | `Patient.name.given` |   |
-| 1.2.3. Namenszusatz | 1.2.3. Autres prénoms | 0..1 | O | String | 716057004 Patient middle name (observable entity) | `Patient.name.prefix` |   |
-| 1.2.4. Vollständiger Name | 1.2.4. Nom complet | 0..1 | R | String | Vollständiger Name mit Vornamen, Nachnamen und Namenszusatz. Der vollständige Name soll alle Namensteile in ihrer korrekten Reihenfolge abbilden. | `Patient.name.text` |   |
+| 1.2.3. Andere Vornamen (Namenszusatz) | 1.2.3. Autres prénoms | 0..1 | O | String | 716057004 Patient middle name (observable entity) | `Patient.name.given` | 'Namenszusatz' (original name German) is to be understood here as a middle name. |
+| 1.2.4. Vollständiger Name | 1.2.4. Nom complet | 0..1 | R | String | Vollständiger Name mit Vornamen, Nachnamen und anderen Vornamen (Namenszusatz). Der vollständige Name soll alle Namensteile in ihrer korrekten Reihenfolge abbilden. | `Patient.name.text` |   |
 | 1.2.5. Pronomen | 1.2.5. Pronoms | 0..1 | O | String | Für Trans-PatientInnen als optionale Angabe | `Patient.extension:pronoun.extension:value.valueCodeableConcept` |   |
 | 1.3. Geburtsdatum | 1.3. Date de naissance | 0..1 | R | Datum | 184099003 Date of birth (observable entity) | `Patient.birthDate` |   |
 | 1.4. Nationalität | 1.4. Nationalité | 0..\* | O | String |   | `Patient.extension:citizenship.extension:code.valueCodeableConcept` |   |

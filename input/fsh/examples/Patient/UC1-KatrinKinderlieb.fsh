@@ -8,10 +8,10 @@ Description: "Example for CH EPREG Patient: Mother"
 * extension[pronoun].extension[value].valueCodeableConcept = $loinc#LA29519-8 "she/her/her/hers/herself"
 * identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
 * identifier[insuranceCardNumber].value = "80756015090002647590"
-* name.text = "Frau Katrin Kinderlieb"
+* name.text = "Katrin Emily Kinderlieb"
 * name.family = "Kinderlieb"
-* name.given = "Katrin"
-* name.prefix = "Frau"
+* name.given[0] = "Katrin"
+* name.given[+] = "Emily"
 * telecom[email].system = #email 
 * telecom[email].value = "katrin.kinderlieb@example.com"
 * telecom[phone][0].system = #phone

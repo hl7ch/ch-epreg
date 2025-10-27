@@ -76,7 +76,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * name.text                                 -> "Vollständiger Name | Nom complet"
 * name.family                               -> "Nachname | Nom de famille"
 * name.given                                -> "Vorname | Prénoms" 
-* name.prefix                               -> "Namenszusatz | Autres prénoms"
+* name.given                                -> "Andere Vornamen (Namenszusatz) | Autres prénoms"
 * telecom[email]                            -> "E-Mailadresse | Courriel"
 * telecom[phone]                            -> "Telefon | N° de téléphone" 
 * telecom[phone]                            -> "use = home: Festnetz | Fixe" 

@@ -17,6 +17,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 
 #### Fixed 
 * [#14](https://github.com/hl7ch/ch-epreg/issues/14), [#28](https://github.com/hl7ch/ch-epreg/issues/28): Typos
+* [#27](https://github.com/hl7ch/ch-epreg/issues/27): Clarify meaning 'Namenszusatz' and fix mapping
 
 
 ### STU 1 Ballot (2025-05-22)
