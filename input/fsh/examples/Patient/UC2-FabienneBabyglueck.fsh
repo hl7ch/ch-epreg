@@ -9,10 +9,10 @@ Description: "Example for CH EPREG Patient: Mother"
 // * identifier[AHVN13]
 * identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
 * identifier[insuranceCardNumber].value = "80756098765432100000"
-* name.text = "Frau Fabienne Babyglück"
+* name.text = "Fabienne Madeleine Babyglück"
 * name.family = "Babyglück"
-* name.given = "Fabienne"
-* name.prefix = "Frau"
+* name.given[0] = "Fabienne"
+* name.given[+] = "Madeleine"
 * telecom[email].system = #email 
 * telecom[email].value = "fabienne.babyglueck@example.com"
 * telecom[phone][0].system = #phone
