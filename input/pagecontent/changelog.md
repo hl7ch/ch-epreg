@@ -1,7 +1,5 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-
-
 ### STU 1 (2025-12)
 
 ### Open Issues
@@ -10,6 +8,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 
 #### Added 
+* [#32](https://github.com/hl7ch/ch-epreg/issues/32)/[#31](https://github.com/hl7ch/ch-epreg/issues/31)/[#33](https://github.com/hl7ch/ch-epreg/issues/33) (-> [CH Core #394](https://github.com/hl7ch/ch-core/issues/394)): Remark on the use of Swiss core artifacts and their impact on the relationship between the different exchange formats
 
 #### Changed / Updated 
 * [#15](https://github.com/hl7ch/ch-epreg/issues/15): Rename number extension and update description to clarify the (re-) usage
