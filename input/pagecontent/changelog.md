@@ -10,6 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 
 #### Added 
+* [#25](https://github.com/hl7ch/ch-epreg/issues/25): Add guidance for narrative representation
 
 #### Changed / Updated 
 * [#15](https://github.com/hl7ch/ch-epreg/issues/15): Rename number extension and update description to clarify the (re-) usage
