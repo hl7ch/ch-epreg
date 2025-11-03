@@ -1,7 +1,7 @@
 ### Introduction
 The **pregnancy passport** contains all the important medical information needed during pregnancy, at birth and for six weeks afterwards to ensure comprehensive care. This information is entered in the pregnancy passport by the treating healthcare providers, such as gynecologists, midwives and general practitioners, as well as institutions such as clinics, birthing centres, practices or midwife organizations. 
 
-The CH EPREG implementation guide (IG) describes the FHIR representation of the **e**lectronic **preg**nancy passport in Switzerland. It is dependent on [CH Core](http://fhir.ch/ig/ch-core/index.html) and [CH Term](http://fhir.ch/ig/ch-term/index.html), which describe the Swiss-specific context, particularly in relation to the Swiss Electronic Patient Record (EPR). CH EPREG follows the [Swiss layered approach to FHIR interoperability](http://fhir.ch/ig/ch-core/usage-swiss-core-artifacts.html), which promotes the reuse of common core artifacts across different exchange formats. Like other Swiss exchange format IGs such as CH EMED (medication) and CH VACD (vaccination), CH EPREG leverages core clinical profiles where relevant to pregnancy care, ensuring consistency across Swiss healthcare documentation while applying pregnancy-specific constraints where needed.
+The CH EPREG implementation guide (IG) describes the FHIR representation of the **e**lectronic **preg**nancy passport in Switzerland. It is dependent on [CH Core](http://fhir.ch/ig/ch-core/index.html) and [CH Term](http://fhir.ch/ig/ch-term/index.html), which describe the Swiss-specific context. CH EPREG follows the [Swiss layered approach to FHIR interoperability](http://fhir.ch/ig/ch-core/usage-swiss-core-artifacts.html), which promotes the reuse of common core artifacts across different exchange formats. Like other Swiss exchange format IGs such as CH EMED (medication) and CH VACD (vaccination), CH EPREG leverages core clinical profiles where relevant to pregnancy care, ensuring consistency across Swiss healthcare documentation while applying pregnancy-specific constraints where needed.
 
 This implementation guide is based on the concept for the exchange format of the electronic pregnancy passport ([de](https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf), [fr](https://www.e-health-suisse.ch/upload/documents/eDossiergrossesse_Concept_fr.pdf)).
 
@@ -50,3 +50,4 @@ This implementation guide contains and references intellectual property owned by
 ### Globals Table
 
 {% include globals-table.xhtml %}
+
