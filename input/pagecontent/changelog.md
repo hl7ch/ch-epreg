@@ -14,6 +14,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 #### Changed / Updated 
 * [#15](https://github.com/hl7ch/ch-epreg/issues/15): Rename number extension and update description to clarify the (re-) usage
 * [#12](https://github.com/hl7ch/ch-epreg/issues/12): Blood Type: stay with the current modelling approach and the VS. Update link in mapping notes to the reintroduced UV IPS VS
+* [#23](https://github.com/hl7ch/ch-epreg/issues/23): Remove note extension as the concept element 'Bemerkungen' is not yet represented in the use cases
 
 #### Fixed 
 * [#14](https://github.com/hl7ch/ch-epreg/issues/14), [#28](https://github.com/hl7ch/ch-epreg/issues/28): Typos
