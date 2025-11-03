@@ -1,7 +1,5 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-
-
 ### STU 1 (2025-12)
 
 ### Open Issues
@@ -11,9 +9,10 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 
 #### Added 
 * [#25](https://github.com/hl7ch/ch-epreg/issues/25): Add guidance for narrative representation
+* [#32](https://github.com/hl7ch/ch-epreg/issues/32)/[#31](https://github.com/hl7ch/ch-epreg/issues/31)/[#33](https://github.com/hl7ch/ch-epreg/issues/33) (-> [CH Core #394](https://github.com/hl7ch/ch-core/issues/394)): Remark on the use of Swiss core artifacts and their impact on the relationship between the different exchange formats
 
 #### Changed / Updated 
-* [#15](https://github.com/hl7ch/ch-epreg/issues/15): Rename number extension and update description to clarify the (re-) usage
+* [#15](https://github.com/hl7ch/ch-epreg/issues/15)/[#22](https://github.com/hl7ch/ch-epreg/issues/22)/[#30](https://github.com/hl7ch/ch-epreg/issues/30): Rename number extension to examination sequence extension and update description to clarify the (re-) usage
 * [#12](https://github.com/hl7ch/ch-epreg/issues/12): Blood Type: stay with the current modelling approach and the VS. Update link in mapping notes to the reintroduced UV IPS VS
 
 #### Fixed 

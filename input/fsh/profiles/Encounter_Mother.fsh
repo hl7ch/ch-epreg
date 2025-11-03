@@ -6,7 +6,7 @@ Description: "This profile constrains the Encounter resource to represent a preg
 * . ^short = "CH EPREG Encounter: Mother"
 * extension contains 
     ChEpregExtPlannedNextPregVisit named nextVisit 0..1 and 
-    ChEpregExtExamNumber named visitNumber 0..1 and
+    ChEpregExtExaminationSequence named examinationSequence 0..1 and
     ChEpregExtNote named note 0..1
 * status = #finished
 * subject only Reference(ChEpregPatientMother)    
@@ -29,7 +29,7 @@ Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Untersuchung | Examen"
 * extension[nextVisit]                      -> "Nächste Kontrolle | Prochain contrôle"
-* extension[visitNumber]                    -> "Nummer | Numéro"
+* extension[examinationSequence]            -> "Nummer | Numéro"
 * extension[note]                           -> "Bemerkungen | Remarques"
 * subject                                   -> "Schwangere Person | Personne enceinte"
 * participant.individual                    -> "Kontrolle durchgeführt durch | Contrôle effectué par"
