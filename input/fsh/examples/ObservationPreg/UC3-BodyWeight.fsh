@@ -11,4 +11,4 @@ Description: "Example for CH EPREG Observation (Mother): Body Weight"
 * effectiveDateTime = "2025-02-10"
 * performer = Reference(UC3-ClaudiaFruehblickAtFrauenzimmer)
 * valueQuantity = 64 $ucum#kg "kilogram"
-* encounter = Reference(UC3-EncounterMother202500210)
+* encounter = Reference(UC3-EncounterMother20250210)

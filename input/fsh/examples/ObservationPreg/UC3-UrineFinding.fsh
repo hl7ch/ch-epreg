@@ -8,6 +8,6 @@ Description: "Example for CH EPREG Observation (Mother): Urine Finding"
 * code = $sct#417597005 "Urine dipstick test finding (finding)"
 * subject = Reference(UC3-SophieDoppelherz)
 * effectiveDateTime = "2025-02-10"
-* performer = Reference(UC1-ClaudiaFruehblickAtFrauenzimmer)
-* encounter = Reference(UC1-EncounterMother20250210)
+* performer = Reference(UC3-ClaudiaFruehblickAtFrauenzimmer)
+* encounter = Reference(UC3-EncounterMother20250210)
 * valueString = "bland"
