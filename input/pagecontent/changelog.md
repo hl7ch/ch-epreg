@@ -13,7 +13,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 #### Changed / Updated 
 * [#15](https://github.com/hl7ch/ch-epreg/issues/15)/[#22](https://github.com/hl7ch/ch-epreg/issues/22)/[#30](https://github.com/hl7ch/ch-epreg/issues/30): Rename number extension to examination sequence extension and update description to clarify the (re-) usage
 * [#12](https://github.com/hl7ch/ch-epreg/issues/12): Blood Type: stay with the current modelling approach and the VS. Update link in mapping notes to the reintroduced UV IPS VS
-* [#21](https://github.com/hl7ch/ch-epreg/issues/21): Change cardinality in the concept paper and mapping for 'Untersuchung' and 'Ultraschall' from 0..1 to 0..*, add note to Composition.section.text, that a narrative has to contain information about the whole section content
+* [#21](https://github.com/hl7ch/ch-epreg/issues/21): Change cardinality in the concept paper and mapping for 'Untersuchung' and 'Ultraschall' from 0..1 to 0..*, add note to section.text in Composition, that a narrative has to contain information about the whole section content
 
 #### Fixed 
 * [#14](https://github.com/hl7ch/ch-epreg/issues/14), [#28](https://github.com/hl7ch/ch-epreg/issues/28): Typos
