@@ -33,6 +33,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[coreData].section[insurance].code 1..
 * section[coreData].section[insurance].code = $loinc#35525-5 // "Clinical trial protocol Financing and insurance section"
 * section[coreData].section[insurance].text 1..
+* section[coreData].section[insurance].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[coreData].section[insurance].entry MS
 * section[coreData].section[insurance].entry only Reference(ChEpregCoverage)
 * section[coreData].section[insurance].entry.reference 1..
@@ -42,6 +43,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[coreData].section[parent].code 1..
 * section[coreData].section[parent].code = $loinc#54136-7 // "Relationship to patient Family member"
 * section[coreData].section[parent].text 1..
+* section[coreData].section[parent].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[coreData].section[parent].entry only Reference(ChEpregRelatedPersonParent)
 * section[coreData].section[parent].entry.reference 1..
 * section[coreData].section[parent].section 0..0
@@ -50,6 +52,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[coreData].section[careTeam].code 1..
 * section[coreData].section[careTeam].code = $loinc#85847-2 // "Patient Care team information"
 * section[coreData].section[careTeam].text 1..
+* section[coreData].section[careTeam].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[coreData].section[careTeam].entry MS
 * section[coreData].section[careTeam].entry only Reference(ChEpregPractitionerRoleTHCP)
 * section[coreData].section[careTeam].entry.reference 1..
@@ -80,6 +83,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[bloodBankStudies].code 1..
 * section[lab-subsections].section[bloodBankStudies].code = $loinc#18717-9 // "Blood bank studies (set)" 
 * section[lab-subsections].section[bloodBankStudies].text 1..  
+* section[lab-subsections].section[bloodBankStudies].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[lab-subsections].section[bloodBankStudies].entry only Reference(ChEpregObservationResultsLab)
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.discriminator.type = #profile
 * section[lab-subsections].section[bloodBankStudies].entry ^slicing.discriminator.path = "resolve()"
@@ -98,6 +102,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[chemistryStudies].code 1..
 * section[lab-subsections].section[chemistryStudies].code = $loinc#18719-5 // "Chemistry studies (set)"
 * section[lab-subsections].section[chemistryStudies].text 1..
+* section[lab-subsections].section[chemistryStudies].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[lab-subsections].section[chemistryStudies].entry only Reference(ChEpregObservationResultsLab)
 * section[lab-subsections].section[chemistryStudies].entry.reference 1..
 * section[lab-subsections].section[chemistryStudies].section 0..0
@@ -106,6 +111,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[hematologyStudies].code 1..
 * section[lab-subsections].section[hematologyStudies].code = $loinc#18723-7 // "Hematology studies (set)"
 * section[lab-subsections].section[hematologyStudies].text 1..
+* section[lab-subsections].section[hematologyStudies].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[lab-subsections].section[hematologyStudies].entry only Reference(ChEpregObservationResultsLab)
 * section[lab-subsections].section[hematologyStudies].entry.reference 1..
 * section[lab-subsections].section[hematologyStudies].section 0..0
@@ -114,6 +120,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[lab-subsections].section[microbiologyStudies].code 1..
 * section[lab-subsections].section[microbiologyStudies].code = $loinc#18725-2 // "Microbiology studies (set)"
 * section[lab-subsections].section[microbiologyStudies].text 1..
+* section[lab-subsections].section[microbiologyStudies].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[lab-subsections].section[microbiologyStudies].entry only Reference(ChEpregObservationResultsLab)
 * section[lab-subsections].section[microbiologyStudies].entry.reference 1..
 * section[lab-subsections].section[microbiologyStudies].section 0..0
@@ -123,6 +130,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].code 1..
 * section[pregProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
 * section[pregProgress].text 1..
+* section[pregProgress].text ^short = "Text summary of all the structured data of the section, for human interpretation"
 * section[pregProgress].entry only Reference(ChEpregEncounterMother or ChEpregEncounterChild or ChEpregObservationPregProgress)
 * section[pregProgress].entry ^short = "Observations representing further examinations and questions can be added as additional entries. See also 'Mapping Laboratory Results'." 
 * section[pregProgress].entry ^slicing.discriminator.type = #profile
