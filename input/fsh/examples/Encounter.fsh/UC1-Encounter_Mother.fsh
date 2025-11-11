@@ -6,7 +6,6 @@ Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
 * extension[nextVisit].valueDateTime = "2025-02-05"
 * extension[examinationSequence].valuePositiveInt = 7
-* extension[note].valueString = "'Bemerkung zur Untersuchung'"
 * status = #finished 
 * class = $v3-ActCode#AMB "ambulatory"
 * subject = Reference(UC1-KatrinKinderlieb)

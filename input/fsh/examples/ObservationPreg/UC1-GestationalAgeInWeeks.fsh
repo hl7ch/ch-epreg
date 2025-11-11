@@ -9,7 +9,7 @@ Description: "Example for CH EPREG Observation (Mother): Gestational Age"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-01-23"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
-* valueQuantity = 35 $ucum#d "day"
+* valueQuantity = 245 $ucum#d "day"
 * encounter = Reference(UC1-EncounterMother20250123)
 
 
@@ -24,5 +24,5 @@ Description: "Example for CH EPREG Observation (Mother): Gestational Age"
 * subject = Reference(UC1-KatrinKinderlieb)
 * effectiveDateTime = "2025-02-05"
 * performer = Reference(UC1-PetraSectionataAtFrauenzimmer)
-* valueQuantity = 37 $ucum#d "day"
+* valueQuantity = 259 $ucum#d "day"
 * encounter = Reference(UC1-EncounterMother20250205)

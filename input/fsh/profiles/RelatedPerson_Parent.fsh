@@ -4,8 +4,6 @@ Id: ch-epreg-relatedperson-parent
 Title: "CH EPREG RelatedPerson: Parent"
 Description: "This profile constrains the RelatedPerson resource to represent the relationship between the parent (besides the biological mother) and the child."
 * . ^short = "CH EPREG RelatedPerson: Parent"
-* extension contains 
-    ChEpregExtNote named note 0..1
 * patient only Reference(ChEpregPatientChild)
 * relationship 1..
 * relationship from Parent (extensible)
@@ -24,7 +22,6 @@ Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Elternteil | Parent"
 * extension[citizenship]                    -> "Nationalität | Nationalité" 
-* extension[note]                           -> "Bemerkungen | Remarques"
 * relationship                              -> "Art des Elternteils | Type de parent" 
 * name                                      -> "Name | Nom"
 * name.family                               -> "Nachname | Nom"

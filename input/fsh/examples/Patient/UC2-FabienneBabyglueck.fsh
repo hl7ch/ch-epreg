@@ -47,4 +47,3 @@ Description: "Example for CH EPREG Patient: Mother"
 * contact[guardian][=].telecom[phone][+].system = #phone
 * contact[guardian][=].telecom[phone][=].use = #work
 * contact[guardian][=].telecom[phone][=].value = "+41 88 888 88 88"
-* contact[guardian][=].extension[note].valueString = "Beistand/Vormund von Fabienne Babyglück" 

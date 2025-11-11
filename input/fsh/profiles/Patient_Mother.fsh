@@ -42,8 +42,7 @@ Description: "This profile constrains the Patient resource to represent the preg
 * contact[emergency].telecom contains phone 0..* MS
 * contact[emergency].telecom[phone] only CHCoreContactPointECH46Phone
 * contact[emergency].extension contains 
-    ChEpregExtPrimaryContact named primaryContact 0..1 and
-    ChEpregExtNote named note 0..1
+    ChEpregExtPrimaryContact named primaryContact 0..1 
 * contact[guardian].relationship = $v3-RoleCode#GUARD // "guardian"
 * contact[guardian].name MS
 * contact[guardian].name.family MS 
@@ -57,8 +56,7 @@ Description: "This profile constrains the Patient resource to represent the preg
     email 0..* and
     phone 0..* MS
 * contact[guardian].telecom[email] only CHCoreContactPointECH46Email    
-* contact[guardian].telecom[phone] only CHCoreContactPointECH46Phone
-* contact[guardian].extension contains ChEpregExtNote named note 0..1    
+* contact[guardian].telecom[phone] only CHCoreContactPointECH46Phone 
 
 
 
@@ -99,7 +97,6 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * contact[emergency].telecom[phone]         -> "use = mobile: Mobil | Mobile" 
 * contact[emergency].telecom[phone]         -> "use = work: Arbeit | Professionnel" 
 * contact[emergency].extension[primaryContact] -> "Primärkontakt | Contact principal"
-* contact[emergency].extension[note]        -> "Bemerkungen | Remarque"
 * contact[guardian]                         -> "Beistand/Vormund | Curatelle/tutelle"
 * contact[guardian].name                    -> "Name | Nom"
 * contact[guardian].name.family             -> "Nachname | Nom"
@@ -109,4 +106,3 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * contact[guardian].telecom[phone]          -> "use = home: Festnetz | Fixe" 
 * contact[guardian].telecom[phone]          -> "use = mobile: Mobil | Mobile" 
 * contact[guardian].telecom[phone]          -> "use = work: Arbeit | Professionnel" 
-* contact[guardian].extension[note]         -> "Bemerkungen | Remarque"

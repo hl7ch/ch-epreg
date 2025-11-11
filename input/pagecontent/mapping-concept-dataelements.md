@@ -47,7 +47,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 2.3. Geburtsdatum | 2.3. Date de naissance | 0..1 | O | Datum |   | `RelatedPerson.birthDate` |   |
 | 2.4. Nationalität | 2.4. Nationalité | 0..\* | O | String |   | `RelatedPerson.extension:citizenship.extension:code.valueCodeableConcept` |   |
 | 2.5. Kommunikationssprache | 2.5. Langue de communication | 0..1 | O | String |   | `RelatedPerson.communication:languageOfCorrespondence` |   |
-| 2.6. Bemerkungen | 2.6. Remarques | 0..1 | O | String |   | `RelatedPerson.extension:note.valueString` |   |
+| 2.6. Bemerkungen | 2.6. Remarques | 0..1 | O | String |   |   |   |
 | **3. Notfallkontakt** | **3. Contact en cas d’urgence** | 0..\* | R |   |   | [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html)<br />`Patient.contact:emergency`  |   |
 | 3.1. Primärkontakt | 3.1. Contact principal | 0..1 | O | Boolean | Gibt an, ob es sich um den Primärkontakt handelt. | `Patient.contact:emergency.extension:primaryContact.valueBoolean` |   |
 | 3.2. Name | 3.2. Nom | 0..1 | R |   |   | `Patient.contact:emergency.name`  |   |
@@ -57,7 +57,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 3.3.1. Festnetz | 3.3.1. Fixe | 0..1 | O | String |   | `Patient.contact:emergency.telecom:phone`<br />`use` = home |   |
 | 3.3.2. Mobil | 3.3.2. Mobile | 0..1 | R | String |   | `Patient.contact:emergency.telecom:phone`<br />`use` = mobile |   |
 | 3.3.3. Arbeit | 3.3.3. Professionnel | 0..1 | O | String |   | `Patient.contact:emergency.telecom:phone`<br />`use` = work |   |
-| 3.4. Bemerkungen | 3.4. Remarque | 0..1 | O | String |   | `Patient.contact:emergency.extension:note.valueString`  |   |
+| 3.4. Bemerkungen | 3.4. Remarque | 0..1 | O | String |   |   |   |
 | **4. Beistand/Vormund** | **4. Curatelle/tutelle** | 0..\* | O |   |   | [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html)<br />`Patient.contact:guardian` |   |
 | 4.1. Name | 4.1. Nom | 0..1 | R |   |   | `Patient.contact:guardian.name` |   |
 | 4.1.1. Nachname | 4.1.1. Nom | 0..1 | R | String |   | `Patient.contact:guardian.name.family` |   |
@@ -67,11 +67,11 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 4.2.2. Mobil | 4.2.2. Mobile | 0..1 | R | String |   | `Patient.contact:guardian.telecom:phone`<br />`use` = mobile |   |
 | 4.2.3. Arbeit | 4.2.3. Professionnel | 0..1 | O | String |   | `Patient.contact:guardian.telecom:phone`<br />`use` = work |   |
 | 4.3. E-Mailadresse | 4.3. Courriel | 0..1 | O | String |   | `Patient.contact:guardian.telecom:email` |   |
-| 4.4. Bemerkungen | 4.4. Remarques | 0..1 | O | String |   | `Patient.contact:guardian.extension:note.valueString` |   |
+| 4.4. Bemerkungen | 4.4. Remarques | 0..1 | O | String |   |   |   |
 | **5. Behandelnder Leistungserbringender** | **5. Fournisseur de prestations** | 0..\* | R |   | Dieses Element kann mehrmals vorkommen, so dass damit zum Beispiel ein Gynäkologe, eine Hebamme und der Hausarzt abgebildet werden können. | `Composition.section:coreData.section:careTeam.entry`<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)<br />`PractitionerRole.practitioner`<br />-> [CH EPREG Practitioner: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitioner-thcp.html)<br />`PractitionerRole.organization`<br />-> [CH EPREG Organization: Treating Healthcare Provider](StructureDefinition-ch-epreg-organization-thcp.html) |   |
 | 5.1. Art des Leistungserbringenden | 5.1. Type de fournisseur de prestations | 1..1 | M | Code | [Value Set: Leistungserbringender](mapping-concept-valuesets.html#healthcare-provider) | `PractitionerRole.code`<br />`PractitionerRole.specialty` |   |
 | 5.2. GLN Nummer | 5.2. Numéro GLN | 0..1 | R | Identifikator |   | `Practitioner.identifier:GLN`|   |
-| 5.3. Bemerkungen | 5.3. Remarques | 0..1 | O | String |   | `PractitionerRole.extension:note.valueString` |   |
+| 5.3. Bemerkungen | 5.3. Remarques | 0..1 | O | String |   |   |   |
 | 5.4. Vorhanden | 5.4. Disponible | 1..1 | M | Boolean | Gibt an, ob ein gewisser Leistungserbringer vorhanden bzw. nicht vorhanden ist. So kann zum Beispiel explizit gesagt werden, dass die Patientin keinen Hausarzt besitzt. | _can be textually described here:_<br />`Composition.section:coreData.section:careTeam.text` |   |
 | 5.5. Name der behandelnden Institution | 5.5. Nom de l’institution | 0..1 | R | String | Name der Institution oder Praxis | `Organization.name` |   |
 | 5.6. Name | 5.6. Nom | 0..1 | R |   | Name des Leistungserbringenden | `Practitioner.name` |   |
@@ -285,7 +285,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **13. Untersuchung** | **13. Examen** | 0..1 | O |   |   | `Composition.section:pregProgress.entry:pregVisit`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
+| **13. Untersuchung** | **13. Examen** | 0..* | O |   |   | `Composition.section:pregProgress.entry:pregVisit`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
 | 13.1. Nummer | 13.1. Numéro | 0..1 | O | Count | Nummer der Untersuchung | `Encounter.extension:examinationSequence.valuePositiveInt` |   |
 | 13.2. Zeitpunkt der Untersuchung | 13.2. Date de l’examen | 1..1 | M |   |   | `Observation.effective[x]` |   |
 | 13.2.1. Datum | 13.2.1. Date | 1..1 | M | Datum | Datum der Untersuchung | `Encounter.period.start`<br />`Encounter.period.end` |   |
@@ -319,7 +319,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 13.6.1. Arbeitsunfähig | 13.6.1. Incapacité de travail | 1..1 | M | Boolean |   |   |   |
 | 13.6.2. Beginn der Arbeitsunfähigkeit | 13.6.2. Début de l’incapacité de travail | 0..1 | O | Datum |   |   |   |
 | 13.6.3. Bemerkungen | 13.6.3. Remarques | 0..1 | O | String | Bemerkungen zur Arbeitsunfähigkeit |   |   |
-| 13.7. Bemerkungen | 13.7. Remarques | 0..1 | O | String | Bemerkungen zur Untersuchung | [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html)<br />`Encounter.extension:note.valueString` |   |
+| 13.7. Bemerkungen | 13.7. Remarques | 0..1 | O | String | Bemerkungen zur Untersuchung |   |   |
 | 13.8. Nächste Kontrolle | 13.8. Prochain contrôle | 0..1 | O | Datum |   | [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html)<br />`Encounter.extension:nextVisit.valueDateTime` |   |
 | 13.9. Kontrolle durchgeführt durch | 13.9. Contrôle effectué par | 1..1 | M |   |   | `Encounter.participant.individual` (Mother & Child)<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)<br />`Observation.performer` (Mother & Child)<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html) |   |
 | 13.9.1. GLN-Nummer | 13.9.1. Numéro GLN | 0..1 | R | Identifikator |   | `Organization.identifier:GLN` |   |
@@ -345,7 +345,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **14. Ultraschall** | **14. Échographie** | 0..1 | O |   | 16310003 Ultrasonography (procedure) |   |   |
+| **14. Ultraschall** | **14. Échographie** | 0..* | O |   | 16310003 Ultrasonography (procedure) |   |   |
 | 14.1. Nummer | 14.1. Numéro | 0..1 | O | Count | Nummer der Ultraschalluntersuchung |   |   |
 | 14.2. Zeitpunkt der Untersuchung | 14.2. Moment | 1..1 | M |   |   |   |   |
 | 14.2.1. Datum | 14.2.1. Date | 1..1 | M | Datum | Datum der Ultraschalluntersuchung |   |   |
