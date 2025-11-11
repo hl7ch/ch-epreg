@@ -1,8 +1,8 @@
 Le **recours au dossier de grossesse** dépend de la méthode de travail des fournisseurs de prestations impliqués. Des exemples possibles d'utilisation de ce format d’échange sont décrits en détail dans le [concept](https://www.e-health-suisse.ch/upload/documents/eDossiergrossesse_Concept_fr.pdf), notamment :
-* Prévention
-* Transferts
+* Prévention ([Cas d'application 3 : Grossesse gémellaire](#cas-dapplication-3--grossesse-gémellaire))
+* Transferts ([Cas d'application 1 : Prééclampsie](#cas-dapplication-1--prééclampsie))
 * Accouchement et suivi post-partum
-* Urgences
+* Urgences ([Cas d'application 2 : Forte activité contractile](#cas-dapplication-2--forte-activité-contractile))
 * Grossesses futures
 
 Les **cas d'application** suivants servent à illustrer les scénarios possibles dans le cadre des possibilités d'utilisation du dossier de grossesse mentionnées ci-dessus.
@@ -46,5 +46,26 @@ Les **cas d'application** suivants servent à illustrer les scénarios possibles
   <div style="flex: 0.5; width: 50%; margin-left: 2%;">
     <img src="UC2-StrongLaborContractions-fr.png" alt="passport" style="width: 100%;">
     <p style="text-align: left; font-style: italic;">Fig. : Dossier de grossesse Fabienne Babyglück, 27.03.2025</p>
+  </div>  
+</div>
+
+
+### Cas d'application 3 : Grossesse gémellaire
+
+<div style="display: flex; align-items: flex-start; width: 100%;">
+  <div style="flex: 0.5; width: 50%;">
+    <p>
+      <br>
+    </p>
+    <p>
+      La patiente <a href="Patient-UC3-SophieDoppelherz.html">Sophie Doppelherz</a> (née le 22.07.1992) attend ses deux premiers enfants – une grossesse gémellaire. Lors du premier <a href="Encounter-UC3-EncounterMother20250210.html">examen prénatal du 10.02.2025</a> en <a href="Observation-UC3-GestationalAgeInDays-20250210.html">7e semaine de grossesse</a>, la gynécologue <a href="PractitionerRole-UC3-ClaudiaFruehblickAtFrauenzimmer.html">Claudia Frühblick</a> constate des valeurs circulatoires stables et un état général sans particularité.
+    </p>  
+    <p>
+      Madame Doppelherz rapporte qu'elle se sent bien et n'a aucune symtôme. La <a href="Observation-UC3-BloodPressure-20250210.html">tension artérielle est de 120/75 mmHg</a>, l'<a href="Observation-UC3-UrineFinding-20250210.html">examen urinaire est sans particularité</a> (pas de protéines, pas de sucre, pas de nitrites), le <a href="Observation-UC3-BodyWeight-20250210.html">poids est de 64 kg</a>. L'échographie montre une grossesse gémellaire avec deux fœtus (<a href="Patient-UC3-ChildA.html">enfant A</a>, <a href="Patient-UC3-ChildB.html">enfant B</a>) développés de manière adaptée à l'âge gestationnel dans une quantité de liquide amniotique normale. Les deux activités cardiaques sont d'environ 155 battements par minute (<a href="Observation-UC3-FetalHeartFeatureChildA-20250210.html">enfant A</a>, <a href="Observation-UC3-FetalHeartFeatureChildB-20250210.html">enfant B</a>). Toutes ces valeurs sont documentées dans le <a href="Bundle-UC3-Document.html"><b>dossier de grossesse</b></a>. Comme tous les résultats sont sans particularité, le Dr Frühblick recommande le prochain examen de routine dans quatre semaines.
+    </p>
+  </div>
+  <div style="flex: 0.5; width: 50%; margin-left: 2%;">
+    <img src="UC3-TwinPregnancy-fr.png" alt="passport" style="width: 100%;">
+    <p style="text-align: left; font-style: italic;">Fig. : Dossier de grossesse Sophie Doppelherz, 10.02.2025</p>
   </div>  
 </div>

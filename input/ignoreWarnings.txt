@@ -17,3 +17,10 @@ Wrong Display Name%
 
 # Information about pinned version 
 Pinned the version of%
+
+# Known IG Publisher issue (https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Publisher.20v2.2E0.2E24.20-.20error.20in.20local.20build/with/547712458)
+The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+
+# Used/required in the CH LAB-Report IG  
+This IG is for FHIR version 4.0.1, while the package 'hl7.fhir.eu.extensions#0.1.1' is for FHIR version 5.0.0

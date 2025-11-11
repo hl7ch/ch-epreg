@@ -1,8 +1,8 @@
 Der **Einsatz des Schwangerschaftspasses** hängt von der Arbeitsweise der behandelnden Leistungserbringenden ab. Mögliche Beispiele für den Einsatz dieses Austauschformats sind im [Konzept](https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf) detailliert beschrieben, darunter:
-* Vorsorge
-* Überweisung
+* Vorsorge ([Fallbeispiel 3: Zwillingsschwangerschaft](#fallbeispiel-3-zwillingsschwangerschaft))
+* Überweisung ([Fallbeispiel 1: Präeklampsie](#fallbeispiel-1-präeklampsie))
 * Geburt und Nachsorge 
-* Notfall
+* Notfall ([Fallbeispiel 2: Starke Wehentätigkeit](#fallbeispiel-2-starke-wehentätigkeit))
 * Nachfolgende Schwangerschaft
 
 Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenarien im Rahmen der oben genannten Einsatzmöglichkeiten des Schwangerschaftspasses.
@@ -47,6 +47,27 @@ Die nachfolgenden **Anwendungsfälle** dienen der Illustration möglicher Szenar
   <div style="flex: 0.5; width: 50%; margin-left: 2%;">
     <img src="UC2-StrongLaborContractions-de.png" alt="passport" style="width: 100%;">
     <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Fabienne Babyglück, 27.03.2025</p>
+  </div>  
+</div>
+
+
+### Fallbeispiel 3: Zwillingsschwangerschaft
+
+<div style="display: flex; align-items: flex-start; width: 100%;">
+  <div style="flex: 0.5; width: 50%;">
+    <p>
+      <br>
+    </p>
+    <p>
+      Die Patientin <a href="Patient-UC3-SophieDoppelherz.html">Sophie Doppelherz</a> (geb. 22.07.1992) erwartet ihre ersten beiden Kinder – eine Zwillingsschwangerschaft. Bei der ersten <a href="Encounter-UC3-EncounterMother20250210.html">Vorsorgeuntersuchung vom 10.02.2025</a> in der <a href="Observation-UC3-GestationalAgeInDays-20250210.html">7. Schwangerschaftswoche</a> stellt die Gynäkologin <a href="PractitionerRole-UC3-ClaudiaFruehblickAtFrauenzimmer.html">Claudia Frühblick</a> stabile Kreislaufwerte und einen unauffälligen Allgemeinzustand fest. 
+    </p>  
+    <p>
+      Frau Doppelherz berichtet, dass sie sich wohlfühlt und keine Beschwerden hat. Der <a href="Observation-UC3-BloodPressure-20250210.html">Blutdruck liegt bei 120/75 mmHg</a>, der <a href="Observation-UC3-UrineFinding-20250210.html">Urinstatus ist unauffällig</a> (kein Eiweiss, kein Zucker, keine Nitrite), das <a href="Observation-UC3-BodyWeight-20250210.html">Gewicht beträgt 64 kg</a>. Im Ultraschall zeigt sich eine Zwillingsschwangerschaft mit zwei altersentsprechend entwickelten Feten (<a href="Patient-UC3-ChildA.html">Kind A</a>, <a href="Patient-UC3-ChildB.html">Kind B</a>) in unauffälliger Fruchtwassermenge. Beide Herzaktivitäten liegen bei rund 155 Schlägen pro Minute (<a href="Observation-UC3-FetalHeartFeatureChildA-20250210.html">Kind A</a>, <a href="Observation-UC3-FetalHeartFeatureChildB-20250210.html">Kind B</a>). All diese Werte werden im <a href="Bundle-UC3-Document.html"><b>Schwangerschaftspass</b></a> dokumentiert. Da alle Befunde unauffällig sind, empfiehlt Dr. Frühblick die nächste Routineuntersuchung in vier Wochen.
+    </p>
+  </div>
+  <div style="flex: 0.5; width: 50%; margin-left: 2%;">
+    <img src="UC3-TwinPregnancy-de.png" alt="passport" style="width: 100%;">
+    <p style="text-align: left; font-style: italic;">Fig.: Schwangerschaftspass Sophie Doppelherz, 10.02.2025</p>
   </div>  
 </div>
 
