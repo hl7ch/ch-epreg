@@ -9,6 +9,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 
 #### Added 
 * [#32](https://github.com/hl7ch/ch-epreg/issues/32)/[#31](https://github.com/hl7ch/ch-epreg/issues/31)/[#33](https://github.com/hl7ch/ch-epreg/issues/33) (-> [CH Core #394](https://github.com/hl7ch/ch-core/issues/394)): Remark on the use of Swiss core artifacts and their impact on the relationship between the different exchange formats
+* [#20](https://github.com/hl7ch/ch-epreg/issues/20): Note on document consolidation
 * [#29](https://github.com/hl7ch/ch-epreg/issues/29): Add use case with a twin pregnancy
 
 #### Changed / Updated 
