@@ -285,7 +285,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **13. Untersuchung** | **13. Examen** | 0..1 | O |   |   | `Composition.section:pregProgress.entry:pregVisit`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
+| **13. Untersuchung** | **13. Examen** | 0..* | O |   |   | `Composition.section:pregProgress.entry:pregVisit`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
 | 13.1. Nummer | 13.1. Numéro | 0..1 | O | Count | Nummer der Untersuchung | `Encounter.extension:examinationSequence.valuePositiveInt` |   |
 | 13.2. Zeitpunkt der Untersuchung | 13.2. Date de l’examen | 1..1 | M |   |   | `Observation.effective[x]` |   |
 | 13.2.1. Datum | 13.2.1. Date | 1..1 | M | Datum | Datum der Untersuchung | `Encounter.period.start`<br />`Encounter.period.end` |   |
@@ -345,7 +345,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **14. Ultraschall** | **14. Échographie** | 0..1 | O |   | 16310003 Ultrasonography (procedure) |   |   |
+| **14. Ultraschall** | **14. Échographie** | 0..* | O |   | 16310003 Ultrasonography (procedure) |   |   |
 | 14.1. Nummer | 14.1. Numéro | 0..1 | O | Count | Nummer der Ultraschalluntersuchung |   |   |
 | 14.2. Zeitpunkt der Untersuchung | 14.2. Moment | 1..1 | M |   |   |   |   |
 | 14.2.1. Datum | 14.2.1. Date | 1..1 | M | Datum | Datum der Ultraschalluntersuchung |   |   |
