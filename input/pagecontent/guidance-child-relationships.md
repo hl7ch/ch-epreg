@@ -13,6 +13,11 @@ The relationship between the **biological mother** and her **child (fetus/newbor
 #### Mother with her Multiple Children  
 {% include img.html img="mother-children.png" caption="Fig.: Relationship between the biological mother and her multiple children (e.g. twins)" width="80%" %}
 
+**Example instances:**    
+[Patient: Mother](Patient-UC3-SophieDoppelherz.html)    
+--> [RelatedPerson: Mother - Child A](RelatedPerson-UC3-RelatedPerson-ChildA-Mother.html) --> [Patient: Child A](Patient-UC3-ChildA.html)    
+--> [RelatedPerson: Mother - Child B](RelatedPerson-UC3-RelatedPerson-ChildB-Mother.html) --> [Patient: Child A](Patient-UC3-ChildB.html)
+
 #### Encounters/Observations of Mother and Child  
 {% include img.html img="enc-obs-mother-child.png" caption="Fig.: Encounters and observations of the biological mother and her child with their references" width="80%" %}
 
