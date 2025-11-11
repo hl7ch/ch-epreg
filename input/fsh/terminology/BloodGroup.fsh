@@ -1,5 +1,4 @@
-// earlier: https://hl7.org/fhir/uv/ips/STU1.1/ValueSet-results-blood-group-snomed-ct-ips-free-set.html
-// future: https://build.fhir.org/ig/HL7/fhir-ips/ValueSet-results-blood-group-uv-ips.html
+// https://hl7.org/fhir/uv/ips/ValueSet-results-blood-group-uv-ips.html
 // https://doc.mednet.swiss/fhir/ValueSet-mni-obs-bloodGroup.html
 
 ValueSet: BloodGroup

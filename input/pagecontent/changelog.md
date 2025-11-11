@@ -17,6 +17,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-epreg/issues).
 * [#12](https://github.com/hl7ch/ch-epreg/issues/12): Blood Type: stay with the current modelling approach and the VS. Update link in mapping notes to the reintroduced UV IPS VS
 * [#21](https://github.com/hl7ch/ch-epreg/issues/21): Change cardinality in the concept paper and mapping for 'Untersuchung' and 'Ultraschall' from 0..1 to 0..*, add note to section.text in Composition, that a narrative has to contain information about the whole section content
 * [#23](https://github.com/hl7ch/ch-epreg/issues/23): Remove note extension as the concept element 'Bemerkungen' is not yet represented in the use cases
+* [#46](https://github.com/hl7ch/ch-epreg/issues/46): Update UV IPS link from ci build to stable version (published in the meantime)
 
 #### Fixed 
 * [#14](https://github.com/hl7ch/ch-epreg/issues/14), [#28](https://github.com/hl7ch/ch-epreg/issues/28): Typos
