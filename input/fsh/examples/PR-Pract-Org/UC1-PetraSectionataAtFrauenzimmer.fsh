@@ -4,7 +4,6 @@ Usage: #example
 Title: "UC 1: Petra Sectionata @ Frauenzimmer"
 Description: "Example for CH EPREG PractitionerRole"
 * language = #de-CH
-* extension[note].valueString = "Bemerkung"
 * practitioner = Reference(UC1-PetraSectionata)
 * organization = Reference(UC1-Frauenzimmer)
 * code = $sct#309343006 "Arzt/Ärztin"
