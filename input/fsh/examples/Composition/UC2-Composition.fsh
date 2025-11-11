@@ -68,7 +68,6 @@ Usage: #inline
         <li>Blutdruck: 122/83 mmHg</li>
         <li>Kindslage: Steisslage</li>
         <li>Weitere Untersuchungen: BZ (Teststreifen Finger): 4.7 mmol/l, Verdauung: Sodbrennen</li>
-        <li>Nächste Kontrolle am: 02.04.2025</li>
     </ul>
   </div>"
 * section[pregProgress].entry[0] = Reference(urn:uuid:4b9ca365-383e-41c8-9bac-b3c79aea1c7e) "Weitere Untersuchungen: BZ 3.9 mmol/l, 27.03.2025"

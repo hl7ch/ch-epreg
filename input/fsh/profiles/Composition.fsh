@@ -131,7 +131,7 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
 * section[pregProgress].text 1..
 * section[pregProgress].text ^short = "Text summary of all the data of the section, for human interpretation"
-* section[pregProgress].entry only Reference(ChEpregEncounterMother or ChEpregEncounterChild or ChEpregObservationPregProgress)
+* section[pregProgress].entry only Reference(ChEpregEncounterMother or ChEpregEncounterChild or ChEpregAppointmentNextVisit or ChEpregObservationPregProgress)
 * section[pregProgress].entry ^short = "Observations representing further examinations and questions can be added as additional entries. See also 'Mapping Laboratory Results'." 
 * section[pregProgress].entry ^slicing.discriminator.type = #profile
 * section[pregProgress].entry ^slicing.discriminator.path = "resolve()"
@@ -149,7 +149,8 @@ Description: "This profile constrains the Composition resource to represent the 
     vaginaFeature 0..* and
     fetalMovement 0..* and
     fetalHeartFeature 0..* and
-    fetalPosition 0..*    
+    fetalPosition 0..* and 
+    nextVisit 0..1    
 * section[pregProgress].entry[pregVisit] only Reference(ChEpregEncounterMother or ChEpregEncounterChild)
 * section[pregProgress].entry[pregVisit].reference 1..
 * section[pregProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInDays)
@@ -174,6 +175,9 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[fetalHeartFeature].reference 1..
 * section[pregProgress].entry[fetalPosition] only Reference(ChEpregObservationFetalPosition)
 * section[pregProgress].entry[fetalPosition].reference 1..
+* section[pregProgress].entry[nextVisit] only Reference(ChEpregAppointmentNextVisit)
+* section[pregProgress].entry[nextVisit].reference 1..
+* section[pregProgress].entry[nextVisit] ^short = "Next visit, which was planned at the most recent pregnancy visit"
 * section[pregProgress].section 0..0
 
 
@@ -208,3 +212,4 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[pregProgress].entry[fetalMovement]            -> "Kindsbewegungen | Mobilité fœtale"
 * section[pregProgress].entry[fetalHeartFeature]        -> "Herztöne | Bruits cardiaques fœtaux"
 * section[pregProgress].entry[fetalPosition]            -> "Kindslage | Position fœtale"
+* section[pregProgress].entry[nextVisit]                -> "Nächste Kontrolle | Prochain contrôle"

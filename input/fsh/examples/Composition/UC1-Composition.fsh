@@ -123,7 +123,6 @@ Description: "Example for CH EPREG Composition"
         <li>Gewicht: 80.6 kg</li>
         <li>Gewichtszunahme: 11.1 kg</li>
         <li>Blutdruck: 120/80 mmHg</li>
-        <li>Nächste Kontrolle am: 05.02.2025</li>
     </ul>
   </div>"
 * section[pregProgress].entry[pregVisit][0] = Reference(UC1-EncounterMother20250205)

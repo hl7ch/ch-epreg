@@ -40,6 +40,7 @@ Description: "Example for CH EPREG Composition"
         <li>Urin: bland</li>
         <li>Herztöne Kind A: 155 /min</li>
         <li>Herztöne Kind B: 155 /min</li>
+        <li>Nächste Kontrolle: 10.03.2025</li>
     </ul>
   </div>"
 * section[pregProgress].entry[pregVisit][0] = Reference(UC3-EncounterMother20250210)
@@ -51,3 +52,4 @@ Description: "Example for CH EPREG Composition"
 * section[pregProgress].entry[urineFinding] = Reference(UC3-UrineFinding-20250210)
 * section[pregProgress].entry[fetalHeartFeature][0] = Reference(UC3-FetalHeartFeatureChildA-20250210)
 * section[pregProgress].entry[fetalHeartFeature][+] = Reference(UC3-FetalHeartFeatureChildB-20250210)
+* section[pregProgress].entry[nextVisit] = Reference(UC3-Appointment20250310)
