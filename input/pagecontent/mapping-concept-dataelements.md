@@ -49,7 +49,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 2.5. Kommunikationssprache | 2.5. Langue de communication | 0..1 | O | String |   | `RelatedPerson.communication:languageOfCorrespondence` |   |
 | 2.6. Bemerkungen | 2.6. Remarques | 0..1 | O | String |   |   |   |
 | **3. Notfallkontakt** | **3. Contact en cas d’urgence** | 0..\* | R |   |   | [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html)<br />`Patient.contact:emergency`  |   |
-| 3.1. Primärkontakt | 3.1. Contact principal | 0..1 | O | Boolean | Gibt an, ob es sich um den Primärkontakt handelt. | `Patient.contact:emergency.extension:primaryContact.valueBoolean` |   |
+| 3.1. Primärkontakt | 3.1. Contact principal | 0..1 | O | Boolean | Gibt an, ob es sich um den Primärkontakt handelt. | `Patient.contact:emergency.extension:contactPriority.valuePositiveInt` |   |
 | 3.2. Name | 3.2. Nom | 0..1 | R |   |   | `Patient.contact:emergency.name`  |   |
 | 3.2.1. Nachname | 3.2.1. Nom | 0..1 | R | String |   | `Patient.contact:emergency.name.family` |   |
 | 3.2.2. Vorname | 3.2.2. Prénom | 0..1 | R | String |   | `Patient.contact:emergency.name.given` |   |
