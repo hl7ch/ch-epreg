@@ -27,4 +27,4 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * name.family                               -> "Nachname | Nom"
 * name.given                                -> "Vorname | Prénom"
 * birthDate                                 -> "Geburtsdatum | Date de naissance"
-* communication[languageOfCorrespondence]   -> "Kommunikationssprache | Langue de communication" 
+* communication                             -> "Kommunikationssprache | Langue de communication" 

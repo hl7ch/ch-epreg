@@ -29,7 +29,7 @@ Description: "Example for CH EPREG Patient: Mother"
 * address.postalCode = "8000"
 * address.city = "Zürich" 
 * address.country = "Schweiz"
-* communication[languageOfCorrespondence].language = urn:ietf:bcp:47#de-CH "German (Switzerland)"
+* communication.language = urn:ietf:bcp:47#de-CH "German (Switzerland)"
 * link[child].other = Reference(UC1-RelatedPerson-Mother)
 * link[child].type = #seealso
 * contact[emergency][0].relationship = $v2-0131#C "Emergency Contact"

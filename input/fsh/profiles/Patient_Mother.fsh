@@ -88,7 +88,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * address.postalCode                        -> "Postleitzahl | Code postal" 
 * address.city                              -> "Ort | Localité" 
 * address.country                           -> "Land | Pays" 
-* communication[languageOfCorrespondence]   -> "Kommunikationssprache | Langue de communication"  
+* communication                             -> "Kommunikationssprache | Langue de communication"  
 * contact[emergency]                        -> "Notfallkontakt | Contact en cas d’urgence"
 * contact[emergency].name                   -> "Name | Nom"
 * contact[emergency].name.family            -> "Nachname | Nom"

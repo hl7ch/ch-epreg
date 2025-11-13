@@ -20,7 +20,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 1.2.5. Pronomen | 1.2.5. Pronoms | 0..1 | O | String | Für Trans-PatientInnen als optionale Angabe | `Patient.extension:pronoun.extension:value.valueCodeableConcept` |   |
 | 1.3. Geburtsdatum | 1.3. Date de naissance | 0..1 | R | Datum | 184099003 Date of birth (observable entity) | `Patient.birthDate` |   |
 | 1.4. Nationalität | 1.4. Nationalité | 0..\* | O | String |   | `Patient.extension:citizenship.extension:code.valueCodeableConcept` |   |
-| 1.5. Kommunikationssprache | 1.5. Langue de communication | 0..1 | O | String |   | `Patient.communication:languageOfCorrespondence` |   |
+| 1.5. Kommunikationssprache | 1.5. Langue de communication | 0..1 | O | String |   | `Patient.communication` |   |
 | 1.6. Adresse | 1.6. Adresse | 0..1 | R |   |   | `Patient.address` |   |
 | 1.6.1. Strasse | 1.6.1. Rue | 0..1 | R | String |   | `Patient.address.line` |   |
 | 1.6.2. Hausnummer | 1.6.2. Numéro | 0..1 | R | String |   | `Patient.address.line` |   |
@@ -46,7 +46,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 2.2.2. Vorname | 2.2.2. Prénom | 0..1 | R | String |   | `RelatedPerson.name.given` |   |
 | 2.3. Geburtsdatum | 2.3. Date de naissance | 0..1 | O | Datum |   | `RelatedPerson.birthDate` |   |
 | 2.4. Nationalität | 2.4. Nationalité | 0..\* | O | String |   | `RelatedPerson.extension:citizenship.extension:code.valueCodeableConcept` |   |
-| 2.5. Kommunikationssprache | 2.5. Langue de communication | 0..1 | O | String |   | `RelatedPerson.communication:languageOfCorrespondence` |   |
+| 2.5. Kommunikationssprache | 2.5. Langue de communication | 0..1 | O | String |   | `RelatedPerson.communication` |   |
 | 2.6. Bemerkungen | 2.6. Remarques | 0..1 | O | String |   |   |   |
 | **3. Notfallkontakt** | **3. Contact en cas d’urgence** | 0..\* | R |   |   | [CH EPREG Patient: Mother](StructureDefinition-ch-epreg-patient-mother.html)<br />`Patient.contact:emergency`  |   |
 | 3.1. Primärkontakt | 3.1. Contact principal | 0..1 | O | Boolean | Gibt an, ob es sich um den Primärkontakt handelt. | `Patient.contact:emergency.extension:contactPriority.valuePositiveInt` |   |
