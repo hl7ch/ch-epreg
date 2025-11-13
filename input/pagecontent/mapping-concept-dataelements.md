@@ -285,7 +285,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 {:class="table table-bordered"}
 | Name German | Name French | Cardinality | Conformity | Data Type | Coding (SNOMED CT) / Comments | Mapping to FHIR (Resources, Elements) | Notes on Modeling Considerations |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **13. Untersuchung** | **13. Examen** | 0..* | O |   |   | `Composition.section:pregProgress.entry:pregVisit`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
+| **13. Untersuchung** | **13. Examen** | 0..* | O |   |   | `Composition.section:pregProgress.entry:pregExamination`<br />-> [CH EPREG Encounter: Mother](StructureDefinition-ch-epreg-encounter-mother.html) |   |
 | 13.1. Nummer | 13.1. Numéro | 0..1 | O | Count | Nummer der Untersuchung | `Encounter.extension:examinationSequence.valuePositiveInt` |   |
 | 13.2. Zeitpunkt der Untersuchung | 13.2. Date de l’examen | 1..1 | M |   |   | `Observation.effective[x]` |   |
 | 13.2.1. Datum | 13.2.1. Date | 1..1 | M | Datum | Datum der Untersuchung | `Encounter.period.start`<br />`Encounter.period.end` |   |
@@ -320,7 +320,7 @@ _Each element that has already been mapped has an entry in the column 'Mapping t
 | 13.6.2. Beginn der Arbeitsunfähigkeit | 13.6.2. Début de l’incapacité de travail | 0..1 | O | Datum |   |   |   |
 | 13.6.3. Bemerkungen | 13.6.3. Remarques | 0..1 | O | String | Bemerkungen zur Arbeitsunfähigkeit |   |   |
 | 13.7. Bemerkungen | 13.7. Remarques | 0..1 | O | String | Bemerkungen zur Untersuchung |   |   |
-| 13.8. Nächste Kontrolle | 13.8. Prochain contrôle | 0..1 | O | Datum |   | `Composition.section:pregProgress.entry:nextVisit`<br />-> [CH EPREG Appointment: Next Visit](StructureDefinition-ch-epreg-appointment-next-visit.html) |   |
+| 13.8. Nächste Kontrolle | 13.8. Prochain contrôle | 0..1 | O | Datum |   | `Composition.section:pregProgress.entry:nextExamination`<br />-> [CH EPREG Appointment: Next Examination](StructureDefinition-ch-epreg-appointment-next-examination.html) |   |
 | 13.9. Kontrolle durchgeführt durch | 13.9. Contrôle effectué par | 1..1 | M |   |   | `Encounter.participant.individual` (Mother & Child)<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html)<br />`Observation.performer` (Mother & Child)<br />-> [CH EPREG PractitionerRole: Treating Healthcare Provider](StructureDefinition-ch-epreg-practitionerrole-thcp.html) |   |
 | 13.9.1. GLN-Nummer | 13.9.1. Numéro GLN | 0..1 | R | Identifikator |   | `Organization.identifier:GLN` |   |
 | 13.9.2. Name | 13.9.2. Nom | 0..1 | R |   |   | `Practitioner.name` |   |

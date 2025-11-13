@@ -2,7 +2,7 @@ Profile: ChEpregEncounterMother
 Parent: CHCoreEncounter
 Id: ch-epreg-encounter-mother
 Title: "CH EPREG Encounter: Mother"
-Description: "This profile constrains the Encounter resource to represent a pregnancy visit from the mother's perspective."
+Description: "This profile constrains the Encounter resource to represent a pregnancy examination from the mother's perspective."
 * . ^short = "CH EPREG Encounter: Mother"
 * extension contains 
     ChEpregExtExaminationSequence named examinationSequence 0..1

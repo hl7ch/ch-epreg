@@ -1,9 +1,9 @@
-Profile: ChEpregAppointmentNextVisit
+Profile: ChEpregAppointmentNextExamination
 Parent: Appointment
-Id: ch-epreg-appointment-next-visit
-Title: "CH EPREG Appointment: Next Visit"
-Description: "This profile constrains the Appointment resource to represent the date of the planned next pregnancy visit."
-* . ^short = "CH EPREG Appointment: Next Visit"
+Id: ch-epreg-appointment-next-examination
+Title: "CH EPREG Appointment: Next Examination"
+Description: "This profile constrains the Appointment resource to represent the date of the planned next pregnancy examination."
+* . ^short = "CH EPREG Appointment: Next Examination"
 * status = #booked
 * start 1..
 * end 1..
@@ -26,8 +26,8 @@ Description: "This profile constrains the Appointment resource to represent the 
 
 
 
-Mapping: ChEpregAppointmentNextVisitToConceptPregnancyPassport
-Source: ChEpregAppointmentNextVisit
+Mapping: ChEpregAppointmentNextExaminationToConceptPregnancyPassport
+Source: ChEpregAppointmentNextExamination
 Target: "https://www.e-health-suisse.ch/upload/documents/eSchwangerschaftspass_Konzept_de.pdf"
 Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"

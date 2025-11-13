@@ -2,7 +2,7 @@ Profile: ChEpregEncounterChild
 Parent: CHCoreEncounter
 Id: ch-epreg-encounter-child
 Title: "CH EPREG Encounter: Child"
-Description: "This profile constrains the Encounter resource to represent a pregnancy visit from the child's perspective."
+Description: "This profile constrains the Encounter resource to represent a pregnancy examination from the child's perspective."
 * . ^short = "CH EPREG Encounter: Child"
 * status = #finished
 * subject only Reference(ChEpregPatientChild)    

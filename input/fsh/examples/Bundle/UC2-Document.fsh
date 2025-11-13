@@ -34,7 +34,7 @@ Description: "Example for CH EPREG Document - using UUIDs for fullUrls/reference
 * entry[+].fullUrl = "urn:uuid:b9145a94-ea12-479b-a031-b07d4ac9f297" // Obs: "Glucose 3.9 mmol/l"
 * entry[=].resource = b9145a94-ea12-479b-a031-b07d4ac9f297
 
-// Pregnancy Visit
+// Pregnancy Examination
 * entry[+].fullUrl = "urn:uuid:1ba6df42-ae1a-4b4a-886f-33d6b2223b1f" // Enc: "Untersuchung Mutter, 27.03.2025"
 * entry[=].resource = 1ba6df42-ae1a-4b4a-886f-33d6b2223b1f
 * entry[+].fullUrl = "urn:uuid:8e89c502-964f-4234-9728-540d881b0380" // Enc: "Untersuchung Mutter, 26.03.2025"

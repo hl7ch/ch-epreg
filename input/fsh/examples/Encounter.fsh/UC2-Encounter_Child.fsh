@@ -1,7 +1,7 @@
 Instance: 22aeb067-85f9-4b3b-9301-161604005206
 InstanceOf: ChEpregEncounterChild
 Usage: #example
-Title: "UC 2: Visit 26.03.2025"
+Title: "UC 2: Examination 26.03.2025"
 Description: "Example for CH EPREG Encounter: Child"
 * language = #de-CH
 * status = #finished 
@@ -16,7 +16,7 @@ Description: "Example for CH EPREG Encounter: Child"
 Instance: 833fd8f2-b75f-4dba-990f-6c46aa468d51
 InstanceOf: ChEpregEncounterChild
 Usage: #example
-Title: "UC 2: Visit 27.03.2025"
+Title: "UC 2: Examination 27.03.2025"
 Description: "Example for CH EPREG Encounter: Child"
 * language = #de-CH
 * status = #finished 

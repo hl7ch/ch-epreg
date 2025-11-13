@@ -1,7 +1,7 @@
 Instance: UC1-EncounterMother20250123
 InstanceOf: ChEpregEncounterMother
 Usage: #example
-Title: "UC 1: Visit 23.01.2025"
+Title: "UC 1: Examination 23.01.2025"
 Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
 * extension[examinationSequence].valuePositiveInt = 7
@@ -16,7 +16,7 @@ Description: "Example for CH EPREG Encounter: Mother"
 Instance: UC1-EncounterMother20250205
 InstanceOf: ChEpregEncounterMother
 Usage: #example
-Title: "UC 1: Visit 05.02.2025"
+Title: "UC 1: Examination 05.02.2025"
 Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
 * status = #finished 

@@ -1,8 +1,8 @@
 Instance: UC3-Appointment20250310
-InstanceOf: ChEpregAppointmentNextVisit
+InstanceOf: ChEpregAppointmentNextExamination
 Usage: #example
-Title: "UC 3: Next Visit 10.03.2025"
-Description: "Example for CH EPREG Appointment: Next Visit"
+Title: "UC 3: Next Examination 10.03.2025"
+Description: "Example for CH EPREG Appointment: Next Examination"
 * language = #de-CH
 * status = #booked
 * start = "2025-03-10T14:30:00+01:00"
