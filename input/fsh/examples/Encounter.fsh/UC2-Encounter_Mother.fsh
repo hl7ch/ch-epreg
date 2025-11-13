@@ -1,10 +1,9 @@
 Instance: 8e89c502-964f-4234-9728-540d881b0380
 InstanceOf: ChEpregEncounterMother
 Usage: #example
-Title: "UC 2: Visit 26.03.2025"
+Title: "UC 2: Examination 26.03.2025"
 Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
-* extension[nextVisit].valueDateTime = "2025-04-02"
 * status = #finished 
 * class = $v3-ActCode#AMB "ambulatory"
 * subject = Reference(urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd) "Fabienne Babyglück"
@@ -16,10 +15,9 @@ Description: "Example for CH EPREG Encounter: Mother"
 Instance: 1ba6df42-ae1a-4b4a-886f-33d6b2223b1f
 InstanceOf: ChEpregEncounterMother
 Usage: #example
-Title: "UC 2: Visit 27.03.2025"
+Title: "UC 2: Examination 27.03.2025"
 Description: "Example for CH EPREG Encounter: Mother"
 * language = #de-CH
-// * extension[nextVisit].valueDateTime = ""
 * status = #finished 
 * class = $v3-ActCode#IMP "inpatient encounter"
 * subject = Reference(urn:uuid:76c2c5aa-3d7f-438d-b23d-56ce827695fd) "Fabienne Babyglück"

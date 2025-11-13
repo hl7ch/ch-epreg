@@ -2,10 +2,9 @@ Profile: ChEpregEncounterMother
 Parent: CHCoreEncounter
 Id: ch-epreg-encounter-mother
 Title: "CH EPREG Encounter: Mother"
-Description: "This profile constrains the Encounter resource to represent a pregnancy visit from the mother's perspective."
+Description: "This profile constrains the Encounter resource to represent a pregnancy examination from the mother's perspective."
 * . ^short = "CH EPREG Encounter: Mother"
 * extension contains 
-    ChEpregExtPlannedNextPregVisit named nextVisit 0..1 and 
     ChEpregExtExaminationSequence named examinationSequence 0..1
 * status = #finished
 * subject only Reference(ChEpregPatientMother)    
@@ -27,7 +26,6 @@ Id: concept-pregnancy-passport
 Title: "Concept Pregnancy Passport"
 Description: "This mapping illustrates the relationship between the CH EPREG profile and the concept of the pregnancy passport."
 *                                           -> "Untersuchung | Examen"
-* extension[nextVisit]                      -> "Nächste Kontrolle | Prochain contrôle"
 * extension[examinationSequence]            -> "Nummer | Numéro"
 * subject                                   -> "Schwangere Person | Personne enceinte"
 * participant.individual                    -> "Kontrolle durchgeführt durch | Contrôle effectué par"

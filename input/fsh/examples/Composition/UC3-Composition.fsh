@@ -40,14 +40,16 @@ Description: "Example for CH EPREG Composition"
         <li>Urin: bland</li>
         <li>Herztöne Kind A: 155 /min</li>
         <li>Herztöne Kind B: 155 /min</li>
+        <li>Nächste Kontrolle: 10.03.2025</li>
     </ul>
   </div>"
-* section[pregProgress].entry[pregVisit][0] = Reference(UC3-EncounterMother20250210)
-* section[pregProgress].entry[pregVisit][+] = Reference(UC3-EncounterChildA20250210)
-* section[pregProgress].entry[pregVisit][+] = Reference(UC3-EncounterChildB20250210)
+* section[pregProgress].entry[pregExamination][0] = Reference(UC3-EncounterMother20250210)
+* section[pregProgress].entry[pregExamination][+] = Reference(UC3-EncounterChildA20250210)
+* section[pregProgress].entry[pregExamination][+] = Reference(UC3-EncounterChildB20250210)
 * section[pregProgress].entry[gestationalAge] = Reference(UC3-GestationalAgeInDays-20250210)
 * section[pregProgress].entry[bodyWeight] = Reference(UC3-BodyWeight-20250210)
 * section[pregProgress].entry[bloodPressure] = Reference(UC3-BloodPressure-20250210)
 * section[pregProgress].entry[urineFinding] = Reference(UC3-UrineFinding-20250210)
 * section[pregProgress].entry[fetalHeartFeature][0] = Reference(UC3-FetalHeartFeatureChildA-20250210)
 * section[pregProgress].entry[fetalHeartFeature][+] = Reference(UC3-FetalHeartFeatureChildB-20250210)
+* section[pregProgress].entry[nextExamination] = Reference(UC3-Appointment20250310)

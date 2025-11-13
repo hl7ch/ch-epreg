@@ -40,6 +40,8 @@ Description: "Example for CH EPREG Document"
 * entry[=].resource = UC3-BloodPressure-20250210
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Observation/UC3-UrineFinding-20250210"
 * entry[=].resource = UC3-UrineFinding-20250210
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Appointment/UC3-Appointment20250310"
+* entry[=].resource = UC3-Appointment20250310
 
 // Child A
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Encounter/UC3-EncounterChildA20250210"

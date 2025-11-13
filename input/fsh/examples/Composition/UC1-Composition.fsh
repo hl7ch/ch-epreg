@@ -123,13 +123,12 @@ Description: "Example for CH EPREG Composition"
         <li>Gewicht: 80.6 kg</li>
         <li>Gewichtszunahme: 11.1 kg</li>
         <li>Blutdruck: 120/80 mmHg</li>
-        <li>Nächste Kontrolle am: 05.02.2025</li>
     </ul>
   </div>"
-* section[pregProgress].entry[pregVisit][0] = Reference(UC1-EncounterMother20250205)
-* section[pregProgress].entry[pregVisit][+] = Reference(UC1-EncounterMother20250123)
-* section[pregProgress].entry[pregVisit][+] = Reference(UC1-EncounterChild20250205)
-* section[pregProgress].entry[pregVisit][+] = Reference(UC1-EncounterChild20250123)
+* section[pregProgress].entry[pregExamination][0] = Reference(UC1-EncounterMother20250205)
+* section[pregProgress].entry[pregExamination][+] = Reference(UC1-EncounterMother20250123)
+* section[pregProgress].entry[pregExamination][+] = Reference(UC1-EncounterChild20250205)
+* section[pregProgress].entry[pregExamination][+] = Reference(UC1-EncounterChild20250123)
 * section[pregProgress].entry[gestationalAge][0] = Reference(UC1-GestationalAgeInDays-20250205)
 * section[pregProgress].entry[gestationalAge][+] = Reference(UC1-GestationalAgeInDays-20250123)
 * section[pregProgress].entry[bodyWeight][0] = Reference(UC1-BodyWeight-20250205)

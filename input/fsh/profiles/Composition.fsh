@@ -131,14 +131,14 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].code = $loinc#57059-8 // "Pregnancy visit summary note Narrative"
 * section[pregProgress].text 1..
 * section[pregProgress].text ^short = "Text summary of all the data of the section, for human interpretation"
-* section[pregProgress].entry only Reference(ChEpregEncounterMother or ChEpregEncounterChild or ChEpregObservationPregProgress)
+* section[pregProgress].entry only Reference(ChEpregEncounterMother or ChEpregEncounterChild or ChEpregAppointmentNextExamination or ChEpregObservationPregProgress)
 * section[pregProgress].entry ^short = "Observations representing further examinations and questions can be added as additional entries. See also 'Mapping Laboratory Results'." 
 * section[pregProgress].entry ^slicing.discriminator.type = #profile
 * section[pregProgress].entry ^slicing.discriminator.path = "resolve()"
 * section[pregProgress].entry ^slicing.ordered = false
 * section[pregProgress].entry ^slicing.rules = #open
 * section[pregProgress].entry contains 
-    pregVisit 0..* and 
+    pregExamination 0..* and 
     gestationalAge 0..* MS and 
     bodyWeight 0..* and 
     weightGain 0..* and
@@ -149,9 +149,10 @@ Description: "This profile constrains the Composition resource to represent the 
     vaginaFeature 0..* and
     fetalMovement 0..* and
     fetalHeartFeature 0..* and
-    fetalPosition 0..*    
-* section[pregProgress].entry[pregVisit] only Reference(ChEpregEncounterMother or ChEpregEncounterChild)
-* section[pregProgress].entry[pregVisit].reference 1..
+    fetalPosition 0..* and 
+    nextExamination 0..1    
+* section[pregProgress].entry[pregExamination] only Reference(ChEpregEncounterMother or ChEpregEncounterChild)
+* section[pregProgress].entry[pregExamination].reference 1..
 * section[pregProgress].entry[gestationalAge] only Reference(ChEpregObservationGestationalAgeInDays)
 * section[pregProgress].entry[gestationalAge].reference 1..
 * section[pregProgress].entry[bodyWeight] only Reference(ChEpregObservationBodyWeight)
@@ -174,6 +175,9 @@ Description: "This profile constrains the Composition resource to represent the 
 * section[pregProgress].entry[fetalHeartFeature].reference 1..
 * section[pregProgress].entry[fetalPosition] only Reference(ChEpregObservationFetalPosition)
 * section[pregProgress].entry[fetalPosition].reference 1..
+* section[pregProgress].entry[nextExamination] only Reference(ChEpregAppointmentNextExamination)
+* section[pregProgress].entry[nextExamination].reference 1..
+* section[pregProgress].entry[nextExamination] ^short = "Next examination, which was planned at the most recent pregnancy examination"
 * section[pregProgress].section 0..0
 
 
@@ -196,7 +200,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[lab-subsections].section[microbiologyStudies] -> "Laboruntersuchung | Analyse de laboratoire"
 * section[pregProgress]                                 -> "Schwangerschaftsverlauf | Évolution de la grossesse"
 * section[pregProgress].entry                           -> "Weitere Untersuchungen und Fragen | Autres examens et questions"
-* section[pregProgress].entry[pregVisit]                -> "Untersuchung | Examen"
+* section[pregProgress].entry[pregExamination]          -> "Untersuchung | Examen"
 * section[pregProgress].entry[gestationalAge]           -> "Schwangerschaftswochen | Semaines de grossesse"
 * section[pregProgress].entry[bodyWeight]               -> "Aktuelles Gewicht | Poids actuel"
 * section[pregProgress].entry[weightGain]               -> "Gewichtszunahme	| Prise de poids"
@@ -208,3 +212,4 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * section[pregProgress].entry[fetalMovement]            -> "Kindsbewegungen | Mobilité fœtale"
 * section[pregProgress].entry[fetalHeartFeature]        -> "Herztöne | Bruits cardiaques fœtaux"
 * section[pregProgress].entry[fetalPosition]            -> "Kindslage | Position fœtale"
+* section[pregProgress].entry[nextExamination]                -> "Nächste Kontrolle | Prochain contrôle"
