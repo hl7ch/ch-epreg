@@ -45,7 +45,9 @@ pages:
     title: Anwendungsfälle
   usecase-french.md:
     title: Cas d'application
-  guidance-child-relationships.md:
+  narrative-content.md:
+    title: Narrative Content    
+  child-relationships.md:
     title: Child Relationships
   mapping-concept-dataelements.md:
     title: Mapping Concept Data Elements
@@ -67,7 +69,8 @@ menu:
     German: usecase-german.html
     French: usecase-french.html
   Guidance: 
-    Child Relationships: guidance-child-relationships.html
+    Narrative Content: narrative-content.html
+    Child Relationships: child-relationships.html
   Mapping:  
     Concept Data Elements: mapping-concept-dataelements.html
     Concept Value Sets: mapping-concept-valuesets.html
