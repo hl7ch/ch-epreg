@@ -44,7 +44,7 @@ Description: "Example for CH EPREG Patient: Mother"
 * contact[emergency][=].telecom[phone][+].system = #phone
 * contact[emergency][=].telecom[phone][=].use = #work
 * contact[emergency][=].telecom[phone][=].value = "+41 46 464 64 64"
-* contact[emergency][=].extension[primaryContact].valueBoolean = true
+* contact[emergency][=].extension[contactPriority].valuePositiveInt = 1
 * contact[emergency][+].relationship = $v2-0131#C "Emergency Contact"
 * contact[emergency][=].name.family = "Kinderlieb"
 * contact[emergency][=].name.given = "Anna"

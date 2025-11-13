@@ -42,7 +42,8 @@ Description: "This profile constrains the Patient resource to represent the preg
 * contact[emergency].telecom contains phone 0..* MS
 * contact[emergency].telecom[phone] only CHCoreContactPointECH46Phone
 * contact[emergency].extension contains 
-    ChEpregExtPrimaryContact named primaryContact 0..1 
+    PatContactPriority named contactPriority 0..1 // https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-patient-contactPriority.html
+* contact[emergency].extension[contactPriority] ^short = "Indicates the priority of the contact person (e.g. 1 = primary contact for an emergency)"    
 * contact[guardian].relationship = $v3-RoleCode#GUARD // "guardian"
 * contact[guardian].name MS
 * contact[guardian].name.family MS 
@@ -96,7 +97,7 @@ Description: "This mapping illustrates the relationship between the CH EPREG pro
 * contact[emergency].telecom[phone]         -> "use = home: Festnetz | Fixe" 
 * contact[emergency].telecom[phone]         -> "use = mobile: Mobil | Mobile" 
 * contact[emergency].telecom[phone]         -> "use = work: Arbeit | Professionnel" 
-* contact[emergency].extension[primaryContact] -> "Primärkontakt | Contact principal"
+* contact[emergency].extension[contactPriority] -> "Primärkontakt | Contact principal"
 * contact[guardian]                         -> "Beistand/Vormund | Curatelle/tutelle"
 * contact[guardian].name                    -> "Name | Nom"
 * contact[guardian].name.family             -> "Nachname | Nom"
