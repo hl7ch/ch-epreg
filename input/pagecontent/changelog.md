@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 1 (2025-12)
+### STU 1 (2025-12-15)
 
 #### Open Issues
 * [#10](https://github.com/hl7ch/ch-epreg/issues/10): Missing SCT concepts for 'social father' and 'social mother'
