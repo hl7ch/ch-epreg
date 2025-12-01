@@ -7,8 +7,10 @@ None of the codings provided are in the value set 'Patient Contact Relationship 
 
 # Issue/information coming from the snapshot (base/derived profile)
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note: 'Use additionalBinding extension or element instead'
-The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|%
+The extension http://hl7.org/fhir/StructureDefinition/regex|%
+The extension http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer|%
+The extension http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time|%
 
 # No valid display values for the given language (information)
 %as no Display Names for the language de-CH 
