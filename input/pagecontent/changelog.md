@@ -1,5 +1,8 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
+### STU 2 Ballot (unreleased)
+
+
 ### STU 1 (2025-12-16)
 
 #### Open Issues

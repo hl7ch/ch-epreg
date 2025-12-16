@@ -15,10 +15,10 @@ license: CC0-1.0
 copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CHE
 date: 2025-12-16
-version: 1.0.0
+version: 2.0.0-ballot-ci-build
 fhirVersion: 4.0.1
 copyrightYear: 2025+
-releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: HL7 Switzerland
 contact:
@@ -33,8 +33,8 @@ dependencies:
     version: 7.0.1  
   ch.fhir.ig.ch-core:
     uri: http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core
-    version: 6.0.0
-  ch.fhir.ig.ch-lab-report: 2.0.0
+    version: current
+  ch.fhir.ig.ch-lab-report: current
 
 pages:
   index.md:
